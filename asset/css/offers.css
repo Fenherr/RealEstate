@@ -1,0 +1,6 @@
+
+ul { 
+    justify-content: space-between;
+    color: rgb(255, 253, 240);
+    display: flex;
+}
