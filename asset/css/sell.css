@@ -1,0 +1,28 @@
+/*********** var ***********/
+:root {
+    --main-color:rgba(177, 243, 188, 1);
+}
+
+
+/*********** Global ***********/
+nav li{
+    font-family: "Baloo 2";
+}
+
+
+/*********** Header ***********/
+
+header {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 45px;
+}
