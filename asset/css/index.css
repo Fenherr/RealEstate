@@ -1,0 +1,19 @@
+header {
+    display: flex;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    
+}
+
+.auth {
+    float: right    ;
+}
+
+.auth a {
+    float: right;
+}
