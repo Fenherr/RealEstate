@@ -1,4 +1,21 @@
-ul{
-    display: inline;
-    flex-direction: row;
+.main-head {
+    background: #b1f3bc;
+    color: black;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
 }
