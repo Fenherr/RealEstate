@@ -26,7 +26,6 @@ header ul {
 
 header ul li {
     margin-left: 30px;
-    margin-left: 30px;
 }
 
 .logo {
@@ -69,13 +68,25 @@ a:hover {
     height: 916px;
     display: block;
 }
-section.search {
-    width: 1200px;
+.search {
+    width: 70%;
     height: 100px;
     background-color: #ffffff;
     opacity: 0.5;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     border-radius: 8px;
+}
+
+.menu_search {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.menu_search ul li {
+    justify-content: space-between;
 }
