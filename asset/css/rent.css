@@ -1,12 +1,19 @@
-ul {
-    list-style-type: none;
+nav {
+    display: flex;
+    display: contents;
     margin-left: 16px;
     margin-right: 16px;
 }
 
+ul {
+    list-style-type: none;
+    background-color: #B1F3BC;
+}
+/* Put a list on the same line. */
 li {
     display: inline-block;
-    padding-inline-start: 16px;
-    padding-inline-end: 5%;
 }
-
+    /* class to reduce the size of an image... */ 
+.mini {
+    width: 24px;
+}
