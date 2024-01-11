@@ -1,13 +1,12 @@
-
 ul {
     list-style-type: none;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 li {
     display: inline-block;
-    padding: auto;
     padding-inline-start: 16px;
     padding-inline-end: 5%;
 }
+
