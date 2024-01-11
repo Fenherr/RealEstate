@@ -1,3 +1,33 @@
+nav{
+    background-color: #b1f3bc;
+    height: 1024px*768px;
+    margin: auto;
+    padding-inline: ;
+}
 li{
-    display: inline-block
+    display: inline-flex;    
+        min-height: auto;
+        display: table-cell;
+        vertical-align: middle;
+}
+div.box{
+    display: inline-flexbox;
+    justify-content: center;
+    font-family: baloo2;
+    font-size: 30px;
+    
+}
+ul{
+    display: flex;
+    justify-content: right;
+    font-family: baloo2;
+    font-size: 30px;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+div.tableau{
+    display: flex;
+    justify-content: left;
 }
