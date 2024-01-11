@@ -1,14 +1,27 @@
 /*********** var ***********/
 :root {
     --main-color:rgba(177, 243, 188, 1);
+    --border-size: 3px;
+    --border-radius: 15px;
+    --footer-color: #1F1F1F;
 }
 
 
 /*********** Global ***********/
-nav li{
-    font-family: "Baloo 2";
+.title-txt {
+    font-family: "Baloo 2", sans-serif;
+    font-size: 1.3rem;
 }
 
+p, a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+}
 
 /*********** Header ***********/
 
@@ -16,6 +29,18 @@ header {
     background-color: var(--main-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    height: fit-content;
+}
+
+header a {
+    height: 78px;
+}
+
+#head_logo {
+    height: 65px;
+    padding: 10px 0 3px;
 }
 
 nav ul {
@@ -24,5 +49,44 @@ nav ul {
 }
 
 nav li {
-    margin: 0 45px;
+    margin: 0 40px 0 0;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 5px;
+    border: var(--border-size) var(--main-color) solid;
+    border-radius: var(--border-radius);
+}
+
+nav li a:hover {
+    color: var(--footer-color);
+    border: var(--border-size) var(--footer-color) solid;
+    border-radius: var(--border-radius);
+    background-color: var(--main-color);
+}
+
+#account {
+    background-color: var(--main-color);
+    border: none;
+}
+
+#account h2 {
+    font-weight: normal;
+}
+
+#account a {
+    display: flex;
+    align-items: center;
+}
+
+#account span:nth-child(1) {
+    height: 24px;
+    width: 24px;
+    border: var(--footer-color) solid var(--border-size);
+    margin-right: 5px;
+}
+
+#account a:hover h2 {
+    text-shadow: white 1px 1px 0;
 }
