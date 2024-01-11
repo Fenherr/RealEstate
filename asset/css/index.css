@@ -9,7 +9,7 @@ a {
     text-decoration: none;
     color: black;
 }
-
+/*header : logo et menu*/
 header {
     display: flex;
     background-color: #b1f3bc;
@@ -44,7 +44,7 @@ nav {
 a:hover {
     font-weight: 600;
 }
-
+/*bannière avec fonction recherche*/
 .banner {
     background-image: url("../images/site_corot_1920.jpg");
     background-repeat: no-repeat;
@@ -55,19 +55,6 @@ a:hover {
     position: absolute;
 }
 
-.news {
-    background-color: #1f1f1f;
-    width: auto;
-    height: 579px;
-    display: block;
-}
-
-.sell {
-    background-color: white;
-    width: auto;
-    height: 916px;
-    display: block;
-}
 .search {
     width: 70%;
     height: 100px;
@@ -90,3 +77,20 @@ a:hover {
 .menu_search ul li {
     justify-content: space-between;
 }
+
+/*section actualités*/
+.news {
+    background-color: #1f1f1f;
+    width: auto;
+    height: 579px;
+    display: block;
+}
+
+/*section derniers biens en vente*/
+.sell {
+    background-color: white;
+    width: auto;
+    height: 916px;
+    display: block;
+}
+
