@@ -47,12 +47,13 @@ a:hover {
 }
 
 .banner {
-    background-image: url("../asset/images/collegiale.jpg");
+    background-image: url("../images/site_corot_1920.jpg");
     background-repeat: no-repeat;
     margin: 0 auto;
-    width: auto;
+    width: 100%;
     height: 400px;
     display: block;
+    position: absolute;
 }
 
 .news {
@@ -67,4 +68,14 @@ a:hover {
     width: auto;
     height: 916px;
     display: block;
+}
+section.search {
+    width: 1200px;
+    height: 100px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 8px;
 }
