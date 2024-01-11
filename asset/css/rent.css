@@ -1,15 +1,16 @@
+/* Left and right margins */
 ul {
     list-style-type: none;
     margin-left: 16px;
     margin-right: 16px;
 }
-
+/* Put a list on the same line with a space of 16px between each item. */
 li {
     display: inline-block;
     padding-inline-start: 16px;
     padding-inline-end: 5%;
 }
-
+/* class to reduce the size of an image... */ 
 .mini {
     width: 24px;
 }
