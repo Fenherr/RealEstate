@@ -47,7 +47,7 @@ a:hover {
 }
 
 .banner {
-    background-image: url("./asset/images/collegiales.jpg");
+    background-image: url("../asset/images/collegiale.jpg");
     background-repeat: no-repeat;
     margin: 0 auto;
     width: auto;
