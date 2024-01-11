@@ -47,8 +47,24 @@ a:hover {
 }
 
 .banner {
-    background-image: url(asset/images/collegiales.jpg) no-repeat 0px 0px;
+    background-image: url("./asset/images/collegiales.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: auto;
+    height: 400px;
     display: block;
-    width: 1920px;
-    height: 779px;
+}
+
+.news {
+    background-color: #1f1f1f;
+    width: auto;
+    height: 579px;
+    display: block;
+}
+
+.sell {
+    background-color: white;
+    width: auto;
+    height: 916px;
+    display: block;
 }
