@@ -1,19 +1,70 @@
+body {
+    margin: 0 0;
+    width:100%;
+    bottom:0;
+    left:0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     display: flex;
+    background-color: #b1f3bc;
+    height: 100px;
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header ul {
     display: flex;
+    list-style: none;
+    margin: 47px 0 5px 5px;
 }
 
 header ul li {
-    
+    margin-left: 30px;
+    margin-left: 30px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+nav {
+    width: 100%;
 }
 
 .auth {
-    float: right    ;
+   align-items: flex-end;
+   margin-right: 50px;
+   margin-top: 47px;
 }
 
-.auth a {
-    float: right;
+a:hover {
+    font-weight: 600;
+}
+
+.banner {
+    background-image: url("../asset/images/collegiale.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: auto;
+    height: 400px;
+    display: block;
+}
+
+.news {
+    background-color: #1f1f1f;
+    width: auto;
+    height: 579px;
+    display: block;
+}
+
+.sell {
+    background-color: white;
+    width: auto;
+    height: 916px;
+    display: block;
 }
