@@ -57,9 +57,7 @@ a:hover {
 
 .search {
     width: 70%;
-    height: 100px;
-    background-color: #ffffff;
-    opacity: 0.5;
+    background-color: #ffffff95;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -70,13 +68,22 @@ a:hover {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
-    justify-content: center;
-    padding-top: 40px;
+    padding: 40px 0;
+    justify-content: space-around;
+    
 }
 
-.menu_search ul li {
-    justify-content: space-between;
+.menu_search_deco {
+    border: #1f1f1f 1px solid;  
+    border-radius: 6px;
+    padding: 5px;
+    width: 100px;
 }
+
+#menu_search_deco {
+    background-color: #b1f3bc;
+}
+
 
 /*section actualités*/
 .news {
