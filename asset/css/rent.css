@@ -7,8 +7,8 @@ header {
 }
 
 nav {
-    height: 61px;
-    width: 1920px;
+   /* height: 61px;*/
+    width: 100%;
 }
 
 .menu {
@@ -19,6 +19,7 @@ nav {
 /* Put a list on the same line. */
 .menu-format {
     display: inline;
+    
     padding-left: 20px;
     font-family: Baloo 2;
     font-size: 24px;
