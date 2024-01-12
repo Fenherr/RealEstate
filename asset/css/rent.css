@@ -1,17 +1,31 @@
-nav {
+header {
     display: flex;
-    display: contents;
-    margin-left: 16px;
-    margin-right: 16px;
+    justify-content: space-between;
+    background-color: #B1F3BC;
+    justify-content: center;
+    
 }
 
-ul {
+nav {
+    height: 61px;
+    width: 1920px;
+}
+
+.menu {
+    /*remove point*/
     list-style-type: none;
-    background-color: #B1F3BC;
+    
 }
 /* Put a list on the same line. */
-li {
-    display: inline-block;
+.menu-format {
+    display: inline;
+    padding-left: 20px;
+    font-family: Baloo 2;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+
 }
     /* class to reduce the size of an image... */ 
 .mini {
