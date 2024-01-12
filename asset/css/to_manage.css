@@ -1,32 +1,31 @@
-body{
-    margin: 0;
+/* reset css*/ 
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-header{
+header {
     background-color: rgba(177, 243, 188, 1);
-    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-nav ul{
+.menu {
     list-style: none;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin-left: 728px; margin-right: 1110px;
-    padding: 75px;
+    gap: 40px;
 }
 
-.logoacgd{
-    height: 52px;
-    width: 73;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 64px;
+.logo {
+    height: 75px;
+    width: 150px;
 }
 
-.account{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-
+li a:hover {
+    border: 2px solid black;
+    border-radius: 10px;
+    border-width: thick;
+    padding: 5px;
 }
