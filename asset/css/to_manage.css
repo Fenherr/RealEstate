@@ -1,7 +1,32 @@
+body{
+    margin: 0;
+}
+
 header{
     background-color: rgba(177, 243, 188, 1);
     height: 60px;
-    width: 1920px;
 }
 
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 728px; margin-right: 1110px;
+    padding: 75px;
+}
 
+.logoacgd{
+    height: 52px;
+    width: 73;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 64px;
+}
+
+.account{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
