@@ -4,7 +4,6 @@ header {
     background-color: #B1F3BC;
     justify-content: center;
     
-    
 }
 
 nav {
@@ -16,11 +15,9 @@ nav {
     /*remove point*/
     list-style-type: none;
     
-
 }
 /* Put a list on the same line. */
 .menu-format {
-    
     display: inline;
     padding-left: 20px;
     font-family: Baloo 2;
