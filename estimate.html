@@ -5,25 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estimate</title>
     <link rel="stylesheet" href="asset/css/estimate.css">
-
-
+<!--Police Baloo 2-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+<!--Police Open Sans-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-       <div id="logo">
-       </div>
 
-            <nav class="menu">
-                <ul>
-                    <li>Acheter</li>
-                    <li>Louer</li>
-                    <li>Vendre</li>
-                    <li>Contact</li>
-                    <li>Mon compte</li>
-                </ul>
-            </nav>
-        </div>
-       </div>
+        <!--Ceci est un premier div pour le logo-->
+    <div class="logo">
+        <img src="./asset/images/logo x150.png" alt="Logo">
+    </div>
+
+        <!--Ceci est un second div pour le menu-->
+    <div>       
+        <nav>
+            <ul class="menu">
+                <li><a href="#"><B>Acheter</B></a></li>
+                <li><a href="#"><B>Louer</B></a></li>
+                <li><a href="#"><B>Vendre</B></a></li>
+                <li><a href="#"><B>Contact</B></a></li>   
+            </ul>
+        </nav>
+    </div>
+
+        <!--Ceci est un div pour la partie mon compte-->
+    <button class="account">
+        <a href="#">Mon compte</a></button>
     </header>
+
+<h2>Vous souhaitez estimer votre bien ?</h2>
+
+<form>
+    <fieldset>
+    <h5>Il s'agit d'un :</h5>
+    
+    <div class="selection">
+        <input type="checkbox" id="Appart">
+        <label for="exampleUniq">Appartement</label>
+    <div class="selection">
+        <input type="checkbox" id="Appart">
+        <label for="exampleUniq">Maison</label>
+      </div>
+    <h5>C'est pour une :</h5>
+    <div class="selection">
+        <input type="checkbox" id="Appart" name="interest" value="Location">
+        <label for="Location">Location</label>
+      </div>
+    <div class="selection">
+        <input type="checkbox" id="Appart" name="interest" value="Vente">
+        <label for="Vente">Vente</label>
+      </div>
+    <h5>Adresse :</h5>
+    <div class="Adresse">
+        <input type="Adresse" style="width: 700px; height: 40px;">
+      </div>
+    </fieldset>
+</form>
+
+<div class="info">
+    <article class="container">
+        <h3><a href="##">En quoi consiste l'estimation immobilière ?</a></h3>
+        <p>Cras orci mauris, finibus ac pellentesque 
+            a, eleifend eu lectus. Vivamus felis augue, 
+            volutpat eget pretium at, egestas quis odio. 
+            Curabitur laoreet turpis in diam maximus 
+            ornare. Donec sed auctor arcu, at porta ante.</p>
+    </article>
+    <article class="container">
+        <img src="./asset/images/comment faire estimer son bien.jpg" alt="pc">
+        <h3><a href="##">Comment faire estimer sa maison ?</a></h3>
+        <p>Sed dictum velit vestibulum euismod bibendum. 
+            Pellentesque cursus sit amet odio ac iaculis.
+            Fusce varius, erat sed eleifend dignissim, 
+            quam leo elementum purus, vel condimentum 
+            ante eros egestas ipsum. Donec eu sem 
+            placerat, euismod dolor et, interdum felis.</p>
+    </article>
+</div>
+
 </body>
 </html>
