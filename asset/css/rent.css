@@ -7,8 +7,8 @@ header {
 }
 
 nav {
-    height: 61px;
-    width: 1920px;
+   /* height: 61px;*/
+    width: 100%;
 }
 
 .menu {
@@ -19,6 +19,7 @@ nav {
 /* Put a list on the same line. */
 .menu-format {
     display: inline;
+    padding-right: 20px;
     padding-left: 20px;
     font-family: Baloo 2;
     font-size: 24px;
@@ -27,7 +28,21 @@ nav {
     line-height: normal;    
 
 }
+/*menu right */
+.menu-right {
+    float: right;
+    display: inline;
+    padding-right: 10px;
+    padding-left: 1px;
+    font-family: Baloo 2;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+
+}
+
     /* class to reduce the size of an image... */ 
 .mini {
-    width: 24px;
+    width: 31px;
 }
