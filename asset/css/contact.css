@@ -2,50 +2,69 @@ nav{
     background-color: #b1f3bc;
     height: 1024px*768px;
     padding: 1920px*61px;
-    
-}
-div.logo{
+    }
+.logo{
     justify-content: flex-start;
     vertical-align: middle;
     font-style: normal;
     font-weight: 400;
     font-family: baloo2;
-    line-height: 130%;
-}
-li{
-    display: inline-block;
-    justify-content: center;
+    line-height: normal;
+    height: 31.2px;
+   }
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
     vertical-align: middle;
-    padding-inline-start: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-inline-start: 50%;
     font-family: baloo2;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-div.bonhomme{
+.bonhomme{
     justify-content: right;
+    align-items: center;
     vertical-align: middle;
-    font-family: 24px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 31.02px;
+    padding-right: 0%;
+}
+.tableau{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: middle;
+    font-family: baloo2;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding: 0%;
 }
-ul.tableau{
-    display: flex;
-    justify-content: flex-end;
-    vertical-align: middle;
-    font-family: baloo2;
-    font-size: 24px;
+main{
+    padding: 1920px*1673px;
 }
-div.h1{
-    display: flex;
+.NOUS CONTACTER{
+    display: contents;
     justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: ;
+    align-items: center;
+    font-family: baloo 2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-div.tableau{
-    display: flex;
+.annonce{
+    display: block;
     justify-content: left;
+
 }
