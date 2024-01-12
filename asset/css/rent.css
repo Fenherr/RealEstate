@@ -15,18 +15,19 @@ nav {
 .menu {
     /*remove point*/
     list-style-type: none;
+    
+
 }
 /* Put a list on the same line. */
 .menu-format {
     
     display: inline;
-    padding-left: 10px;
+    padding-left: 20px;
     font-family: Baloo 2;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    
+    line-height: normal;    
 
 }
     /* class to reduce the size of an image... */ 
