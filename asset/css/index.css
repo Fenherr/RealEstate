@@ -138,6 +138,12 @@ a:hover {
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
+    text-align: center;
+}
+
+.activ_news_all span {
+   position: relative;
+   top: 30%;
 }
 
 .activ_news {
