@@ -49,6 +49,14 @@ nav {
     width: 31px;
 }
 
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
 .font-title {
     text-align: center;
     background-color: #B1F3BC;
@@ -58,7 +66,7 @@ nav {
     
 }
 
-.div1 { 
-    
+
+.div2 { 
     
 }
