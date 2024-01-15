@@ -1,9 +1,10 @@
 /*********** var ***********/
 :root {
     --main-color:rgba(177, 243, 188, 1);
+    --related-green-color: #E2FBB7;
+    --footer-color: #1F1F1F;
     --border-size: 3px;
     --border-radius: 25px;
-    --footer-color: #1F1F1F;
 }
 
 
@@ -13,6 +14,7 @@
     src: 
         url("/asset/fonts-family/Baloo2-Medium.ttf") format(truetype);
 }
+
 @font-face {
     font-family: "Open Sans";
     src: url("/asset/fonts-family/OpenSans/OpenSans-Regular.ttf") format(truetype);
@@ -23,7 +25,7 @@
 
 .title-txt {
     font-family: "Baloo 2", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .title-txt.active,
@@ -31,20 +33,26 @@
     font-weight: bold;
 }
 
-p, a {
+p, a, ul {
     text-decoration: none;
     color: black;
+    list-style: none;
 }
 
 .content-text,
-.number_point {
+.number_point,
+section h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 body {
     margin: 0;
     width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -68,7 +76,6 @@ header a {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
 }
 
@@ -144,10 +151,17 @@ h1.title-txt {
 
     /*********** step block ***********/
 
+    /*variable declaration*/
+section {
+    --padding-number_point: 10px;
+}
+
 section {
     display: flex;
     justify-content: center;
     gap: var(--space-element-gap);
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .step-block {
@@ -156,25 +170,77 @@ section {
     align-items: center;
     background-color: var(--main-color);
     border-radius: var(--border-radius);
+    width: 40%;
 }
 
 .step-block img {
+    margin: var(--space-element-gap);
     width: 90%;
-    margin-top: var(--space-element-gap);
 }
 
 .step-block div {
     display: flex;
 }
 
+.step-block .content-text,
+.step-block .number_point {
+    margin-top: 0;
+}
+
+.step-block .content-text {
+    margin-top: calc(var(--padding-number_point)/2);
+}
+
+.info-button {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0 40px;
+    margin-bottom: 30px;
+    border: var(--main-color) var(--border-size) solid;
+}
+
+.info-button:hover {
+    border: var(--footer-color) var(--border-size) solid;
+}
+
+.info-button,
+.number_point {
+    background-color: var(--related-green-color);
+    box-shadow: none;
+}
+
+.number_point {
+    font-weight: bold;
+    margin-right: 15px;
+    padding: calc(var(--padding-number_point)/2) var(--padding-number_point);
+    border-radius: var(--border-radius);
+}
 
 
     /*********** Breadcrumb ***********/
+
+#breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#breadcrumb a {
+    text-decoration: underline;
+}
+
+#breadcrumb * {
+    font-size: 0.9rem;
+}
+
+#breadcrumb .content-text:nth-child(2) {
+    margin: auto 5px;
+}
 
 #breadcrumb .content-text.active:hover {
     cursor: not-allowed;
 }
 
 
-
 /*********** Footer ***********/
+
