@@ -5,6 +5,8 @@
     --footer-color: #1F1F1F;
     --border-size: 3px;
     --border-radius: 25px;
+    --margin-left-document: 50px;
+    --space-element-gap: 35px;
 }
 
 
@@ -52,7 +54,7 @@ body {
     width: 100%;
 }
 
-button {
+button, a {
     cursor: pointer;
 }
 
@@ -121,9 +123,7 @@ nav li a.active:hover,
 
 
 /*********** Main ***********/
-main {
-    --space-element-gap: 35px
-}
+
 
     /*********** Top content ***********/
 
@@ -222,11 +222,12 @@ section {
 #breadcrumb {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: var(--margin-left-document);
 }
 
 #breadcrumb a {
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 #breadcrumb * {
@@ -259,10 +260,43 @@ footer ul {
     padding-left: 0;
 }
 
+.identity {
+    margin-left: var(--margin-left-document);
+    width: 30%;
+}
+
+.identity a {
+    display: block;
+}
+
+.identity img {
+    margin: 15px auto;
+}
+
+.social-media ul {
+    display: flex;
+    gap: var(--space-element-gap);
+}
+
 .quick-links-block {
     display: flex;
+    width: 60%;
+}
+
+.quick-links:nth-child(2) {
+    margin: auto 170px;
+    width: 20%;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links li a:hover {
+    font-weight: bold;
 }
 
 .copyright {
     width: 100%;
+    text-align: center;
 }
