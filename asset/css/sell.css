@@ -8,15 +8,11 @@
 
 
 /*********** Font ***********/
-/*@font-face {
+@font-face {
     font-family: "Baloo 2";
     src: 
-        url("asset\fonts-family\Baloo2-Bold.ttf"),
-        url("asset\fonts-family\Baloo2-ExtraBold.ttf"),
-        url("asset\fonts-family\Baloo2-Medium.ttf"),
-        url("asset\fonts-family\Baloo2-Regular.ttf"),
-        url("asset\fonts-family\Baloo2-SemiBold.ttf")
-}*/
+        url("asset/fonts-family/Baloo2-Medium.ttf") format(truetype)
+}
 
 
 /*********** Global ***********/
