@@ -41,7 +41,8 @@ p, a, ul {
 
 .content-text,
 .number_point,
-section h2 {
+section h2,
+footer h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
@@ -244,3 +245,25 @@ section {
 
 /*********** Footer ***********/
 
+footer {
+    background-color: var(--footer-color);
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+}
+
+footer * {
+    color: white;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+.quick-links-block {
+    display: flex;
+}
+
+.copyright {
+    width: 100%;
+}
