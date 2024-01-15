@@ -145,12 +145,16 @@ a:hover {
     padding: 10px 10px;
     display: flex;
     justify-content: center;
-    align-content: flex-end ;
-    flex-wrap: wrap;
-    -moz-border-radius:7px 7px 0 0;
-    -webkit-border-radius:7px 7px 0 0;
-    border-radius:7px 7px 0 0;
+    position: relative;
+    top: 73%;
+    left: 0;
+    -moz-border-radius: 0 0 7px 7px;
+    -webkit-border-radius: 0 0 7px 7px;
+    border-radius: 0 0 7px 7px;
+}
 
+.activ_news a:hover {
+    font-weight: 600;
 }
 
 /*section derniers biens en vente*/
