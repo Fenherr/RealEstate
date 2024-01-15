@@ -36,6 +36,7 @@
     <main>
         <center><h1>NOUS CONTACTER</h1></center>
             <!-- paramétrage center position fixe-->
+            <!--INSERER DES INTERLIGNES-->
         <div class="annonce">
             <p align="left">Pour une question relative à une annonce :<br></p>
             <p align="left"><i>Contacter l'agence au 01.02.03.04.05</i><br></p>
@@ -44,16 +45,18 @@
             <p align="right">Pour une prise de rendez-vous pour une visite :<br></p>
             <p align="right"><i> Contacter l'agence au 01.23.45.67.89 </i><br></p>
         </div>
+        <!--INSERER DES INTERLIGNES-->
         <div class="autre demande">
             <div>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</div>
                 <ul>
                     <li>* Nom : </li>
                     <li>* Prénom : </li>
                     <li>* Adresse mail :</li>
+                    <!--ATTENTION, SUJET ET MESSAGE A DEPLACER / FRAMES A CREER-->
                     <li>* Sujet :
                         <ul id="menu déroulant">
                             <li><a href="Particuliers">Particuliers</a></li>
-                                <ul>
+                                <ul class="sous-menu Particuliers">
                                     <li><a href="Mon espace perso">Mon espace perso</a></li>
                                     <li><a href="Mon profil locataire">Mon profil locataire</a></li>
                                     <li><a href="Recherche d'un bien">Recherche d'un bien</a></li>
@@ -64,17 +67,27 @@
                                     <li><a href="Problèmes techniques sur le site">Problèmes techniques sur le site</a></li>
                                 </ul>
                             <li><a href="Professionnels">Professionnels</a></li>
-                                <ul>
+                                <ul class="sous-menu Professionnels">
                                     <li><a href="Partenariat">Partenariat</a></li>
                                     <li><a href="Régie publicitaire">Régie publicitaire</a></li>
                                     <li><a href="Offres commerciales">Offres commerciales</a></li>
-                                </ul>
-                            
+                                </ul>                            
                         </ul>
                     </li>
+                    <li>* Votre message :</li>
                 </ul>
         </div>
-        <div></div>
+        <div class="Réseaux sociaux">
+            <div>Retrouvez-vous sur nos réseaux sociaux !</div>
+            <ul>
+                <!-- ATTENTION, CODAGE PROVISOIRE, A MODIF EN BOUTONS-->
+                <img src="./asset/images/logos/facebook_f_logo_(2021).svg" width="52px" height="55px" alt="facebook_f_logo_">
+                <img src="./asset/images/logos/instagram_logo_2016.svg" width="52px" height="55px" alt="instagram_logo_2016">
+                <img src="./asset/images/logos/youtube_social_white_square_(2017).svg" width="52px" height="55px" alt="youtube_social_white_square_">
+                <img src="./asset/images/logos/linkedIn_icon.svg" width="52px" height="55px" alt="linkedIn_icon">
+                <img src="./asset/images/logos/Google-My-Business_logo.svg" width="52px" height="55px" alt="Google-My-Business_logo">
+            </ul>
+        </div>
         <div></div>
         <div></div>
         <div></div>
