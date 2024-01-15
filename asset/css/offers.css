@@ -1,34 +1,66 @@
-body {
+* {
     margin: 0;
-
+    padding: 0;
+    color: inherit;
 }
 
-.header {
+body{
+	font-family: 'Roboto';
+}
+
+header {
+    display: flex;
     background: lightgreen;
-
+    justify-content: space-between;
 }
 
-.header-nav a {
-    padding: 0 50px 30px;
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 30px;
+    font-size: large;
+    gap: 80px;
 }
 
-.acheter {
-    margin: 60px;
+a {
+    text-decoration: none;
 }
 
-.auth {
-    margin: 0 120px;
-
+.account {
+    margin: 30px;
+    text-decoration: none;
+    font-size: large;
 }
 
-.middle {
+.nos_offres {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+main { 
+    display: flex;
     background: gray;
 }
 
-.nos-offres {
-    margin: 0 550px;
+.formulaire {
+    display: flex;
+    justify-content: center;
 }
 
-.footer {
-    background-color: grey;
+.post { 
+    display: flex;
+    justify-content: center;
+}
+
+.reinitiate {
+    color: blue;
+}
+
+.line {
+    display: flex;
+    list-style: none;
+    margin: 30px;
+    font-size: large;
+    gap: 80px;
 }

@@ -7,10 +7,27 @@
 }
 
 
+/*********** Font ***********/
+/*@font-face {
+    font-family: "Baloo 2";
+    src: 
+        url("asset\fonts-family\Baloo2-Bold.ttf"),
+        url("asset\fonts-family\Baloo2-ExtraBold.ttf"),
+        url("asset\fonts-family\Baloo2-Medium.ttf"),
+        url("asset\fonts-family\Baloo2-Regular.ttf"),
+        url("asset\fonts-family\Baloo2-SemiBold.ttf")
+}*/
+
+
 /*********** Global ***********/
+
 .title-txt {
     font-family: "Baloo 2", sans-serif;
     font-size: 1.3rem;
+}
+
+a.title-tx {
+
 }
 
 p, a {
@@ -21,7 +38,9 @@ p, a {
 
 body {
     margin: 0;
+    width: 100%;
 }
+
 
 /*********** Header ***********/
 
@@ -31,7 +50,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 5% 0 5%;
-    height: fit-content;
 }
 
 header a {
@@ -52,18 +70,12 @@ nav li {
     margin: 0 40px 0 0;
 }
 
-nav li a {
+nav a {
     text-decoration: none;
-    padding: 5px;
-    border: var(--border-size) var(--main-color) solid;
-    border-radius: var(--border-radius);
 }
 
-nav li a:hover {
-    color: var(--footer-color);
-    border: var(--border-size) var(--footer-color) solid;
-    border-radius: var(--border-radius);
-    background-color: var(--main-color);
+nav li a:hover, #account a:hover h2 {
+    font-weight: bold;
 }
 
 #account {
@@ -78,15 +90,11 @@ nav li a:hover {
 #account a {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 #account span:nth-child(1) {
     height: 24px;
     width: 24px;
     border: var(--footer-color) solid var(--border-size);
-    margin-right: 5px;
-}
-
-#account a:hover h2 {
-    text-shadow: white 1px 1px 0;
 }
