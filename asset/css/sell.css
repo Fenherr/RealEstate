@@ -2,38 +2,44 @@
 :root {
     --main-color:rgba(177, 243, 188, 1);
     --border-size: 3px;
-    --border-radius: 15px;
+    --border-radius: 25px;
     --footer-color: #1F1F1F;
 }
 
 
 /*********** Font ***********/
-/*@font-face {
+@font-face {
     font-family: "Baloo 2";
     src: 
-        url("asset\fonts-family\Baloo2-Bold.ttf"),
-        url("asset\fonts-family\Baloo2-ExtraBold.ttf"),
-        url("asset\fonts-family\Baloo2-Medium.ttf"),
-        url("asset\fonts-family\Baloo2-Regular.ttf"),
-        url("asset\fonts-family\Baloo2-SemiBold.ttf")
-}*/
+        url("/asset/fonts-family/Baloo2-Medium.ttf") format(truetype);
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("/asset/fonts-family/OpenSans/OpenSans-Regular.ttf") format(truetype);
+}
 
 
 /*********** Global ***********/
 
 .title-txt {
     font-family: "Baloo 2", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-a.title-tx {
-
+.title-txt.active,
+.account-connexion.active h2 {
+    font-weight: bold;
 }
 
 p, a {
-    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: black;
+}
+
+.content-text,
+.number_point {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
 }
 
 body {
@@ -74,27 +80,101 @@ nav a {
     text-decoration: none;
 }
 
-nav li a:hover, #account a:hover h2 {
+nav li a:hover,
+.account-connexion a:hover h2 {
     font-weight: bold;
 }
 
-#account {
+nav li a.active:hover,
+.account-connexion.active a:hover h2 {
+    font-weight: lighter;
+    text-shadow: white 1px 1px 0;
+}
+
+.account-connexion {
     background-color: var(--main-color);
     border: none;
 }
 
-#account h2 {
+.account-connexion h2 {
     font-weight: normal;
 }
 
-#account a {
+.account-connexion a {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#account span:nth-child(1) {
+.account-connexion span:nth-child(1) {
     height: 24px;
     width: 24px;
     border: var(--footer-color) solid var(--border-size);
 }
+
+
+/*********** Main ***********/
+main {
+    --space-element-gap: 35px
+}
+
+    /*********** Top content ***********/
+
+#top-content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: var(--space-element-gap);
+}
+
+#top-content img {
+    height: 100%;
+    margin-top: 0;
+    border-radius: var(--border-radius);
+}
+
+h1.title-txt {
+    margin-bottom: 5px;
+}
+
+#top-content .content-text {
+    margin: 0;
+}
+
+    /*********** step block ***********/
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-element-gap);
+}
+
+.step-block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+}
+
+.step-block img {
+    width: 90%;
+    margin-top: var(--space-element-gap);
+}
+
+.step-block div {
+    display: flex;
+}
+
+
+
+    /*********** Breadcrumb ***********/
+
+#breadcrumb .content-text.active:hover {
+    cursor: not-allowed;
+}
+
+
+
+/*********** Footer ***********/
