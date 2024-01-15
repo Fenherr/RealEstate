@@ -1,3 +1,10 @@
+/*Load font from asset*/
+@font-face {
+    font-family: "Baloo2";
+    src: url(/asset/fonts-family/Baloo2-Regular.ttf) format(truetype);
+    src: url(/asset/fonts-family/Baloo2-Medium.ttf)  format(truetype);
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -12,37 +19,46 @@ nav {
 }
 
 .menu {
-    /*remove point*/
+    /*remove point and use special font*/
     list-style-type: none;
+    font-family: "Baloo2", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
     
 }
+
 /* Put a list on the same line. */
 .menu-format {
     display: inline;
     padding-right: 20px;
     padding-left: 20px;
-    font-family: Baloo 2;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-
 }
+
 /*menu right */
 .menu-right {
     float: right;
     display: inline;
     padding-right: 10px;
     padding-left: 1px;
-    font-family: Baloo 2;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-
 }
 
     /* class to reduce the size of an image... */ 
 .mini {
     width: 31px;
+}
+
+.font-title {
+    text-align: center;
+    background-color: #B1F3BC;
+    font-family: "Baloo2", sans-serif;
+    font-style: normal;
+    line-height: normal;
+    
+}
+
+.div1 { 
+    
+    
 }
