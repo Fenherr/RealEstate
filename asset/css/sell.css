@@ -138,7 +138,7 @@ nav li a.active:hover,
 #top-content img {
     height: 100%;
     margin-top: 0;
-    border-radius: var(--border-radius);
+    width: 100%;
 }
 
 h1.title-txt {
@@ -293,7 +293,7 @@ footer ul {
 }
 
 .quick-links li a:hover {
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 .copyright {
