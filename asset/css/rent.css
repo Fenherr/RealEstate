@@ -5,6 +5,10 @@
     src: url(/asset/fonts-family/Baloo2-Medium.ttf)  format(truetype);
 }
 
+body {
+    margin: 0%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
