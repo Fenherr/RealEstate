@@ -5,193 +5,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos offres d'emploi</title>
-    <link rel="stylesheet" href="asset\css\offers.css">
+    <link rel="stylesheet" href="asset/css/offers.css">
 </head>
 
 <body>
-    <header class="header">
-        <img class="logo" src="asset/images/logo x150.png"
-        alt="Deux toits superposés avec une cheminée, en dessous ACGD Immo d'écrit. C'est le logo de l'agence immobilière">    
-       <nav class="header-nav">
-            <a class="acheter" href="">Acheter</a>
-            <a href="">Louer</a>
-            <a href="">Vendre</a>
-            <a href="">Contact</a>
-                <a class="auth" href="http://">Mon compte</a>
+    <header> 
+        <!--Menu-->
+        <a href="index.html">
+            <img src="asset/images/logo x150.png" alt="logo" width="75">
+        </a>
+        <nav class="menu">
+            <a href="buy.html">Acheter</a>
+            <a href="rent.html">Louer</a>
+            <a href="sell.html">Vendre</a>
+            <a href="contact.html">Contact</a>
         </nav>
-       
+        <div class="logo-auth">
+            <a href="login.html">
+                <img id="account" src="asset/images/offers/account.png" alt="" width="20"></a>
+            <a class="auth" href="contact.html">Mon compte</a>
+        </div>
     </header>
-    <main class="middle">
-        <br>
-        <br>
-        <label class="nos-offres" for="Nos offres d'emploi">Nos offres d'emploi</label>
-        <form action="" method="get" class="form-example">
-            <div class="form-example">
-
-                <label for="name">Emploi : </label>
-                <input type="text" name="name" id="name" />
+    <main>
+        <!--First section-->
+        <section class="section1">
+            <div class="section1-title">
+                <p>Nos offres d'emploi</p>
             </div>
-            <form action="" method="get" class="form-example">
-                <div class="form-example">
-                    <label for="name">Où : </label>
-                    <input type="text" name="name" id="name" />
-                </div>
-                <form action="" method="get" class="form-example">
-                    <div class="form-example">
-                        <label for="name">Rechercher : </label>
-                        <input type="text" name="name" id="name" />
-                    </div>
-                    <form action="" method="get" class="form-example">
-                        <div class="form-example">
-                            <label for="name">Contrat : </label>
-                            <input type="text" name="name" id="name" />
+            <div class="section1-form">
+                <input id="form" type="text" name="job" value="Emploi" onfocus="this.value='';">
+                <input id="form" type="text" name="localisation" value="Où" onfocus="this.value='';">
+                <input id="research" type="submit" value="Rechercher">
+            </div>
+            <div class="form-contract">
+                <select name="contract" id="form">
+                    <optgroup label="Contrats">
+                        <option value="Contrat">CDD</option>
+                        <option value="Contrat">CDI</option>
+                        <option value="Contrat">Stage</option>
+                    </optgroup>
+                </select>
+                <div class="refresh-logo-reinitiate">
+                    <a href="offers-last.html">
+                        <div class="refresh-logo">
+                            <img src="asset/images/offers/refresh.png" alt="" width="16">
                         </div>
-                        <a href="">Réintialiser</a>
-                    </form>
-                </main>
-                    <br>
-                    <br>
-                    <label for="Nos offres">Nos offres</label>
-                    <br>
-                    <br>
-                    <br>
-                    <img src="asset/images/photo_offer.jpg" alt="Photo d'illustration de l'offre d'emploi">
-                    <img src="asset/images/photo_offer.jpg" alt="Photo d'illustration de l'offre d'emploi">
-                    <img src="asset/images/photo_offer.jpg" alt="Photo d'illustration de l'offre d'emploi">
-                    <img src="asset/images/photo_offer.jpg" alt="Photo d'illustration de l'offre d'emploi">
-                    <img src="asset/images/photo_offer.jpg" alt="Photo d'illustration de l'offre d'emploi">
-                    <img src="asset/images/photo_offer.jpg" alt="Photo d'illustration de l'offre d'emploi">
-                    <style>
-                        img {
-                            width: 200px;
-                        }
-                    </style>
-                    <label for="talents">Rejoignez notre source de talents</label>
-                    <br>
-                    <br>
-                    <a href="">POSTULER</a>
-                    <br>
-                    <br>
-                    <a href="">Mieux nous connaître</a>
-                    <br>
-                    <br>
-                    <label for="slogan">"Clé en main bonheur certain !"</label>
-                    <br>
-                    <br>
-                    <label for="Description succinte d'ACGD Immo">"Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum."</label>
-                    <br>
-                    <br>
-                    <br>
-                    <label for="témoignages">Témoignages de l'équipe</label>
-                    <br>
-                    <br>
-                    <img src="asset/images/real_estate_agent_1.jpg"
-                        alt="Photo présentant le premier membre de l'équipe qui témoigne">
-                    <br>
-                    <br>
-                    <label for="membre 1">Lorem ipsum</label>
-                    <label for="témoignage 1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu smod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum</label>
-                    <br>
-                    <br>
-                    <img src="asset/images/real_estate_agent_2.jpg"
-                        alt="Photo présentant le second membre de l'équipe qui témoigne">
-                    <br>
-                    <br>
-                    <label for="témoignage 2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu smod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum</label>
-                    <br>
-                    <br>
-                    <img src="asset/images/real_estate_agent_3.jpg"
-                        alt="Photo présentant le troisième membre de l'équipe qui témoigne">
-                    <br>
-                    <br>
-                    <label for="témoignage 3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu smod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum</label>
-                    <br>
-                    <br>
-                    <br>
-    
-    <footer class="footer">
-        <div6>
-            <label for="réseaux sociaux">Retrouvez-nous sur nos réseaux sociaux</label>
-        </div6>
-        <br>
-        <br>
-        <div3>
-            <label for="services">Services</label>
-            <a href="achat">Achat</a>
-            <a href="">Vendre</a>
-            <a href="">Louer</a>
-        </div3>
-        <br>
-        <br>
-        <div4>
-            <label for="Accès rapide">Accès rapide</label>
-            <a href="Newsletter">Inscription newsletter</a>
-            <a href="Qui sommes nous ?">Qui sommes nous ?</a>
-            <a href="Nos offres d'emploi">Nos offres d'emploi</a>
-            <a href="Avis client">Avis client</a>
-            <a href="Plan du site">Plan du site</a>
-        </div4>
-        <br>
-        <br>
-        <div5>
-            <label for="contact">Contact</label>
-            <label for="numéro">xx.xx.xx.xx.xx</label>
-            <a href="mail">contact@acgdimmo.fr</a>
-            <a href="map">Saint-Junien</a>
-        </div5>
-        <br>
-        <br>
-        <br>
-        <div6>
-            </div class="copyright">
-            <a class="copyright" href="x">acgd immo C</a>
+                        <div class="reinitiate">
+                            <a href="offers-last.html">Réinitialiser</a>
+                        </div>
+                    </a>
+                </div>
+        </section>
+        <!--Second section-->
+        <div class="section2-title">
+            <h4>Nos offres</h4>
+        </div>
+        <section class="section2">
+            <div class="photos-map">
+                <div class="section2-photos">
+                    <a href="offers-last.html">
+                        <img id="offer-photo" src="asset/images/offers/photo_offer.jpg" alt="photo de l'offre">
+                        <figcaption>Agent immobilier F/H</figcaption>
+                    </a>
+                </div>
+                <div class="section2-photos">
+                    <a href="offers-last.html">
+                        <img id="offer-photo" src="asset/images/offers/photo_offer.jpg" alt="photo de l'offre">
+                        <figcaption>Agent immobilier F/H</figcaption>
+                    </a>
+                </div>
+                <div class="section2-photos">
+                    <a href="offers-last.html">
+                        <img id="offer-photo" src="asset/images/offers/photo_offer.jpg" alt="photo de l'offre">
+                        <figcaption>Agent immobilier F/H</figcaption>
+                    </a>
+
+        </section>
+        <section class="section2">
+            <div class="section2-photos">
+                <a href="offers-last.html">
+                    <img id="offer-photo" src="asset/images/offers/photo_offer.jpg" alt="photo de l'offre">
+                    <!-- j'essaye d'arrondir les bords de ces photos-->
+                    <figcaption>Agent immobilier F/H</figcaption>
+                </a>
             </div>
+            <div class="section2-photos">
+                <a href="offers-last.html">
+                    <img id="offer-photo" src="asset/images/offers/photo_offer.jpg"" alt=" photo de l'offre">
+                    <figcaption>Agent immobilier F/H</figcaption>
+                </a>
+            </div>
+            <div class="section2-photos">
+                <a href="offers-last.html">
+                    <img id="offer-photo" src="asset/images/offers/photo_offer.jpg" alt="photo de l'offre">
+                    <figcaption>Agent immobilier F/H</figcaption>
+                </a>
+            </div>
+            </div>
+            <a href="#"><img id="map" src="asset/images/offers/map.png" alt="" width="150"></a>
+        </section>
+        <ul class="paging">
+            <a href="#" aria-label="Precedent">
+                <img src="asset/images/offers/noun-left-arrow-3465503.png" alt="" width="30">
+            </a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">20</a></li>
+            <a href="#" aria-label="Next">
+                <img src="asset/images/offers/noun-arrow-3771902.png" width=" 30">
+            </a></li>
+        </ul>
+        <p id="announce-number">... - ... sur ... annonces</p>
+        </div>
+        <div class="section2-to-apply">
+            <p>Rejoignez notre source de talents</p>
+            <button class="to-apply">POSTULER</button>
+        </div>
+        <section class="section3">
+            <!--Third section-->
+            <div class="section3-title">
+                <h4>Mieux nous connaître</h4>
+            </div>
+            <div>
+                <div class="slogan-section3-text-agency-photo">
+                    <div class="section3-slogan">
+                        <h4>"Clé en main bonheur certain !"</h4>
+                    </div>
+                    <div class="section3-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                            in
+                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="agency-photo">
+                        <img src="asset/images/offers/agency.jpg" alt="photo de l'agence" width="400">
+                    </div>
+                </div>
+            </div>
+            <div class="team_photo">
+                <div>
+                    <img src="asset/images/offers/real_estate_agent_1.jpg" alt="photo 1" width="200px">
+                    <figcaption> <strong> Lorem - dolor sit </strong> </figcaption>
+                    <p class="testimony"> <i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+                </div>
+                <div><img src="asset/images/offers/real_estate_agent_2.jpg" alt="photo 2" width="200px">
+                    <figcaption> <strong> Lorem - dolor sit </strong> </figcaption>
+                    <p class="testimony"> <i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+                </div>
+                <div>
+                    <img src="asset/images/offers/real_estate_agent_3.jpg" alt="photo 3" width="200px">
+                    <figcaption> <strong> Lorem - dolor sit </strong> </figcaption>
+                    <p class="testimony"> <i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--Footer-->
+        <div class="logo-text">
+            <a href="index.html">
+                <img src="asset/images/logo_white_150.png" alt="logo" width="115">
+            </a>
+            <div class="footer-text">Retrouvez nous sur nos réseaux sociaux</p>
+            </div>
+            <div class="footer-logos">
+                <a href="#"><img src="asset/images/offers/insta.png" alt="" width="45"></a>
+                <a href="#"><img src="asset/images/offers/twitter.png" alt="" width="40"></a>
+                <a href="#"><img src="asset/images/offers/fb.png" alt="" width="45"></a>
+            </div>
+        </div>
+        <nav class="footer-menu">
+            <p><strong>Services</strong></p>
+            <a href="buy.html">Acheter</a>
+            <a href="rent.html">Louer</a>
+            <a href="sell.html">Vendre</a>
+        </nav>
+        <nav class="footer-menu">
+            <p><strong>Accès rapide</strong></p>
+            <a href="#">Inscription newsletter</a>
+            <a href="#">Qui sommes-nous ?</a>
+            <a href="offers-last.html">Nos offres d'emploi</a>
+            <a href="#">Avis client</a>
+            <a href="#">Plan du site</a>
+        </nav>
+        <nav class="footer-menu">
+            <p><strong>Contact</strong></p>
+            <p>...-...-...-...-...</p>
+            <a href="#">contact@acgdimmo.fr</a>
+            <a
+                href="https://www.google.fr/maps/place/87200+Saint-Junien/@45.8964635,0.8029236,12z/data=!3m1!4b1!4m6!3m5!1s0x47feeadaef87b0c9:0x8b265b0dc126d53e!8m2!3d45.88716!4d0.901165!16zL20vMDh6Xzkz?entry=ttu">Saint-Junien</a>
+        </nav>
 
+        <div class="copyright">
+        </div>
     </footer>
-
+    <div class="copyright">
+        <p>acgdimmo&copy</p>
+    </div>
 </body>
 
 </html>
-
-<!-- correction :--> 
-<header>
-    <div>
-        <a href="index.html">
-        <img src="asset/images/logo x150.png" alt="logo" width="75">
-    </a>
-    <div>
-        <div>
-            <link rel="stylesheet" href="./asset/css/offers.css">
-        </div>
-        <div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="buy.html">Acheter</a>
-                    <li><a href="rent.html">Louer</a>
-                    <li><a href="sell.html">Vendre</a>
-                    <li><a href="contact.html">Contact</a>
-                </ul>
-            </nav>  
-        </div>
-        <li><a href="#">Mon compte
-        </a>
-    </li>
-        <div>
-
-        </div>
-
-
