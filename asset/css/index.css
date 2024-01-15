@@ -38,11 +38,13 @@ nav {
 }
 
 .auth {
-   align-items: flex-end;
    display: flex;
-   margin-right: 50px;
    margin-top: 47px;
    list-style: none;
+   width: -webkit-fill-available;
+   width: 100%;
+   justify-content: flex-end;
+   padding-right: 30px;
 }
 
 a:hover {
@@ -50,7 +52,7 @@ a:hover {
 }
 /*bannière avec fonction recherche*/
 .banner {
-    background-image: url("../images/site_corot_1920.jpg");
+    background-image: url("../images/home/site_corot_1920.jpg");
     padding: 50px 0;
 }
 
@@ -88,12 +90,67 @@ a:hover {
 .news {
     background-color: #1f1f1f;
     width: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.news_slide p {
-    color: #e71a1a;
+.news_slide {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.news_slide a {
+    /*color: #ffffff;*/
+}
+
+.news_1 {
+    background-image: url("../images/home/actu_1.jpg");
+    width: 200px;
+    height: 150px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+.news_2 {
+    background-image: url("../images/home/actu_2.jpg");
+    width: 200px;
+    height: 150px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+.news_3 {
+    background-image: url("../images/home/actu_3.jpg");
+    width: 200px;
+    height: 150px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+.news_all {
+    background-color: #ffffff;
+    width: 200px;
+    height: 150px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+.activ_news {
+    background-color: #ffffff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end ;
+    flex-wrap: wrap;
+    -moz-border-radius:7px 7px 0 0;
+    -webkit-border-radius:7px 7px 0 0;
+    border-radius:7px 7px 0 0;
+
 }
 
 /*section derniers biens en vente*/
