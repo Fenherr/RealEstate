@@ -11,7 +11,7 @@
 @font-face {
     font-family: "Baloo 2";
     src: 
-        url("asset/fonts-family/Baloo2-Medium.ttf") format(truetype)
+        url("/asset/fonts-family/Baloo2-Medium.ttf") format(truetype)
 }
 
 
