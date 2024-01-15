@@ -2,7 +2,7 @@
 :root {
     --main-color:rgba(177, 243, 188, 1);
     --border-size: 3px;
-    --border-radius: 15px;
+    --border-radius: 25px;
     --footer-color: #1F1F1F;
 }
 
@@ -26,14 +26,20 @@
     font-size: 1.5rem;
 }
 
-.title-txt.active, .account-connexion.active h2 {
+.title-txt.active,
+.account-connexion.active h2 {
     font-weight: bold;
 }
 
 p, a {
-    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: black;
+}
+
+.content-text,
+.number_point {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
 }
 
 body {
@@ -74,11 +80,13 @@ nav a {
     text-decoration: none;
 }
 
-nav li a:hover, .account-connexion a:hover h2 {
+nav li a:hover,
+.account-connexion a:hover h2 {
     font-weight: bold;
 }
 
-nav li a.active:hover, .account-connexion.active a:hover h2 {
+nav li a.active:hover,
+.account-connexion.active a:hover h2 {
     font-weight: lighter;
     text-shadow: white 1px 1px 0;
 }
@@ -106,10 +114,66 @@ nav li a.active:hover, .account-connexion.active a:hover h2 {
 
 
 /*********** Main ***********/
+main {
+    --space-element-gap: 35px
+}
+
+    /*********** Top content ***********/
+
+#top-content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: var(--space-element-gap);
+}
+
+#top-content img {
+    height: 100%;
+    margin-top: 0;
+    border-radius: var(--border-radius);
+}
+
+h1.title-txt {
+    margin-bottom: 5px;
+}
+
+#top-content .content-text {
+    margin: 0;
+}
+
+    /*********** step block ***********/
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-element-gap);
+}
+
+.step-block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+}
+
+.step-block img {
+    width: 90%;
+    margin-top: var(--space-element-gap);
+}
+
+.step-block div {
+    display: flex;
+}
 
 
 
-/*********** Breadcrumb ***********/
+    /*********** Breadcrumb ***********/
+
+#breadcrumb .content-text.active:hover {
+    cursor: not-allowed;
+}
 
 
 
