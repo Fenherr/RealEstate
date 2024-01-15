@@ -66,9 +66,9 @@ main{
     font-weight: 500;
     line-height: normal;
 }
-/*.annonce à descendre même ligne rv*/
 .annonce{
    display: block;
+   position: absolute;
    font-family: "open sans";
    font-style: normal;
    font-weight: 400;
@@ -76,6 +76,8 @@ main{
 }
 .rv{
     display: block;
+    position: relative;
+    padding-left: 10%;
     font-family: "open sans";
     font-style: normal;
     font-weight: 400;
@@ -83,7 +85,8 @@ main{
 }
 .autre demande {
     /* astérisque (champs obligatoire) à mettre en rouge*/
-    display: list-item;
+    display: flex;
     list-style: none;
+
 
 }
