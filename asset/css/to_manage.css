@@ -118,7 +118,6 @@ li a:hover {
 .paragraph_service_1 {
     width: 569px;
     height: 569px;
-    flex-shrink: 0;
     padding-left: 160px;
     margin-bottom: 32px;
     color: #E2FBB7;
@@ -159,7 +158,6 @@ li a:hover {
 .paragraph_service_2 {
     width: 569px;
     height: 554px;
-    flex-shrink: 0;
     color: #E2FBB7;
     font-family: Open Sans;
     font-size: 24px;
@@ -175,9 +173,9 @@ li a:hover {
 .bloc_stats {
     width: 1795px;
     height: 448px;
-    flex-shrink: 0;
     background-color: black;
-
+    margin-left: 61px;
+    margin-right: 64px;
 }
 
 .title_stats {
@@ -187,9 +185,11 @@ li a:hover {
     padding-top: 14px;
     color: #E2FBB7;
     text-align: center;
-    font-family: Inter;
+    font-family: Baloo2;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    display: flex;
+    justify-content: center;
 }
