@@ -23,11 +23,11 @@
 
 .title-txt {
     font-family: "Baloo 2", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-a.title-tx {
-
+.title-txt.active, .account-connexion.active h2 {
+    font-weight: bold;
 }
 
 p, a {
@@ -74,27 +74,43 @@ nav a {
     text-decoration: none;
 }
 
-nav li a:hover, #account a:hover h2 {
+nav li a:hover, .account-connexion a:hover h2 {
     font-weight: bold;
 }
 
-#account {
+nav li a.active:hover, .account-connexion.active a:hover h2 {
+    font-weight: lighter;
+    text-shadow: white 1px 1px 0;
+}
+
+.account-connexion {
     background-color: var(--main-color);
     border: none;
 }
 
-#account h2 {
+.account-connexion h2 {
     font-weight: normal;
 }
 
-#account a {
+.account-connexion a {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#account span:nth-child(1) {
+.account-connexion span:nth-child(1) {
     height: 24px;
     width: 24px;
     border: var(--footer-color) solid var(--border-size);
 }
+
+
+/*********** Main ***********/
+
+
+
+/*********** Breadcrumb ***********/
+
+
+
+/*********** Footer ***********/
