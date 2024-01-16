@@ -225,14 +225,37 @@ a:hover {
     padding-right: 80px;
 }
 
-.sell_frame{
+.sell_frame {
     border:#1f1f1f solid 1px;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
 }
 
-.sell_slide p{
+.sell_slide p {
     text-align: center;
+    margin: 0 0;
+}
+
+.sell_type {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 12px;
+}
+
+.sell_type span {
+    padding-left: 8px;
+}
+
+i[class="fa-solid fa-bed"] {
+    padding-top: 2px;   
+}
+
+.sell_type {
+
+}
+.sell_type_bedroom {
+   
+
 }
