@@ -1,0 +1,120 @@
+/* reset css */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* General code CSS */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header + Nav */
+
+header {
+    background-color:rgba(177, 243, 188, 1);
+}
+
+.logo_header {
+    margin-left: 64px;
+}
+.menu {
+    list-style: none; 
+}
+
+nav li {
+    margin: 0 40px 0 0;
+}
+
+.button_connect {
+    margin-right: 64px;
+}
+
+li a:hover {
+
+}
+
+/* Search bar */
+
+.search_bar {
+    margin-top: 95px;
+}
+
+.icon_search {
+    padding: 15px;
+    background-color: black;
+    border: 5px solid;
+    border-color: #E2FBB7;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.bar_search input {
+    padding: 25px;
+    font-size: 25px;
+    color: #E2FBB7;
+    height: auto;
+    width: 500px;
+    background-color: black;
+    border: 5px solid;
+    border-color: #E2FBB7;
+}
+
+.bar_search {
+    padding-right: 45px;
+}
+
+.button_search {
+    padding: 25px;  
+    font-size: 20px;    
+    color: #E2FBB7;
+    background-color: black;
+    border: 5px solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #E2FBB7;
+}
+
+/* Presentation text to_manage */
+
+.presentation_to_manage {
+    margin-top: 53px;
+}
+
+.presentation_to_manage p {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 53px 304px 0px 304px;
+    padding-left: 60px;
+}
+
+/* Les services immobliers */
+
+.frame_1 {
+    background-color: black;
+    width: 888px;
+    height: 1218px;
+
+}
+
+.frame_2 {
+    background-color: black;
+    width: 888px;
+    height: 1218px;
+    
+}
+
