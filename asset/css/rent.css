@@ -37,30 +37,25 @@ header {
     padding-right: 10px;
 }
 
+.compte {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    list-style-type: none;
+    font-family: "Baloo2", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
 
+}
 
     /* class to reduce the size of an image... */ 
 .mini {
     width: 31px;
 }
 /*---------------------------------------*/
-
-.div1 {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 180px;
-}
-
-.div2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: auto;
-    
-    
-}
 
 .font-title {
     text-align: center;
@@ -69,3 +64,21 @@ header {
     font-style: normal;
     line-height: normal;
 }
+
+.backpict {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+.title-search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 180px;
+}
+
+
+
+
