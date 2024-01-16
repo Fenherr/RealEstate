@@ -1,92 +1,71 @@
-nav{
-    background-color: #b1f3bc;
-    height: 1024px*768px;
-    padding: 1920px*61px;
-    }
-    /*ajout truetype baloo 2 medium*/
-    @font-face {
-        font-family: baloo 2;
-        src: url(https://fonts.google.com/specimen/Baloo+2?query=bal);
-    }
-.logo{
-    justify-content: flex-start;
-    vertical-align: middle;
-    font-style: normal;
-    font-weight: 500;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600; 1 700 ; 1 800 & display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+a, h1, h2, h3, h4, h5, h6 {
     font-family: "baloo 2";
-    line-height: normal;
-    height: 31.2px;
-   }
+    font-weight: 500;
+    font-size: 24px;
+}
+header {
+    background-color: #b1f3bc; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 10px;
+}
+
 .menu{
     display: flex;
     list-style: none;
+}
+
+.menu li {
+    margin-right: 44px;
+}
+
+.menu a {
+    font-size: 24px;
+        color: black;
+}
+
+.menu a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.logo-mon-compte{
+    color: black;
+}
+.logo-mon-compte a:hover{
+    color: #000;
+    font-weight: bolder;
+}
+
+.contact {
+    text-align: center;
+}
+  
+.contactform {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
-    padding-left: 40%;
-    padding-right: 40%;
-    padding-inline-start: 30%;
-    font-family: "baloo 2";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    margin-top: 50px;
+    }
+.contactform article {
+    width: 50%;
+    padding: 0 20px;
 }
-.bonhomme{
-    justify-content: right;
-    align-items: center;
-    vertical-align: middle;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    height: 31.02px;
-    padding-right: 0%;
-}
-.tableau{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    vertical-align: middle;
-    font-family: "baloo 2";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding: 0%;
-}
-main{
-    padding: 1920px*1673px;
-}
-.NOUS CONTACTER{
-    /* pas de display cause centrage fixe en html*/
-    font-family: "baloo 2";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.annonce{
-   display: block;
-   position: absolute;
-   font-family: "open sans";
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
-}
-.rv{
-    display: block;
-    position: relative;
-    padding-left: 10%;
-    font-family: "open sans";
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.autre demande {
-    /* astérisque (champs obligatoire) à mettre en rouge*/
-    display: flex;
-    list-style: none;
 
-
+.formulaire{
+    display: ;
 }
