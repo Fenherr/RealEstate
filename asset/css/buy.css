@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    
+    background-color: #b1f3bc;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+}
+
+h1{
+    text-align: center;
+    font-family: "baloo 2";
+    font-size: 5rem;
+    padding: 3rem
+}
+
+.annonces{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5rem;
+    padding-right: 7rem;
+    font-size: 2rem;
+}
+
+.titre{
+    font-size: 2rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
