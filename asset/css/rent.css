@@ -1,3 +1,8 @@
+. {
+    margin: 0;
+    padding: 0;
+}
+
 /*Load font from asset*/
 @font-face {
     font-family: "Baloo2";
@@ -5,25 +10,20 @@
     src: url(/asset/fonts-family/Baloo2-Medium.ttf)  format(truetype);
 }
 
-body {
-    margin: 0%;
-}
-
+/* initialise flex*/
 header {
     display: flex;
-    justify-content: space-between;
     background-color: #B1F3BC;
-    justify-content: center;
+    
     
 }
 
-nav {
-   /* height: 61px;*/
-    width: 100%;
-}
 
 .menu {
     /*remove point and use special font*/
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
     list-style-type: none;
     font-family: "Baloo2", sans-serif;
     font-size: 24px;
@@ -34,19 +34,14 @@ nav {
 }
 
 /* Put a list on the same line. */
-.menu-format {
-    display: inline;
-    padding-right: 20px;
-    padding-left: 20px;
+.menu li {
+    padding-right: 10px;
 }
 
 /*menu right */
 .menu-right {
-    float: right;
-    display: inline;
-    padding-right: 10px;
-    padding-left: 1px;
-}
+    display: flex;
+justify-content: flex-end;}
 
     /* class to reduce the size of an image... */ 
 .mini {
@@ -73,7 +68,7 @@ nav {
 
 .font-title {
     text-align: center;
-    background-color: #B1F3BC;
+    /* background-color: #B1F3BC;*/
     font-family: "Baloo2", sans-serif;
     font-style: normal;
     line-height: normal;
