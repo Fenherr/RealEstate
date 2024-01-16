@@ -52,6 +52,12 @@ nav {
    padding-right: 30px;
 }
 
+i[class="fa-regular fa-user"] {
+    position: relative;
+    top: -2px;
+    padding-right: 5px;
+}
+
 a:hover {
     font-weight: 600;
 }
@@ -86,7 +92,7 @@ a:hover {
 }
 
 #menu_search_deco {
-    background-color: #b1f3bc;
+    background-color: #e2fbb7;
     border: none;
 }
 
@@ -221,9 +227,12 @@ a:hover {
 
 .sell_frame{
     border:#1f1f1f solid 1px;
-    padding-top: 100px;
     padding-bottom: 50px;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
+}
+
+.sell_slide p{
+    text-align: center;
 }
