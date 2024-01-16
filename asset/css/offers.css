@@ -1,66 +1,311 @@
+
+/* changer les logos, rogner les logos , diminuer la hauteur du formulaire choix du contrat, approcher logo réinitialiser de son texte
+ajouter image a droite des offres, améliorer les offres, ajouter image de carte à droite des offres
+améliorer le paging 
+aligner photo de l'agence avec le texte 
+faire le footer*/
+
+@font-face {
+    font-family: "Baloo2-Bold";
+    src: url("/asset/fonts-family/Baloo2-Medium.ttf") format(truetype);
+}
+
 * {
     margin: 0;
     padding: 0;
     color: inherit;
-}
-
-body{
-	font-family: 'Roboto';
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header {
+    background: #B1F3BC;
+    padding:10px;
     display: flex;
-    background: lightgreen;
     justify-content: space-between;
+    font-family: "Baloo2-Bold";
+}
+
+body header nav a {
+    text-decoration: none;
+    color: #1F1F1F;
+    margin: 30px;
+    font-size: medium;
+}
+
+body header nav a:hover { 
+    font-weight: bold;
+}
+
+.auth {
+    text-decoration: none;
+    color: #1F1F1F;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    margin-top: 7px;
+}
+
+.auth:hover {
+    font-weight: bold;
+}
+
+#account {
+    margin-top: 6px;
 }
 
 .menu {
-    display: flex;
-    list-style: none;
-    margin: 30px;
-    font-size: large;
-    gap: 80px;
+    margin-top: 8px;
 }
 
-a {
-    text-decoration: none;
+.section1 {
+    background: #1F1F1F;
 }
 
-.account {
-    margin: 30px;
-    text-decoration: none;
-    font-size: large;
+.section1-title {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding-top: 25px;
 }
 
-.nos_offres {
+.section1-form {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    padding-top: 25px;
+    gap: 70px;
 }
 
-main { 
-    display: flex;
-    background: gray;
+#form {
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
-.formulaire {
-    display: flex;
-    justify-content: center;
+#research {
+    background-color: #B1F3BC;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
 }
 
-.post { 
-    display: flex;
-    justify-content: center;
+.refresh-logo {
+    filter: invert(1);
 }
 
 .reinitiate {
-    color: blue;
+    color: white;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.line {
+.refresh-logo-reinitiate {
     display: flex;
-    list-style: none;
-    margin: 30px;
+    margin: 0 20px;
+    margin-top: 9px;
+}
+
+.refresh-logo, .reinitiate {
+    margin: 4px;
+}
+
+.reinitiate:hover {
+    font-weight: bold;
+}
+/* comment ajuster la hauter de mon formulaire choix du contrat ? */
+.form-contract {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+    padding-bottom: 25px;
+}
+
+.reinitiate {
+    padding-bottom: 10px;
+}
+
+.section2-title {
+    padding-top: 20px;
+    padding-left: 65px;
+    font-size: x-large;
+}
+
+.section2-photos {
+    width: 150px;
+    height: 100px;
+    border: 30px solid #B1F3BC;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    white-space: nowrap;;
+}
+
+.section2-photos img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#offer-photo {
+    border-radius: 20px;
+    padding-bottom: 5px;
+} 
+
+.photos-map {
+    display: flex;
+}
+
+#map {
+    margin-left: 300px;
+}
+
+/* je ne parviens pas à arrondir les bords de mes offer-photo */
+
+.paging {
+    display: flex;
+   list-style: none;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.paging li {
+    margin: 0 25px;
+    text-decoration: none;
+}
+
+.paging a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid green;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+#announce-number {
+    margin-left: 320px;
+    color: grey;
+    font-size: x-small;
+}
+
+.section2 {
+    display: flex;
+}
+
+.section2-to-apply {
+    width: 230px;
+    height: 50px;
+    border: 10px solid #B1F3BC;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    text-align: center;
+    background-color: #B1F3BC;
+    white-space: nowrap;
+}
+
+.to-apply {
+    padding: 5px 10px;
+    background-color: #1F1F1F;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.section3 {
+    background: #B1F3BC;
+}
+
+.section3-title {
+    background: #B1F3BC;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+.section3-slogan {
+    padding-left: 250px;
+    padding-top: 30px;
     font-size: large;
-    gap: 80px;
+}
+
+.section3-text {
+    padding: 30px 750px 10px 70px;
+    text-align: justify;
+}
+
+.team_photo {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    color: #1F1F1F;
+}
+
+footer {
+    background: #1F1F1F;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footer-logos {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    gap: 30px;
+    margin-left: 150px;
+    filter: invert(1)
+}
+
+.footer-text {
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 140px;
+    font-size: larger;
+}
+
+nav a, nav p {
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    font-size: larger;
+    text-align: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    background-color: #1F1F1F;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
