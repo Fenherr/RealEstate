@@ -77,6 +77,10 @@ header {
     margin-bottom: 390px;
 }
 
+.posi {
+    position: absolute;
+    background-color: white;
+}
 
 
 
