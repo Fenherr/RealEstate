@@ -18,7 +18,6 @@ header {
     
 }
 
-
 .menu {
     /*remove point and use special font*/
     display: flex;
@@ -38,16 +37,13 @@ header {
     padding-right: 10px;
 }
 
-/*menu right */
-.menu-right {
-    display: flex;
-justify-content: flex-end;}
+
 
     /* class to reduce the size of an image... */ 
 .mini {
     width: 31px;
 }
-
+/*---------------------------------------*/
 
 .div1 {
     display: flex;
