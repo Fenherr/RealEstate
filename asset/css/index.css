@@ -240,6 +240,7 @@ a:hover {
 
 .sell_type {
     display: flex;
+    justify-content: space-around;
     padding-left: 12px;
 }
 
