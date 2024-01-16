@@ -89,3 +89,32 @@ li a:hover {
 .presentation_to_manage {
     margin-top: 53px;
 }
+
+.presentation_to_manage p {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 53px 304px 0px 304px;
+    padding-left: 60px;
+}
+
+/* Les services immobliers */
+
+.frame_1 {
+    background-color: black;
+    width: 888px;
+    height: 1218px;
+
+}
+
+.frame_2 {
+    background-color: black;
+    width: 888px;
+    height: 1218px;
+    
+}
+
