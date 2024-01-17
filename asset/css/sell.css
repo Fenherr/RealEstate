@@ -66,6 +66,10 @@ button, a {
     width: 100%;
 }
 
+.hover-low-opacity:hover {
+    opacity: 50%;
+}
+
 
 /*********** Header ***********/
 
@@ -78,10 +82,6 @@ header {
 
 header a {
     height: 78px;
-}
-
-header > a:first-child:hover {
-    opacity: 50%;
 }
 
 #head_logo {
@@ -286,10 +286,6 @@ footer ul {
 
 .social-media ul {
     gap: var(--space-element-gap);
-}
-
-.hover-footer-logo-opacity:hover {
-    opacity: 50%;
 }
 
 .quick-links-block {
