@@ -44,10 +44,10 @@ header {
     font-weight: bolder;
 }
 
-.logo-mon-compte{
+.logo-my-account{
     color: black;
 }
-.logo-mon-compte a:hover{
+.logo-my-account a:hover{
     color: #000;
     font-weight: bolder;
 }
@@ -66,6 +66,6 @@ header {
     padding: 0 20px;
 }
 
-.formulaire{
+.form{
     display: ;
 }
