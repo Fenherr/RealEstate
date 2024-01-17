@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locations</title>
+    <!-- Create link to file css... -->
     <link href="asset/css/rent.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Create link to file css... -->
-        <logo><img src="./asset/images/logo x150.png" alt="test"></logo>
+        <logo><a href="index.html"><img src="./asset/images/logo x150.png" alt="test"></a></logo>
             <nav>
                 <!-- Add parameters in file css for little picture... -->
                 <ul class="menu">
@@ -25,14 +25,48 @@
     </header>
     <main>
         <div>
-            <!--<img src="./asset/images/rent/picture-title.jpg" alt="" class="backpict">-->
+            <p class="backpict"><img src="./asset/images/rent/picture-title.jpg" alt=""></p>
         </div>
         <div class="title-search font-title">
             <h1>Chercher et trouver une location</h1>
         </div>
-        <div class="posi">
-            <p>ertertertreterter</p>
+        <div class="compo-search">
+            <div class="infos-serv-label">
+                <div>
+                    <label>Lieu :</label>
+                    <input type="text" placeholder="Adresse, département, région, etc...">
+                </div>
+                <div><label>Prix :</label>
+                    <input type="text" placeholder="Prix en euros">
+                </div>
+            </div>
+            <div class="infos-serv-label">
+                <div>
+                    <button type="button">Filtres</button>
+                </div>
+                <div>
+                    <button type="button">Recherche</button>
+                </div>
+            </div>
+        </div>
+        <div class=infos-serv>
+            <div>
+                <div id="ordre"><h2>Informations sur les services</h2></div>
+                <div id="ordre"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dolorem nisi ipsa nesciunt, possimus debitis? Quod eaque similique unde nam voluptatibu</p></div>
+            </div>
+            <div id="ordre"><img src="./asset/images/rent/agent-immobilier-visite.jpg"></div>
+        </div>
+        <div class=infos-links>
+            <div id="ordre"><img src="./asset/images/rent/maison.jpg"></div>
+            <div>
+                <div id="ordre"><h2>Liens utiles</h2></div>
+                <div id="ordre"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dolorem nisi ipsa nesciunt, possimus debitis? Quod eaque similique unde nam voluptatibu</p></div>
+            </div>
+            
         </div>
     </main>
+    <footer>
+        Test
+    </footer>
 </body>
 </html>
