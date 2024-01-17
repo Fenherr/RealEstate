@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Load font from asset*/
 @font-face {
     font-family: "Baloo2";
@@ -62,21 +66,75 @@ header {
 }
 
 .backpict {
-    position: absolute;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    text-align: center;
 }
 
 .title-search {
     display: flex;
     justify-content: center;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 180px;
+    
 }
 
+p {
+    margin-bottom: 24px;
+}
 
+.compo-search {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
 
+}
 
+.infos-serv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 10px;
+    
+}
+
+.infos-serv-label {
+    display: flex;
+    padding: 12px;
+}
+
+.infos-serv-label div {
+    margin-right: 12px;
+}
+
+.infos-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+#ordre {
+    display: flex;
+    justify-content: center;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    width: 400px;
+}
+.ordre:nth-of-type(1) {order: 1;}
+.ordre:nth-of-type(2) {order: 2;}
+.ordre:nth-of-type(3) {order: 3;}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 402px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+footer div {
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}

@@ -22,7 +22,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>            
         </nav>
-        <div class="logo-mon-compte">
+        <div class="logo-my-account">
             <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
         </div>  
      </header>  
@@ -31,55 +31,132 @@
         <section>
             <article class="contact">
                 <h1>NOUS CONTACTER</h1>
-                <p><i>Nous engageons à vous répondre sous 48h ouvrés</i></p>
+                <p><i>Nous nous engageons à vous répondre sous 48h ouvrés</i></p>
             </article>
         </section>
 
         <section class="contactform">
-            <article> 
+            <article class="phone"> 
                 <h2>Pour une question relative à une annonce :</h2>
                 <h3><i>Contacter l'agence au 01.02.03.04.05</i></h3>
-
-                <form action="formulaire">
-                <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
-                <label for="nom">
-                    <input type="text" placeholder="Nom :">
-                </label>
-                <label for="prénom">
-                    <input type="text" placeholder="Prénom :">
-                </label>
-                <label for="email">
-                    <input type="email" name="" id="" placeholder="Email :">
-                </label>
-                <select id="dino-select">
-                    <optgroup label="Theropods">
-                      <option>Tyrannosaurus</option>
-                      <option>Velociraptor</option>
-                      <option>Deinonychus</option>
-                    </optgroup>
-                    <optgroup label="Sauropods">
-                      <option>Diplodocus</option>
-                      <option>Saltasaurus</option>
-                      <option>Apatosaurus</option>
-                    </optgroup>
-                  </select>
-                  
-                </label>
-                <button type="submit">Submit</button>
-            </form>
-            </article>
-            <article>
+            </article> 
+            <article class="phone">
                 <h2>Pour une prise de rendez-vous pour une visite :</h2>
                 <h3><i>Contacter l'agence au 01.23.45.67.89</i></h3>
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.9069978587!2d35.97402454737375!3d49.99439433350955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2sKharkiv%2C%20Oblast%20de%20Kharkiv%2C%20Ukraine!5e0!3m2!1sfr!2sfr!4v1705396472368!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></article>
+            </article>  
         </section>
+        <section>
+            <article>
+                <form action="form">
+                <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
+                
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="name">
+                    <input type="text" placeholder="Nom :">
+                    <p>Nom <span class="obligatoire">*</span> :</p>                    
+                </label>
+               
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="first-name">
+                    <input type="text" placeholder="Prénom :">
+                    <p>Prénom <span class="obligatoire">*</span> :</p>
+                </label>
+
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="email">
+                    <input type="email" name="" id="" placeholder="Email :">
+                    <p>Email <span class="obligatoire">*</span> :</p>
+                </label>
+                </form>
+
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="subjet-select">Sujet :</label> 
+                <p>Sujet <span class="obligatoire">*</span> :</p>
+                <select id="subjet-select">            
+                    <optgroup label="Particuliers">
+                        <option value="">Mon espace personnel</option>
+                        <option value="">Mon profil locataire</option>
+                        <option value="">Recherche d'un bien</option>
+                        <option value="">Vendre son bien</option>
+                        <option value="">L'alerte immo</option>
+                        <option value="">Données personnelles : exercer mes droits</option>
+                        <option value="">Problèmes techniques sur le site</option>
+                    </optgroup>
+                    <optgroup label="Professionnels">
+                        <option value="">Partenariat</option>
+                        <option value="">Régie publicitaire</option>
+                        <option value="">Offres commerciales</option>
+                    </optgroup>
+                  </select>                
+                </label>
+
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="message">
+                    <input type="text" placeholder="Votre message :">
+                    <p>Votre message <span class="obligatoire">*</span> :</p>
+                </label>
+
+                <button type="submit">Envoyer</button>                
+                </form>
+            </article>                      
+            </section>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44427.813926552095!2d0.8441252993535505!3d45.89654548272686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47feeadaef87b0c9%3A0x8b265b0dc126d53e!2s87200%20Saint-Junien!5e0!3m2!1sfr!2sfr!4v1705479222960!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+            </div>
+            
+        <article>
+            <h5>Retrouvez-nous sur nos réseaux sociaux</h5>
+                <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="100" height="100"></a>
+                <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="100" height="100"></a>
+                <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="100" height="100"></a>
+                <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="100" height="100"></a>
+        </article>
+            <h5>Et sur l'application</h5>
+            <a href="googlemybusiness"><img src="./asset/images/logos/Google-My-Business_logo.svg" alt="logo"width="100" height="100"></a>
      </main>
 
      <footer>
-        ddfdfdffddfdfdf
-     </footer>
-     
+        <div class="social-networks">
+            <img class="contrast" src="./asset/images/logo x150.png" alt="logo" width="150" height="75">
+            <h6>Retrouvez-nous sur nos réseaux sociaux</h6>
+                <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
+        </div>
+        <div class="services">
+            <h6>Services</h6>
+            <ul class="footer-menu">
+                <li><a href="buy.html">Acheter</a></li>
+                <li><a href="rent.html">Louer</a></li>
+                <li><a href="sell.html">Vendre</a></li>
+            </ul>            
+        </div>
+        <div class="rapid-access">
+            <h6>Accès rapide</h6>
+            <ul>
+                <li><a href="newsletter registration.html">Inscription newsletter</a></li>
+                <li><a href="aboutus.html">Qui sommes nous ?</a></li>
+                <li><a href="offers.html">Nos offres d'emploi</a></li>
+                <li><a href="customers' opinion.html">Avis client</a></li>
+                <li><a href="sitemap.html">Plan du site</a></li>
+            </ul>
+        </div>
+        <div class="to-contact">
+            <h6>Contact</h6>
+            <ul>
+                <li><a href="phone">01.23.45.67.89</a></li>
+                <li><a href="mail">contact@acgdimmo.fr</a></li>
+                <li><a href="contact.html">saint-junien</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>acgdimmo©</p>
+        </div>
+        
+     </footer>     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </body>
