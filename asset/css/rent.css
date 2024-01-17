@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /*Load font from asset*/
 @font-face {
     font-family: "Baloo2";
@@ -5,25 +10,19 @@
     src: url(/asset/fonts-family/Baloo2-Medium.ttf)  format(truetype);
 }
 
-body {
-    margin: 0%;
-}
-
+/* initialise flex*/
 header {
     display: flex;
-    justify-content: space-between;
-    background-color: #B1F3BC;
-    justify-content: center;
+    background-color: #B1F3BC;    
     
-}
-
-nav {
-   /* height: 61px;*/
-    width: 100%;
 }
 
 .menu {
     /*remove point and use special font*/
+    display: flex;
+    padding-top: 20px;
+    margin-right: 20px;
+    justify-content: center;
     list-style-type: none;
     font-family: "Baloo2", sans-serif;
     font-size: 24px;
@@ -34,47 +33,54 @@ nav {
 }
 
 /* Put a list on the same line. */
-.menu-format {
-    display: inline;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-/*menu right */
-.menu-right {
-    float: right;
-    display: inline;
+.menu li {
     padding-right: 10px;
-    padding-left: 1px;
 }
 
-    /* class to reduce the size of an image... */ 
-.mini {
-    width: 31px;
-}
-
-
-.div1 {
+.compte {
     display: flex;
-    justify-content: center;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 180px;
+    padding-top: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    list-style-type: none;
+    font-family: "Baloo2", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+
 }
 
-.div2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: auto;
-    
-    
-}
+/*---------------------------------------*/
 
 .font-title {
-    text-align: center;
-    background-color: #B1F3BC;
+    /* background-color: #B1F3BC;*/
     font-family: "Baloo2", sans-serif;
     font-style: normal;
     line-height: normal;
 }
+
+.backpict {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.title-search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 390px;
+}
+
+.posi {
+    position: absolute;
+    background-color: white;
+}
+
+
+

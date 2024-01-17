@@ -1,10 +1,10 @@
-/* reset css*/ 
+/* reset css */
 * {
     margin: 0px;
     padding: 0px;
 }
 
-/* General*/ 
+/* General code CSS */
 
 .flex-center {
     display: flex;
@@ -12,67 +12,85 @@
     align-items: center;
 }
 
-/* header + nav*/
-header {
-    background-color: rgba(177, 243, 188, 1);
+.flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
+/* Header + Nav */
+
+header {
+    background-color:rgba(177, 243, 188, 1);
+}
+
+.logo_header {
+    margin-left: 64px;
+}
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    color: #000;
-    font-family: Baloo 2;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
+    list-style: none; 
 }
 
-.logo {
-    height: 75px;
-    width: 150px;
+nav li {
+    margin: 0 40px 0 0;
+}
+
+.button_connect {
+    margin-right: 64px;
 }
 
 li a:hover {
-    border: 2px solid black;
-    border-radius: 10px;
-    border-width: thick;
-    padding: 5px;
+
 }
 
-/* Barre de recherche */
+/* Search bar */
 
-.icone_localisation {
-    padding-right: 20px;
-}
-.localisation_search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search_bar {
     margin-top: 95px;
+}
+
+.icon_search {
+    padding: 15px;
     background-color: black;
-    background-size: 900px 71px;
+    border: 5px solid;
+    border-color: #E2FBB7;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-.adress {
-    height: 50px;
-    width: 971px;
-    display: flex;
-    align-items: center;
+.bar_search input {
+    padding: 25px;
+    font-size: 25px;
+    color: #E2FBB7;
+    height: auto;
+    width: 500px;
+    background-color: black;
+    border: 5px solid;
+    border-color: #E2FBB7;
 }
 
-/* Descritpion to manage */
+.bar_search {
+    padding-right: 45px;
+}
 
-.description_to_manage {
+.button_search {
+    padding: 25px;  
+    font-size: 20px;    
+    color: #E2FBB7;
+    background-color: black;
+    border: 5px solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #E2FBB7;
+}
+
+/* Presentation text to_manage */
+
+.presentation_to_manage {
     margin-top: 53px;
-    display: flex;
-    justify-content: center;
+}
+
+.presentation_to_manage p {
     color: #000;
     text-align: center;
     font-family: Open Sans;
@@ -80,116 +98,23 @@ li a:hover {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 53px 304px 0px 304px;
+    padding-left: 60px;
 }
 
-/* Block service 1 et 2 */
+/* Les services immobliers */
 
-.section_service {
-    display: flex;
-    align-items: center;
-}
-
-/* Service 1 */
-
-.service_1 {
-    margin-top: 90px;
-    margin-left: 64px;
+.frame_1 {
     background-color: black;
     width: 888px;
     height: 1218px;
+
 }
 
-.title_service_1 {
-    padding-left: 110px;
-    margin-bottom: 24px;
-    color: #E2FBB7;
-    font-family: Baloo2 semibold;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.image_service_1 {
-    padding-left: 160px;
-    margin-bottom: 25px;
-}
-
-.paragraph_service_1 {
-    width: 569px;
-    height: 569px;
-    padding-left: 160px;
-    margin-bottom: 32px;
-    color: #E2FBB7;
-    font-family: Open Sans;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Service 2 */
-
-.service_2 {
-    margin-top: 90px;
-    margin-left: 968px;
-    margin-right: 64px;
+.frame_2 {
     background-color: black;
     width: 888px;
     height: 1218px;
+    
 }
 
-.title_service_2 {
-    margin-bottom: 24px;
-    margin-right: 408px;
-    color: #E2FBB7;
-    font-family: Baloo2 semibold;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.image_service_2 {
-    margin-bottom: 25px;
-    margin-right: 182px;
-}
-
-.paragraph_service_2 {
-    width: 569px;
-    height: 554px;
-    color: #E2FBB7;
-    font-family: Open Sans;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-right: 159px;
-    margin-bottom: 32px;
-}
-
-/* Statistiques */
-
-.bloc_stats {
-    width: 1795px;
-    height: 448px;
-    background-color: black;
-    margin-left: 61px;
-    margin-right: 64px;
-}
-
-.title_stats {
-    margin-top: 125px;
-    margin-left: 839px;
-    margin-right: 845px;
-    padding-top: 14px;
-    color: #E2FBB7;
-    text-align: center;
-    font-family: Baloo2;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-}

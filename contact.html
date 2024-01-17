@@ -4,98 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
+    <!--lien pour bonhomme-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/contact.css">
 </head>
 <body>
     <!--creation du header-->
     <header>
-         <nav>
             <div class="logo">
                 <img src="./asset/images/logo x150.png" alt="logo" width="150" height="75">
-            </div>           
-            <div class="menu">
+            </div>   
+         <nav>
+            <ul class="menu">
                 <li><a href="buy.html">Acheter</a></li>
                 <li><a href="rent.html">Louer</a></li>
                 <li><a href="sell.html">Vendre</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </div>            
-            <ul class="tableau">
-                <div class="bonhomme">
-                    <img src="./asset/images/compte.svg" width="24px">
-                </div>
-                <li style="float:right"><a class="active" href="#Mon compte">Mon compte</a></li>
-            </ul> 
+            </ul>            
         </nav>
-        <!--ajout truetype baloo 2-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+        <div class="logo-mon-compte">
+            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+        </div>  
+     </header>  
+     
+     <main>
+        <section>
+            <article class="contact">
+                <h1>NOUS CONTACTER</h1>
+                <p><i>Nous engageons à vous répondre sous 48h ouvrés</i></p>
+            </article>
+        </section>
 
-        </header>
+        <section class="contactform">
+            <article> 
+                <h2>Pour une question relative à une annonce :</h2>
+                <h3><i>Contacter l'agence au 01.02.03.04.05</i></h3>
+
+                <form action="formulaire">
+                <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
+                <label for="nom">
+                    <input type="text" placeholder="Nom :">
+                </label>
+                <label for="prénom">
+                    <input type="text" placeholder="Prénom :">
+                </label>
+                <label for="email">
+                    <input type="email" name="" id="" placeholder="Email :">
+                </label>
+                <select id="dino-select">
+                    <optgroup label="Theropods">
+                      <option>Tyrannosaurus</option>
+                      <option>Velociraptor</option>
+                      <option>Deinonychus</option>
+                    </optgroup>
+                    <optgroup label="Sauropods">
+                      <option>Diplodocus</option>
+                      <option>Saltasaurus</option>
+                      <option>Apatosaurus</option>
+                    </optgroup>
+                  </select>
+                  
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </article>
+            <article>
+                <h2>Pour une prise de rendez-vous pour une visite :</h2>
+                <h3><i>Contacter l'agence au 01.23.45.67.89</i></h3>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.9069978587!2d35.97402454737375!3d49.99439433350955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2sKharkiv%2C%20Oblast%20de%20Kharkiv%2C%20Ukraine!5e0!3m2!1sfr!2sfr!4v1705396472368!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></article>
+        </section>
+     </main>
+
+     <footer>
+        ddfdfdffddfdfdf
+     </footer>
+     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </body>
-    <main>
-        <center><h1>NOUS CONTACTER</h1></center>
-            <!-- paramétrage center position fixe-->
-            <!--INSERER DES INTERLIGNES-->
-        <div class="annonce">
-            <p align="left">Pour une question relative à une annonce :<br></p>
-            <p align="left"><i>Contacter l'agence au 01.02.03.04.05</i><br></p>
-        </div>
-        <div class="rv"></div>
-            <p align="right">Pour une prise de rendez-vous pour une visite :<br></p>
-            <p align="right"><i> Contacter l'agence au 01.23.45.67.89 </i><br></p>
-        </div>
-        <!--INSERER DES INTERLIGNES-->
-        <div class="autre demande">
-            <div>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</div>
-                <ul>
-                    <li>* Nom : </li>
-                    <li>* Prénom : </li>
-                    <li>* Adresse mail :</li>
-                    <!--ATTENTION, SUJET ET MESSAGE A DEPLACER / FRAMES A CREER-->
-                    <li>* Sujet :
-                        <ul id="menu déroulant">
-                            <li><a href="Particuliers">Particuliers</a></li>
-                                <ul class="sous-menu Particuliers">
-                                    <li><a href="Mon espace perso">Mon espace perso</a></li>
-                                    <li><a href="Mon profil locataire">Mon profil locataire</a></li>
-                                    <li><a href="Recherche d'un bien">Recherche d'un bien</a></li>
-                                    <li><a href="Vendre son bien">Vendre son bien</a></li>
-                                    <li><a href="L'alerte immo">L'alerte immo</a></li>
-                                    <li><a href="Newsletter">Newsletter</a></li>
-                                    <li><a href="Données personnelles : Exercer vos droits">Données personnelles : Exercer vos droits</a></li>
-                                    <li><a href="Problèmes techniques sur le site">Problèmes techniques sur le site</a></li>
-                                </ul>
-                            <li><a href="Professionnels">Professionnels</a></li>
-                                <ul class="sous-menu Professionnels">
-                                    <li><a href="Partenariat">Partenariat</a></li>
-                                    <li><a href="Régie publicitaire">Régie publicitaire</a></li>
-                                    <li><a href="Offres commerciales">Offres commerciales</a></li>
-                                </ul>                            
-                        </ul>
-                    </li>
-                    <li>* Votre message :</li>
-                </ul>
-        </div>
-        <div class="Réseaux sociaux">
-            <div>Retrouvez-vous sur nos réseaux sociaux !</div>
-            <ul>
-                <!-- ATTENTION, CODAGE PROVISOIRE, A MODIF EN BOUTONS-->
-                <img src="./asset/images/logos/facebook_f_logo_(2021).svg" width="52px" height="55px" alt="facebook_f_logo_">
-                <img src="./asset/images/logos/instagram_logo_2016.svg" width="52px" height="55px" alt="instagram_logo_2016">
-                <img src="./asset/images/logos/youtube_social_white_square_(2017).svg" width="52px" height="55px" alt="youtube_social_white_square_">
-                <img src="./asset/images/logos/linkedIn_icon.svg" width="52px" height="55px" alt="linkedIn_icon">
-                <img src="./asset/images/logos/Google-My-Business_logo.svg" width="52px" height="55px" alt="Google-My-Business_logo">
-            </ul>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> 
-        
-    </main>
+
 </html>
