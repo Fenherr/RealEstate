@@ -3,8 +3,8 @@ body {
     width:100%;
     bottom:0;
     left:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    font-family: 'Open sans', sans-serif;
+    }
 
 p, span {
     font-size: 1rem;
@@ -13,6 +13,7 @@ p, span {
 h1 {
     font-size: 1.7rem;
     font-weight: 400;
+    font-family: 'Baloo 2', sans-serif;
 }
 
 a {
@@ -21,12 +22,17 @@ a {
     font-size: 1rem;
 }
 /*header : logo et menu*/
+header a {
+    font-size: 1.1rem;;
+}
+
 header {
     display: flex;
     background-color: #b1f3bc;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.2rem;
 }
 
 header ul {
@@ -69,7 +75,7 @@ a:hover {
 /*bannière avec fonction recherche*/
 .banner {
     background-image: url("../images/home/site_corot_1920.jpg");
-    padding: 50px 0;
+    padding: 90px 0;
 }
 
 .search {
@@ -78,27 +84,54 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
 }
 
 .menu_search {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
-    padding: 40px 0;
+    padding: 20px 0;
     justify-content: space-around;
-    
+    margin-top: 25px;
+    margin-bottom: 25px;    
 }
 
 .menu_search_deco {
     border: #1f1f1f 1px solid;  
     border-radius: 6px;
-    padding: 5px;
-    width: 100px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 140px;
+    background-color: #ffffff;
+    font-family: 'Open sans', sans-serif;
 }
 
-#menu_search_deco {
+/*#local_align i {
+    position: absolute;
+    top: 55%;
+    left: 39%;
+}*/
+
+input[type="text"]:focus {
+	outline:none;
+}
+
+.search_btn button {
+    padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
-    border: none;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border-color:transparent;
+}
+
+.search_btn button:hover {
+    background-color: #b1f3bc;
+    cursor: pointer;
 }
 
 
@@ -106,7 +139,7 @@ a:hover {
 .news {
     background-color: #1f1f1f;
     width: auto;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     margin-top: 0;
 }
 
@@ -115,8 +148,8 @@ a:hover {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .news_slide h1 {
@@ -170,13 +203,15 @@ a:hover {
 .activ_news_all span {
    position: relative;
    top: 30%;
-   font-size: 1.2rem;
+   font-size: 1.1rem;
 }
 
 .activ_news_all_btn {
     display: inline-block;
     background:#e2fbb7;
     border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
     width:28px;
     height:28px;
     border:1px solid #1f1f1f; 
@@ -192,7 +227,7 @@ a:hover {
 }
 
 .activ_news_all_btn span:hover {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .activ_news {
@@ -201,7 +236,7 @@ a:hover {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 73%;
+    top: 72%;
     left: 0;
     -moz-border-radius: 0 0 7px 7px;
     -webkit-border-radius: 0 0 7px 7px;
@@ -216,7 +251,7 @@ a:hover {
 .sell {
     background-color: #ffffff;
     width: auto;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -224,8 +259,8 @@ h1 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .sell_slide {
@@ -270,12 +305,39 @@ i[class="fa-solid fa-bed"] {
     height: 20px;
 }
 
+.navbar_sell {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.navbar_sell a {
+    text-align: center;
+}
+
+.navbar_sell
+
+.navbar_sell_min_btn {
+    display: inline-block;
+    background:#e2fbb7;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:8px;
+    height:8px;
+    border:1px solid #1f1f1f; 
+}
+
+.navbar_sell ul {
+    padding-left: 0;
+}
+
 /*section avis clients*/
 .customers {
     background-color: #1f1f1f;
     width: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     text-align: center;
     color: #ffffff;
 }
@@ -287,7 +349,7 @@ i[class="fa-solid fa-bed"] {
 .customers p {
     margin-top: 0;
     margin-bottom: 5px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .customers button {
@@ -313,7 +375,7 @@ i[class="fa-solid fa-bed"] {
 .agency {
     background-color: #ffffff;
     width: auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .agency h1 {
@@ -321,8 +383,8 @@ i[class="fa-solid fa-bed"] {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .agency p {
@@ -368,13 +430,13 @@ i[class="fa-solid fa-bed"] {
 
 .footer li {
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     list-style: none;
     line-height: 2em;
 }
 .footer p {
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     list-style: none;
     line-height: 2em;
 }
@@ -416,6 +478,7 @@ i[class="fa-solid fa-bed"] {
 
 .footer i[class="fa-regular fa-copyright"] {
     color: #ffffff;
+    font-family: 'Open sans', sans-serif;
 }
 
 .copyright p {
@@ -425,4 +488,5 @@ i[class="fa-solid fa-bed"] {
     background-color: #000000;
     color: #ffffff;
     padding-bottom: 30px;
+    font-family: 'Open sans', sans-serif;
 }

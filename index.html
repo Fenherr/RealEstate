@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/724458d0e8.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+      </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
     <link rel="stylesheet" href="./asset/css/index.css">
 </head>
@@ -33,14 +37,31 @@
 <!-- bannière avec fonction recherche -->
    <div class="banner">
      <div class="search">
-        <ul class="menu_search">
-            <li class="menu_search_deco">Vente</li>
-            <li class="menu_search_deco">Localisation</li>
-            <li class="menu_search_deco">Type biens...</li>
-            <li class="menu_search_deco">Prix</li>
-            <li class="menu_search_deco" id="menu_search_deco">Rechercher...</li>
-            <!-- menu deroulant à faire -->
-        </ul>
+        <div class="menu_search">
+            <select class="menu_search_deco">
+                <option label="">Je cherche ...</option>
+                <option value="vente">Vente</option>
+                <option value="location">Location</option>
+            </select>
+            <div>
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <input class="menu_search_deco" type="text" placeholder="Localisation..."  /> 
+            </div>
+            <select class="menu_search_deco">
+                <option label="">Type de biens ...</option>
+                <option value="appartement">Appartement</option>
+                <option value="maison">Maison</option>
+                <option value="terrain">Terrain</option>
+                <option value="autre">Autre</option>
+            </select>
+            <div>
+                <input class="menu_search_deco" type="text" placeholder="Prix maximum..."  /> 
+            </div>
+            <div class="search_btn">
+                <a href="#"><button class="menu_search_deco">Rechercher...</button></a>
+            </div>
+        </div>
+
      </div>
     </div>
 
@@ -59,7 +80,6 @@
                     </div>
                 </div> 
             </div>
-        </div> 
     </section>
 
 <!-- derniers biens en vente -->
@@ -112,6 +132,23 @@
                     </div>
                 </div>
             </div> 
+        </div>
+        <div class="navbar_sell">
+            <div>
+                <a class="activ_news_all_btn" href="#"><span>&lsaquo;</span></a>
+            </div>
+            <div>
+            <ul >
+                <li class="navbar_sell_min_btn"></li>
+                <li class="navbar_sell_min_btn"></li>
+                <li class="navbar_sell_min_btn"></li>
+            </ul>
+            </div>
+            <div>
+                <a class="activ_news_all_btn" href="#"><span>&rsaquo;</span></a>
+            </div>
+
+
         </div>
     </section>
 
