@@ -74,9 +74,13 @@ header {
     justify-content: center;
     position: relative;
     padding-top: 10px;
-    padding-bottom: 180px;
+    margin-bottom: 390px;
 }
 
+.posi {
+    position: absolute;
+    background-color: white;
+}
 
 
 
