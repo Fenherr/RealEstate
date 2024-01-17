@@ -6,14 +6,19 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+p, span {
+    font-size: 1rem;
+}
+
 h1 {
-    font-size: 25px;
+    font-size: 1.7rem;
     font-weight: 400;
 }
 
 a {
     text-decoration: none;
     color: black;
+    font-size: 1rem;
 }
 /*header : logo et menu*/
 header {
@@ -101,15 +106,21 @@ a:hover {
 .news {
     background-color: #1f1f1f;
     width: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+    margin-top: 0;
 }
 
 .news h1 {
     color: #ffffff;
     text-align: center;
-    position: relative;
-    top: -50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.news_slide h1 {
+    display:initial;
 }
 .news_slide {
     display: flex;
@@ -159,7 +170,7 @@ a:hover {
 .activ_news_all span {
    position: relative;
    top: 30%;
-   font-size: larger;
+   font-size: 1.2rem;
 }
 
 .activ_news_all_btn {
@@ -195,7 +206,6 @@ a:hover {
     -moz-border-radius: 0 0 7px 7px;
     -webkit-border-radius: 0 0 7px 7px;
     border-radius: 0 0 7px 7px;
-    
 }
 
 .activ_news a:hover {
@@ -206,15 +216,16 @@ a:hover {
 .sell {
     background-color: #ffffff;
     width: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
-.sell h1 {
+h1 {
     color: #000000;
     text-align: center;
-    position: relative;
-    top: -50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .sell_slide {
@@ -223,6 +234,7 @@ a:hover {
     justify-content: space-around;
     padding-left: 80px;
     padding-right: 80px;
+    margin-bottom: 0;
 }
 
 .sell_frame {
@@ -252,10 +264,165 @@ i[class="fa-solid fa-bed"] {
     padding-top: 2px;   
 }
 
-.sell_type {
-
+.vertical_row{
+    width: 1px;
+    border-left: 1px solid black;
+    height: 20px;
 }
-.sell_type_bedroom {
-   
 
+/*section avis clients*/
+.customers {
+    background-color: #1f1f1f;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.customers span {
+    font-style: italic;
+}
+
+.customers p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.customers button {
+    padding: 7px 10px 7px 10px;
+    background-color: #e2fbb7;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border-color:transparent;
+    width: 15%;
+    margin-top: 15px;
+}
+
+.customers button:hover {
+    background-color: #b1f3bc;
+}
+
+.customers button a:hover {
+    font-weight: inherit;
+}
+
+/*section article agence*/
+.agency {
+    background-color: #ffffff;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.agency h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.agency p {
+    text-align: center;
+}
+
+.agency button {
+    padding: 7px 10px 7px 10px;
+    background-color: #e2fbb7;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border-color:transparent;
+    width:15%;
+    margin-top: 15px;
+}
+
+.agency button:hover {
+    background-color: #b1f3bc;
+}
+
+.agency button a:hover {
+    font-weight: inherit;
+}
+
+/*section footer*/
+.footer {
+    background-color: #000000;
+    width: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a {
+    color: #ffffff;
+    font-size: 0.8rem;
+    list-style: none;
+    line-height: 2em;
+}
+
+.footer li {
+    color: #ffffff;
+    font-size: 0.8rem;
+    list-style: none;
+    line-height: 2em;
+}
+.footer p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    list-style: none;
+    line-height: 2em;
+}
+
+.column1 {
+    margin-top: 5px;
+}
+
+.column2 .menu_footer {
+    font-weight: bold;
+}
+
+.column3 .menu_footer {
+    font-weight: bold;
+}
+
+.column4 .menu_footer {
+    font-weight: bold;
+}
+.footer i[class="fa-brands fa-square-facebook"] {
+    color: #ffffff;
+    font-size: 35px;
+    margin-top: 10px;
+    margin: 0 10px;
+}
+
+.footer i[class="fa-brands fa-square-twitter"] {
+    color: #ffffff;
+    font-size: 35px;
+    margin-top: 10px;
+    margin: 0 10px;  
+}
+.footer i[class="fa-brands fa-square-instagram"] {
+    color: #ffffff;
+    font-size: 35px;
+    margin-top: 10px;
+    margin: 0 10px;  
+}
+
+.footer i[class="fa-regular fa-copyright"] {
+    color: #ffffff;
+}
+
+.copyright p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 30px;
 }
