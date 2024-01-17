@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Load font from asset*/
 @font-face {
     font-family: "Baloo2";
@@ -78,8 +82,7 @@ p {
 .compo-search {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
-    background: #B1F3BC;
+    width: 50%;
 
 }
 
@@ -120,4 +123,18 @@ p {
 .ordre:nth-of-type(2) {order: 2;}
 .ordre:nth-of-type(3) {order: 3;}
 
+footer {
+    display: flex;
+    width: 100%;
+    height: 402px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
 
+footer div {
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
