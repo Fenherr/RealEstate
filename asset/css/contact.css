@@ -25,7 +25,7 @@ header {
     padding: 10px;
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
 }
@@ -44,28 +44,76 @@ header {
     font-weight: bolder;
 }
 
-.logo-my-account{
+.logo-my-account {
     color: black;
 }
-.logo-my-account a:hover{
+.logo-my-account a:hover {
     color: #000;
     font-weight: bolder;
 }
 
 .contact {
     text-align: center;
+    padding-bottom: 20px;
 }
   
 .contactform {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
     }
-.contactform article {
+
+.phone {
     width: 50%;
-    padding: 0 20px;
+    padding: 0 20px;    
 }
 
-.form{
-    display: ;
+h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+label-message {
+    height: max-content;
+ 
+}
+
+.obligatoire {
+    color: red;
+}
+
+
+.map {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+footer a:hover {
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.social-networks {
+    img{
+        .contrast{filter: contrast(300%);}
+    }
+}
+
+.services, rapid-access, to-contact {
+    color: aliceblue;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+
 }
