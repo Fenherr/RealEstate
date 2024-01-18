@@ -4,31 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locations</title>
+    <!-- Create link to file css... -->
+    <link href="asset/css/rent.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Create link to file css... -->
-        <link href="asset/css/rent.css" rel="stylesheet">
-        <img src="./asset/images/logo x150.png" alt="test">
+        <logo><a href="index.html"><img src="./asset/images/logo x150.png" alt="test"></a></logo>
             <nav>
                 <!-- Add parameters in file css for little picture... -->
                 <ul class="menu">
                     <li><a href="buy.html">Acheter</a></li>
                     <li>Louer</li>
                     <li><a href="sell.html">Vendre</a> </li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="menu-right"><a href="to_manage.html">Mon compte</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
+                <ul class="compte">
+                    <li><a href="to_manage.html">Mon compte</a></li>
+                </ul>
     </header>
-   <!-- <div class="font-title">
-        <div class="div2">
-            <img src="asset/images/rent/picture-title.jpg">
+    <main>
+        <div>
+            <p class="backpict"><img src="./asset/images/rent/picture-title.jpg" alt=""></p>
         </div>
-        <div class="div1">
+        <div class="title-search font-title">
             <h1>Chercher et trouver une location</h1>
         </div>
-        
-    </div>-->
+        <div class="compo-search">
+            <div class="infos-serv-label">
+                <div>
+                    <label>Lieu :</label>
+                    <input type="text" placeholder="Adresse, département, région, etc...">
+                </div>
+                <div><label>Prix :</label>
+                    <input type="text" placeholder="Prix en euros">
+                </div>
+            </div>
+            <div class="infos-serv-label">
+                <div>
+                    <button type="button">Filtres</button>
+                </div>
+                <div>
+                    <button type="button">Recherche</button>
+                </div>
+            </div>
+        </div>
+        <div class=infos-serv>
+            <div>
+                <div id="ordre"><h2>Informations sur les services</h2></div>
+                <div id="ordre"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dolorem nisi ipsa nesciunt, possimus debitis? Quod eaque similique unde nam voluptatibu</p></div>
+            </div>
+            <div id="ordre"><img src="./asset/images/rent/agent-immobilier-visite.jpg" alt=""></div>
+        </div>
+        <div class=infos-links>
+            <div id="ordre"><img src="./asset/images/rent/maison.jpg" alt=""></div>
+            <div>
+                <div id="ordre"><h2>Liens utiles</h2></div>
+                <div id="ordre"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dolorem nisi ipsa nesciunt, possimus debitis? Quod eaque similique unde nam voluptatibu</p></div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div><p><img src="./asset/images/logo_white_150.png" alt=""></p></div>
+            <div><p>Retrouvez-nous sur nos réseaux sociaux</p></div>
+            <div><p>
+                    <img src="asset/images/facebook-logo.png" alt="">
+                    <img src="asset/images/twitter-logo.png" alt="">
+                    <img src="asset/images/instagram-logo.png" alt="">
+                </p>
+            </div>
+        </div>
+        <div>
+            <p>Services</p>
+            <p>Achat</p>
+            <p>Vendre</p>
+            <p>Louer</p>
+        </div>
+        <div>
+            <p>Accès rapide</p>
+            <p>Inscription newsletter</p>
+            <p>Qui sommes-nous ?</p>
+            <p>Nos offres d’emploi</p>
+            <p>Avis client</p>
+            <p>Plan du site</p>
+        </div>
+        <div>
+            <p>Contact</p>
+            <p>06.08.16.45.22</p>
+            <p>contact@acgdimmo.fr</p>
+            <p>Saint-Junien</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -4,98 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
+    <!--lien pour bonhomme-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/contact.css">
 </head>
 <body>
     <!--creation du header-->
     <header>
-         <nav>
             <div class="logo">
                 <img src="./asset/images/logo x150.png" alt="logo" width="150" height="75">
-            </div>           
-            <div class="menu">
+            </div>   
+         <nav>
+            <ul class="menu">
                 <li><a href="buy.html">Acheter</a></li>
                 <li><a href="rent.html">Louer</a></li>
                 <li><a href="sell.html">Vendre</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </div>            
-            <ul class="tableau">
-                <div class="bonhomme">
-                    <img src="./asset/images/compte.svg" width="24px">
-                </div>
-                <li style="float:right"><a class="active" href="#Mon compte">Mon compte</a></li>
-            </ul> 
+            </ul>            
         </nav>
-        <!--ajout truetype baloo 2-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+        <div class="logo-mon-compte">
+            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+        </div>  
+     </header>  
+     
+     <main>
+        <section>
+            <article class="contact">
+                <h1>NOUS CONTACTER</h1>
+                <p><i>Nous engageons à vous répondre sous 48h ouvrés</i></p>
+            </article>
+        </section>
 
-        </header>
-</body>
-    <main>
-        <center><h1>NOUS CONTACTER</h1></center>
-            <!-- paramétrage center position fixe-->
-            <!--INSERER DES INTERLIGNES-->
-        <div class="annonce">
-            <p align="left">Pour une question relative à une annonce :<br></p>
-            <p align="left"><i>Contacter l'agence au 01.02.03.04.05</i><br></p>
+        <section class="contactform">
+            <article class="phone"> 
+                <h2>Pour une question relative à une annonce :</h2>
+                <h3><i>Contacter l'agence au 01.02.03.04.05</i></h3>
+            </article> 
+            <article class="phone">
+                <h2>Pour une prise de rendez-vous pour une visite :</h2>
+                <h3><i>Contacter l'agence au 01.23.45.67.89</i></h3>
+            </article>  
+        </section>
+        <section>
+            <article>
+                <form action="form">
+                <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
+                
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="name">
+                    <input type="text" placeholder="Nom :">
+                    <p>Nom <span class="obligatoire">*</span> :</p>                    
+                </label>
+               
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="first-name">
+                    <input type="text" placeholder="Prénom :">
+                    <p>Prénom <span class="obligatoire">*</span> :</p>
+                </label>
+
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="email">
+                    <input type="email" name="" id="" placeholder="Email :">
+                    <p>Email <span class="obligatoire">*</span> :</p>
+                </label>
+                </form>
+
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="subjet-select">Sujet :</label> 
+                <p>Sujet <span class="obligatoire">*</span> :</p>
+                <select id="subjet-select">            
+                    <optgroup label="Particuliers">
+                        <option value="">Mon espace personnel</option>
+                        <option value="">Mon profil locataire</option>
+                        <option value="">Recherche d'un bien</option>
+                        <option value="">Vendre son bien</option>
+                        <option value="">L'alerte immo</option>
+                        <option value="">Données personnelles : exercer mes droits</option>
+                        <option value="">Problèmes techniques sur le site</option>
+                    </optgroup>
+                    <optgroup label="Sauropods">
+                      <option>Diplodocus</option>
+                      <option>Saltasaurus</option>
+                      <option>Apatosaurus</option>
+                    </optgroup>
+                  </select>                
+                </label>
+
+                <!--A VERIFIER / LIGNE A SUPPRIMER-->
+                <label for="message">
+                    <input type="text" placeholder="Votre message :">
+                    <p>Votre message <span class="obligatoire">*</span> :</p>
+                </label>
+
+                <button type="submit">Envoyer</button>                
+                </form>
+            </article>                      
+            </section>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44427.813926552095!2d0.8441252993535505!3d45.89654548272686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47feeadaef87b0c9%3A0x8b265b0dc126d53e!2s87200%20Saint-Junien!5e0!3m2!1sfr!2sfr!4v1705479222960!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+            </div>
+            
+        <article>
+            <h5>Retrouvez-nous sur nos réseaux sociaux</h5>
+                <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="100" height="100"></a>
+                <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="100" height="100"></a>
+                <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="100" height="100"></a>
+                <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="100" height="100"></a>
+        </article>
+            <h5>Et sur l'application</h5>
+            <a href="googlemybusiness"><img src="./asset/images/logos/Google-My-Business_logo.svg" alt="logo"width="100" height="100"></a>
+     </main>
+
+     <footer>
+        <div class="social-networks">
+            <img class="contrast" src="./asset/images/logo x150.png" alt="logo" width="150" height="75">
+            <h6>Retrouvez-nous sur nos réseaux sociaux</h6>
+                <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
         </div>
-        <div class="rv"></div>
-            <p align="right">Pour une prise de rendez-vous pour une visite :<br></p>
-            <p align="right"><i> Contacter l'agence au 01.23.45.67.89 </i><br></p>
+        <div class="services">
+            <h6>Services</h6>
+            <ul class="footer-menu">
+                <li><a href="buy.html">Acheter</a></li>
+                <li><a href="rent.html">Louer</a></li>
+                <li><a href="sell.html">Vendre</a></li>
+            </ul>            
         </div>
-        <!--INSERER DES INTERLIGNES-->
-        <div class="autre demande">
-            <div>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</div>
-                <ul>
-                    <li>* Nom : </li>
-                    <li>* Prénom : </li>
-                    <li>* Adresse mail :</li>
-                    <!--ATTENTION, SUJET ET MESSAGE A DEPLACER / FRAMES A CREER-->
-                    <li>* Sujet :
-                        <ul id="menu déroulant">
-                            <li><a href="Particuliers">Particuliers</a></li>
-                                <ul class="sous-menu Particuliers">
-                                    <li><a href="Mon espace perso">Mon espace perso</a></li>
-                                    <li><a href="Mon profil locataire">Mon profil locataire</a></li>
-                                    <li><a href="Recherche d'un bien">Recherche d'un bien</a></li>
-                                    <li><a href="Vendre son bien">Vendre son bien</a></li>
-                                    <li><a href="L'alerte immo">L'alerte immo</a></li>
-                                    <li><a href="Newsletter">Newsletter</a></li>
-                                    <li><a href="Données personnelles : Exercer vos droits">Données personnelles : Exercer vos droits</a></li>
-                                    <li><a href="Problèmes techniques sur le site">Problèmes techniques sur le site</a></li>
-                                </ul>
-                            <li><a href="Professionnels">Professionnels</a></li>
-                                <ul class="sous-menu Professionnels">
-                                    <li><a href="Partenariat">Partenariat</a></li>
-                                    <li><a href="Régie publicitaire">Régie publicitaire</a></li>
-                                    <li><a href="Offres commerciales">Offres commerciales</a></li>
-                                </ul>                            
-                        </ul>
-                    </li>
-                    <li>* Votre message :</li>
-                </ul>
-        </div>
-        <div class="Réseaux sociaux">
-            <div>Retrouvez-vous sur nos réseaux sociaux !</div>
+        <div class="rapid-access">
+            <h6>Accès rapide</h6>
             <ul>
-                <!-- ATTENTION, CODAGE PROVISOIRE, A MODIF EN BOUTONS-->
-                <img src="./asset/images/logos/facebook_f_logo_(2021).svg" width="52px" height="55px" alt="facebook_f_logo_">
-                <img src="./asset/images/logos/instagram_logo_2016.svg" width="52px" height="55px" alt="instagram_logo_2016">
-                <img src="./asset/images/logos/youtube_social_white_square_(2017).svg" width="52px" height="55px" alt="youtube_social_white_square_">
-                <img src="./asset/images/logos/linkedIn_icon.svg" width="52px" height="55px" alt="linkedIn_icon">
-                <img src="./asset/images/logos/Google-My-Business_logo.svg" width="52px" height="55px" alt="Google-My-Business_logo">
+                <li><a href="newsletter registration.html">Inscription newsletter</a></li>
+                <li><a href="aboutus.html">Qui sommes nous ?</a></li>
+                <li><a href="offers.html">Nos offres d'emploi</a></li>
+                <li><a href="customers' opinion.html">Avis client</a></li>
+                <li><a href="sitemap.html">Plan du site</a></li>
             </ul>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> 
+        <div class="to-contact">
+            <h6>Contact</h6>
+            <ul>
+                <li><a href="phone">01.23.45.67.89</a></li>
+                <li><a href="mail">contact@acgdimmo.fr</a></li>
+                <li><a href="contact.html">saint-junien</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>acgdimmo©</p>
+        </div>
         
-    </main>
+     </footer>     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+
 </html>
