@@ -1,13 +1,11 @@
-
 /*
-ajouter image a droite des offres, améliorer les offres,
+améliorer les offres,
 améliorer le paging 
 optimiser le code
 terminer le code 
 
 font-size: calc   (min value + (max value - min value) * ((100vw - bp min) / (bp max - bp min)));
 avec bp = break point
-
 
 */
 

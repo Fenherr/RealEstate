@@ -14,6 +14,11 @@ a {
     src: url(/asset/fonts-family/Baloo2-Medium.ttf)  format(truetype);
 }
 
+@font-face {
+    font-family: "opensans";
+    src: url(/asset/fonts-family/OpenSans/OpenSans-Regular.ttf) format(truetype);
+}
+
 /* initialise flex*/
 header {
     display: flex;
@@ -139,3 +144,14 @@ footer div {
     margin-left: 12px;
     margin-bottom: 12px;
 }
+/*---------------------------------------*/
+
+/* Add media query */
+
+@media all AND (max-width:768px)
+    {
+        nav {
+            display: none;
+        }
+    }
+
