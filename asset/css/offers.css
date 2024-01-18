@@ -1,9 +1,15 @@
 
-/*  Diminuer la hauteur du formulaire choix du contrat, 
-ajouter image a droite des offres, améliorer les offres, ajouter image de carte à droite des offres
+/*
+ajouter image a droite des offres, améliorer les offres,
 améliorer le paging 
 optimiser le code
-terminer le code */
+terminer le code 
+
+font-size: calc   (min value + (max value - min value) * ((100vw - bp min) / (bp max - bp min)));
+avec bp = break point
+
+
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600; 1 700 ; 1 800 & display=swap');
@@ -38,6 +44,10 @@ body header nav a:hover {
 #user-logo {
     text-decoration: none;
     margin-top: 0.738px;
+}
+
+#user-logo:hover {
+    font-weight: bold;
 }
 
 .auth:hover {
