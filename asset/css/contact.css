@@ -19,8 +19,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
+ }
+    
 .logo {
     padding: 10px;
 }
@@ -68,6 +68,8 @@ header {
 }
 
 h4 {
+    background-color: #b1f3bc; 
+    margin-right: 50%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -75,10 +77,6 @@ h4 {
 label-message {
     height: max-content;
  
-}
-
-.obligatoire {
-    color: red;
 }
 
 
@@ -95,7 +93,9 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
-
+}
+footer a {
+    color: aliceblue;
 }
 footer a:hover {
     color: aliceblue;
@@ -104,7 +104,8 @@ footer a:hover {
 
 .social-networks {
     img{
-        .contrast{filter: contrast(300%);}
+        /*.contrast{filter: contrast(300%);}*/
+        color: aliceblue;
     }
 }
 
@@ -114,6 +115,14 @@ footer a:hover {
 .copyright {
     display: flex;
     justify-content: center;
-    align-items: last baseline;
-
+    text-align: center;
 }
+
+/*medias query*/
+@media all AND (max-width:768px)
+    {
+        nav {
+            display: none;
+        }
+    }
+
