@@ -110,11 +110,15 @@ a:hover {
     font-family: 'Open sans', sans-serif;
 }
 
-/*#local_align i {
+.input_icon {
+    position: relative;
+}
+
+.input_icon_search+i {
     position: absolute;
-    top: 55%;
-    left: 39%;
-}*/
+    top: 8px;
+    left: 117px;
+}
 
 input[type="text"]:focus {
 	outline:none;
@@ -494,4 +498,53 @@ i[class="fa-solid fa-bed"] {
     color: #ffffff;
     padding-bottom: 30px;
     font-family: 'Open sans', sans-serif;
+}
+
+/*menu burger*/
+.menu_burger {
+    display: flex;
+    justify-content: flex-start;
+    display: none;
+}
+
+
+@media all and (max-width: 576px) {
+        nav ul li {
+            display: none;
+        }
+
+        .auth {
+            display: none;
+        }
+
+        .logo img {
+            width: 55%;
+        }
+
+        .menu_burger {
+            display: block;
+        }
+
+        
+
+    }
+
+@media all and (max-width: 768px) {
+    
+    }
+
+}
+@media all and (max-width: 992px) {
+    
+    }
+
+}
+
+@media all and (max-width: 1200px) {
+    
+
+}
+
+@media all and (max-width: 1400px) {
+    
 }
