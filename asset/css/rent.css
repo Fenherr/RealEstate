@@ -139,3 +139,14 @@ footer div {
     margin-left: 12px;
     margin-bottom: 12px;
 }
+/*---------------------------------------*/
+
+/* Add media query */
+
+@media all AND (max-width:768px)
+    {
+        nav {
+            display: none;
+        }
+    }
+
