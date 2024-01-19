@@ -70,9 +70,18 @@ header {
 h4 {
     background-color: #b1f3bc; 
     margin-right: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 1%;
+    
 }
+
+name, first-name, email {
+    background-color: #b1f3bc;
+    justify-content: space-between;
+    
+    
+    
+}
+    
 
 label-message {
     height: max-content;
@@ -119,10 +128,14 @@ footer a:hover {
 }
 
 /*medias query*/
-@media all AND (max-width:576px)
+@media all AND (max-width:579px)
     {
         nav {
             display: none;
         }
+        .logo-my-account {
+            display: none;
+        }
     }
+
 
