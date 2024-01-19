@@ -14,6 +14,11 @@ a {
     src: url(/asset/fonts-family/Baloo2-Medium.ttf)  format(truetype);
 }
 
+@font-face {
+    font-family: "opensans";
+    src: url(/asset/fonts-family/OpenSans/OpenSans-Regular.ttf) format(truetype);
+}
+
 /* initialise flex*/
 header {
     display: flex;
