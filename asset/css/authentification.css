@@ -1,0 +1,47 @@
+/* style qui s'applique à l'ensemble de la page*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+/*style qui s'applique au header*/
+
+header{
+     width: 100%;
+     background-color: #B1F3BC;
+     margin:auto;
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+    }
+
+ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 15px;
+}
+
+/*style qui s'applique a*/
+
+.logoacgd{
+margin-left:30px;
+margin-top:10px;
+margin-bottom:10px;    
+}
+
+
+
+   
+
+
+
+
+
+
+
