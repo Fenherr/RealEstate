@@ -114,10 +114,14 @@ h5 {
 fieldset {
     margin-right: 250px;
     margin-left: 250px;
-    box-shadow: 0 0 15px #000000;
     border-radius: 10px;
-    
+    margin-bottom: 180px;
 }
+
+.class1 {
+    box-shadow: 0 0 15px #000000;x
+}
+
 
 #Appart {
     font-size: 25px;
@@ -156,14 +160,14 @@ h3 {
 
 .esti {
     margin-top: 20px;
-    height: 400px;
+    height: 265px;
     border-radius: 10px;
 }
 
 .onesti {
     margin-top: 20px;
-    margin-left: 146px;
-    height: 400px;
+    margin-left: 22px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -176,7 +180,7 @@ h3 {
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 15px;
-    margin-left: 228px;
+    margin-left: 76px;
 }
 
 .ensaone{
@@ -188,12 +192,12 @@ h3 {
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 15px;
-    margin-left: 207px;
+    margin-left: 124px;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -203,10 +207,8 @@ p{
     margin-right: 10px;
     background-color: #e2fbb7;
     padding: 10px;
-    box-shadow: #e2fbb7;
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
-    align-items: center;
     margin-bottom: 15px;
     
 }
@@ -216,33 +218,41 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
-    
-
-}
-
-.contenu-footer {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 50px 0 100px;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    
 }
 
-.footer-service,
-.footer-quick,
-.footer-contact {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.liste-quick,
-.liste-contact,
-.liste-services {
+.titre-footer {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
-h4 {
-    width: 100%;
+li {
+    list-style-type: none;
+}
+
+.footer-service,
+.footer-text,
+.footer-quick,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.Adresse input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.information {
+    display: flex;
+    margin: 10px;
+    width: 10px;
+    margin-top: 232px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }

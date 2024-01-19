@@ -43,23 +43,23 @@
 
 <form>
         <!--Case d'estimation-->
-    <fieldset>
+    <fieldset class="class1" >
     <h5>Il s'agit d'un :</h5>
     
     <div class="selection">
-        <input type="checkbox" id="Appart">
+        <input type="radio" id="Appart" name="group">
         <label for="exampleUniq">Appartement</label>
     <div class="selection">
-        <input type="checkbox" id="Appart">
+        <input type="radio" id="Appart" name="group">
         <label for="exampleUniq">Maison</label>
       </div>
     <h5>C'est pour une :</h5>
     <div class="selection">
-        <input type="checkbox" id="Appart" name="interest" value="Location">
+        <input type="radio" id="Appart" name="interest" value="Location">
         <label for="Location">Location</label>
       </div>
     <div class="selection">
-        <input type="checkbox" id="Appart" name="interest" value="Vente">
+        <input type="radio" id="Appart" name="interest" value="Vente">
         <label for="Vente">Vente</label>
       </div>
     <h5>Adresse :</h5>
@@ -72,9 +72,11 @@
     </fieldset>
 </form>
         <!--Partie information-->
+
 <div class="info">
+<fieldset class="information">
     <article class="container">
-        <img class="esti" src="./asset/images/estimation immobilière.jpeg">
+        <img class="esti" src="./asset/images/rent/estimate/estimation immobilière.jpeg">
         <h3><a href="##">En quoi consiste l'estimation immobilière ?</a></h3>
         <p>Cras orci mauris, finibus ac pellentesque 
             a, eleifend eu lectus. Vivamus felis augue, 
@@ -83,8 +85,10 @@
             ornare. Donec sed auctor arcu, at porta ante.</p>
             <button class="ensaone">En savoirs plus</button>
     </article>
+</fieldset>
+<fieldset class="information">
     <article class="container">
-        <img class="onesti" src="./asset/images/comment faire estimer son bien.jpg" alt="pc">
+        <img class="onesti" src="./asset/images/rent/estimate/Comment faire esti.jpg" alt="pc">
         <h3><a href="##">Comment faire estimer sa maison ?</a></h3>
         <p>Sed dictum velit vestibulum euismod bibendum. 
             Pellentesque cursus sit amet odio ac iaculis.
@@ -95,42 +99,53 @@
 
     <button class="ensa">En savoirs plus</button>
     </article>
+</fieldset>
 </div>
 
 
 <footer>
-        <!--Footer-->
-    <div class="contenu-footer">
-
-        <div class="footer-service">
-            <h4>Nos services</h4>
-            <ul class="liste-services">
-                <li><a href="#">Achat</a></li>
-                <li><a href="#">Vendre</a></li>
-                <li><a href="#">Louer</a></li>
-            </ul>
+<div>
+    <!--Footer-->
+    <div class="logo-text">
+        <a href="index.html">
+            <img src="asset/images/logo_white_150.png" alt="logo" width="115">
+        </a>
+        <div class="footer-text">Retrouvez nous sur nos réseaux sociaux</p>
         </div>
-
-        <div class="footer-quick">
-            <h4>Accès rapide</h4>
-            <ul class="liste-quick">
-                <li><a href="#">Inscription newsletter</a></li>
-                <li><a href="#">Qui sommes-nous ?</a></li>
-                <li><a href="#">Nos offres d'emploi</a></li>
-                <li><a href="#">Avis client</a></li>
-                <li><a href="#">Plan du site</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Contact</h4>
-            <ul class="liste-contact">
-                <li>06.08.16.43.22</li>
-                <li>contact@acgdimmo.fr</li>
-                <li>Sain-Junien</li>
-            </ul>
+        <div class="footer-logos">
+            <a href="#"><img src="asset/images/offers/insta.png" alt="" width="45"></a>
+            <a href="#"><img src="asset/images/offers/twitter.png" alt="" width="40"></a>
+            <a href="#"><img src="asset/images/offers/fb.png" alt="" width="45"></a>
         </div>
     </div>
+    <div class="footer-service">
+        <p class="titre-footer">Services</p>
+        <li><a href="#">Acheter</a></li>
+        <li><a href="#">Louer</a></li>
+        <li><a href="#">Vendre</a></li>
+    </div>
+    <div class="footer-quick">
+        <p class="titre-footer">Accès rapide</p>
+        <li><a href="#">Inscription newsletter</a></li>
+        <li><a href="#">Qui sommes-nous ?</a></li>
+        <li><a href="#">Nos offres d'emploi</a></li>
+        <li><a href="#">Avis client</a></li>
+        <li><a href="#">Plan du site</a></li>
+    </div>
+    <div class="footer-contact">
+        <p class="titre-footer">Contact</p>
+        <section class="last-footer">
+        <li><a href="#">06.08.16.45.22</a></li>
+        <li><a href="#">contact@acgdimmo.fr</a></li>
+        <li><a
+            href="https://www.google.fr/maps/place/87200+Saint-Junien/@45.8964635,0.8029236,12z/data=!3m1!4b1!4m6!3m5!1s0x47feeadaef87b0c9:0x8b265b0dc126d53e!8m2!3d45.88716!4d0.901165!16zL20vMDh6Xzkz?entry=ttu">Saint-Junien</a></li>
+        </section>
+    </div>
+
+    <div class="copyright">
+        <p>acgdimmo&copy</p>
+    </div>
+</div>
 </footer>
 </body>
 </html>
