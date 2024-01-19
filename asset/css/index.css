@@ -505,40 +505,96 @@ i[class="fa-solid fa-bed"] {
 
 
 @media all and (max-width: 576px) {
-        nav ul li {
-            display: none;
+
+    html,body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+    nav ul li {
+        display: none;
         }
 
-        .auth {
-            display: none;
-        }
+    .logo-mon-compte {
+        display: none;
+    }
 
-        .logo img {
-            width: 55%;
-        }
+    .logo img {
+        width: 55%;
+    }
 
-        .menu_burger {
-            display: block;
-        }
+    .menu_burger {
+        display: block;
+    }
+
+    .banner {
+        padding: 0 0;
+    }
+
+    .search {
+        background-color: inherit;
+        
+    }
+
+    .menu_search {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        margin: 0 auto; 
+    }
+
+    .menu_search_deco {
+        margin-top: 5px;
+        width: 20rem;
+    }
+
+    .input_icon_search + i {
+        top: 13px;
+        left: 300px;
+    }
+
+    .news_slide {
+        flex-wrap: wrap;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
     }
 
-@media all and (max-width: 768px) {
-    
+    .news_1,news_2 {
+        margin-bottom: 2rem;
+    }
+
+    .news {
+        padding-bottom: 3rem;
+    }
+
+    .news h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .sell_slide {
+        flex-wrap: wrap;
     }
 
 }
-@media all and (max-width: 992px) {
+
+@media all and (max-width: 767px) {
     
-    }
+ }
+
+@media all and (min-width: 768px) {
+    
+}
+
+
+@media all and (min-width: 992px) {
+    
 
 }
 
-@media all and (max-width: 1200px) {
-    
-
-}
-
-@media all and (max-width: 1400px) {
+@media all and (min-width: 1200px) {
     
 }
+
+    
