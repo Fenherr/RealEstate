@@ -23,6 +23,7 @@ a {
     font-size: 1.4rem;
 }
 .flex {
+    
     display: flex;
 }
 .justify-content{

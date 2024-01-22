@@ -45,15 +45,17 @@ header {
     font-size: 1.4rem;
     padding: 0.675rem;
 }
-/*A MODIFIER*/
+
+/*body*/
+
 a, h1, h2, h3, h4, h5, h6 {
     font-family: "baloo2";
     font-weight: 500;
-    font-size: 20px;
+    font-size: 32px;
 }
 .contact {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
   
 .contactform {
@@ -62,38 +64,67 @@ a, h1, h2, h3, h4, h5, h6 {
     }
 
 .phone {
+    h2, h3 {
+        font-size: 20px;
+    }
     width: 50%;
-    padding: 0 20px;    
+    padding: 0 20px 30px;
+
 }
 
 h4 {
     background-color: #b1f3bc; 
-    margin-right: 50%;
-    margin-bottom: 1%;
-    
+    font-size: 20px;
+    margin-right: 62%;
+    margin-bottom: 1%;    
+}
+ 
+.form {
+    display: flex;
+    justify-content: space-between;
 }
 
 .formatting {
-    #name, #first-name, #email, #subjet-select, #message{
+    #name, #first-name, #email, #subjet-select, #message {
         background-color: #b1f3bc;        
-    }
+    }  
     width: 50%;
-    padding: 0 10px;
+    padding: 0 20px;
 } 
  
-.label-message {
-    height: max-content;
- 
+#subjet, #subjet-selected, #message, #submit {
+    display: block;
+}
+.subject {
+    background-color: #b1f3bc;
+    margin-right: 62%;
+}
+
+#message {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#submit {
+    bottom: 3px;
+    background-color: #E2FBB7;
 }
 
 
-.map {
+.find-us {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    margin-left: 35%;
-    margin-right: auto;
+    justify-content: space-between;
+    width: 80%;
+    padding: 30px 20px 30px 20px;
+   
+    h5 {background-color: #b1f3bc; 
+        font-size: 20px;
+    }
+}
+
+.champs {
+    background-color: #b1f3bc;
+    margin-right: 90%;
+    margin-bottom: 1%;   
 }
 
 footer {
