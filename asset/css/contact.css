@@ -79,7 +79,6 @@ name, first-name, email {
     justify-content: space-between;
     
     
-    
 }
     
 
@@ -93,7 +92,9 @@ label-message {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
-    align-items: center;
+    position: relative;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 footer {
