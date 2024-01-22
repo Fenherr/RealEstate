@@ -22,51 +22,55 @@ a {
     font-size: 1rem;
 }
 /*header : logo et menu*/
-@font-face {
-    font-family: "baloo2";
-    src: url(../fonts-family/Baloo2-Medium.ttf);
-}
-@font-face {
-    font-family: "opensans";
-    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
-}
-:root {
-    --main-color: #b1f3bc;
-}
-* {
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: #000;
-}
-.title-txt {
-    font-family: "Baloo2", sans-serif;
-    font-size: 1.4rem;
-}
-.flex {
-    display: flex;
-}
-.justify-content{
-    justify-content: space-between;
-}
-.align-item{
-    align-items: center;
-}
-.menu li {
-    list-style: none;
-    margin: 0 40px 0 0;
-}
-.menu li:hover, .logo-mon-compte:hover {
-    font-weight: bolder;
+header a {
+    font-size: 1.1rem;;
 }
 
 header {
-    background-color: var(--main-color);
-    font-family: baloo2;
-    font-size: 1.4rem;
-    padding: 0.675rem;
+    display: flex;
+    background-color: #b1f3bc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.2rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 47px 0 5px 5px;
+    width: 100%;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+nav {
+    width: 100%;
+}
+
+.auth {
+   display: flex;
+   margin-top: 47px;
+   list-style: none;
+   width: -webkit-fill-available;
+   width: 100%;
+   justify-content: flex-end;
+   padding-right: 30px;
+}
+
+i[class="fa-regular fa-user"] {
+    position: relative;
+    top: -2px;
+    padding-right: 5px;
+}
+
+a:hover {
+    font-weight: 600;
 }
 /*bannière avec fonction recherche*/
 .banner {
@@ -505,96 +509,40 @@ i[class="fa-solid fa-bed"] {
 
 
 @media all and (max-width: 576px) {
-
-    html,body {
-        overflow-x: hidden;
-        width: 100%;
-      }
-
-    nav ul li {
-        display: none;
+        nav ul li {
+            display: none;
         }
 
-    .logo-mon-compte {
-        display: none;
-    }
+        .auth {
+            display: none;
+        }
 
-    .logo img {
-        width: 55%;
-    }
+        .logo img {
+            width: 55%;
+        }
 
-    .menu_burger {
-        display: block;
-    }
-
-    .banner {
-        padding: 0 0;
-    }
-
-    .search {
-        background-color: inherit;
-        
-    }
-
-    .menu_search {
-        flex-direction: column;
-        justify-content: none;
-        align-items: center;
-        margin: 0 auto; 
-    }
-
-    .menu_search_deco {
-        margin-top: 5px;
-        width: 20rem;
-    }
-
-    .input_icon_search + i {
-        top: 13px;
-        left: 300px;
-    }
-
-    .news_slide {
-        flex-wrap: wrap;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        .menu_burger {
+            display: block;
+        }
 
     }
 
-    .news_1,news_2 {
-        margin-bottom: 2rem;
+@media all and (max-width: 768px) {
+    
     }
 
-    .news {
-        padding-bottom: 3rem;
-    }
-
-    .news h1 {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .sell_slide {
-        flex-wrap: wrap;
+}
+@media all and (max-width: 992px) {
+    
     }
 
 }
 
-@media all and (max-width: 767px) {
-    
- }
-
-@media all and (min-width: 768px) {
-    
-}
-
-
-@media all and (min-width: 992px) {
+@media all and (max-width: 1200px) {
     
 
 }
 
-@media all and (min-width: 1200px) {
+@media all and (max-width: 1400px) {
     
 }
-
-    
