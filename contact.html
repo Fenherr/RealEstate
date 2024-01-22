@@ -43,11 +43,12 @@
             <h3><i>Contacter l'agence au 01.23.45.67.89</i></h3>
         </article>
     </section>
-    <section>
-        <article class="formatting">
-            <form action="form">
-                <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
 
+
+        <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
+    <section class="form">  
+        <article class="formatting">
+            <form action="form">                
                 <label for="name">
                     <input type="text" id="name" placeholder="Nom :">
                 </label>
@@ -58,8 +59,12 @@
 
                 <label for="email">
                     <input type="email" name="" id="email" placeholder="Email :">
-                </label>
-               
+                </label>      
+            </form>
+        </article>
+
+        <article class="formatting">   
+            <form action="form"> 
                 <label for="subjet-select">Sujet :</label>
                 <select id="subjet-select">
                     <optgroup label="Particuliers">
@@ -69,7 +74,7 @@
                         <option value="">Vendre son bien</option>
                         <option value="">L'alerte immo</option>
                         <option value="">Données personnelles : exercer mes droits</option>
-                        <option value="">Problèmes techniques sur le site</option>
+                         <option value="">Problèmes techniques sur le site</option>
                     </optgroup>
                     <optgroup label="Professionnels">
                         <option value="">Partenariat</option>
@@ -83,8 +88,7 @@
                     <textarea name="textarea" rows="5" cols="30" id="message" placeholder="Votre message :"></textarea>
                 </label>
 
-                <button type="submit">Envoyer</button>          
-                
+                <button type="submit">Envoyer</button>  
             </form>            
         </article>
     </section>
