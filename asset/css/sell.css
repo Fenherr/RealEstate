@@ -14,12 +14,12 @@
 @font-face {
     font-family: "Baloo 2";
     src: 
-        url("/asset/fonts-family/Baloo2-Medium.ttf") format(truetype);
+        url("../fonts-family/Baloo2-Medium.ttf") format(truetype);
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url("/asset/fonts-family/OpenSans/OpenSans-Regular.ttf") format(truetype);
+    src: url("../fonts-family/OpenSans/OpenSans-Regular.ttf") format(truetype);
 }
 
 
@@ -122,6 +122,33 @@ nav li a.active:hover,
     font-size: 1.1rem;
 }
 
+#check, .checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+@media all and (max-width: 830px) {
+    
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        color: black;
+        float: right;
+    }
+
+    nav ul {
+        display: none!important;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    .account-connexion {
+        display: none;
+    }
+
+}
 
 /*********** Main ***********/
 
