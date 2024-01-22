@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resp-1.css">
     <title>CONTACT</title>
     <!--lien pour bonhomme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,17 +10,15 @@
 </head>
 <body>
 <!--creation du header-->
-<header>
-    <div class="logo">
-        <img src="./asset/images/logo x150.png" alt="logo" width="150" height="75">
-    </div>
+<header class="flex justify-content align-item">    
+    <img class="logo" src="./asset/images/logo x150.png" alt="logo">
     <nav>
-        <ul class="menu">
-            <li><a href="buy.html">Acheter</a></li>
-            <li><a href="rent.html">Louer</a></li>
-            <li><a href="sell.html">Vendre</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <ul class="menu flex justify-content">
+            <li><a class="title-txt" href="buy.html">Acheter</a></li>
+            <li><a class="title-txt" href="rent.html">Louer</a></li>
+            <li><a class="title-txt" href="sell.html">Vendre</a></li>
+            <li><a class="title-txt" href="contact.html">Contact</a></li>
+        </ul>            
     </nav>
     <div class="logo-mon-compte">
         <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
@@ -46,49 +43,53 @@
             <h3><i>Contacter l'agence au 01.23.45.67.89</i></h3>
         </article>
     </section>
-    <section>
-        <article>
-            <form action="form">
-                <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
 
+
+        <h4>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</h4>
+    <section class="form">  
+        <article class="formatting">
+            <form action="form">                
                 <label for="name">
-                    <input type="text" placeholder="Nom :">
+                    <input type="text" id="name" placeholder="Nom :">
                 </label>
 
                 <label for="first-name">
-                    <input type="text" placeholder="Prénom :">
+                    <input type="text" id="first-name" placeholder="Prénom :">
                 </label>
 
                 <label for="email">
-                    <input type="email" name="" id="" placeholder="Email :">
+                    <input type="email" name="" id="email" placeholder="Email :">
+                </label>      
+            </form>
+        </article>
+
+        <article class="formatting">   
+            <form action="form"> 
+                <label for="subjet-select">Sujet :</label>
+                <select id="subjet-select">
+                    <optgroup label="Particuliers">
+                        <option value="">Mon espace personnel</option>
+                        <option value="">Mon profil locataire</option>
+                        <option value="">Recherche d'un bien</option>
+                        <option value="">Vendre son bien</option>
+                        <option value="">L'alerte immo</option>
+                        <option value="">Données personnelles : exercer mes droits</option>
+                         <option value="">Problèmes techniques sur le site</option>
+                    </optgroup>
+                    <optgroup label="Professionnels">
+                        <option value="">Partenariat</option>
+                        <option value="">Régie publicitaire</option>
+                        <option value="">Offres commerciales</option>
+                    </optgroup>
+                </select>
                 </label>
-            </form>
 
-            <label for="subjet-select">Sujet :</label>
-            <select id="subjet-select">
-                <optgroup label="Particuliers">
-                    <option value="">Mon espace personnel</option>
-                    <option value="">Mon profil locataire</option>
-                    <option value="">Recherche d'un bien</option>
-                    <option value="">Vendre son bien</option>
-                    <option value="">L'alerte immo</option>
-                    <option value="">Données personnelles : exercer mes droits</option>
-                    <option value="">Problèmes techniques sur le site</option>
-                </optgroup>
-                <optgroup label="Professionnels">
-                    <option value="">Partenariat</option>
-                    <option value="">Régie publicitaire</option>
-                    <option value="">Offres commerciales</option>
-                </optgroup>
-            </select>
-            </label>
+                <label for="message">
+                    <textarea name="textarea" rows="5" cols="30" id="message" placeholder="Votre message :"></textarea>
+                </label>
 
-            <label for="message">
-                <textarea name="textarea" rows="5" cols="30" placeholder="Votre message :"></textarea>
-            </label>
-
-            <button type="submit">Envoyer</button>
-            </form>
+                <button type="submit">Envoyer</button>  
+            </form>            
         </article>
     </section>
 
