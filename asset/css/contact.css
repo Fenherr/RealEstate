@@ -1,60 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600; 1 700 ; 1 800 & display=swap');
-
+@font-face {
+    font-family: "baloo2";
+    src: url(../fonts-family/Baloo2-Medium.ttf);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
+}
+:root {
+    --main-color: #b1f3bc;
+    --third-color: white;
+}
 * {
     padding: 0;
     margin: 0;
 }
-
 a {
     text-decoration: none;
-}
-a, h1, h2, h3, h4, h5, h6 {
-    font-family: "baloo 2";
-    font-weight: 500;
-    font-size: 20px;
-}
-header {
-    background-color: #b1f3bc; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
-    
-.logo {
-    padding: 10px;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-}
-
-.menu li {
-    margin-right: 44px;
-}
-
-.menu a {
-    font-size: 24px;
-        color: black;
-}
-
-.menu a:hover {
-    color: black;
-    font-weight: bolder;
-}
-
-.logo-my-account {
-    color: black;
-}
-.logo-my-account a:hover {
     color: #000;
+}
+.title-txt {
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.4rem;
+}
+.flex {
+    display: flex;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.align-item{
+    align-items: center;
+}
+.menu li {
+    list-style: none;
+    margin: 0 40px 0 0;
+}
+.menu li:hover, .logo-mon-compte:hover {
     font-weight: bolder;
 }
 
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    font-size: 1.4rem;
+    padding: 0.675rem;
+}
+
+/*body*/
+
+a, h1, h2, h3, h4, h5, h6 {
+    font-family: "baloo2";
+    font-weight: 500;
+    font-size: 32px;
+}
 .contact {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
   
 .contactform {
@@ -63,28 +64,67 @@ header {
     }
 
 .phone {
+    h2, h3 {
+        font-size: 20px;
+    }
     width: 50%;
-    padding: 0 20px;    
+    padding: 0 20px 30px;
+
 }
 
 h4 {
     background-color: #b1f3bc; 
-    margin-right: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 20px;
+    margin-right: 62%;
+    margin-bottom: 1%;    
 }
-
-label-message {
-    height: max-content;
  
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formatting {
+    #name, #first-name, #email, #subjet-select, #message {
+        background-color: #b1f3bc;        
+    }  
+    width: 50%;
+    padding: 0 20px;
+} 
+ 
+#subjet, #subjet-selected, #message, #submit {
+    display: block;
+}
+.subject {
+    background-color: #b1f3bc;
+    margin-right: 62%;
+}
+
+#message {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#submit {
+    bottom: 3px;
+    background-color: #E2FBB7;
 }
 
 
-.map {
+.find-us {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 30px 20px 30px 20px;
+   
+    h5 {background-color: #b1f3bc; 
+        font-size: 20px;
+    }
+}
+
+.champs {
+    background-color: #b1f3bc;
+    margin-right: 90%;
+    margin-bottom: 1%;   
 }
 
 footer {
@@ -119,10 +159,14 @@ footer a:hover {
 }
 
 /*medias query*/
-@media all AND (max-width:768px)
+@media all AND (max-width:579px)
     {
         nav {
             display: none;
         }
+        .logo-my-account {
+            display: none;
+        }
     }
+
 

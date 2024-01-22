@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "baloo2";
+    src: url(../fonts-family/Baloo2-Medium.ttf);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
+}
+:root {
+    --main-color: #b1f3bc;
+    --third-color: white;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.title-txt {
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.4rem;
+}
+.flex {
+    display: flex;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.align-item{
+    align-items: center;
+}
+.menu li {
+    list-style: none;
+    margin: 0 40px 0 0;
+}
+.menu li:hover, .logo-mon-compte:hover {
+    font-weight: bolder;
+}
+
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    font-size: 1.4rem;
+    padding: 0.675rem;
+}
+
+footer {
+    background-color: #1f1f1f;
+    font-size: 1.1rem;
+
+}
+
+.social-media {
+    color: var(--third-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+}
+
+footer p, footer h2, footer li {
+    color: var(--third-color);
+}
+
+.colonne {
+    display: flex;
+    padding-top: 0.675rem;
+}
+
+footer ul {
+    flex-flow: column;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-service, .footer-acces, .footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-acces, .footer-contact, .footer-service {
+    padding-left: 6rem;
+}
+
+.copyright {
+    padding-bottom: 0.675rem;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: 73px;
+}

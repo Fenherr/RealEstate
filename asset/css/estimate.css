@@ -1,248 +1,85 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #b1f3bc;
-    color: black;
-    padding-top: 3px;
-    width: 100%;
-
-}
-
-a {
-    color: black;
-    text-decoration: none;
-
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 100%;
-    margin-left: 250px;
-    margin-right: 250px;
-    font-size: 15px;
-}
-
-h2 {
+h3 {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-family: 'Baloo 2', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.5rem;
 }
 
-.info {
+fieldset {
+    margin-right: 10rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+h5 {
+    margin: 1rem;
+    margin-top: 1rem;
+    font-size: 0.950rem;
+    font-family: "opensans", sans-serif;
+}
+
+.selection {
+    margin-left: 1.5rem;
+    font-size: 0.850rem;
+    font-family: "opensans", sans-serif;
+}
+
+.adresse {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    font-family: "opensans", sans-serif;
+}
+
+.adresse input {
+    border-radius: 0.880rem;
+    margin-right: 5rem;
+}
+
+.valider {
+    display: block;
+    font-size: 0.850rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    background-color: #e2fbb7;
+    padding: 1rem;
+    border-radius: 0.88rem;
+    margin-bottom: 1rem;
+    font-family: "opensans", sans-serif;
+}
+
+.information {
     display: flex;
     justify-content: space-around;
 }
 
-
-.container {
-    max-width: 600px;
-    margin: 20px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0,3);
+.estimation-immo {
+    margin-top: 8rem;
 }
 
-
-button {
-    background: transparent;
+.info {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.88rem;
 }
 
-button::after {
-    content: ;
-    width: 300px;
-    height: 300px;
-    background: #b1f3bc;
+.info p {
+    font-family: "opensans", sans-serif;
+    text-align: justify;
+    font-size: 0.85rem;
 }
 
-.menu {
-    display: flex;
-    gap: 40px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-form {
-    justify-content: center;
-    margin: 15px;
-}
-
-h5 {
-    margin: 15px;
-    margin-top: 25px;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    
-}
-
-.Adresse {
-    margin-bottom: 20px;
-    margin-top: 15px;
-    margin-right: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-}
-
-.selection {
-    margin-left: 20px;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.titre {
-    display: flex;
-    justify-content: center;
-}
-
-fieldset {
-    margin-right: 250px;
-    margin-left: 250px;
-    box-shadow: 0 0 15px #000000;
-    border-radius: 10px;
-    
-}
-
-#Appart {
-    font-size: 25px;
-}
-
-.account {
+.ensaone {
     display: block;
-    font-size: 15px;
-    margin-right: 10px;
+    font-size: 0.84rem;
     background-color: #e2fbb7;
-    padding: 10px;
-    box-shadow: #e2fbb7;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-    align-items: center;
-
-}
-
-input {
-    border-radius: 14px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-h3 {
-   display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-family: 'Baloo 2', sans-serif; 
-}
-
-.logo {
-    max-width: 100%;
-    height: auto;
-}
-
-.esti {
-    margin-top: 20px;
-    height: 400px;
-    border-radius: 10px;
-}
-
-.onesti {
-    margin-top: 20px;
-    margin-left: 146px;
-    height: 400px;
-    border-radius: 10px;
-}
-
-.ensa {
-    display: block;
-    font-size: 15px;
-    margin-right: 10px;
-    background-color: #e2fbb7;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 15px;
-    margin-left: 228px;
-}
-
-.ensaone{
-    display: block;
-    font-size: 15px;
-    margin-right: 10px;
-    background-color: #e2fbb7;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 15px;
-    margin-left: 207px;
-}
-
-p{
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-}
-
-
-.valider {
-    display: block;
-    font-size: 15px;
-    margin-right: 10px;
-    background-color: #e2fbb7;
-    padding: 10px;
-    box-shadow: #e2fbb7;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-    align-items: center;
-    margin-bottom: 15px;
-    
-}
-
-footer {
-    border-top: 1px;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    
-
-}
-
-.contenu-footer {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 50px 0 100px;
-}
-
-.footer-service,
-.footer-quick,
-.footer-contact {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.liste-quick,
-.liste-contact,
-.liste-services {
-    flex-direction: column;
-}
-
-h4 {
-    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.88rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-family: "opensans", sans-serif;
 }
