@@ -8,28 +8,23 @@
     <title>Page de vente</title>
 </head>
 <body>
-    <header class="flex">
-        <a class="hover-low-opacity" href="index.html">
-            <img id="head_logo" src="asset/images/logo x150.png" alt="Logo ACGDImmo" width="133" height="">
-        </a>
+    <header class="flex justify-content align-item">    
+        <img class="logo" src="./asset/images/logo x150.png" alt="logo">
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <ul class="flex">
+            <ul class="menu flex justify-content">
                 <li><a class="title-txt" href="buy.html">Acheter</a></li>
                 <li><a class="title-txt" href="rent.html">Louer</a></li>
-                <li><a class="title-txt active" href="sell.html">Vendre</a></li>
+                <li><a class="title-txt" href="sell.html">Vendre</a></li>
                 <li><a class="title-txt" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button class="account-connexion" type="button">
-            <a class="flex" href="">
-                <i class="fa-solid fa-user"></i>
-                <h2 class="title-txt">Mon compte</h2>
-            </a>
-        </button>
+        <div class="logo-mon-compte">
+            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+        </div>
     </header>
 
     <main>
@@ -43,8 +38,8 @@
         
         <section class="flex full-width">
             <article class="step-block flex">
-                <img src="asset/images/sell/serre-main.png" alt="Photo serrant la main">
-                <div class="flex">
+                <img src="asset/images/sell/serre-main.png" class="full-width" alt="Photo serrant la main">
+                <div class="flex align-item full-width">
                     <p class="number_point">1</p>
                     <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
@@ -54,8 +49,8 @@
             </article>
     
             <article class="step-block flex">
-                <img src="asset/images/sell/rappel.png" alt="Photo appel téléphonique">
-                <div class="flex">
+                <img src="asset/images/sell/rappel.png" class="full-width" alt="Photo appel téléphonique">
+                <div class="flex align-item full-width">
                     <p class="number_point">2</p>
                     <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
@@ -72,7 +67,7 @@
         </div>
     </main>
 
-    <footer class="flex">
+    <footer class="flex footer full-width">
         <div class="identity">
             <a href="index.html">
                 <img class="hover-low-opacity" src="asset/images/logo_white_150.png" alt="Logo ACGDImmo" width="200px" height="">

@@ -1,6 +1,7 @@
 /*********** var ***********/
 :root {
     --main-color:rgba(177, 243, 188, 1);
+    --third-color: white;
     --related-green-color: #E2FBB7;
     --footer-color: #1F1F1F;
     --border-size: 3px;
@@ -12,27 +13,45 @@
 
 /*********** Font ***********/
 @font-face {
-    font-family: "Baloo 2";
+    font-family: "baloo2";
     src: 
         url("../fonts-family/Baloo2-Medium.ttf") format(truetype);
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: "opensans";
     src: url("../fonts-family/OpenSans/OpenSans-Regular.ttf") format(truetype);
 }
 
 
 /*********** Global ***********/
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .title-txt {
-    font-family: "Baloo 2", sans-serif;
+    font-family: "Baloo2", sans-serif;
     font-size: 1.4rem;
 }
 
 .title-txt.active,
 .account-connexion.active h2 {
     font-weight: bold;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+
+.align-item {
+    align-items: center;
 }
 
 p, a, ul {
@@ -50,7 +69,6 @@ footer h2 {
 }
 
 body {
-    margin: 0;
     width: 100%;
 }
 
@@ -75,51 +93,17 @@ button, a {
 
 header {
     background-color: var(--main-color);
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 var(--margin-left-document) 0 var(--margin-left-document);
+    font-family: baloo2;
+    padding: 0.675rem;
+    font-size: 1.4rem;
 }
 
-header a {
-    height: 78px;
-}
-
-#head_logo {
-    padding: 10px 0 3px;
-    overflow: hidden;
-}
-
-nav li {
+.menu li {
+    list-style: none;
     margin: 0 40px 0 0;
 }
-
-nav li a:hover,
-.account-connexion a:hover h2 {
-    font-weight: bold;
-}
-
-nav li a.active:hover,
-.account-connexion.active a:hover h2 {
-    font-weight: lighter;
-    text-shadow: white 1px 1px 0;
-}
-
-.account-connexion {
-    background-color: var(--main-color);
-    border: none;
-}
-
-.account-connexion h2 {
-    font-weight: normal;
-}
-
-.account-connexion a {
-    align-items: center;
-    gap: 10px;
-}
-
-.fa-user {
-    font-size: 1.1rem;
+.menu li:hover, .logo-mon-compte:hover {
+    font-weight: bolder;
 }
 
 #check, .checkbtn {
@@ -127,25 +111,18 @@ nav li a.active:hover,
     cursor: pointer;
 }
 
-@media all and (max-width: 830px) {
+@media all and (max-width: 768px) {
     
     .checkbtn {
         display: block;
         font-size: 30px;
+        padding-right: 0.675rem;
         color: black;
         float: right;
     }
 
-    nav ul {
+    .menu, .logo-mon-compte {
         display: none!important;
-    }
-
-    nav li {
-        display: block;
-    }
-
-    .account-connexion {
-        display: none;
     }
 
 }
@@ -167,6 +144,7 @@ nav li a.active:hover,
 
 .top-content img {
     height: 100%;
+    width: 70%;
     margin-top: 0;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     filter: blur(3px);
@@ -181,13 +159,40 @@ nav li a.active:hover,
     text-align: center;
 }
 
-h1.title-txt {
-    margin-bottom: 5px;
+.top-content h1.title-txt {
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
+    line-height: 1.9rem;
 }
 
 .top-content .content-text {
     margin: 0;
+    line-height: 1.5rem;
+}
+
+@media all and (max-width: 1070px) {
+
+    .top-content {
+        margin-bottom: 0.5rem;
+    }
+
+    .title-absolute {
+        position: static;
+        padding-top: 15px;
+    }
+
+    .top-content img {
+        border-radius: 0 0 3rem 3rem;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .top-content img {
+        width: 100%;
+    }
+
 }
 
     /*********** step block ***********/
@@ -208,13 +213,17 @@ section {
     align-items: center;
     background-color: var(--main-color);
     border-radius: var(--border-radius);
-    width: 35%;
+    width: 40%;
+    padding: var(--space-element-gap);
     box-shadow: 0px .24rem 2.4rem rgba(0, 0, 0, 0.1);
 }
 
+.step-block div {
+    margin: auto var(--space-element-gap);
+}
+
 .step-block img {
-    margin: var(--space-element-gap);
-    width: 90%;
+    margin-bottom: var(--space-element-gap);;
 }
 
 .step-block .content-text,
@@ -229,8 +238,8 @@ section {
 .info-button {
     border: none;
     border-radius: var(--border-radius);
-    padding: 0 40px;
-    margin-bottom: 30px;
+    padding: 10px 40px;
+    margin-top: 15px;
     border: var(--main-color) var(--border-size) solid;
 }
 
@@ -245,18 +254,39 @@ section {
 }
 
 .number_point {
+    align-self: flex-start;
     font-weight: bold;
     margin-right: 15px;
     padding: calc(var(--padding-number_point)/2) var(--padding-number_point);
     border-radius: var(--border-radius);
 }
 
+@media all and (max-width: 768px) {
+
+    section {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .step-block {
+        width: 85%;
+    }
+
+}
+
+@media all and (max-width: 576px) {
+
+    .step-block {
+        width: 70%;
+    }
+
+}
 
     /*********** Breadcrumb ***********/
 
 .breadcrumb {
     align-items: center;
-    margin-left: var(--margin-left-document);
+    margin-left: 0.675rem;
 }
 
 .breadcrumb a {
@@ -287,6 +317,8 @@ footer {
     background-color: var(--footer-color);
     flex-flow: wrap;
     align-items: flex-start;
+    padding-top: 15px;
+    margin-top: 15px;
 }
 
 footer * {
@@ -298,7 +330,7 @@ footer ul {
 }
 
 .identity {
-    margin-left: var(--margin-left-document);
+    margin-left: 0.675rem;
     width: 30%;
 }
 
@@ -318,8 +350,12 @@ footer ul {
     width: 60%;
 }
 
+.footer-title {
+    margin-bottom: 0.675rem;
+}
+
 .quick-links:nth-child(2) {
-    margin: auto 170px;
+    margin: auto auto;
     width: 20%;
 }
 
@@ -341,4 +377,16 @@ footer ul {
 
 .copyright {
     text-align: center;
+}
+
+@media all and (max-width: 660px) {
+
+    main {
+        margin-bottom: 1rem;
+    }
+    
+    footer {
+        display: none!important;
+    }
+
 }
