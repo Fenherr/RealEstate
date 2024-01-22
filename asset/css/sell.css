@@ -233,6 +233,7 @@ section {
 
 .step-block .content-text {
     margin-top: calc(var(--padding-number_point)/2);
+    align-self: self-start;
 }
 
 .info-button {
