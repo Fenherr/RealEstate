@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/contact.css">
 </head>
+
 <body>
 <!--creation du header-->
 <header class="flex justify-content align-item">    
@@ -65,27 +66,28 @@
 
         <article class="formatting">   
             <form action="form"> 
-                <label for="subjet-select">Sujet :</label>
-                <select id="subjet-select">
-                    <optgroup label="Particuliers">
-                        <option value="">Mon espace personnel</option>
-                        <option value="">Mon profil locataire</option>
-                        <option value="">Recherche d'un bien</option>
-                        <option value="">Vendre son bien</option>
-                        <option value="">L'alerte immo</option>
-                        <option value="">Données personnelles : exercer mes droits</option>
-                         <option value="">Problèmes techniques sur le site</option>
-                    </optgroup>
-                    <optgroup label="Professionnels">
-                        <option value="">Partenariat</option>
-                        <option value="">Régie publicitaire</option>
-                        <option value="">Offres commerciales</option>
-                    </optgroup>
-                </select>
-                </label>
+               <div class="subject">
+                    <label for="subjet-select">Sujet :</label>
+                    <select id="subjet-select">
+                        <optgroup label="Particuliers">
+                            <option value="">Mon espace personnel</option>
+                            <option value="">Mon profil locataire</option>
+                            <option value="">Recherche d'un bien</option>
+                            <option value="">Vendre son bien</option>
+                            <option value="">L'alerte immo</option>
+                            <option value="">Données personnelles : exercer mes droits</option>
+                            <option value="">Problèmes techniques sur le site</option>
+                        </optgroup>
+                        <optgroup label="Professionnels">
+                            <option value="">Partenariat</option>
+                            <option value="">Régie publicitaire</option>
+                            <option value="">Offres commerciales</option>
+                        </optgroup>
+                    </select>                    
+                </div>
 
                 <label for="message">
-                    <textarea name="textarea" rows="5" cols="30" id="message" placeholder="Votre message :"></textarea>
+                    <textarea name="textarea" rows="5" cols="45" id="message" placeholder="Votre message :"></textarea>
                 </label>
 
                 <button type="submit">Envoyer</button>  
@@ -93,19 +95,25 @@
         </article>
     </section>
 
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44427.813926552095!2d0.8441252993535505!3d45.89654548272686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47feeadaef87b0c9%3A0x8b265b0dc126d53e!2s87200%20Saint-Junien!5e0!3m2!1sfr!2sfr!4v1705479222960!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <section class="find-us">     
+        <article class="social-media">
+            <h5>Retrouvez-nous sur nos réseaux sociaux</h5>
+            <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
+            <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
+            <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
+            <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
+        
+            <h5>Et sur l'application</h5>
+            <a href="googlemybusiness"><img src="./asset/images/logos/Google-My-Business_logo.svg" alt="logo"width="50" height="50"></a>
+        </article>
 
-    <article>
-        <h5>Retrouvez-nous sur nos réseaux sociaux</h5>
-        <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="100" height="100"></a>
-        <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="100" height="100"></a>
-        <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="100" height="100"></a>
-        <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="100" height="100"></a>
-    </article>
-    <h5>Et sur l'application</h5>
-    <a href="googlemybusiness"><img src="./asset/images/logos/Google-My-Business_logo.svg" alt="logo"width="100" height="100"></a>
+        <article class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44427.813926552095!2d0.8441252993535505!3d45.89654548272686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47feeadaef87b0c9%3A0x8b265b0dc126d53e!2s87200%20Saint-Junien!5e0!3m2!1sfr!2sfr!4v1705479222960!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </section>
+
+    <p class="champs">* champs obligatoires</p>
+
 </main>
 
 <footer>

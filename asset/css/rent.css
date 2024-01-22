@@ -49,6 +49,7 @@ header {
 }
 h1, h2 {
     font-family: baloo2;
+    text-align: center;
 }
 
 /*---------------------------------------*/
@@ -78,6 +79,19 @@ main {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+.pict {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 12px;
+    
 }
 
 /*
