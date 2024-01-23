@@ -1,17 +1,5 @@
-#icons {
-    cursor: pointer;
-    display: none;
-}
 
-@media screen (max-width: 768px) {
-     #icons {
-        display: block;
-    }
-    #icons::before {
-        content: "\2630";
-    }
-}
-
+/**********TITRE DE LA PAGE**********/
 h3 {
     display: flex;
     justify-content: center;
@@ -21,8 +9,10 @@ h3 {
     font-size: 1.5rem;
 }
 
-fieldset {
-    margin-right: 10rem;
+/***********CASE D'ESTIMATION*********/
+
+.estimer {
+    margin-right: 50rem;
     margin-left: 2rem;
     border-radius: 1rem;
     margin-bottom: 2rem;
@@ -66,6 +56,8 @@ h5 {
     font-family: "opensans", sans-serif;
 }
 
+/***********PARTIE INFORMATION**********/
+
 .information {
     display: flex;
     justify-content: space-around;
@@ -73,6 +65,8 @@ h5 {
 
 .estimation-immo {
     margin-top: 8rem;
+    border-radius: 1rem;
+    margin: 1rem;
 }
 
 .info {
@@ -96,4 +90,23 @@ h5 {
     margin-top: 1rem;
     margin-left: 2rem;
     font-family: "opensans", sans-serif;
+}
+
+@media all and (max-width: 576px) {
+    .estimation-immo {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+        margin-top: 4rem;
+    }
+
+    .information {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 768px) {
+
 }
