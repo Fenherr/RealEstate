@@ -47,7 +47,7 @@ header {
     font-size: 1.4rem;
     padding: 0.675rem;
 }
-h1, h2 {
+h1, h2, h3 {
     font-family: baloo2;
     text-align: center;
 }
@@ -55,6 +55,7 @@ h1, h2 {
 p {
     font-family: opensans;
     text-align: justify;
+    margin: 0px 12px 12px 12px;
     
 }
 
@@ -97,8 +98,10 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 12px;
+    font-family: opensans;
     
 }
+
 
 /*
 p {
@@ -160,11 +163,16 @@ footer {
     color: white;
 }
 
-footer div {
+footer ul {
     margin-top: 12px;
     margin-right: auto;
     margin-left: 12px;
     margin-bottom: 12px;
+}
+
+footer li {
+    list-style: none;
+    font-family: opensans;
 }
 /*---------------------------------------*/
 
