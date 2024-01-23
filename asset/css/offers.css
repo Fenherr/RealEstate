@@ -229,7 +229,7 @@ body header nav a:hover {
 }
 
 .inside {
-    padding-top: 1px;
+    padding-top: 0.063rem;
 }
 
 .paging a {
@@ -243,12 +243,12 @@ body header nav a:hover {
 #page-select {
   appearance: none;
   -moz-appearance: none;
-  border: 2px solid #B1F3BC;
-  border-radius: 50px; /* La moitié de la hauteur pour créer un cercle */
-  padding: 10px; /* Ajoutez du rembourrage pour un meilleur aspect */
+  border: 0.125rem solid #B1F3BC;
+  border-radius: 3.125rem; /* La moitié de la hauteur pour créer un cercle */
+  padding: 0.625rem; /* Ajoutez du rembourrage pour un meilleur aspect */
   cursor: pointer;
-  margin-left: 20px;
-  margin-top: 5px;
+  margin-left: 1.25rem;
+  margin-top: 0.313rem;
 }
 
 .agent {
@@ -269,13 +269,13 @@ body header nav a:hover {
 }
 
 .section2-to-apply {
-    width: 230px;
-    height: 50px;
-    border: 10px solid #B1F3BC;
-    border-radius: 15px;
-    margin-left: 500px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 14.375rem;
+    height: 3.125rem;
+    border: 0.625rem solid #B1F3BC;
+    border-radius: 0.938rem;
+    margin-left: 31.25rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: smaller;
     text-align: center;
@@ -284,10 +284,10 @@ body header nav a:hover {
 }
 
 .to-apply {
-    padding: 5px 10px;
+    padding: 0.313rem 0.625rem;
     background-color: #1F1F1F;
     color: white;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     cursor: pointer;
 }
 
@@ -477,3 +477,152 @@ footer p {
 margin-left: 80px;
 margin-top: 20px;
 }
+
+@media all and (max-width:768px) {
+    .section1-form {
+        display: inherit;
+        text-align: center;
+    }
+    .logo-form2, .form-contract {
+        display: none;
+    }
+
+h3 {
+    margin-bottom: 15px;
+}
+
+#research {
+    text-align: center;
+}
+
+.photos-map {
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px  ;
+
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section2-photos {
+    width: 32.5rem;
+    height: 6.25rem;
+    border: 1.875rem solid #B1F3BC;
+    border-radius: 0.938rem;
+    margin-left: 2.5rem;
+    margin-top: 1.25rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    white-space: nowrap;;
+}
+
+#offer-photo {
+    width: 100%;
+    height: 100%;
+}
+
+.agent {
+    margin-top: -4px;
+}
+
+.photos-map2 {
+    display: none;
+}
+
+#research {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.responsive-map {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: -130px;
+}
+
+.section2-to-apply {
+    margin-left: 245px;
+}
+
+.paging li, #page-select {
+    display: none;
+}
+
+.paging {
+    gap: 440px;
+}
+
+.section3 {
+    display: none;
+}
+}
+
+
+@media all and (min-width:768px){
+
+}²
+
+@media all and (min-width:992px){
+
+}
+
+@media all and (min-width:1200px){
+
+}
+
+@media all and (max-width:576px) {
+    .section2-photos {
+        width: 32.5rem;
+        height: 6.25rem;
+        border: 1.875rem solid #B1F3BC;
+        border-radius: 0.938rem;
+        margin-left: .5rem;
+        margin-top: 1.25rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: smaller;
+        white-space: nowrap;;
+    }
+
+.paging {
+    gap: 345px;
+    margin-left: 80px;
+}
+
+.section2-to-apply {
+    margin-left: 175px;
+}
+
+#announce-number {
+    margin-left: 16rem;
+}
+}
+
+@media all and (max-width:992px) {
+         .section1-form { 
+         margin-top: -20px;
+ }
+        .logo-form, .logo-form2, ..responsive-research {
+            display: flex;
+  
+        }
+
+        #form {
+            display: flex;
+        }
+}
+
+/* 
+    Jusqu’à 479px : smartphone en portrait
+    De 480px à 959px : smartphone en paysage, tablette en portrait et petite tablette en paysage
+    De 960px à 1280px : tablette en paysage, écran d’ordinateur de taille petite et moyenne
+    1281px et au delà : grand écran d’ordinateur (21″ et + en plein écran )
+
+@media all and (max-width:576px){ }
+@media all and (max-width:768px){ }
+@media all and (max-width:992px){ }
+@media all and (max-width:1200px){ }
+
+    */      

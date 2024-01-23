@@ -23,6 +23,7 @@ a {
     font-size: 1.4rem;
 }
 .flex {
+    
     display: flex;
 }
 .justify-content{
@@ -96,3 +97,4 @@ footer li {
     width: 150px;
     height: 73px;
 }
+

@@ -1,3 +1,17 @@
+#icons {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen (max-width: 768px) {
+     #icons {
+        display: block;
+    }
+    #icons::before {
+        content: "\2630";
+    }
+}
+
 h3 {
     display: flex;
     justify-content: center;
