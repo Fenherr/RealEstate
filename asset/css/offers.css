@@ -174,7 +174,6 @@ body header nav a:hover {
     padding-top: 1rem;
     padding-left: 4.063rem;
     font-size: x-large;
-
 }
 
 .section2-photos {
@@ -455,7 +454,7 @@ footer li:hover:not(.number) {
 }
 
 .footer-access, .footer-contact, .footer-services {
-    padding-left: 7.6rem;
+    padding-left: 8.3rem;
 }
 
 .copyright {
@@ -502,7 +501,7 @@ h3 {
 
 }
 
-.section2 {
+.section2, .section2b {
     display: flex;
     justify-content: center;
 }
@@ -538,9 +537,7 @@ h3 {
 }
 
 .responsive-map {
-    margin-top: 20px;
-    margin-bottom: 60px;
-    margin-left: -130px;
+    margin-t
 }
 
 .section2-to-apply {
@@ -563,7 +560,7 @@ h3 {
 
 @media all and (min-width:768px){
 
-}²
+}
 
 @media all and (min-width:992px){
 
@@ -574,6 +571,17 @@ h3 {
 }
 
 @media all and (max-width:576px) {
+
+.h4 {
+    display: none;
+}
+
+
+.logo-form {
+    display: flex;
+    justify-content: center;
+}
+
     .section2-photos {
         width: 32.5rem;
         height: 6.25rem;
@@ -583,8 +591,12 @@ h3 {
         margin-top: 1.25rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: smaller;
-        white-space: nowrap;;
+        white-space: nowrap;
     }
+
+  footer, #map,  {
+    display: none;
+  }
 
 .paging {
     gap: 345px;
@@ -600,19 +612,15 @@ h3 {
 }
 }
 
-@media all and (max-width:992px) {
-         .section1-form { 
-         margin-top: -20px;
- }
-        .logo-form, .logo-form2, ..responsive-research {
-            display: flex;
-  
+@media all and (min-width:992px) {
+    .h4responsive {
+        display: none;
+    }
         }
 
         #form {
             display: flex;
         }
-}
 
 /* 
     Jusqu’à 479px : smartphone en portrait
