@@ -84,13 +84,14 @@ header {
 footer {
     background-color: #1f1f1f;
     font-family: "opensans";
+    padding-top: 0.675rem;
 }
 
 .social-media {
     color: var(--third-color);
     display: flex;
     flex-direction: row;
-    transform: scale(1.5);
+    font-size: 1.5rem;
     padding-left: 38px;
 }
 
@@ -113,6 +114,7 @@ footer ul {
 
 footer li {
     list-style: none;
+    padding-bottom: 1rem;
 }
 
 .footer-services, .footer-access, .footer-contact {
@@ -139,7 +141,7 @@ footer li {
 
 footer p {
 padding-left: 9px;
-padding-top: 5px;
+padding-top: 2rem;
 }
 
 #fb:hover, #tw:hover, #insta:hover {
@@ -155,3 +157,72 @@ footer li a:hover {
     text-decoration: underline;
 }
 
+.footer-queries {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 1200px) {
+    .colonne {
+        flex-direction: column;
+    }
+
+    .footer-access, .footer-services, .footer-contact {
+        width: 33.33%;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+    }
+    .social-media {
+        padding-left: 0rem;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        width: 20%;
+    } 
+}
+
+@media all and (max-width: 768px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+}
+}
+
+@media all and (max-width: 576px) {
+    .colonne {
+        flex-direction: column;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        padding: 0.675rem;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        padding-left: 12.5rem;
+    }
+
+    .footer-logo p {
+        padding-left: 8.5rem;
+    }
+
+    .social-media {
+        font-size: 3.5rem;
+        padding-left: 0rem;
+        justify-content: space-around;
+    }
+
+    .social-media li {
+        padding: 1rem 8.6rem 1rem 0rem;
+    }
+
+    .footer-queries {
+        flex-direction: column;
+    }
+
+    .social-media li:last-child {
+        padding-right: 0;
+    }
+}
