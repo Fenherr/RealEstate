@@ -79,12 +79,12 @@ footer li {
     list-style: none;
 }
 
-.footer-service, .footer-acces, .footer-contact {
+.footer-services, .footer-access, .footer-contact {
     display: flex;
     flex-direction: column;
 }
 
-.footer-acces, .footer-contact, .footer-service {
+.footer-access, .footer-contact, .footer-services {
     padding-left: 6rem;
 }
 
