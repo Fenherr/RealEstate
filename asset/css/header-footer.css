@@ -57,6 +57,27 @@ header {
     padding: 0.675rem;
 }
 
+#check, .checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+    
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        padding-right: 0.675rem;
+        color: black;
+        float: right;
+    }
+
+    .menu, .logo-mon-compte, header nav {
+        display: none!important;
+    }
+
+}
+
 
 /************** FOOTER ******************   */
 
