@@ -26,9 +26,11 @@
     font-family: "opensans";
     src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
 }
+
 :root {
     --main-color: #b1f3bc;
     --third-color: white;
+}
 
 h2 {
     color: white;
@@ -271,17 +273,19 @@ a {
 
 footer {
     background-color: #1f1f1f;
-    font-size: 1.1rem;
-
+    font-family: "opensans";
 }
 
 .social-media {
     color: var(--third-color);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    
+    transform: scale(1.5);
+    padding-left: 38px;
+}
+
+.social-media li {
+    padding: 20px;
 }
 
 footer p, footer h2, footer li {
@@ -301,14 +305,12 @@ footer li {
     list-style: none;
 }
 
-.footer-service, .footer-acces, .footer-contact {
+.footer-services, .footer-access, .footer-contact {
     display: flex;
     flex-direction: column;
+    padding-left: 8.95rem;
 }
 
-.footer-acces, .footer-contact, .footer-service {
-    padding-left: 6rem;
-}
 
 .copyright {
     padding-bottom: 0.675rem;
@@ -318,7 +320,29 @@ footer li {
 .footer-logo img {
     width: 150px;
     height: 73px;
-    padding-bottom: 0.5rem;
+}
+
+.footer-logo {
+    padding: 0.675rem;
+    padding-top: 0;
+}
+
+footer p {
+padding-left: 9px;
+padding-top: 5px;
+}
+
+#fb:hover, #tw:hover, #insta:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+footer h2 {
+    padding-bottom: 10px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
 }
 
 /* Media Queries */
@@ -364,4 +388,4 @@ footer li {
     .icone_stats {
        flex-direction: column;
     }
-}}
+}

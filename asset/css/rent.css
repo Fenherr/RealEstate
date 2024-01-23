@@ -47,14 +47,20 @@ header {
     font-size: 1.4rem;
     padding: 0.675rem;
 }
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: baloo2;
     text-align: center;
 }
 
+h2 {
+    background-color: var(--main-color);
+}
+
 p {
+    background-color: var(--main-color);
     font-family: opensans;
     text-align: justify;
+    padding: 0px 12px 12px 12px;
     
 }
 
@@ -62,7 +68,8 @@ p {
 
 
 .backpict {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .title-search {
@@ -84,7 +91,13 @@ main {
 .sous-zone {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
+}
+
+.sous-zone-r {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 .pict {
@@ -97,58 +110,17 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 12px;
+    font-family: opensans;
     
 }
 
-/*
-p {
-    margin-bottom: 24px;
+input {
+    width: 20rem;
 }
 
-.compo-search {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-
+button {
+    width: 10rem;
 }
-
-.infos-serv {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    margin-top: 10px;
-    
-}
-
-.infos-serv-label {
-    display: flex;
-    padding: 12px;
-}
-
-.infos-serv-label div {
-    margin-right: 12px;
-}
-
-.infos-links {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 10px;
-    
-}
-
-#ordre {
-    display: flex;
-    justify-content: center;
-    padding-right: 12px;
-    padding-bottom: 12px;
-    width: 400px;
-}
-.ordre:nth-of-type(1) {order: 1;}
-.ordre:nth-of-type(2) {order: 2;}
-.ordre:nth-of-type(3) {order: 3;}
-*/
 
 footer {
     display: flex;
@@ -160,12 +132,23 @@ footer {
     color: white;
 }
 
-footer div {
+footer ul {
     margin-top: 12px;
     margin-right: auto;
     margin-left: 12px;
     margin-bottom: 12px;
 }
+
+footer li {
+    list-style: none;
+    font-family: opensans;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
 /*---------------------------------------*/
 
 /* Add media query */
