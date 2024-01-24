@@ -66,7 +66,6 @@ p {
 
 /*---------------------------------------*/
 
-
 .backpict {
     display: flex;
     justify-content: center;
@@ -76,6 +75,11 @@ p {
     display: flex;
     justify-content: center;
     
+}
+
+.backpict, .title-search {
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -100,6 +104,11 @@ main {
     width: 30%;
 }
 
+.group-button {
+    display: flex;
+    flex-direction: column;
+}
+
 .pict {
     width: 100%;
 }
@@ -108,7 +117,7 @@ form {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
     padding: 12px;
     font-family: opensans;
     
@@ -121,6 +130,49 @@ input {
 button {
     width: 10rem;
 }
+
+@media all AND (max-width:1200px)
+    {
+        
+        input {
+            width: 15rem;
+        }
+        button {
+            width: 8rem;
+        }
+    }
+
+
+    @media all AND (max-width:992px)
+    {
+        
+        input {
+            width: 10rem;
+        }
+        button {
+            width: 6rem;
+        }
+    }
+
+    @media all AND (max-width:768px)
+    {
+        
+        input {
+            width: 10rem;
+        }
+        button {
+            width: 6rem;
+        }
+        form {
+            flex-direction: column;
+            align-items:flex-start;
+        }
+        .group-button {
+            flex-direction: row;
+        }
+    }
+
+/* footer */
 
 footer {
     display: flex;
