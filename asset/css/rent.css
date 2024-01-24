@@ -113,14 +113,23 @@ main {
     width: 100%;
 }
 
+.pict-invis {
+    display: none;
+}
+
 form {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
-    padding: 12px;
+    align-items: baseline;
+    padding: 0.675rem;
     font-family: opensans;
+    font-size: 1.5rem;
     
+}
+
+.lab-pri {
+    letter-spacing: 0.022rem;
 }
 
 input {
@@ -129,7 +138,19 @@ input {
 
 button {
     width: 10rem;
+    margin: 0rem 0rem 0.675rem 0rem;;
 }
+
+@media all AND (max-width:1400px)
+    {
+        
+        input {
+            width: 20rem;
+        }
+        button {
+            width: 10rem;
+        }
+    }
 
 @media all AND (max-width:1200px)
     {
@@ -152,6 +173,9 @@ button {
         button {
             width: 6rem;
         }
+        form {
+            font-size: 1.2rem;
+        }
     }
 
     @media all AND (max-width:768px)
@@ -159,17 +183,32 @@ button {
         
         input {
             width: 10rem;
+            margin-bottom: 0.675rem;
         }
         button {
             width: 6rem;
+            margin: 0rem 0.9rem 0rem 0rem;
         }
         form {
             flex-direction: column;
             align-items:flex-start;
+            font-size: 1rem;
         }
         .group-button {
             flex-direction: row;
         }
+
+        .sous-zone img  {
+            display: none;
+        }
+
+        .sous-zone  {
+            width: 50%;
+        }
+        .sous-zone-r {
+            width: 50%;
+        }
+
     }
 
 /* footer */
