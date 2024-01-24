@@ -1,3 +1,5 @@
+/*header commun*/
+
 @font-face {
     font-family: "baloo2";
     src: url(../fonts-family/Baloo2-Medium.ttf);
@@ -10,14 +12,21 @@
     --main-color: #b1f3bc;
     --third-color: white;
 }
+
 * {
     padding: 0;
     margin: 0;
+    color: inherit;
 }
+
 a {
     text-decoration: none;
-    color: #000;
 }
+
+.logo:hover {
+    opacity: 0.6;
+}
+
 .title-txt {
     font-family: "Baloo2", sans-serif;
     font-size: 1.4rem;
@@ -25,17 +34,21 @@ a {
 .flex {
     display: flex;
 }
+
 .justify-content{
     justify-content: space-between;
 }
+
 .align-item{
     align-items: center;
 }
+
 .menu li {
     list-style: none;
     margin: 0 2.5rem 0 0;
 }
-.menu li:hover, .logo-mon-compte:hover {
+
+.menu a:hover, .logo-mon-compte a:hover {
     font-weight: bolder;
 }
 
@@ -46,9 +59,9 @@ header {
     padding: 0.675rem;
 }
 
-/*body*/
+/*body - page contact*/
 
-a, h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: "baloo2";
     font-weight: 500;
     font-size: 2rem;
@@ -58,21 +71,18 @@ a, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 1.875rem;
 }
   
-.contactform {
+.phone-numbers {
     display: flex;
     justify-content: space-between;
     }
 
 .phone {
-    h2, h3 {
-        font-size: 1.25rem;
-    }
+    font-size: 1.25rem;
     width: 50%;
     padding: 0 1.25rem 1.875rem;
-
 }
 
-h4 {
+.other-request {
     background-color: #b1f3bc; 
     font-size: 1.25rem;
     margin-right: 62%;
@@ -109,14 +119,13 @@ h4 {
     background-color: #E2FBB7;
 }
 
-
 .find-us {
     display: flex;
     justify-content: space-between;
     width: 80%;
     padding: 1.875rem 1.25rem 1.875rem 1.25rem;
    
-    h5 {background-color: #b1f3bc; 
+    .social-media {background-color: #b1f3bc; 
         font-size: 1.25rem;
         margin-bottom: 1%;
     }
@@ -128,6 +137,9 @@ h4 {
     margin-bottom: 1%;   
 }
 
+/*footer commun*/
+
+/*footer perso*/
 footer {
     background-color: black;
     color: aliceblue;
@@ -150,7 +162,7 @@ footer a:hover {
     }
 }
 
-.services, rapid-access, to-contact {
+.services, .rapid-access, .to-contact {
     color: aliceblue;
 }
 .copyright {
