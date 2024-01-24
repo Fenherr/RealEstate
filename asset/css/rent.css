@@ -87,21 +87,41 @@ main {
     flex-direction: column;
 }
 
-.zone {
+.zone0 {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.sous-zone {
+.zone1 {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
 
-.sous-zone-r {
+.zone2 {
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+
+.zone3 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.zone4 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+zone5 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .group-button {
@@ -168,7 +188,7 @@ button {
     {
         
         input {
-            width: 10rem;
+            width: 9rem;
         }
         button {
             width: 6rem;
@@ -176,6 +196,18 @@ button {
         form {
             font-size: 1.2rem;
         }
+        .zone4  {
+            display: none;
+        }
+
+        .zone1 {
+            width: 60%;
+        }
+
+        .zone2 {
+            width: 50%;
+        }
+
     }
 
     @media all AND (max-width:768px)
@@ -198,15 +230,17 @@ button {
             flex-direction: row;
         }
 
-        .sous-zone img  {
-            display: none;
+        .zone1 {
+            width: 40%;
         }
 
-        .sous-zone  {
-            width: 50%;
+        .zone2 {
+            width: 60%;
         }
-        .sous-zone-r {
-            width: 50%;
+
+
+        .zone7  {
+            display: none;
         }
 
     }
