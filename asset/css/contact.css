@@ -185,7 +185,7 @@ footer {
     font-family: "opensans";
     padding-top: 0.675rem;
 }
-    
+
 .social-media {
     color: var(--third-color);
     display: flex;
@@ -198,7 +198,7 @@ footer {
     padding: 20px;
 }
 
-footer p, footer h2, footer li {
+footer p, footer h2, .footer-queries a {
     color: var(--third-color);
 }
 
