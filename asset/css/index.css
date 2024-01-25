@@ -729,7 +729,7 @@ button {
 
     .button_contact, .button_estimate {
         transition: none;
-        width: 9rem;
+        width: 10rem;
     }
 
    .button_contact:hover, .button_estimate:hover {
