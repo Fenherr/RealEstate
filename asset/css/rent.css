@@ -87,21 +87,42 @@ main {
     flex-direction: column;
 }
 
-.zone {
+.zone0 {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.sous-zone {
+.zone1 {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
 
-.sous-zone-r {
+.zone2 {
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+
+.zone3 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.zone4 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.zone5 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .group-button {
@@ -113,14 +134,23 @@ main {
     width: 100%;
 }
 
+.pict-invis {
+    display: none;
+}
+
 form {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
-    padding: 12px;
+    align-items: baseline;
+    padding: 0.675rem;
     font-family: opensans;
+    font-size: 1.5rem;
     
+}
+
+.lab-pri {
+    letter-spacing: 0.022rem;
 }
 
 input {
@@ -129,7 +159,19 @@ input {
 
 button {
     width: 10rem;
+    margin: 0rem 0rem 0.675rem 0rem;;
 }
+
+@media all AND (max-width:1400px)
+    {
+        
+        input {
+            width: 20rem;
+        }
+        button {
+            width: 10rem;
+        }
+    }
 
 @media all AND (max-width:1200px)
     {
@@ -147,10 +189,28 @@ button {
     {
         
         input {
-            width: 10rem;
+            width: 9rem;
         }
         button {
             width: 6rem;
+        }
+        form {
+            font-size: 1.2rem;
+        }
+        .zone4  {
+            display: none;
+        }
+
+        .zone1 {
+            width: 60%;
+        }
+
+        .zone2 {
+            width: 50%;
+        }
+
+        .zone5 {
+            width: 100%;
         }
     }
 
@@ -159,17 +219,33 @@ button {
         
         input {
             width: 10rem;
+            margin-bottom: 0.675rem;
         }
         button {
             width: 6rem;
+            margin: 0rem 0.9rem 0rem 0rem;
         }
         form {
             flex-direction: column;
             align-items:flex-start;
+            font-size: 1rem;
         }
         .group-button {
             flex-direction: row;
         }
+
+        .zone1 {
+            width: 40%;
+        }
+
+        .zone2 {
+            width: 60%;
+        }
+
+        .zone7  {
+            display: none;
+        }
+
     }
 
 /* footer */
