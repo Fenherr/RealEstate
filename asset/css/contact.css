@@ -167,17 +167,14 @@ h1 {
 }
 
 @media screen AND (max-width: 768px) {
-    .phone, .formatting, #subjet, #subjet-selected, #message, #submit {
+    .phone-numbers, .other-request, .formatting, .find-us, .maps {
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        
+        justify-content: flex-start;        
     }
 }
    
-    
-
-
+   
 /*footer commun*/
 
 footer {
