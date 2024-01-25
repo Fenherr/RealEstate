@@ -23,7 +23,7 @@ a {
 }
 /*header : logo et menu*/
 header a {
-    font-size: 1.1rem;;
+    font-size: 1.1rem;
 }
 
 header {
@@ -204,7 +204,7 @@ input[type="text"]:focus {
 .news_all {
     background-color: #ffffff;
     width: 200px;
-    height: 150px;
+    height: 153px;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
@@ -1111,7 +1111,7 @@ button {
     }
 
     .customers button {
-        width: auto;
+        width: 12rem !important;
         transition: none;
     }
 
@@ -1249,7 +1249,7 @@ button {
     }
 
     .news_all {
-        height: 151px;
+        height: 153px;
     }
 
     .news_1, .news_2, .news_3, .news_all {
@@ -1273,7 +1273,22 @@ button {
 
     /*section avis clients*/
     .customers button {
-        width: 20%;
+        width: 12rem !important;
+    }
+
+    .bkg_agency p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+     /*section article agence*/
+     .button_contact, .button_estimate {
+        width: 10rem;
+    }
+
+
+    .footer {
+        padding-right: 20px;
     }
 
 }
@@ -1296,7 +1311,27 @@ button {
     }
 
     .input_icon_search + i {
-    left: 140px;
+        left: 140px;
     }
 
+    /*section avis clients*/
+    .customers button {
+        width: 12rem !important;
+    }
+
+}
+
+/* -------------------------XXL-----------------------*/
+@media screen and (min-width: 1500px) {
+    .bkg_agency {
+        background-image: none;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    .banner {
+        background-image: url("../images/home/bkg_banner_xxl_5599.jpg");
+        background-position: center;
+    }
 }
