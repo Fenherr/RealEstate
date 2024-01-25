@@ -1,88 +1,44 @@
-<<<<<<< HEAD
+
 /*style qui s'applique à l'ensemble de la page*/
 
 *{
-    margin:0;
-    padding:0;
-    font-family:"Baloo2";
+    margin: 0;
+    padding: 0;
 }
 
 /* style qui s'applique au header*/
 
 header{
-    width: auto;
-    background-color: #B1F3BC ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+     width: 100%;
+     background-color: #B1F3BC;
+     margin:auto;
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+    }
+
+ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 15px;
 }
 
-/* style qui s'applique à la barre nav*/
+/*style qui s'applique a*/
 
-ul{
-    display: flex;
-    list-style: none;
-}
-
-li {
-    padding-right: 0.5rem;
-}
-
-/*style qui s'applique à la partie main*/
-
-main{
-    height:100vh;
-    width: 100%;
-    display: flex;
-
-    
-}
-
-.form_container{
-    height:60%;
-    width: 40%;
-    border:1px solid black;
-    border-radius: 30px;
-
-}
-
-.form_container_heading{
-    font-size: 1,2rem;
-    font-family: 'Open Sans', sans-serif;
-    color:black;
-    margin-top: 50px;
-    margin-left: 50px;
-
-}
-
-.form_container_inputs, .form_container_inputs {
-    margin-bottom: 25px;
-    display: flex;
-    margin-left: 150px;
-    padding: 15px;
-    width: 50%; 
-    border-radius:10px;
-    border: 2px solid #B1F3BC;
-    outline: none;
-
-}
-
-.form_container_button{
-    padding: 15px;
-    width: 110px;
-    border-radius: 10px;
-    border: 2px solid #B1F3BC;
-    outline: none;
-}
-.test {
-    width: 60%;
-    height: 60%;
+.logoacgd{
+margin-left:30px;
+margin-top:10px;
+margin-bottom:10px;    
 }
 
 
 
    
-
 
 
 
