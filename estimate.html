@@ -1,136 +1,146 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estimate</title>
+    <title>Estimer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="asset/css/estimate.css">
-<!--Police Baloo 2-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
-<!--Police Open Sans-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/header-footer.css">
+
 </head>
 <body>
-    <header>
+    <!--Partie Header-->
 
-        <!--Ceci est un premier div pour le logo-->
-    <div class="logo">
-        <img src="./asset/images/logo x150.png" alt="Logo">
-    </div>
-
-        <!--Ceci est un second div pour le menu-->
-    <div>       
+    <header class="flex justify-content align-item">    
+        <img class="logo" src="./asset/images/logo x150.png" alt="logo">
         <nav>
-            <ul class="menu">
-                <li><a href="#"><B>Acheter</B></a></li>
-                <li><a href="#"><B>Louer</B></a></li>
-                <li><a href="#"><B>Vendre</B></a></li>
-                <li><a href="#"><B>Contact</B></a></li>   
-            </ul>
+            <ul class="menu flex justify-content">
+                <li><a class="title-txt" href="buy.html">Acheter</a></li>
+                <li><a class="title-txt" href="rent.html">Louer</a></li>
+                <li><a class="title-txt" href="sell.html">Vendre</a></li>
+                <li><a class="title-txt" href="contact.html">Contact</a></li>
+            </ul>            
         </nav>
-    </div>
-
-        <!--Ceci est un div pour la partie mon compte-->
-    <button class="account">
-        <a href="#">Mon compte</a></button>
+        <div class="logo-mon-compte">
+            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+        </div>
+        <div id="icons"></div>
     </header>
-        <!--Titre de la partie estimer-->
-<h2>Vous souhaitez estimer votre bien ?</h2>
+    <!--Partie case estimation-->
+
+    <h3>Vous souhaitez estimer votre bien ?</h3>
 
 <form>
-        <!--Case d'estimation-->
-    <fieldset>
-    <h5>Il s'agit d'un :</h5>
-    
-    <div class="selection">
-        <input type="checkbox" id="Appart">
-        <label for="exampleUniq">Appartement</label>
-    <div class="selection">
-        <input type="checkbox" id="Appart">
-        <label for="exampleUniq">Maison</label>
-      </div>
-    <h5>C'est pour une :</h5>
-    <div class="selection">
-        <input type="checkbox" id="Appart" name="interest" value="Location">
-        <label for="Location">Location</label>
-      </div>
-    <div class="selection">
-        <input type="checkbox" id="Appart" name="interest" value="Vente">
-        <label for="Vente">Vente</label>
-      </div>
-    <h5>Adresse :</h5>
-    <div class="Adresse">
-        <input type="Adresse" placeholder="  Ex: 121 Rue des Fleurs 87000 Limoges" style="width: 700px; height: 40px;">
-      </div>
-      <button class="valider">
-        <a href="#">Valider</a>
-      </button>
+
+    <fieldset class="estimer">  
+        <h5>Il s'agit d'un :</h5>
+
+        <div class="selection">
+            <input type="radio" id="Appart" name="group">
+            <label for="Appartement">Appartement</label>
+        </div>
+        <div class="selection">
+            <input type="radio" id="Home" name="group">
+            <label for="Home">Maison</label>
+        </div>
+
+        <h5>C'est pour une :</h5>
+
+        <div class="selection">
+            <input type="radio" id="Location" name="interest" value="Location">
+            <label for="Location">Location</label>
+        </div>
+        <div class="selection">
+            <input type="radio" id="Vente" name="interest" value="Vente">
+            <label for="Vente">Vente</label>
+        </div>
+
+        <h5>Adresse :</h5>
+
+        <div class="adresse">
+            <input type="Adresse" placeholder="   Ex: 121 Rue des Fleurs 87000 Limoges" style="width: 500px; height: 40px;">
+        </div>
+        <button class="valider">
+            <a href="#">Valider</a>
+        </button>
     </fieldset>
 </form>
-        <!--Partie information-->
-<div class="info">
-    <article class="container">
-        <img class="esti" src="./asset/images/estimation immobilière.jpeg">
-        <h3><a href="##">En quoi consiste l'estimation immobilière ?</a></h3>
-        <p>Cras orci mauris, finibus ac pellentesque 
-            a, eleifend eu lectus. Vivamus felis augue, 
-            volutpat eget pretium at, egestas quis odio. 
-            Curabitur laoreet turpis in diam maximus 
-            ornare. Donec sed auctor arcu, at porta ante.</p>
-            <button class="ensaone">En savoirs plus</button>
-    </article>
-    <article class="container">
-        <img class="onesti" src="./asset/images/comment faire estimer son bien.jpg" alt="pc">
-        <h3><a href="##">Comment faire estimer sa maison ?</a></h3>
-        <p>Sed dictum velit vestibulum euismod bibendum. 
-            Pellentesque cursus sit amet odio ac iaculis.
-            Fusce varius, erat sed eleifend dignissim, 
-            quam leo elementum purus, vel condimentum 
-            ante eros egestas ipsum. Donec eu sem 
-            placerat, euismod dolor et, interdum felis.</p>
 
-    <button class="ensa">En savoirs plus</button>
-    </article>
+<!--Partie information-->
+
+<div class="information">
+    <!--1ère infos-->
+    <fieldset class="estimation-immo">
+        <article class="info">
+            <h3><a href="#">En quoi consiste l'estimation immobilière ?</a></h3>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. 
+                Duis ultricies pulvinar euismod. </p>
+            <button class="ensaone"><a href="#">En savoirs plus</a></button>
+        </article>
+    </fieldset>
+
+    <!--2e infos-->
+
+    <fieldset class="estimation-immo">
+        <article class="info">
+            <h3><a href="#">Comment faire estimer sa maison ?</a></h3>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. 
+                Duis ultricies pulvinar euismod.</p>
+            <button class="ensaone"><a href="#">En savoirs plus</a></button>
+        </article>
+    </fieldset>
 </div>
 
+    <footer>
+        <div class="colonne">
+            <div class="footer-logo">
+                <a href="index.html"><img src="./asset/images/logo_white_150.png" alt="Logo"></a>
+                <p>Retrouvez-nous sur les réseaux sociaux</p>
 
-<footer>
-        <!--Footer-->
-    <div class="contenu-footer">
+                <ul class="social-media">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
 
-        <div class="footer-service">
-            <h4>Nos services</h4>
-            <ul class="liste-services">
-                <li><a href="#">Achat</a></li>
-                <li><a href="#">Vendre</a></li>
-                <li><a href="#">Louer</a></li>
-            </ul>
+            <div class="footer-services">
+                <h2>Services</h2>
+
+                <ul class="flex">
+                    <li>Achat</li>
+                    <li>Vendre</li>
+                    <li>Louer</li>
+                </ul>
+            </div>
+            <div class="footer-access">
+                <h2>Accès rapide</h2>
+
+                <ul class="flex">
+                    <li>Inscription newsletter</li>
+                    <li>Qui sommes-nous ?</li>
+                    <li>Nos offres d'emploi</li>
+                    <li>Avis client</li>
+                    <li>Plan du site</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact</h2>
+
+                <ul class="flex">
+                    <li>06.08.16.45.22</li>
+                    <li>contact@acgdimmo.fr</li>
+                    <li>Saint-Junien</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="footer-quick">
-            <h4>Accès rapide</h4>
-            <ul class="liste-quick">
-                <li><a href="#">Inscription newsletter</a></li>
-                <li><a href="#">Qui sommes-nous ?</a></li>
-                <li><a href="#">Nos offres d'emploi</a></li>
-                <li><a href="#">Avis client</a></li>
-                <li><a href="#">Plan du site</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Contact</h4>
-            <ul class="liste-contact">
-                <li>06.08.16.43.22</li>
-                <li>contact@acgdimmo.fr</li>
-                <li>Sain-Junien</li>
-            </ul>
-        </div>
-    </div>
-</footer>
+            <div class="copyright">
+                <p>acgdimmo©</p>
+            </div>
+    
+    </footer>
 </body>
 </html>

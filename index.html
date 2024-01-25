@@ -11,7 +11,7 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="./asset/css/index.css">
 </head>
-<body>
+
 
 <!-- logo avec menu principal -->
    <header>
@@ -35,32 +35,41 @@
    <div class="banner">
         <div class="search">
                 <div class="menu_search">
-                        <select class="menu_search_deco">
-                            <option label="">Je cherche ...</option>
-                            <option value="vente">Vente</option>
-                            <option value="location">Location</option>
-                        </select>
-                        <div class="input_icon">
-                            <input class="menu_search_deco input_icon_search" type="text" placeholder="Localisation..."  />
-                            <i class="fa-solid fa-magnifying-glass"></i> 
-                        </div>
-                        <select class="menu_search_deco">
-                            <option label="">Type de biens ...</option>
-                            <option value="appartement">Appartement</option>
-                            <option value="maison">Maison</option>
-                            <option value="terrain">Terrain</option>
-                            <option value="autre">Autre</option>
-                        </select>
                         <div>
-                            <input class="menu_search_deco" type="text" placeholder="Prix maximum..."  /> 
+                            <select class="menu_search_deco size_search">
+                                <option label="">Je cherche ...</option>
+                                <option value="vente">Vente</option>
+                                <option value="location">Location</option>
+                            </select>
                         </div>
-                        <div class="search_btn">
-                            <a href="#"><button class="menu_search_deco">Rechercher...</button></a>
+                        <div>
+                            <div class="input_icon">
+                                <input class="menu_search_deco size_search input_icon_search" type="text" placeholder="Localisation..."  />
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                            </div>
+                        </div>
+                        <div>
+                            <select class="menu_search_deco size_search">
+                                <option label="">Type de biens ...</option>
+                                <option value="appartement">Appartement</option>
+                                <option value="maison">Maison</option>
+                                <option value="terrain">Terrain</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input class="menu_search_deco size_search" type="text" placeholder="Prix maximum..."  /> 
+                        </div>
+                        <div>
+                            <div class="search_btn">
+                                <a href="#"><button class="menu_search_deco size_search">Rechercher...</button></a>
+                            </div>
                         </div>
                 </div>
         </div>
     </div>
-
+    
+<body>
 <!-- section actualités -->
     <section>
         <div class="news">
@@ -83,7 +92,7 @@
         <div class="sell">
         <h1>Nos derniers biens en vente</h1>
             <div class="sell_slide">
-                <div class="sell_frame">
+                <div class="sell_frame" id="frame_1">
                     <p>145000€</p>
                     <p>MAISON</p>
                     <P>SAINT-JUNIEN</p>
@@ -94,7 +103,7 @@
                         <p><i class="fa-regular fa-square"></i><span>120 m²</span></p>
                     </div>
                 </div>
-                <div class="sell_frame">
+                <div class="sell_frame" id="frame_2">
                     <p>119000€</p>
                     <p>MAISON</p>
                     <P>SAINT-JUNIEN</p>
@@ -105,7 +114,7 @@
                         <p><i class="fa-regular fa-square"></i><span>90.3 m²</span></p>
                     </div>
                 </div>
-                <div class="sell_frame">
+                <div class="sell_frame" id="frame_3">
                     <p>139000€</p>
                     <p>MAISON</p>
                     <P>SAINT-JUNIEN</p>
@@ -116,7 +125,7 @@
                         <p><i class="fa-regular fa-square"></i><span>135 m²</span></p>
                     </div>
                 </div>
-                <div class="sell_frame">
+                <div class="sell_frame" id="frame_4">
                     <p>45000€</p>
                     <p>GRANGE</p>
                     <P>SAINT-JUNIEN</p>
@@ -164,6 +173,8 @@
         <p><button><a href="#">Nous contacter</a></button></p>
     </section>
 
+</body>
+
 <!-- footer -->
     <footer class="footer">
         <div class="column1">
@@ -171,9 +182,11 @@
                 <img src="asset/images/logo_white_150.png" alt="logo acgdimmo" width="150" height="73">
             </a>
             <p>Retouvez-nous sur les réseaux sociaux</p>
-            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <div  class="section_social_media">
+                <span class="social_media"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
+                <span class="social_media"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></span>
+                <span class="social_media"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></span>
+            </div>
         </div>
 
         <div class="column2">
@@ -199,9 +212,9 @@
         <div class="column4">
             <ul>
                 <li class="menu_footer">Contact</li>
-                <li><i class="fa-solid fa-phone"></i>   07 06 05 04 03</li>
-                <li><i class="fa-solid fa-at"></i>   contact@acgdimmo.fr</li>
-                <li><i class="fa-solid fa-location-dot"></i>   Saint-Junien</li>
+                <li><i class="fa-solid fa-phone"></i><span>07 06 05 04 03</span></li>
+                <li><i class="fa-solid fa-at"></i><span>contact@acgdimmo.fr</span></li>
+                <li><i class="fa-solid fa-location-dot"></i><span>Saint-Junien</span></li>
             </ul>
         </div>
     </footer>
@@ -209,6 +222,5 @@
     <div class="copyright">
         <p>copyright <i class="fa-regular fa-copyright"></i> acgd immo</p>
     </div>
- 
-</body>
+
 </html>

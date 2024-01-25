@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qui somme nous ?</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Open+Sans&display=swap"
-        rel="stylesheet">
 
     <link rel="stylesheet" href="./asset/css/aboutus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -21,36 +14,32 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="">
-                <img src="asset/images/logo x150.png" alt="logo" class="logo" srcset="">
-            </a>
-        </div>
+    <header class="flex justify-content align-item">
+        <a href="index.html"><img class="logo" src="./asset/images/logo x150.png" alt="logo"></a>
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
         <nav>
-            <ul class="menu">
-                <li><a href="">Acheter</a></li>
-                <li><a href="">Louer</a></li>
-                <li><a href="">Vendre</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <ul class="menu flex justify-content">
+                <li><a class="title-txt" href="buy.html">Acheter</a></li>
+                <li><a class="title-txt" href="rent.html">Louer</a></li>
+                <li><a class="title-txt" href="sell.html">Vendre</a></li>
+                <li><a class="title-txt" href="contact.html">Contact</a></li>
+            </ul>            
         </nav>
-        <div class="compte">
-            <i class="fa-solid fa-user"></i>
-            <a href="">Mon compte</a>
+        <div class="logo-mon-compte">
+            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
         </div>
     </header>
 
     <main>
-
         <section class="qsn">
             <article>
                 <div class="rectangle-noir1">
                     <h1>
                         Qui sommes nous ?
                     </h1>
-                </div>
-                <div class="rectangle-noir2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         laoreet et sem id ornare. Vivamus mauris augue,
                         egestas id nisl ac, pulvinar tristique dui. Nam luctus eros nec
@@ -67,8 +56,6 @@
                     <h1>
                         Notre mission
                     </h1>
-                </div>
-                <div class="rectangle-noir2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         laoreet et sem id ornare. Vivamus mauris augue,
                         egestas id nisl ac, pulvinar tristique dui. Nam luctus eros nec
@@ -85,8 +72,6 @@
                     <h1>
                         Notre équipe
                     </h1>
-                </div>
-                <div class="rectangle-noir2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         laoreet et sem id ornare. Vivamus mauris augue,
                         egestas id nisl ac, pulvinar tristique dui. Nam luctus eros nec
@@ -103,8 +88,6 @@
                     <h1>
                         Nos valeurs
                     </h1>
-                </div>
-                <div class="rectangle-noir2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         laoreet et sem id ornare. Vivamus mauris augue,
                         egestas id nisl ac, pulvinar tristique dui. Nam luctus eros nec
@@ -117,12 +100,10 @@
 
         <section class="pourquoi">
             <article>
-                <div class="rectangle-noir3">
+                <div class="rectangle-noir1">
                     <h1>
                         Pourquoi choisir ACGDIMMO ?
                     </h1>
-                </div>
-                <div class="rectangle-noir2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         laoreet et sem id ornare. Vivamus mauris augue,
                         egestas id nisl ac, pulvinar tristique dui. Nam luctus eros nec
@@ -133,7 +114,7 @@
             </article>
         </section>
 
-        <article>
+        <article class="vert">
             <div class="rectangle-vert">
                 <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed viverra, lorem non placerat congue, erat nunc
@@ -145,64 +126,55 @@
 
     <footer>
 
-        <div class="colonnes">
-            <div class="c1">
+        <div class="colonne">
+            <div class="footer-logo">
+                <a href="index.html"><img class="logo" src="./asset/images/logo_white_150.png" alt="Logo" width="150px" height="73px"></a>
+                <p>Retrouvez-nous sur les réseaux sociaux</p>
 
-                <a href="">
-                    <img src="asset/images/logo_white_150.png" alt="logo blanc" class="logowhite" width="50%"
-                        height="100">
-                </a>
-                <p class="p3">Retrouvez-nous sur nos réseaux sociaux !</p>
-
-                <ul class="logos">
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
+                <ul class="social-media">
+                    <li><i  id="fb" class="fa-brands fa-facebook"></i></li>
+                    <li><i  id="tw" class="fa-brands fa-twitter"></i></li>
+                    <li><i  id="insta" class="fa-brands fa-instagram"></i></li>
                 </ul>
             </div>
-            <div class="c1">
-                <h2>
-                    Services
-                </h2>
-                <ul class="listef">
-                    <li><a class="a2" href="">Achat</a></li>
-                    <li><a class="a2" href="">Vendre</a></li>
-                    <li><a class="a2" href="">Louer</a></li>
-                </ul>
+            <div class="footer-queries">
+                <div class="footer-services">
+                    <h2>Services</h2>
+
+                    <ul class="flex">
+                        <li><a href="buy.html">Achat</a></li>
+                        <li><a href="sell.html">Vendre</a></li>
+                        <li><a href="rent.html">Louer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-access">
+                    <h2>Accès rapide</h2>
+
+                    <ul class="flex">
+                        <li><a href="newsletter registration.html">Inscription newsletter</a></li>
+                        <li><a href="aboutus.html">Qui sommes-nous ?</a></li>
+                        <li><a href="offers.html">Nos offres d'emploi</a></li>
+                        <li><a href="customer-feedback.html">Avis client</a></li>
+                        <li><a href="sitemap.html">Plan du site</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+
+                    <ul class="flex">
+                        <li><a href="tel:06.08.16.45.22">06.08.16.45.22</a></li>
+                        <li><a href="mailto:contact@acgdimmo.fr">contact@acgdimmo.fr</li></a>
+                        <li><a target="_blank" href="https://www.google.fr/maps/place/87200+Saint-Junien/@45.8964635,0.802924,12z/data=!3m1!4b1!4m6!3m5!1s0x47feeadaef87b0c9:0x8b265b0dc126d53e!8m2!3d45.88716!4d0.901165!16zL20vMDh6Xzkz?entry=ttu">Saint-Junien</a></li>
+                    </ul>
+                </div>
+                </div>
             </div>
-
-            <div class="c2">
-                <h2>
-                    Accès rapide
-                </h2>
-                <ul class="listef">
-                    <li><a class="a2" href="">Inscription Newsletter</a></li>
-                    <li><a class="a2" href="">Qui sommes-nous ?</a></li>
-                    <li><a class="a2" href="">Nos offres d'emploi</a></li>
-                    <li><a class="a2" href="">Avis client</a></li>
-                    <li><a class="a2" href="">Plan du site</a></li>
-                </ul>
-            </div>
-
-
-            <div class="c3">
-                <h2>
-                    Contact
-                </h2>
-                <ul class="listef">
-                    <li>06.08.16.45.22</li>
-                    <li>contact@acgdimmo.fr</li>
-                    <li>Saint-Junien</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div>
-            <p class="copyrigth">acgdimmo ©</p>
-        </div>
+                <div class="copyright">
+                    <p>acgdimmo©</p>
+                </div>
 
     </footer>
 </body>
 
 </html>
+
