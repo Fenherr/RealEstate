@@ -782,7 +782,7 @@ button {
 /*--------------------------------------------*/
 
 @media all and (max-width: 768px) {
-    
+   
     /*header : logo et menu*/
     nav ul li {
         display: none;
@@ -977,6 +977,11 @@ button {
 
 /*-----------------------------------------------*/
 @media all and (max-width: 992px) {
+     
+    /*header : logo et menu*/
+     header ul {
+        padding-left: 0;
+    }
 
     /*bannière avec fonction recherche*/
     .menu_search_deco {
@@ -1008,5 +1013,14 @@ button {
         width: 20%;
     }
 
+}
+
+/*-----------------------------------------------*/
+@media all and (max-width: 1200px) {
+     
+    /*header : logo et menu*/
+     header ul {
+        padding-left: 0;
+    }
 
 }
