@@ -584,7 +584,7 @@ button {
 }
 
 /*-----------------------------------------------------------------------*/
-@media only screen and (max-width: 576px) {
+@media all and (max-width: 576px) {
 
 
 /*header : logo et menu*/
@@ -710,21 +710,23 @@ button {
 
 /*section article agence*/
     .agency {
-        padding-bottom: 0 !important;
+        padding-bottom: 0.5rem;
     }
 
     .agency h1 {
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 0.5rem;
     }
 
     .bkg_agency p {
         margin-left: 2rem;
         margin-right: 2rem;
-        padding-bottom: 0;
+        padding-bottom: 1rem;
         padding-top: 0;
         margin-bottom: 0;
         margin-top: 0;
+        text-justify: inter-word;
+        text-align: justify;
     }
 
     .button_contact, .button_estimate {
@@ -760,7 +762,6 @@ button {
 
     .column2 ul, .column3 ul, .column4 ul {
         padding-left: 0.6rem;
-        /*padding-top: 0.4rem;*/
     }
 
     .footer li {
@@ -780,8 +781,8 @@ button {
 
 /*--------------------------------------------*/
 
-@media only screen and (max-width: 768px) {
-    
+@media all and (max-width: 768px) {
+   
     /*header : logo et menu*/
     nav ul li {
         display: none;
@@ -793,6 +794,17 @@ button {
 
     .menu_burger {
         display: block;
+        position: relative;
+        top: 38px;
+        right: 10px;
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+    .fa-bars {
+        font-size: 2rem;
     }
 
     /*bannière avec fonction recherche*/
@@ -813,12 +825,23 @@ button {
 
     .menu_search_deco {
         margin-top: 5px;
-        width: 25rem;
     }
 
     .input_icon_search + i {
         top: 13px;
-        left: 370px;
+        left: 295px !important;
+    }
+
+    .size_form select {
+        width: 20rem;
+    }
+
+    .size_form input {
+        width: 19.6rem;
+    }
+
+    .search_btn button {
+        width: 20rem;
     }
 
     /*section actualités*/
@@ -827,7 +850,6 @@ button {
         padding-left: 2rem;
         padding-right: 2rem;
         align-items: center;
-        padding-bottom: 1.5rem;
     }
 
     .news h1 {
@@ -840,7 +862,7 @@ button {
     }
 
     .news {
-        padding-bottom: 1rem;
+        padding-bottom: 2.5rem;
     }
 
     /*section derniers biens en vente*/
@@ -868,31 +890,61 @@ button {
 
     /*section avis clients*/
     .customers {
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
     }
 
     .customers button {
         width: auto;
+        transition: none;
+    }
+
+    .customers button:hover {
+        pointer-events: none;
+        transition: none;
     }
 
     /*section article agence*/
     .agency {
-        padding-bottom: 1.3rem;
+        padding-bottom: 0.5rem;
     }
 
     .agency h1 {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
     }
 
-    .agency button {
-        width: auto;
-    }
-
-    .agency p {
+    .bkg_agency p {
         margin-left: 2rem;
         margin-right: 2rem;
         padding-bottom: 1rem;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-justify: inter-word;
+        text-align: justify;
+    }
+
+    .button_contact, .button_estimate {
+        transition: none;
+        width: 10rem;
+    }
+
+   .button_contact:hover, .button_estimate:hover {
+    pointer-events: none;
+    transform: none;
+    }
+
+    .center_button {
+        margin-top: 0;
+    }
+
+    .button_contact button, .button_estimate button {
+        display: inline;
+    }
+
+    .bkg_agency {
+        padding-bottom: 2rem;
     }
 
     /*section footer*/
@@ -904,10 +956,9 @@ button {
         font-size: 2.5rem;
     }
 
-    /*.column2, .column3, .column4 ul {
+    .column2 ul, .column3 ul, .column4 ul {
         padding-left: 0.6rem;
-        padding-top: 0.4rem;
-    }*/
+    }
 
     .footer li {
         font-size: 1.1rem;
@@ -924,34 +975,52 @@ button {
 
 }
 
-
-/* -----------------------------------------------*/
-
-@media only screen and (max-width: 992px) {
-
+/*-----------------------------------------------*/
+@media all and (max-width: 992px) {
+     
     /*header : logo et menu*/
-
+     header ul {
+        padding-left: 0;
+    }
 
     /*bannière avec fonction recherche*/
-
-    .size_search {
+    .menu_search_deco {
         width: 10rem;
     }
 
-    .input_icon_search + i {
-        left: 135px;
+    .banner {
+        padding: 4rem 0;
     }
 
-/*section actualités*/
-/*section derniers biens en vente*/
-/*section avis clients*/
-/*section article agence*/
-/*section footer*/   
+    .input_icon_search + i {
+    left: 140px;
+    }
+
+    /*section actualités*/
+    .news_slide {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /*section derniers biens en vente*/
+    .sell_slide {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /*section avis clients*/
+    .customers button {
+        width: 20%;
+    }
 
 }
 
-@media only screen and (max-width: 1200px) {
+/*-----------------------------------------------*/
+@media all and (max-width: 1200px) {
+     
+    /*header : logo et menu*/
+     header ul {
+        padding-left: 0;
+    }
 
 }
-
-
