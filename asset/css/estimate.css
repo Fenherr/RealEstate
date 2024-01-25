@@ -67,6 +67,7 @@ h5 {
     margin-top: 8rem;
     border-radius: 1rem;
     margin: 1rem;
+    background-color: var(--main-color);
 }
 
 .info {
@@ -104,6 +105,12 @@ h5 {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
     }
 }
 

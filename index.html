@@ -12,168 +12,197 @@
     <link rel="stylesheet" href="./asset/css/index.css">
 </head>
 
+<body>
 
 <!-- logo avec menu principal -->
-   <header>
-    <header class="flex justify-content align-item">    
-        <img class="logo" src="./asset/images/logo x150.png" alt="logo">
-        <nav>
-            <ul class="menu flex justify-content">
-                <li><a class="title-txt" href="buy.html">Acheter</a></li>
-                <li><a class="title-txt" href="rent.html">Louer</a></li>
-                <li><a class="title-txt" href="sell.html">Vendre</a></li>
-                <li><a class="title-txt" href="contact.html">Contact</a></li>
-            </ul>            
-        </nav>
-        <div class="logo-mon-compte">
-            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
-        </div>
-    </header>
-   </header>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="asset/images/logo x150.png" alt="logo acgdimmo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a class="activ" href="index.html">Accueil</a></li>
+            <li><a class="activ" href="buy.html">Acheter</a></li>
+            <li><a class="activ" href="rent.html">Louer</a></li>
+            <li><a class="activ"href="sell.html">Vendre</a></li>
+            <li><a class="activ" href="login.html">Contact</a></li>
+        </ul>         
+    </nav>
 
-<!-- bannière avec fonction recherche -->
-   <div class="banner">
-        <div class="search">
-                <div class="menu_search">
-                        <div>
-                            <select class="menu_search_deco size_search">
-                                <option label="">Je cherche ...</option>
-                                <option value="vente">Vente</option>
-                                <option value="location">Location</option>
-                            </select>
-                        </div>
-                        <div>
-                            <div class="input_icon">
-                                <input class="menu_search_deco size_search input_icon_search" type="text" placeholder="Localisation..."  />
-                                <i class="fa-solid fa-magnifying-glass"></i> 
-                            </div>
-                        </div>
-                        <div>
-                            <select class="menu_search_deco size_search">
-                                <option label="">Type de biens ...</option>
-                                <option value="appartement">Appartement</option>
-                                <option value="maison">Maison</option>
-                                <option value="terrain">Terrain</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                        </div>
-                        <div>
-                            <input class="menu_search_deco size_search" type="text" placeholder="Prix maximum..."  /> 
-                        </div>
-                        <div>
-                            <div class="search_btn">
-                                <a href="#"><button class="menu_search_deco size_search">Rechercher...</button></a>
-                            </div>
-                        </div>
-                </div>
-        </div>
+    <div class="auth"> 
+        <li><a href="#"><i class="fa-regular fa-user"></i>Mon compte</a></li>
     </div>
     
-<body>
+    <div class="menu_burger">
+        <i class="fa-solid fa-bars"></i>
+    </div>   
+
+</header>
+
+<!-- bannière avec fonction recherche -->
+    <div class="banner">
+            <div class="search">
+                    <div class="menu_search">
+                            <div class="size_form">
+                                <select class="menu_search_deco size_search">
+                                    <option label="">Je cherche ...</option>
+                                    <option value="vente">Vente</option>
+                                    <option value="location">Location</option>
+                                </select>
+                            </div>
+                            <div class="size_form">
+                                <div class="input_icon">
+                                    <input class="menu_search_deco size_search input_icon_search" type="text" placeholder="Localisation..."  />
+                                    <i class="fa-solid fa-magnifying-glass"></i> 
+                                </div>
+                            </div>
+                            <div class="size_form">
+                                <select class="menu_search_deco size_search">
+                                    <option label="">Type de biens ...</option>
+                                    <option value="appartement">Appartement</option>
+                                    <option value="maison">Maison</option>
+                                    <option value="terrain">Terrain</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="size_form">
+                                <input class="menu_search_deco size_search" type="text" placeholder="Prix maximum..."  /> 
+                            </div>
+                            <div class="size_form">
+                                <div class="search_btn">
+                                    <a href="#"><button class="menu_search_deco size_search">Rechercher...</button></a>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+    </div>
+    
 <!-- section actualités -->
-    <section>
-        <div class="news">
-            <h1>Les actualités de l'immobilier</h1>
-            <div class="news_slide">
-                <div class="news_1"><a class="activ_news" href="#">Lorem ipsum first</a></div>
-                <div class="news_2"><a class="activ_news" href="#">Lorem ipsum second</a></div>
-                <div class="news_3"><a class="activ_news" href="#">Lorem ipsum third</a></div>
-                <div class="news_all">
-                    <a class="activ_news_all" href="#"><span>Toutes nos actualités</span></a>
-                    <div>
-                        <a class="activ_news_all_btn" href="#"><span>&rsaquo;</span></a>
+        <section>
+            <div class="news">
+                <h1>Les actualités de l'immobilier</h1>
+                <div class="news_slide">
+                    <div class="size_flex">
+                        <div class="news_1"><a class="activ_news" href="#">Lorem ipsum first</a></div>
+                    </div>
+                    <div class="size_flex">
+                        <div class="news_2"><a class="activ_news" href="#">Lorem ipsum second</a></div>
+                    </div>
+                    <div class="size_flex">
+                        <div class="news_3"><a class="activ_news" href="#">Lorem ipsum third</a></div>
+                    </div>
+                    <div class="size_flex">
+                        <div class="news_all">
+                            <a class="activ_news_all" href="#"><span>Toutes nos actualités</span></a>
+                            <div>
+                                <a class="activ_news_all_btn" href="#"><span>&rsaquo;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+<!-- derniers biens en vente -->
+        <section>
+            <div class="sell">
+            <h1>Nos derniers biens en vente</h1>
+                <div class="sell_slide">
+                    <div class="sell_frame" id="frame_1">
+                        <p>145000€</p>
+                        <p>MAISON</p>
+                        <P>SAINT-JUNIEN</p>
+                        <a class="activ_sell" href="#"><img src="asset/images/home/bien_1.jpg" alt="bien 1 acgdimmo" width="200"></a>
+                        <div class="sell_type">
+                            <p><i class="fa-solid fa-bed"></i><span>4</span></p>
+                            <div class="vertical_row"></div>
+                            <p><i class="fa-regular fa-square"></i><span>120 m²</span></p>
+                        </div>
+                    </div>
+                    <div class="sell_frame" id="frame_2">
+                        <p>119000€</p>
+                        <p>MAISON</p>
+                        <P>SAINT-JUNIEN</p>
+                        <a class="activ_sell" href="#"><img src="asset/images/home/bien_2.jpg" alt="bien 2 acgdimmo" width="200"></a>
+                        <div class="sell_type">
+                            <p><i class="fa-solid fa-bed"></i><span>2</span></p>
+                            <div class="vertical_row"></div>
+                            <p><i class="fa-regular fa-square"></i><span>90.3 m²</span></p>
+                        </div>
+                    </div>
+                    <div class="sell_frame" id="frame_3">
+                        <p>139000€</p>
+                        <p>MAISON</p>
+                        <P>SAINT-JUNIEN</p>
+                        <a class="activ_sell" href="#"><img src="asset/images/home/bien_3.jpg" alt="bien 3 acgdimmo" width="200"></a>
+                        <div class="sell_type">
+                            <p><i class="fa-solid fa-bed"></i><span>4</span></p>
+                            <div class="vertical_row"></div>
+                            <p><i class="fa-regular fa-square"></i><span>135 m²</span></p>
+                        </div>
+                    </div>
+                    <div class="sell_frame" id="frame_4">
+                        <p>45000€</p>
+                        <p>GRANGE</p>
+                        <P>SAINT-JUNIEN</p>
+                        <a class="activ_sell" href="#"><img src="asset/images/home/bien_4.jpg" alt="bien 4 acgdimmo" width="200"></a>
+                        <div class="sell_type">
+                            <p><i class="fa-solid fa-bed"></i><span>0</span></p>
+                            <div class="vertical_row"></div>
+                            <p><i class="fa-regular fa-square"></i><span>165 m²</span></p>
+                        </div>
                     </div>
                 </div> 
             </div>
-    </section>
-
-<!-- derniers biens en vente -->
-    <section>
-        <div class="sell">
-        <h1>Nos derniers biens en vente</h1>
-            <div class="sell_slide">
-                <div class="sell_frame" id="frame_1">
-                    <p>145000€</p>
-                    <p>MAISON</p>
-                    <P>SAINT-JUNIEN</p>
-                    <a class="activ_sell" href="#"><img src="asset/images/home/bien_1.jpg" alt="bien 1 acgdimmo" width="200"></a>
-                    <div class="sell_type">
-                        <p><i class="fa-solid fa-bed"></i><span>4</span></p>
-                        <div class="vertical_row"></div>
-                        <p><i class="fa-regular fa-square"></i><span>120 m²</span></p>
-                    </div>
+            <div class="navbar_sell">
+                <div>
+                    <a class="activ_news_all_btn" href="#"><span>&lsaquo;</span></a>
                 </div>
-                <div class="sell_frame" id="frame_2">
-                    <p>119000€</p>
-                    <p>MAISON</p>
-                    <P>SAINT-JUNIEN</p>
-                    <a class="activ_sell" href="#"><img src="asset/images/home/bien_2.jpg" alt="bien 2 acgdimmo" width="200"></a>
-                    <div class="sell_type">
-                        <p><i class="fa-solid fa-bed"></i><span>2</span></p>
-                        <div class="vertical_row"></div>
-                        <p><i class="fa-regular fa-square"></i><span>90.3 m²</span></p>
-                    </div>
+                <div>
+                <ul >
+                    <li class="navbar_sell_min_btn"></li>
+                    <li class="navbar_sell_min_btn"></li>
+                    <li class="navbar_sell_min_btn"></li>
+                </ul>
                 </div>
-                <div class="sell_frame" id="frame_3">
-                    <p>139000€</p>
-                    <p>MAISON</p>
-                    <P>SAINT-JUNIEN</p>
-                    <a class="activ_sell" href="#"><img src="asset/images/home/bien_3.jpg" alt="bien 3 acgdimmo" width="200"></a>
-                    <div class="sell_type">
-                        <p><i class="fa-solid fa-bed"></i><span>4</span></p>
-                        <div class="vertical_row"></div>
-                        <p><i class="fa-regular fa-square"></i><span>135 m²</span></p>
-                    </div>
+                <div>
+                    <a class="activ_news_all_btn" href="#"><span>&rsaquo;</span></a>
                 </div>
-                <div class="sell_frame" id="frame_4">
-                    <p>45000€</p>
-                    <p>GRANGE</p>
-                    <P>SAINT-JUNIEN</p>
-                    <a class="activ_sell" href="#"><img src="asset/images/home/bien_4.jpg" alt="bien 4 acgdimmo" width="200"></a>
-                    <div class="sell_type">
-                        <p><i class="fa-solid fa-bed"></i><span>0</span></p>
-                        <div class="vertical_row"></div>
-                        <p><i class="fa-regular fa-square"></i><span>165 m²</span></p>
-                    </div>
-                </div>
-            </div> 
-        </div>
-        <div class="navbar_sell">
-            <div>
-                <a class="activ_news_all_btn" href="#"><span>&lsaquo;</span></a>
-            </div>
-            <div>
-            <ul >
-                <li class="navbar_sell_min_btn"></li>
-                <li class="navbar_sell_min_btn"></li>
-                <li class="navbar_sell_min_btn"></li>
-            </ul>
-            </div>
-            <div>
-                <a class="activ_news_all_btn" href="#"><span>&rsaquo;</span></a>
-            </div>
 
 
-        </div>
-    </section>
+            </div>
+        </section>
 
 <!-- section avis clients -->
-    <section class="customers">
-        <p>Avis clients</p>
-        <p><span>Ce que nos clients pensent de notre travail !</span></p>
-        <button><a href="#">Lire les témoignages</a></button>
-    </section>
+        <section class="customers">
+            <p>Avis clients</p>
+            <p><span>Ce que nos clients pensent de notre travail !</span></p>
+            <button><a href="customer-feedback.html">Lire les témoignages</a></button>
+        </section>
 
 <!-- section article agence -->
-    <section class="agency">
-        <h1>Votre agence ACGD IMMO en Limousin</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <p><button><a href="#">Nous contacter</a></button></p>
-    </section>
+        <section class="agency">
+            <div class="bkg_agency">
+                <h1>Votre agence ACGD IMMO en Limousin</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="center_button">
+                    <div class="button_contact">
+                        <button><a href="estimate.html">Estimons votre bien</a></button>
+                    </div>
+                    <div class="button_estimate">
+                        <button><a href="to_manage.html">Gérons votre bien</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</body>
+    </body>
 
 <!-- footer -->
     <footer class="footer">
@@ -201,11 +230,11 @@
         <div class="column3">
             <ul>
                 <li class="menu_footer">Accès rapide</li>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">Qui sommes-nous ?</a></li>
-                <li><a href="#">Nos offres d'emploi</a></li>
-                <li><a href="#">Avis client</a></li>
-                <li><a href="#">Plan du site</a></li>
+                <li><a href="newsletter registration.html">Newsletter</a></li>
+                <li><a href="aboutus.html">Qui sommes-nous ?</a></li>
+                <li><a href="offers.html">Nos offres d'emploi</a></li>
+                <li><a href="customer-feedback.html">Avis client</a></li>
+                <li><a href="sitemap.html">Plan du site</a></li>
             </ul>
         </div>
 
