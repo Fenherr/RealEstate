@@ -42,7 +42,7 @@
                 <!-- bloque recherche -->
                 <form>
                     <div>
-                        <label>Lieu :</label>
+                        <label for="localization">Lieu :</label>
                         <input type="text" placeholder="Adresse, département, région, etc...">
                     </div>
                     <div>
@@ -50,7 +50,14 @@
                         <input type="text" placeholder="Prix en euros">
                     </div>
                     <div class="group-button">
-                        <button type="button">Filtres</button>
+                        <select name="distance" id="localization">
+                            <option value="">Périmètre</option>
+                            <option value="10Km">10 Km</option>
+                            <option value="20km">20 Km</option>
+                            <option value="30km">30 Km</option>
+                            <option value="departement">Département</option>
+                            <option value="region">Région</option>
+                        </select>
                         <button type="button">Recherche</button>
                     </div>
                 </form>
