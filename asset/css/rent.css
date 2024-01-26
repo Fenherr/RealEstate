@@ -82,7 +82,7 @@ main {
     position: absolute;
     left: 30%;
     right: 30%;
-    top: 25%;
+    top: 9rem;
 }
 
 h1 {
@@ -208,10 +208,6 @@ select {
         select {
             width: 10rem;
         }
-
-        .title-search {
-            top: 20%;
-        }
     }
 
 @media all AND (max-width:1200px)
@@ -226,10 +222,6 @@ select {
 
         select {
             width: 8rem;
-        }
-
-        .title-search {
-            top: 16%;
         }
     }
 
@@ -268,7 +260,6 @@ select {
         }
 
         .title-search {
-            top: 15%;
             left: 20%;
             right: 20%;
         }
@@ -314,7 +305,6 @@ select {
             display: none;
         }
         .title-search {
-            top: 15%;
             left: 6%;
             right: 6%;
         }
@@ -348,7 +338,6 @@ select {
     @media all AND (max-width:576px)
     {
         .title-search {
-            top: 13%;
             left: 3%;
             right: 3%;
         }
@@ -357,7 +346,6 @@ select {
     @media all AND (max-width:512px)
     {
         .title-search {
-            top: 8%;
             left: 0%;
             right: 0%;
         }
