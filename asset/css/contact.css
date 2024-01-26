@@ -83,6 +83,12 @@ header {
 
 /*body - page contact*/
 
+    /*fond page - à corriger*/
+.background-picture {
+    background-image: url("https ://asset/images/squarecurie.jpg");
+    background-color: #ffffff;
+}
+
 h1 {
     font-family: "baloo2";
     font-weight: 500;
@@ -139,6 +145,7 @@ h1 {
 .button {
     width: 0.188rem;
     background-color: #E2FBB7;
+    
 }
 
 .find-us {
@@ -160,17 +167,14 @@ h1 {
 }
 
 @media screen AND (max-width: 768px) {
-    .phone, .formatting, #subjet, #subjet-selected, #message, #submit {
+    .phone-numbers, .other-request, .formatting, .find-us, .maps {
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        
+        justify-content: flex-start;        
     }
 }
    
-    
-
-
+   
 /*footer commun*/
 
 footer {
@@ -178,7 +182,7 @@ footer {
     font-family: "opensans";
     padding-top: 0.675rem;
 }
-    
+
 .social-media {
     color: var(--third-color);
     display: flex;
@@ -191,7 +195,7 @@ footer {
     padding: 20px;
 }
 
-footer p, footer h2, footer li {
+footer p, footer h2, .footer-queries a {
     color: var(--third-color);
 }
 

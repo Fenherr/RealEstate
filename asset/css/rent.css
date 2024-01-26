@@ -18,8 +18,13 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #000;    
 }
+
+.logo:hover {
+    opacity: 0.6;
+}
+
 .title-txt {
     font-family: "Baloo2", sans-serif;
     font-size: 1.4rem;
@@ -49,42 +54,57 @@ header {
 }
 h1, h2, h3, h4 {
     font-family: baloo2;
+}
+
+h1 {
     text-align: center;
 }
 
-h2 {
-    background-color: var(--main-color);
+p {
+    font-family: opensans;
 }
 
-p {
-    background-color: var(--main-color);
-    font-family: opensans;
-    text-align: justify;
-    padding: 0px 12px 12px 12px;
-    
+.logo-alter {
+    display: none;
 }
 
 /*---------------------------------------*/
 
-.backpict {
-    display: flex;
-    justify-content: center;
-}
-
-.title-search {
-    display: flex;
-    justify-content: center;
-    
+main {
+    background-color: var(--main-color);
 }
 
 .backpict, .title-search {
     display: flex;
     flex-direction: column;
 }
+.title-search {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 25%;
+}
+
+h1 {
+    background-color:#b1f3bc60 ;
+    border-radius: 0.675rem;
+}
+.backpict {
+    position: relative;
+}
 
 main {
     display: flex;
     flex-direction: column;
+}
+
+main p {
+    text-align: justify;
+    padding: 0px 12px 12px 12px;
+}
+
+main h2 {
+    text-align: center;
 }
 
 .zone0 {
@@ -97,6 +117,10 @@ main {
     display: flex;
     flex-direction: column;
     width: 70%;
+}
+
+form {
+    border: 0.01rem solid;
 }
 
 .zone2 {
@@ -143,6 +167,7 @@ form {
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
+    background-color:white;
     padding: 0.675rem;
     font-family: opensans;
     font-size: 1.5rem;
@@ -159,7 +184,15 @@ input {
 
 button {
     width: 10rem;
-    margin: 0rem 0rem 0.675rem 0rem;;
+    margin: 0rem 0rem 0.675rem 0rem;
+    background-color: #E2FBB7;
+}
+
+select {
+    text-align: center;
+    width: 10rem;
+    margin: 0rem 0rem 0.675rem 0rem;
+    background-color: #E2FBB7;
 }
 
 @media all AND (max-width:1400px)
@@ -171,6 +204,14 @@ button {
         button {
             width: 10rem;
         }
+
+        select {
+            width: 10rem;
+        }
+
+        .title-search {
+            top: 20%;
+        }
     }
 
 @media all AND (max-width:1200px)
@@ -181,6 +222,14 @@ button {
         }
         button {
             width: 8rem;
+        }
+
+        select {
+            width: 8rem;
+        }
+
+        .title-search {
+            top: 16%;
         }
     }
 
@@ -194,6 +243,11 @@ button {
         button {
             width: 6rem;
         }
+
+        select {
+            width: 6rem;
+        }
+
         form {
             font-size: 1.2rem;
         }
@@ -212,6 +266,13 @@ button {
         .zone5 {
             width: 100%;
         }
+
+        .title-search {
+            top: 15%;
+            left: 20%;
+            right: 20%;
+        }
+       
     }
 
     @media all AND (max-width:768px)
@@ -223,13 +284,20 @@ button {
         }
         button {
             width: 6rem;
-            margin: 0rem 0.9rem 0rem 0rem;
+            margin: 0rem 0.5rem 0rem 0.5rem;
         }
+
+        select {
+            width: 6rem;
+            margin: 0rem 0.5rem 0rem 0.5rem;
+        }
+
         form {
             flex-direction: column;
-            align-items:flex-start;
+            align-items:center;
             font-size: 1rem;
         }
+
         .group-button {
             flex-direction: row;
         }
@@ -245,46 +313,217 @@ button {
         .zone7  {
             display: none;
         }
+        .title-search {
+            top: 15%;
+            left: 6%;
+            right: 6%;
+        }
+         
+        .logo-mon-compte {
+            display: none;
+        }
 
+        .logo-alter {
+            display: contents;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .zone0 {
+            flex-direction: column;
+        }
+
+        .zone1 {
+            width: 100%;
+        }
+
+        .zone2 {
+            width: 100%;
+        }
     }
 
+
+    @media all AND (max-width:576px)
+    {
+        .title-search {
+            top: 13%;
+            left: 3%;
+            right: 3%;
+        }
+    }
+
+    @media all AND (max-width:512px)
+    {
+        .title-search {
+            top: 8%;
+            left: 0%;
+            right: 0%;
+        }
+    }
 /* footer */
 
 footer {
+    background-color: #1f1f1f;
+    font-family: "opensans";
+    padding-top: 0.675rem;
+}
+
+.social-media {
+    color: var(--third-color);
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 20%;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding-left: 38px;
+}
+
+.social-media li {
+    padding: 20px;
+}
+
+footer p, footer h2, .footer-queries a {
+    color: var(--third-color);
+}
+
+.colonne {
+    display: flex;
+    padding-top: 0.675rem;
 }
 
 footer ul {
-    margin-top: 12px;
-    margin-right: auto;
-    margin-left: 12px;
-    margin-bottom: 12px;
+    flex-flow: column;
 }
 
 footer li {
     list-style: none;
-    font-family: opensans;
+    padding-bottom: 1rem;
 }
 
-.social-media {
+.footer-services, .footer-access, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.95rem;
+}
+
+
+.copyright {
+    padding-bottom: 0.675rem;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: 73px;
+}
+
+.footer-logo {
+    padding: 0.675rem;
+    padding-top: 0;
+}
+
+footer p {
+padding-left: 9px;
+padding-top: 2rem;
+
+}
+
+#fb:hover, #tw:hover, #insta:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+footer h2 {
+    padding-bottom: 10px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-queries {
     display: flex;
     justify-content: space-around;
 }
 
+@media all and (max-width: 1200px) {
+    .colonne {
+        flex-direction: column;
+    }
+
+    .footer-access, .footer-services, .footer-contact {
+        width: 33.33%;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+    }
+    .social-media {
+        padding-left: 0rem;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        width: 20%;
+    } 
+}
+
+@media all and (max-width: 768px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+        width: max-content;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .colonne {
+        flex-direction: column;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        padding: 0.675rem;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        padding-left: 12.5rem;
+    }
+
+    .footer-logo p {
+        padding-left: 8.5rem;
+    }
+
+    .social-media {
+        font-size: 3.5rem;
+        padding-left: 0rem;
+        justify-content: space-around;
+    }
+
+    .social-media li {
+        padding: 1rem 8.6rem 1rem 0rem;
+    }
+
+    .footer-queries {
+        flex-direction: column;
+    }
+
+    .social-media li:last-child {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 460px) {
+
+    .logo {
+        padding-left: 6.5rem;
+    }
+
+    .social-media li {
+        padding-right: 4rem;
+    }
+
+}
 /*---------------------------------------*/
 
-/* Add media query */
-
-@media all AND (max-width:768px)
-    {
-        nav {
-            display: none;
-        }
-    }
+/* Add media query for header */
 
