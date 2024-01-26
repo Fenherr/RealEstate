@@ -340,14 +340,16 @@ select {
         .title-search {
             left: 3%;
             right: 3%;
+            top: 6.8rem;
         }
     }
 
-    @media all AND (max-width:512px)
+    @media all AND (max-width:460px)
     {
         .title-search {
             left: 0%;
             right: 0%;
+            top: 6.5rem;
         }
     }
 /* footer */
