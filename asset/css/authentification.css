@@ -4,12 +4,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Baloo22";
 }
 
 /* style qui s'applique au header*/
 
 header{
-     width: 100%;
+     width: auto;
      background-color: #B1F3BC;
      margin:auto;
      display:flex;
@@ -28,13 +29,72 @@ ul {
         font-size: 15px;
 }
 
-/*style qui s'applique a*/
+li{
+    padding-right: 40px;
+}
+
+/*style qui s'applique à la partie main*/
 
 .logoacgd{
 margin-left:30px;
 margin-top:10px;
 margin-bottom:10px;    
 }
+
+main{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container{
+    height: 40%;
+    width: 45%;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 95px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+
+}
+
+.form_container_heading{
+    font-size: 1.2rem;
+    font-family:sans-serif;
+    color: #B1F3BC;
+}
+
+
+
+.form_container_inputs,.form_container_button {
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline:none;
+}
+.form_container_button{
+    width: 85%;
+    background-color: #B1F3BC;
+    color: #fff;
+
+}
+
+img{
+
+}
+
+
+ 
+
 
 
 
