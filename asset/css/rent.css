@@ -261,14 +261,14 @@ button {
         }
         button {
             width: 6rem;
-            margin: 0rem 0.5rem 0rem 0rem;
+            margin: 0rem 0.5rem 0rem 0.5rem;
         }
         form {
             flex-direction: column;
             align-items:center;
             font-size: 1rem;
         }
-        
+
         .group-button {
             flex-direction: row;
         }
