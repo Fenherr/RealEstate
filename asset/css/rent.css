@@ -246,6 +246,8 @@ button {
 
         .title-search {
             top: 15%;
+            left: 20%;
+            right: 20%;
         }
        
     }
@@ -259,13 +261,14 @@ button {
         }
         button {
             width: 6rem;
-            margin: 0rem 0.9rem 0rem 0rem;
+            margin: 0rem 0.5rem 0rem 0rem;
         }
         form {
             flex-direction: column;
-            align-items:flex-start;
+            align-items:center;
             font-size: 1rem;
         }
+        
         .group-button {
             flex-direction: row;
         }
@@ -282,7 +285,9 @@ button {
             display: none;
         }
         .title-search {
-            top: 10%;
+            top: 15%;
+            left: 6%;
+            right: 6%;
         }
          
         .logo-mon-compte {
@@ -297,9 +302,37 @@ button {
             display: none;
         }
 
+        .zone0 {
+            flex-direction: column;
+        }
 
+        .zone1 {
+            width: 100%;
+        }
+
+        .zone2 {
+            width: 100%;
+        }
     }
 
+
+    @media all AND (max-width:576px)
+    {
+        .title-search {
+            top: 13%;
+            left: 3%;
+            right: 3%;
+        }
+    }
+
+    @media all AND (max-width:512px)
+    {
+        .title-search {
+            top: 8%;
+            left: 0%;
+            right: 0%;
+        }
+    }
 /* footer */
 
 footer {
