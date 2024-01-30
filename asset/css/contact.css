@@ -83,30 +83,44 @@ header {
 
 /*body - page contact*/
 
-.background-picture{
-    background-image: url("../images/squarecurie.jpg");
-    background-color: #ffffff;
-    background-size: cover;
+.background-picture {
+    position: relative;
 }
 
-
-.background-picture ::before {
-     opacity: .3;      
+.wallpaper {
+    background: url("../images/squarecurie.jpg");      
+    position: absolute;
+    background-color: #ffffff;
+    background-size: cover;      
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 h1 {
     font-family: "baloo2";
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2rem;       
+   
 }
+
 .contact {
     text-align: center;
     padding-bottom: 1.875rem;
+    text-shadow: #F0F8FF 2px 2px, #F0F8FF -2px 2px, #F0F8FF -2px -2px, #F0F8FF 2px -2px;
+ 
+   
 }
   
 .phone-numbers {
     display: flex;
     justify-content: space-between;
+    text-shadow: #F0F8FF 0.5px 0.5px, #F0F8FF -0.5px 0.5px, #F0F8FF -0.5px -0.5px, #F0F8FF 0.5px -0.5px;
+   
     }
 
 .phone {
@@ -120,6 +134,8 @@ h1 {
     font-size: 1.25rem;
     margin-right: 62%;
     margin-bottom: 1%;    
+    margin-left: 1.25rem;
+    text-shadow: #F0F8FF 0.5px 0.5px, #F0F8FF -0.5px 0.5px, #F0F8FF -0.5px -0.5px, #F0F8FF 0.5px -0.5px;
 }
  
 .form {
@@ -138,6 +154,7 @@ h1 {
 #subjet, #subjet-selected, #message, #submit {
     display: block;
 }
+
 .subject {
     background-color: #b1f3bc;
     margin-right: 62%;
@@ -147,10 +164,10 @@ h1 {
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 .button {
     width: 0.188rem;
-    background-color: #E2FBB7;
-    
+    background-color: #E2FBB7;    
 }
 
 .find-us {
@@ -158,6 +175,7 @@ h1 {
     justify-content: space-between;
     width: 80%;
     padding: 1.875rem 1.25rem 1.875rem 1.25rem;
+    text-shadow: #F0F8FF 0.5px 0.5px, #F0F8FF -0.5px 0.5px, #F0F8FF -0.5px -0.5px, #F0F8FF 0.5px -0.5px;
    
     .social-networks {background-color: #b1f3bc; 
         font-size: 1.25rem;
@@ -165,20 +183,19 @@ h1 {
     }
 }
 
-.champs {
+.fields {
     background-color: #b1f3bc;
-    margin-right: 90%;
-    margin-bottom: 1%;   
+    margin-right: 90%;      
 }
 
 @media screen AND (max-width: 768px) {
-    .phone-numbers, .other-request, .formatting, .find-us, .maps {
+   .phone-numbers, .other-request, .form, .subject, .message,.find-us, .maps {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;        
-    }
-}
-  
+    }      
+
+}   
    
 /*footer commun*/
 
