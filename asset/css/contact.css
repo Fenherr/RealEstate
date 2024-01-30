@@ -83,10 +83,15 @@ header {
 
 /*body - page contact*/
 
-    /*fond page - à corriger*/
-.background-picture {
-    background-image: url("https ://asset/images/squarecurie.jpg");
+.background-picture{
+    background-image: url("../images/squarecurie.jpg");
     background-color: #ffffff;
+    background-size: cover;
+}
+
+
+.background-picture ::before {
+     opacity: .3;      
 }
 
 h1 {
