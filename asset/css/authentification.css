@@ -51,18 +51,21 @@ main{
 
 .form_container{
     height: 40%;
-    width: 45%;
-    border: 3px solid black;
-    border-radius: 30px;
+    width: 35%;
+    border: 2px solid black;
+    
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 95px;
+    gap: 50px;
     position: absolute;
-    left: 0px;
-    top: 150px;
+    left: 4px;
+    top: 250px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+   
 
 }
 
@@ -88,7 +91,12 @@ main{
 
 }
 
-
+.test {
+    padding-left: 50%;
+    width: 78%;
+    height: 102%;
+    margin-bottom:17px ;
+}
  
 
 

@@ -100,7 +100,7 @@ main {
 
 main p {
     text-align: justify;
-    padding: 0px 12px 12px 12px;
+    padding: 0rem 1.7rem 1.1rem 1.7rem;
 }
 
 main h2 {
@@ -120,7 +120,7 @@ main h2 {
 }
 
 form {
-    border: 0.01rem solid;
+    border-bottom: black solid 1px;
 }
 
 .zone2 {
@@ -180,7 +180,10 @@ form {
 
 input {
     width: 20rem;
+    height: 2rem;
+    font-size: 1.2rem;
 }
+
 
 button {
     width: 10rem;
@@ -231,6 +234,8 @@ select {
         
         input {
             width: 9rem;
+            height: 1.8rem;
+            font-size: 1.08rem;
         }
         button {
             width: 6rem;
@@ -340,7 +345,7 @@ select {
         .title-search {
             left: 3%;
             right: 3%;
-            top: 6.8rem;
+            top: 8.8rem;
         }
     }
 
@@ -349,9 +354,20 @@ select {
         .title-search {
             left: 0%;
             right: 0%;
-            top: 6.5rem;
-        }
+            top: 6.3rem;
+        }  
     }
+
+    @media all AND (max-width:320px)
+    {
+        .title-search {
+            left: 0%;
+            right: 0%;
+            top: 6.5rem;
+        }  
+    }
+
+
 /* footer */
 
 footer {

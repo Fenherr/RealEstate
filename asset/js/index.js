@@ -1,1 +1,1 @@
-alert('Courage!');
+/*alert('Courage!');*/
