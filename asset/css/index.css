@@ -21,9 +21,10 @@ a {
     color: black;
     font-size: 1rem;
 }
+
 /*header : logo et menu*/
 header a {
-    font-size: 1.1rem;;
+    font-size: 1.1rem;
 }
 
 header {
@@ -49,6 +50,7 @@ header ul li {
 .logo {
     margin-left: 20px;
 }
+
 nav {
     width: 100%;
 }
@@ -76,6 +78,7 @@ a:hover {
 .banner {
     background-image: url("../images/home/site_corot_1920.jpg");
     padding: 5rem 0;
+    background-size: cover;
 }
 
 .search {
@@ -144,6 +147,7 @@ input[type="text"]:focus {
 
 .search_btn button:hover {
     border: solid #000000 1px;
+    font-size: 0.95rem;
 }
 
 /*section actualités*/
@@ -204,7 +208,7 @@ input[type="text"]:focus {
 .news_all {
     background-color: #ffffff;
     width: 200px;
-    height: 150px;
+    height: 153px;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
@@ -347,41 +351,43 @@ i[class="fa-solid fa-bed"] {
 .customers {
     background-color: #1f1f1f;
     width: auto;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     text-align: center;
     color: #ffffff;
 }
 
-.customers span {
-    font-style: italic;
+.customers h2 {
+    margin: 0 auto;
 }
 
 .customers p {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
+    font-style: italic;
 }
 
-.customers button {
+.customers .button {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width: 15%;
+    width: 10rem;
     margin-top: 15px;
     transition: transform .3s;
+    margin: 0 auto;
 }
 
-.customers button:hover {
+.customers .button:hover {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.customers button a:hover {
+.customers .button a:hover {
     font-weight: inherit;
 }
 
@@ -409,7 +415,6 @@ i[class="fa-solid fa-bed"] {
 
 .agency p {
     text-align: center;
-    /*font-weight: 580;*/
 }
 
 .button_contact {
@@ -419,7 +424,7 @@ i[class="fa-solid fa-bed"] {
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width:15%;
+    width:10rem;
     margin-top: 15px;
     transition: transform .3s;
     text-align: center;
@@ -432,15 +437,10 @@ i[class="fa-solid fa-bed"] {
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width:15%;
+    width:10rem;
     margin-top: 1rem;
     transition: transform .3s;
     text-align: center;
-}
-
-button {
-    border: none;
-    background-color: transparent;
 }
 
 .center_button {
@@ -461,11 +461,11 @@ button {
     transform: scale(1.1);
 }
 
-.button_contact button a {
+.button_contact .button a {
     font-weight: inherit;
 }
 
-.button_estimate button a {
+.button_estimate .button a {
     font-weight: inherit;
 }
 
@@ -473,9 +473,10 @@ button {
 .footer {
     background-color: #000000;
     width: auto;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 2.5rem;
     display: flex;
     justify-content: space-around;
 }
@@ -572,7 +573,7 @@ button {
     font-size: 0.8rem;
     background-color: #000000;
     color: #ffffff;
-    padding-bottom: 30px;
+    padding-bottom: 1.25rem;
     font-family: 'Open sans', sans-serif;
 }
 
@@ -584,10 +585,11 @@ button {
 }
 
 /*-----------------------------------------------------------------------*/
-@media all and (max-width: 576px) {
 
+/*----------------------------------------------*/
+@media screen and (max-width: 480px) {
 
-/*header : logo et menu*/
+    /*header : logo et menu*/
     nav ul li {
         display: none;
         }
@@ -611,7 +613,189 @@ button {
         font-size: 2rem;
     }
 
-/*bannière avec fonction recherche*/
+    .logo {
+        margin-left: 0.2rem;
+    }
+
+    /*bannière avec fonction recherche*/
+    .banner {
+        padding: 0 0 !important;
+    }
+
+    .search {
+        background-color: inherit;
+    }
+
+    .menu_search {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        margin: 0 auto; 
+    }
+
+    .menu_search_deco {
+        margin-top: 5px;
+    }
+
+    .input_icon_search + i {
+        display: none;
+    }
+
+    .size_form select {
+        width: 13rem !important;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+
+    .size_form input {
+        width: 12.625rem !important;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+
+    .search_btn button {
+        width: 13rem !important;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+
+    /*section actualités*/
+    .news_slide {
+        flex-direction: column;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        align-items: center;
+        flex-wrap: nowrap !important;
+    }
+
+    .news h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .news_1, .news_2, .news_3 {
+        margin-bottom: 2rem;
+    }
+
+    .news {
+        padding-bottom: 1rem;
+    }
+
+    /*section derniers biens en vente*/
+    .sell {
+        padding-bottom: 0;
+    }
+
+    .sell h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .sell_slide {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .sell_frame {
+        margin-bottom: 2rem;
+    }
+
+    .navbar_sell {
+        padding-bottom: 0.5rem;
+        margin-top: -1rem;
+    }
+
+    /*section avis clients*/
+
+    .customers .button {
+        transition: none;
+    }
+
+    .customers .button:hover {
+        pointer-events: none;
+        transition: none;
+    }
+
+    /*section article agence*/
+    .agency {
+        padding-bottom: 0.5rem;
+    }
+
+    .agency h1 {
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .bkg_agency p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-justify: inter-word;
+        text-align: left !important;
+    }
+
+    .button_contact, .button_estimate {
+        transition: none;
+        max-width: 6rem;
+    }
+
+   .button_contact:hover, .button_estimate:hover {
+    pointer-events: none;
+    transform: none;
+    }
+
+    .center_button {
+        margin-top: 0;
+    }
+
+    .bkg_agency {
+        padding-bottom: 2rem;
+    }
+
+    /*section footer*/
+    .column2, .column3, .column4 {
+        margin-left: 0.1rem !important;   
+    }
+
+    footer {
+        padding-left: 0.2rem !important;
+    }
+}
+
+/*------------------------------------------*/
+@media screen and (max-width: 576px) {
+
+    /*header : logo et menu*/
+    nav ul li {
+        display: none;
+        }
+
+    .auth {
+        display: none;
+    }
+
+    .menu_burger {
+        display: block;
+        position: relative;
+        top: 38px;
+        right: 10px;
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+    .fa-bars {
+        font-size: 2rem;
+    }
+
+    /*bannière avec fonction recherche*/
     .banner {
         padding: 0 0;
     }
@@ -648,7 +832,7 @@ button {
         width: 20rem;
     }
 
-/*section actualités*/
+    /*section actualités*/
     .news_slide {
         flex-direction: column;
         padding-left: 2rem;
@@ -669,7 +853,7 @@ button {
         padding-bottom: 1rem;
     }
 
-/*section derniers biens en vente*/
+    /*section derniers biens en vente*/
     .sell {
         padding-bottom: 0;
     }
@@ -679,12 +863,17 @@ button {
         padding-bottom: 1.5rem;
     }
 
+    .sell_slide {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
     .sell_frame {
         margin-bottom: 2rem;
     }
 
-    #frame_2, #frame_3, #frame_4 {
-        display: none;
+    #frame_1, #frame_2, #frame_4 {
+        display: none !important;
     }
 
     .navbar_sell {
@@ -692,14 +881,13 @@ button {
         margin-top: -1rem;
     }
 
-/*section avis clients*/
-    .customers {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
+    /*section avis clients*/
+    .customers p {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .customers button {
-        width: auto;
+    .customers .button {
         transition: none;
     }
 
@@ -708,7 +896,7 @@ button {
         transition: none;
     }
 
-/*section article agence*/
+    /*section article agence*/
     .agency {
         padding-bottom: 0.5rem;
     }
@@ -731,7 +919,6 @@ button {
 
     .button_contact, .button_estimate {
         transition: none;
-        width: 10rem;
     }
 
    .button_contact:hover, .button_estimate:hover {
@@ -743,15 +930,11 @@ button {
         margin-top: 0;
     }
 
-    .button_contact button, .button_estimate button {
-        display: inline;
-    }
-
     .bkg_agency {
         padding-bottom: 2rem;
     }
 
-/*section footer*/
+    /*section footer*/
     .footer {
         display: inherit;
     }
@@ -781,7 +964,7 @@ button {
 
 /*--------------------------------------------*/
 
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
    
     /*header : logo et menu*/
     nav ul li {
@@ -879,29 +1062,28 @@ button {
         margin-bottom: 2rem;
     }
 
-    #frame_2, #frame_3, #frame_4 {
-        display: none;
-    }
-
     .navbar_sell {
         padding-bottom: 0.5rem;
         margin-top: -1rem;
     }
 
+    .sell_slide {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    #frame_1, #frame_2, #frame_4 {
+        display: none !important;
+    }
+
     /*section avis clients*/
-    .customers {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
-
-    .customers button {
-        width: auto;
+    .customers .button {
         transition: none;
     }
 
-    .customers button:hover {
+    .customers .button:hover {
         pointer-events: none;
-        transition: none;
+        transform: none;
     }
 
     /*section article agence*/
@@ -927,7 +1109,6 @@ button {
 
     .button_contact, .button_estimate {
         transition: none;
-        width: 10rem;
     }
 
    .button_contact:hover, .button_estimate:hover {
@@ -937,10 +1118,6 @@ button {
 
     .center_button {
         margin-top: 0;
-    }
-
-    .button_contact button, .button_estimate button {
-        display: inline;
     }
 
     .bkg_agency {
@@ -976,7 +1153,7 @@ button {
 }
 
 /*-----------------------------------------------*/
-@media all and (max-width: 992px) {
+@media screen and (max-width: 992px) {
      
     /*header : logo et menu*/
      header ul {
@@ -1033,7 +1210,7 @@ button {
     }
 
     .news_all {
-        height: 151px;
+        height: 153px;
     }
 
     .news_1, .news_2, .news_3, .news_all {
@@ -1046,15 +1223,39 @@ button {
         padding-right: 3rem;
     }
 
-    /*section avis clients*/
-    .customers button {
-        width: 20%;
+    #frame_1, #frame_4 {
+        display: none;
     }
+
+    .sell_slide {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    /*section avis clients*/
+    .customers .button {
+        transition: none;
+    }
+
+    .customers .button:hover {
+        pointer-events: none;
+        transform: none;
+    }
+
+     /*section article agence*/
+     .button_contact, .button_estimate {
+        transition: none;
+    }
+
+    .button_contact:hover, .button_estimate:hover {
+        pointer-events: none;
+        transform: none;
+        }
 
 }
 
 /*-----------------------------------------------*/
-@media all and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
      
     /*header : logo et menu*/
      header ul {
@@ -1071,7 +1272,15 @@ button {
     }
 
     .input_icon_search + i {
-    left: 140px;
+        left: 140px;
+    }
+
+}
+
+/* -------------------------XXL-----------------------*/
+@media screen and (min-width: 1500px) {
+    .bkg_agency {
+        background-image: none;
     }
 
 }
