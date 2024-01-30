@@ -88,7 +88,7 @@ header {
     }
 }
 
-@media all and (min-width:768px) {
+@media all and (min-width:769px) {
     .mobile {
         display: none;
     }
@@ -144,7 +144,7 @@ header {
         border: 4px solid #B1F3BC;
         border-radius: 2rem;
         background-color: white;
-        color: #B1F3BC;
+        color: #1F1F1F;
     }
 
     .directions {
@@ -182,6 +182,7 @@ header {
     #form-mobile {
         padding-left: 35px;
         width: 100%;
+        border-radius: 4.313px;
     }
 
     .mobile-h2 {
@@ -237,6 +238,7 @@ header {
         text-decoration: none;
         border: 4px solid #B1F3BC;
         border-radius: 2rem;
+        color: black;
     }
 
     #mobile-page-select {
@@ -244,9 +246,7 @@ header {
         -moz-appearance: none;
         border: 4px solid #B1F3BC;
         border-radius: 3.125rem;
-        /* La moitié de la hauteur pour créer un cercle */
         padding: 0.625rem;
-        /* Ajoutez du rembourrage pour un meilleur aspect */
         cursor: pointer;
     }
 
@@ -303,7 +303,7 @@ header {
     color: white;
     text-align: center;
     font-size: larger;
-    padding-top: 1.563rem;
+    padding-top: 15px;
 }
 
 .section1-form {
@@ -315,9 +315,10 @@ header {
 
 .desktop-form-contract {
     display: flex;
-    width: 114px;
+    width: 118px;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 10px;
+    padding-bottom: 6px;
 }
 
 #form,
@@ -334,7 +335,8 @@ header {
 }
 
 .logo-form,
-.logo-form2 {
+.logo-form2,
+.responsive-research {
     position: relative;
 }
 
@@ -355,10 +357,7 @@ header {
 }
 
 #form {
-    margin-left: 1%;
-    padding-left: 13%;
-    width: %;
-    margin-right: 1%;
+    padding-left: 16%;
 }
 
 #research {
@@ -366,6 +365,12 @@ header {
     border-radius: 0.313rem;
     cursor: pointer;
     width: 120px;
+}
+
+.responsive-research i {
+    position: absolute;
+    top: 20%;
+    padding-left: 5%;
 }
 
 .reinitiate {
@@ -469,9 +474,7 @@ h4 {
     -moz-appearance: none;
     border: 4px solid #B1F3BC;
     border-radius: 3.125rem;
-    /* La moitié de la hauteur pour créer un cercle */
     padding: 0.625rem;
-    /* Ajoutez du rembourrage pour un meilleur aspect */
     cursor: pointer;
     margin-left: 47.5%;
     margin-top: 0.313rem;
@@ -561,11 +564,18 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8px;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 1097px) {
+    .agency {
+        overflow-y: hidden;
+    }
 }
 
 h3 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 figcaption {
@@ -584,13 +594,13 @@ figcaption {
     flex-direction: column;
     margin-bottom: 30px;
     margin-left: 20px;
+    padding-right: 2%;
 }
 
 .testimonies {
     display: flex;
     justify-content: center;
     margin-bottom: -20px;
-    margin-top: -10px;
 }
 
 .testimony {
@@ -604,10 +614,9 @@ figcaption {
 }
 
 .description {
-    margin-left: 60px;
+    margin-left: 20%;
     margin-right: 60px;
     display: flex;
-    justify-content: center;
     margin-bottom: 150px;
     text-align: justify;
 }
@@ -806,7 +815,7 @@ figcaption {
 }
 
 .photo7 {
-    width: 75%;
+    padding-right: 6.4%;
 }
 
 .agency {
