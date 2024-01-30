@@ -21,6 +21,7 @@ a {
     color: black;
     font-size: 1rem;
 }
+
 /*header : logo et menu*/
 header a {
     font-size: 1.1rem;
@@ -49,6 +50,7 @@ header ul li {
 .logo {
     margin-left: 20px;
 }
+
 nav {
     width: 100%;
 }
@@ -76,6 +78,7 @@ a:hover {
 .banner {
     background-image: url("../images/home/site_corot_1920.jpg");
     padding: 5rem 0;
+    background-size: cover;
 }
 
 .search {
@@ -144,6 +147,7 @@ input[type="text"]:focus {
 
 .search_btn button:hover {
     border: solid #000000 1px;
+    font-size: 0.95rem;
 }
 
 /*section actualités*/
@@ -347,41 +351,43 @@ i[class="fa-solid fa-bed"] {
 .customers {
     background-color: #1f1f1f;
     width: auto;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     text-align: center;
     color: #ffffff;
 }
 
-.customers span {
-    font-style: italic;
+.customers h2 {
+    margin: 0 auto;
 }
 
 .customers p {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
+    font-style: italic;
 }
 
-.customers button {
+.customers .button {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width: 15%;
+    width: 10rem;
     margin-top: 15px;
     transition: transform .3s;
+    margin: 0 auto;
 }
 
-.customers button:hover {
+.customers .button:hover {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.customers button a:hover {
+.customers .button a:hover {
     font-weight: inherit;
 }
 
@@ -409,7 +415,6 @@ i[class="fa-solid fa-bed"] {
 
 .agency p {
     text-align: center;
-    /*font-weight: 580;*/
 }
 
 .button_contact {
@@ -419,7 +424,7 @@ i[class="fa-solid fa-bed"] {
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width:15%;
+    width:10rem;
     margin-top: 15px;
     transition: transform .3s;
     text-align: center;
@@ -432,15 +437,10 @@ i[class="fa-solid fa-bed"] {
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width:15%;
+    width:10rem;
     margin-top: 1rem;
     transition: transform .3s;
     text-align: center;
-}
-
-button {
-    border: none;
-    background-color: transparent;
 }
 
 .center_button {
@@ -461,11 +461,11 @@ button {
     transform: scale(1.1);
 }
 
-.button_contact button a {
+.button_contact .button a {
     font-weight: inherit;
 }
 
-.button_estimate button a {
+.button_estimate .button a {
     font-weight: inherit;
 }
 
@@ -473,9 +473,10 @@ button {
 .footer {
     background-color: #000000;
     width: auto;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 2.5rem;
     display: flex;
     justify-content: space-around;
 }
@@ -572,7 +573,7 @@ button {
     font-size: 0.8rem;
     background-color: #000000;
     color: #ffffff;
-    padding-bottom: 30px;
+    padding-bottom: 1.25rem;
     font-family: 'Open sans', sans-serif;
 }
 
@@ -616,7 +617,6 @@ button {
         margin-left: 0.2rem;
     }
 
-
     /*bannière avec fonction recherche*/
     .banner {
         padding: 0 0 !important;
@@ -642,19 +642,19 @@ button {
     }
 
     .size_form select {
-        width: 10rem !important;
+        width: 13rem !important;
         margin: 0 auto;
         margin-top: 0.5rem;
     }
 
     .size_form input {
-        width: 9.625rem !important;
+        width: 12.625rem !important;
         margin: 0 auto;
         margin-top: 0.5rem;
     }
 
     .search_btn button {
-        width: 10rem !important;
+        width: 13rem !important;
         padding-right: 0;
         margin: 0 auto;
         margin-top: 0.5rem;
@@ -707,22 +707,12 @@ button {
     }
 
     /*section avis clients*/
-    .customers {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
 
-    .customers p {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .customers button {
-        width: 12rem !important;
+    .customers .button {
         transition: none;
     }
 
-    .customers button:hover {
+    .customers .button:hover {
         pointer-events: none;
         transition: none;
     }
@@ -752,7 +742,7 @@ button {
 
     .button_contact, .button_estimate {
         transition: none;
-        width: 6rem !important;
+        max-width: 6rem;
     }
 
    .button_contact:hover, .button_estimate:hover {
@@ -764,31 +754,24 @@ button {
         margin-top: 0;
     }
 
-    .button_contact button, .button_estimate button {
-        display: inline;
-    }
-
     .bkg_agency {
         padding-bottom: 2rem;
     }
 
     /*section footer*/
-
     .column2, .column3, .column4 {
-        margin-left: 0.1rem !important;
-        
+        margin-left: 0.1rem !important;   
     }
 
     footer {
         padding-left: 0.2rem !important;
-
     }
 }
 
 /*------------------------------------------*/
 @media screen and (max-width: 576px) {
 
-/*header : logo et menu*/
+    /*header : logo et menu*/
     nav ul li {
         display: none;
         }
@@ -812,7 +795,7 @@ button {
         font-size: 2rem;
     }
 
-/*bannière avec fonction recherche*/
+    /*bannière avec fonction recherche*/
     .banner {
         padding: 0 0;
     }
@@ -849,7 +832,7 @@ button {
         width: 20rem;
     }
 
-/*section actualités*/
+    /*section actualités*/
     .news_slide {
         flex-direction: column;
         padding-left: 2rem;
@@ -899,18 +882,12 @@ button {
     }
 
     /*section avis clients*/
-    .customers {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
-
     .customers p {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    .customers button {
-        width: 12rem !important;
+    .customers .button {
         transition: none;
     }
 
@@ -919,7 +896,7 @@ button {
         transition: none;
     }
 
-/*section article agence*/
+    /*section article agence*/
     .agency {
         padding-bottom: 0.5rem;
     }
@@ -942,7 +919,6 @@ button {
 
     .button_contact, .button_estimate {
         transition: none;
-        width: 10rem;
     }
 
    .button_contact:hover, .button_estimate:hover {
@@ -954,15 +930,11 @@ button {
         margin-top: 0;
     }
 
-    .button_contact button, .button_estimate button {
-        display: inline;
-    }
-
     .bkg_agency {
         padding-bottom: 2rem;
     }
 
-/*section footer*/
+    /*section footer*/
     .footer {
         display: inherit;
     }
@@ -1105,19 +1077,13 @@ button {
     }
 
     /*section avis clients*/
-    .customers {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-    }
-
-    .customers button {
-        width: 12rem !important;
+    .customers .button {
         transition: none;
     }
 
-    .customers button:hover {
+    .customers .button:hover {
         pointer-events: none;
-        transition: none;
+        transform: none;
     }
 
     /*section article agence*/
@@ -1143,7 +1109,6 @@ button {
 
     .button_contact, .button_estimate {
         transition: none;
-        width: 10rem;
     }
 
    .button_contact:hover, .button_estimate:hover {
@@ -1153,10 +1118,6 @@ button {
 
     .center_button {
         margin-top: 0;
-    }
-
-    .button_contact button, .button_estimate button {
-        display: inline;
     }
 
     .bkg_agency {
@@ -1272,24 +1233,24 @@ button {
     }
 
     /*section avis clients*/
-    .customers button {
-        width: 12rem !important;
+    .customers .button {
+        transition: none;
     }
 
-    .bkg_agency p {
-        margin-left: 2rem;
-        margin-right: 2rem;
+    .customers .button:hover {
+        pointer-events: none;
+        transform: none;
     }
 
      /*section article agence*/
      .button_contact, .button_estimate {
-        width: 10rem;
+        transition: none;
     }
 
-
-    .footer {
-        padding-right: 20px;
-    }
+    .button_contact:hover, .button_estimate:hover {
+        pointer-events: none;
+        transform: none;
+        }
 
 }
 
@@ -1314,11 +1275,6 @@ button {
         left: 140px;
     }
 
-    /*section avis clients*/
-    .customers button {
-        width: 12rem !important;
-    }
-
 }
 
 /* -------------------------XXL-----------------------*/
@@ -1327,11 +1283,4 @@ button {
         background-image: none;
     }
 
-}
-
-@media screen and (min-width: 1900px) {
-    .banner {
-        background-image: url("../images/home/bkg_banner_xxl_5599.jpg");
-        background-position: center;
-    }
 }
