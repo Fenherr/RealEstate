@@ -26,9 +26,11 @@
     font-family: "opensans";
     src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
 }
+
 :root {
     --main-color: #b1f3bc;
     --third-color: white;
+}
 
 h2 {
     color: white;
@@ -42,10 +44,20 @@ h2 {
 
 /* Header + Nav */
 
+* {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
 a {
     text-decoration: none;
-    color: #000;
 }
+
+.logo:hover {
+    opacity: 0.6;
+}
+
 .title-txt {
     font-family: "Baloo2", sans-serif;
     font-size: 1.4rem;
@@ -53,35 +65,44 @@ a {
 .flex {
     display: flex;
 }
+
 .justify-content{
     justify-content: space-between;
 }
+
 .align-item{
     align-items: center;
 }
+
 .menu li {
     list-style: none;
     margin: 0 40px 0 0;
 }
-.menu li:hover, .logo-mon-compte:hover {
+
+.menu a:hover, .logo-mon-compte:hover {
     font-weight: bolder;
 }
 
-.header {
+header {
     background-color: var(--main-color);
     font-family: baloo2;
     font-size: 1.4rem;
     padding: 0.675rem;
 }
 
+#check, .checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
 /* Search bar */
 
 .search_bar {
-    margin-top: 95px;
+    margin-top: 4rem;
 }
 
 .icon_search {
-    padding: 15px;
+    padding: 1rem;
     background-color: black;
     border: 5px solid;
     border-color: #E2FBB7;
@@ -101,11 +122,11 @@ a {
 }
 
 .bar_search {
-    padding-right: 45px;
+    padding-right: 4rem;
 }
 
 .button_search {
-    padding: 25px;  
+    padding: 1.65rem;  
     font-size: 20px;    
     color: #E2FBB7;
     background-color: black;
@@ -120,7 +141,7 @@ a {
 /* Presentation text to_manage */
 
 .presentation_to_manage {
-    margin-top: 53px;
+    margin-top: 2rem;
 }
 
 .presentation_to_manage p {
@@ -131,7 +152,8 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 53px 304px 0px 304px;
+    margin: 0 auto;
+    margin-bottom: 53px;
 }
 
 /* Les services immobliers */
@@ -226,6 +248,7 @@ a {
     background: black;
     width: 93%;
     margin-left: 64px;
+    margin-bottom: 2rem;
 }
 
 .title_stats {
@@ -267,21 +290,24 @@ a {
     background: black;
 }
 
-/* Footer */
+/************** FOOTER ******************   */
 
 footer {
     background-color: #1f1f1f;
-    font-size: 1.1rem;
-
+    font-family: "opensans";
+    padding-top: 0.675rem;
 }
 
 .social-media {
     color: var(--third-color);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    
+    font-size: 1.5rem;
+    padding-left: 38px;
+}
+
+.social-media li {
+    padding: 20px;
 }
 
 footer p, footer h2, footer li {
@@ -299,16 +325,15 @@ footer ul {
 
 footer li {
     list-style: none;
+    padding-bottom: 1rem;
 }
 
-.footer-service, .footer-acces, .footer-contact {
+.footer-services, .footer-access, .footer-contact {
     display: flex;
     flex-direction: column;
+    padding-left: 8.95rem;
 }
 
-.footer-acces, .footer-contact, .footer-service {
-    padding-left: 6rem;
-}
 
 .copyright {
     padding-bottom: 0.675rem;
@@ -318,23 +343,47 @@ footer li {
 .footer-logo img {
     width: 150px;
     height: 73px;
-    padding-bottom: 0.5rem;
+}
+
+.footer-logo {
+    padding: 0.675rem;
+    padding-top: 0;
+}
+
+footer p {
+padding-left: 9px;
+padding-top: 2rem;
+}
+
+#fb:hover, #tw:hover, #insta:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+footer h2 {
+    padding-bottom: 10px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-queries {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 767px) {
-    .presentation_to_manage p {
-        margin: 2rem;
-    }
-}
+
 
 @media screen and (max-width: 1919px) {
     .bloc_article {
         flex-direction: column;
     }
     .article_1 {
-        width: 80%;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .image_service_1 {
@@ -346,8 +395,10 @@ footer li {
     }
 
     .article_2 {
-        width: 80%;
+        width: 90%;
         margin-left: 64px;
+        margin: 0 auto;
+        margin-top: 4rem;
     }
 
     .image_service2 {
@@ -359,9 +410,91 @@ footer li {
     }
 
     .bloc_stats {
-        width: 80%;
+        width: 90%;
+        margin: 0 auto;
     }
     .icone_stats {
        flex-direction: column;
     }
-}}
+}
+
+@media all and (max-width: 768px) {
+    
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        padding-right: 0.675rem;
+        color: black;
+        float: right;
+    }
+
+    .menu, .logo-mon-compte, header nav {
+        display: none!important;
+    }
+
+}
+
+@media all and (max-width: 1200px) {
+    .colonne {
+        flex-direction: column;
+    }
+
+    .footer-access, .footer-services, .footer-contact {
+        width: 33.33%;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+    }
+    .social-media {
+        padding-left: 0rem;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        width: 20%;
+    } 
+}
+
+@media all and (max-width: 768px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+}
+}
+
+@media all and (max-width: 576px) {
+    .colonne {
+        flex-direction: column;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        padding: 0.675rem;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        padding-left: 12.5rem;
+    }
+
+    .footer-logo p {
+        padding-left: 8.5rem;
+    }
+
+    .social-media {
+        font-size: 3.5rem;
+        padding-left: 0rem;
+        justify-content: space-around;
+    }
+
+    .social-media li {
+        padding: 1rem 8.6rem 1rem 0rem;
+    }
+
+    .footer-queries {
+        flex-direction: column;
+    }
+
+    .social-media li:last-child {
+        padding-right: 0;
+    }
+}

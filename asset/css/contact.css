@@ -1,3 +1,5 @@
+/*header commun*/
+
 @font-face {
     font-family: "baloo2";
     src: url(../fonts-family/Baloo2-Medium.ttf);
@@ -6,36 +8,49 @@
     font-family: "opensans";
     src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
 }
+
 :root {
     --main-color: #b1f3bc;
     --third-color: white;
 }
+
 * {
     padding: 0;
     margin: 0;
+    color: inherit;
 }
+
 a {
     text-decoration: none;
-    color: #000;
 }
+
+.logo:hover {
+    opacity: 0.6;
+}
+
 .title-txt {
     font-family: "Baloo2", sans-serif;
     font-size: 1.4rem;
 }
+
 .flex {
     display: flex;
 }
+
 .justify-content{
     justify-content: space-between;
 }
+
 .align-item{
     align-items: center;
 }
+
 .menu li {
     list-style: none;
     margin: 0 40px 0 0;
 }
-.menu li:hover, .logo-mon-compte:hover {
+
+.menu a:hover, .logo-mon-compte:hover {
     font-weight: bolder;
 }
 
@@ -46,35 +61,63 @@ header {
     padding: 0.675rem;
 }
 
-/*body*/
+#check, .checkbtn {
+    display: none;
+    cursor: pointer;
+}
 
-a, h1, h2, h3, h4, h5, h6 {
+@media all and (max-width: 768px) {
+    
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        padding-right: 0.675rem;
+        color: black;
+        float: right;
+    }
+
+    .menu, .logo-mon-compte, header nav {
+        display: none!important;
+    }
+}
+
+/*body - page contact*/
+
+.background-picture{
+    background-image: url("../images/squarecurie.jpg");
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+
+.background-picture ::before {
+     opacity: .3;      
+}
+
+h1 {
     font-family: "baloo2";
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2rem;
 }
 .contact {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
   
-.contactform {
+.phone-numbers {
     display: flex;
     justify-content: space-between;
     }
 
 .phone {
-    h2, h3 {
-        font-size: 20px;
-    }
+    font-size: 1.25rem;
     width: 50%;
-    padding: 0 20px 30px;
-
+    padding: 0 1.25rem 1.875rem;
 }
 
-h4 {
+.other-request {
     background-color: #b1f3bc; 
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-right: 62%;
     margin-bottom: 1%;    
 }
@@ -89,7 +132,7 @@ h4 {
         background-color: #b1f3bc;        
     }  
     width: 50%;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 } 
  
 #subjet, #subjet-selected, #message, #submit {
@@ -104,20 +147,21 @@ h4 {
     margin-top: 1%;
     margin-bottom: 1%;
 }
-#submit {
-    bottom: 3px;
+.button {
+    width: 0.188rem;
     background-color: #E2FBB7;
+    
 }
-
 
 .find-us {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    padding: 30px 20px 30px 20px;
+    padding: 1.875rem 1.25rem 1.875rem 1.25rem;
    
-    h5 {background-color: #b1f3bc; 
-        font-size: 20px;
+    .social-networks {background-color: #b1f3bc; 
+        font-size: 1.25rem;
+        margin-bottom: 1%;
     }
 }
 
@@ -127,46 +171,159 @@ h4 {
     margin-bottom: 1%;   
 }
 
-footer {
-    background-color: black;
-    color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-footer a {
-    color: aliceblue;
-}
-footer a:hover {
-    color: aliceblue;
-    font-weight: bolder;
-}
-
-.social-networks {
-    img{
-        /*.contrast{filter: contrast(300%);}*/
-        color: aliceblue;
+@media screen AND (max-width: 768px) {
+    .phone-numbers, .other-request, .formatting, .find-us, .maps {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;        
     }
 }
+  
+   
+/*footer commun*/
 
-.services, rapid-access, to-contact {
-    color: aliceblue;
+footer {
+    background-color: #1f1f1f;
+    font-family: "opensans";
+    padding-top: 0.675rem;
 }
-.copyright {
+
+.social-media {
+    color: var(--third-color);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding-left: 38px;
+}
+
+.social-media li {
+    padding: 20px;
+}
+
+footer p, footer h2, .footer-queries a {
+    color: var(--third-color);
+}
+
+.colonne {
+    display: flex;
+    padding-top: 0.675rem;
+}
+
+footer ul {
+    flex-flow: column;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.footer-services, .footer-access, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.95rem;
+}
+
+
+.copyright {
+    padding-bottom: 0.675rem;
     text-align: center;
 }
 
-/*medias query*/
-@media all AND (max-width:579px)
-    {
-        nav {
-            display: none;
-        }
-        .logo-my-account {
-            display: none;
-        }
+.footer-logo img {
+    width: 150px;
+    height: 73px;
+}
+
+.footer-logo {
+    padding: 0.675rem;
+    padding-top: 0;
+}
+
+footer p {
+padding-left: 9px;
+padding-top: 2rem;
+}
+
+#fb:hover, #tw:hover, #insta:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+footer h2 {
+    padding-bottom: 10px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-queries {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 1200px) {
+    .colonne {
+        flex-direction: column;
     }
 
+    .footer-access, .footer-services, .footer-contact {
+        width: 33.33%;
+    }
 
+}
+
+@media all and (max-width: 992px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+    }
+    .social-media {
+        padding-left: 0rem;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        width: 20%;
+    } 
+}
+
+@media all and (max-width: 768px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+}
+}
+
+@media all and (max-width: 576px) {
+    .colonne {
+        flex-direction: column;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        padding: 0.675rem;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        padding-left: 12.5rem;
+    }
+
+    .footer-logo p {
+        padding-left: 8.5rem;
+    }
+
+    .social-media {
+        font-size: 3.5rem;
+        padding-left: 0rem;
+        justify-content: space-around;
+    }
+
+    .social-media li {
+        padding: 1rem 8.6rem 1rem 0rem;
+    }
+
+    .footer-queries {
+        flex-direction: column;
+    }
+
+    .social-media li:last-child {
+        padding-right: 0;
+    }
+}
