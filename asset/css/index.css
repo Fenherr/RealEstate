@@ -78,7 +78,7 @@ a:hover {
 .banner {
     background-image: url("../images/home/site_corot_1920.jpg");
     padding: 5rem 0;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 .search {
@@ -417,7 +417,7 @@ i[class="fa-solid fa-bed"] {
     text-align: center;
 }
 
-.button_contact {
+.button_estimate {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
@@ -430,7 +430,7 @@ i[class="fa-solid fa-bed"] {
     text-align: center;
 }
 
-.button_estimate {
+.button_manage {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
@@ -449,23 +449,23 @@ i[class="fa-solid fa-bed"] {
     margin-top: 2rem;
 }
 
-.button_contact:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .button_estimate:hover {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.button_contact .button a {
-    font-weight: inherit;
+.button_manage:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .button_estimate .button a {
+    font-weight: inherit;
+}
+
+.button_manage .button a {
     font-weight: inherit;
 }
 
@@ -740,12 +740,12 @@ i[class="fa-solid fa-bed"] {
         text-align: left !important;
     }
 
-    .button_contact, .button_estimate {
+    .button_estimate, .button_manage {
         transition: none;
         max-width: 6rem;
     }
 
-   .button_contact:hover, .button_estimate:hover {
+   .button_estimate:hover, .button_manage:hover {
     pointer-events: none;
     transform: none;
     }
@@ -917,11 +917,11 @@ i[class="fa-solid fa-bed"] {
         text-align: justify;
     }
 
-    .button_contact, .button_estimate {
+    .button_estimate, .button_manage {
         transition: none;
     }
 
-   .button_contact:hover, .button_estimate:hover {
+   .button_estimate:hover, .button_manage:hover {
     pointer-events: none;
     transform: none;
     }
@@ -1107,11 +1107,11 @@ i[class="fa-solid fa-bed"] {
         text-align: justify;
     }
 
-    .button_contact, .button_estimate {
+    .button_estimate, .button_manage {
         transition: none;
     }
 
-   .button_contact:hover, .button_estimate:hover {
+   .button_estimate:hover, .button_manage:hover {
     pointer-events: none;
     transform: none;
     }
@@ -1243,11 +1243,11 @@ i[class="fa-solid fa-bed"] {
     }
 
      /*section article agence*/
-     .button_contact, .button_estimate {
+     .button_estimate, .button_manage {
         transition: none;
     }
 
-    .button_contact:hover, .button_estimate:hover {
+    .button_estimate:hover, .button_manage:hover {
         pointer-events: none;
         transform: none;
         }

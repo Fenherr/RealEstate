@@ -180,7 +180,10 @@ form {
 
 input {
     width: 20rem;
+    height: 2rem;
+    font-size: 1.2rem;
 }
+
 
 button {
     width: 10rem;
@@ -231,6 +234,8 @@ select {
         
         input {
             width: 9rem;
+            height: 1.8rem;
+            font-size: 1.08rem;
         }
         button {
             width: 6rem;
@@ -349,11 +354,11 @@ select {
         .title-search {
             left: 0%;
             right: 0%;
-            top: 6.5rem;
+            top: 6.3rem;
         }  
     }
 
-    @media all AND (max-width:460px)
+    @media all AND (max-width:320px)
     {
         .title-search {
             left: 0%;
