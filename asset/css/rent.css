@@ -349,11 +349,11 @@ select {
         .title-search {
             left: 0%;
             right: 0%;
-            top: 6.5rem;
+            top: 6.3rem;
         }  
     }
 
-    @media all AND (max-width:460px)
+    @media all AND (max-width:320px)
     {
         .title-search {
             left: 0%;
