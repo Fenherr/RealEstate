@@ -1,45 +1,87 @@
-
-/*style qui s'applique à l'ensemble de la page*/
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Baloo22";
+@font-face {
+    font-family: "baloo2";
+    src: url(../fonts-family/Baloo2-Medium.ttf);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
+}
+:root {
+    --main-color: #b1f3bc;
+    --third-color: white;
 }
 
-/* style qui s'applique au header*/
+* {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
 
-header{
-     width: auto;
-     background-color: #B1F3BC;
-     margin:auto;
-     display:flex;
-     justify-content:space-between;
-     align-items:center;
+a {
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+.title-txt {
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.4rem;
+}
+.flex {
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-item{
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 40px 0 0;
+}
+
+.menu a:hover, .logo-mon-compte:hover {
+    font-weight: bolder;
+}
+
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    font-size: 1.4rem;
+    padding: 0.675rem;
+}
+
+#check, .checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+    
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        padding-right: 0.675rem;
+        color: black;
+        float: right;
     }
 
-ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        width: 100%;
-        margin-left: 40px;
-        margin-right: 40px;
-        font-size: 15px;
+    .menu, .logo-mon-compte, header nav {
+        display: none!important;
+    }
+
 }
 
-li{
-    padding-right: 40px;
-}
 
 /*style qui s'applique à la partie main*/
 
-.logoacgd{
-margin-left:30px;
-margin-top:10px;
-margin-bottom:10px;    
-}
+
 
 main{
     height:100vh;
@@ -98,7 +140,6 @@ main{
     margin-bottom:17px ;
 }
  
-
 
 
 
