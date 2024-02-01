@@ -15,11 +15,13 @@
     padding: 0;
     margin: 0;
     color: inherit;
+    font-family: "opensans";
 }
 
 a {
     text-decoration: none;
 }
+
 
 .logo:hover {
     opacity: 0.6;
@@ -54,7 +56,8 @@ header {
     background-color: var(--main-color);
     font-family: baloo2;
     font-size: 1.4rem;
-    padding: 0.675rem;
+    padding: 0.675rem; 
+   
 }
 
 #check, .checkbtn {
@@ -92,23 +95,21 @@ main{
 }
 
 .form_container{
-    height: 40%;
-    width: 35%;
-    border: 2px solid black;
+    height: 66%;
+    width: 40.5%;
+    border: 4px solid rgb(12, 12, 12);
     
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 55px;
     position: absolute;
-    left: 4px;
-    top: 250px;
-    padding-top: 150px;
-    padding-bottom: 200px;
-   
-
+    left: 2px;
+    top: 102px;
+    padding-top: 114px;
+    padding-bottom: 213px;
 }
 
 .form_container_heading{
@@ -134,21 +135,24 @@ main{
 }
 
 .test {
-    padding-left: 50%;
-    width: 78%;
-    height: 102%;
-    margin-bottom:17px ;
+    width: 88%;
+    height: 100%;
+    margin-bottom:15px ;
+    margin-left: 38%;
 }
  
+.image {
+    width: 66%;
+    height: 100%;
+}
 
 
 
-
-
-
-
-
-
+.check {
+    display: flex;
+    margin-left: -320px;
+    justify-content: space-around;
+}
 
 
 
@@ -269,9 +273,70 @@ footer li a:hover {
     .footer-access, .footer-services, .footer-contact {
         padding-left: 1.5rem;
 }
+.form_container{
+    height: 25%;
+    width: 38.5%;
+    border: 4px solid rgb(5, 0, 0);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 17%;
+    position: absolute;
+    left: 2px;
+    padding-top: 34.5%;
+    padding-bottom: 25.5%;
+}
+
+
+.check {
+    display: flex;
+    flex-direction: column;
+}
 }
 
 @media all and (max-width: 576px) {
+
+    .image {
+        display: none;
+    }
+
+    .form_container{
+        height: 41%;
+        width: 92%;
+        border: 4px solid rgb(5, 0, 0);
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 17%;
+        position: absolute;
+        left: 2px;
+        top: 103px;
+        padding-top: 34.5%;
+        padding-bottom: 44%;
+    }
+    
+    .check {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .form_container_heading{
+        font-size: 1.2rem;
+        font-family:sans-serif;
+        color: #B1F3BC;
+        padding-top: 20%;
+    }
+    
+
+
+
+               /* footer */
+
     .colonne {
         flex-direction: column;
     }
@@ -280,10 +345,7 @@ footer li a:hover {
         padding-left: 1rem;
     }
 
-    .logo {
-        padding-left: 12.5rem;
-    }
-
+  
     .footer-logo p {
         padding-left: 8.5rem;
     }
@@ -294,9 +356,7 @@ footer li a:hover {
         justify-content: space-around;
     }
 
-    .social-media li {
-        padding: 1rem 8.6rem 1rem 0rem;
-    }
+  
 
     .footer-queries {
         flex-direction: column;
@@ -308,7 +368,35 @@ footer li a:hover {
 }
 
 
+@media screen and (max-width: 576px) {
 
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+
+/* 
+    Jusqu’à 479px : smartphone en portrait
+    De 480px à 959px : smartphone en paysage, tablette en portrait et petite tablette en paysage
+    De 960px à 1280px : tablette en paysage, écran d’ordinateur de taille petite et moyenne
+    1281px et au delà : grand écran d’ordinateur (21″ et + en plein écran )
+
+    @media all and (max-width:576px){ }
+    @media all and (max-width:768px){ }
+    @media all and (max-width:992px){ }
+    @media all and (max-width:1200px){ }
+
+*/      
 
    
 
