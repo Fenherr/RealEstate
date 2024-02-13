@@ -92,15 +92,19 @@ header {
         display: block;
         font-size: 30px;
         color: black;
-        float: right;
+    }
+
+    #nav{
+        display: none;
     }
 
     nav ul {
-        position: fixed;
+        position: absolute;
         left: -100%;
-        top: 15%;
+        top: 21%;
         flex-direction: column;
         background-color: #B1F3BC;
+        opacity: 0.9;
         width: 100%;
         text-align: center;
         transition: 0.25s;
@@ -112,6 +116,8 @@ header {
 
     nav li:hover {
         background: #e2fbb7;
+        width: 100%;
+        transition: 0.3s ease;   
     }
 
     nav.active ul {
