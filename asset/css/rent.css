@@ -191,6 +191,15 @@ button {
     background-color: #E2FBB7;
 }
 
+.botonburger {
+    width: 3rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    height: 3rem;
+    font-size: 2rem;
+    border: none;
+    background-color: #e2fbb700;
+}
+
 select {
     text-align: center;
     width: 10rem;

@@ -6,12 +6,12 @@
     <title>Location</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/rent.css">
-
+    <script src="./asset/js/rent.js"></script>
 </head>
 <body>
     <header class="flex justify-content align-item">    
         <a href="index.html"><img class="logo" src="./asset/images/logo x150.png" alt="logo"></a>
-        <nav>
+        <nav id="zemenu">
             <ul class="menu flex justify-content">
                 <li><a class="title-txt" href="buy.html">Acheter</a></li>
                 <li><a class="title-txt" href="rent.html">Louer</a></li>
@@ -23,7 +23,7 @@
             <a class="active" href="to_manage.html"><i class="fa-solid fa-user"></i>Mon compte</a>
         </div>
         <div class="logo-alter">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <button id="burger" onclick="ouvre();" class="botonburger"><a href="#"><i class="fa-solid fa-bars"></i></a></button>
         </div>
     </header>
     <main>
