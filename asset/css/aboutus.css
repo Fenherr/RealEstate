@@ -74,18 +74,25 @@ header {
     cursor: pointer;
 }
 
+#moncompte{
+    display: none;
+}
+
 @media all and (max-width: 768px) {
+
+    #moncompte{
+        display: inline-block;
+    }
+
+    .logo-mon-compte{
+       display: none;
+    }
     
     .checkbtn {
         display: block;
         font-size: 30px;
-        padding-right: 0.675rem;
         color: black;
         float: right;
-    }
-
-    .active #chek::before {
-        content: "X";
     }
 
     nav ul {
