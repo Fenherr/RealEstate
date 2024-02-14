@@ -68,6 +68,16 @@ p {
     display: none;
 }
 
+.logo-alter input {
+    font-family: FontAwesome;
+    text-align: right;
+    font-size: 2.5rem;
+    margin: 0rem;
+    height: 2.6rem;
+    background-color: transparent;
+    border: none;
+}
+
 /*---------------------------------------*/
 
 main {
