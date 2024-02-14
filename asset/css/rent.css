@@ -90,6 +90,7 @@ main {
 }
 .title-search {
     position: absolute;
+    z-index: 1;
     left: 30%;
     right: 30%;
     top: 9rem;
