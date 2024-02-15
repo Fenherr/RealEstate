@@ -74,6 +74,11 @@ i[class="fa-regular fa-user"] {
 a:hover {
     font-weight: 600;
 }
+
+#idcount {
+    display: none;
+}
+
 /*bannière avec fonction recherche*/
 .banner {
     background-image: url("../images/home/site_corot_1920.jpg");
@@ -1111,6 +1116,10 @@ i[class="fa-solid fa-bed"] {
         font-size: 2.5rem;
     }
 
+    #idcount {
+        display: block;
+    }
+
     #menu_burger:before {
         font-family: 'Font Awesome 5 Free';
         content: "\f0c9";
@@ -1122,7 +1131,6 @@ i[class="fa-solid fa-bed"] {
         content: "\f00d";
         font-weight: 900;
     }
-
 
     nav ul {
         flex-direction: column;
@@ -1143,18 +1151,21 @@ i[class="fa-solid fa-bed"] {
     nav li {
         margin-left: 0 !important;
         border-top: 1px solid #1f1f1f;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        
     }
 
     nav li a {
         padding-right: 0.7rem;
     }
 
-    nav li:hover, nav li:active {
+    nav li:hover {
         background-color:#e2fbb7;
         margin-left: 0;
     }
 
-    nav li a:hover, nav li a:active {
+    nav li a:hover {
         font-weight: inherit;
     }
 

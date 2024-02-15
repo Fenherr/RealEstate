@@ -1,13 +1,50 @@
 // Début
+let burgermenu=document.getElementById("burger");
+let listmenu=document.querySelector("#zemenu");
+let main=document.querySelector("main");
+let header=document.querySelector("header");
 
-function ouvre() {
-    let listburger=document.getElementById("zemenu");
-    let menuburger=document.getElementById("burger");
-    let menu=document.createElement("menu");
-    let sousmenu=document.createElement("li");
-    sousmenu.textContent="Achat";
-    menu.appendChild(sousmenu);
-    menuburger.appendChild(menu)
-    listburger.setAttribute("display", "")
-    return console.log(listburger);
+burgermenu.addEventListener("click", ouverture);
+main.addEventListener("click", fermeture);
+
+function fermeture() {
+    let flexi=document.getElementById("divmenu");
+    flexi.setAttribute("style", "position:absolute;z-index:2;right:-100%;top:0");
+    
+
+    ;
 }
+
+function ouverture() {
+    let flexi=document.getElementById("divmenu");
+    if (flexi==null) {
+    let linkmenu=document.createElement("a");
+    let compteplus=document.createElement("li");
+    let flexi=document.createElement("div");
+    linkmenu.setAttribute("class", "title-txt");
+    linkmenu.setAttribute("href", "to_manage.html")
+    linkmenu.textContent="Compte";
+    listmenu.setAttribute("style", "display:block; background-color:#b1f3bc; border:black solid 1px; padding-left:1rem");
+    flexi.setAttribute("id", "divmenu");
+    flexi.setAttribute("style", "position:absolute;z-index:2;right:0;top:0");
+    compteplus.appendChild(linkmenu);
+    listmenu.appendChild(compteplus);
+    flexi.appendChild(listmenu);
+    header.appendChild(flexi);
+    listmenu=listmenu.textContent;
+    return console.log(listmenu);
+}
+    flexi.setAttribute("style", "position:absolute;z-index:2;right:0;top:0");
+}
+
+
+/*-_-_-_-_ Formulaire recherche -_-_-_-_-_-_-_-_-_-_-_-_*/
+
+let form=document.getElementById("formu");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let secteur=document.getElementById("local").value;
+    let prize=document.getElementById("prize").value;
+    let distance=document.getElementById("localization").value;
+    console.log(secteur+" "+prize+" "+distance);
+});
