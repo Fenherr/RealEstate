@@ -40,14 +40,14 @@
             <!-- zone Recherche + zone gauche -->
             <div class="zone1">
                 <!-- bloque recherche -->
-                <form>
+                <form id="formu">
                     <div>
                         <label for="localization">Lieu :</label>
-                        <input type="text" placeholder="Adresse, département, région, etc...">
+                        <input id="local" type="text" placeholder="Adresse, département, région, etc...">
                     </div>
                     <div>
                         <label class="lab-pri">Prix :</label>
-                        <input type="text" placeholder="Prix en euros">
+                        <input id="prize" type="text" placeholder="Prix en euros">
                     </div>
                     <div class="group-button">
                         <select name="distance" id="localization">
@@ -58,7 +58,7 @@
                             <option value="departement">Département</option>
                             <option value="region">Région</option>
                         </select>
-                        <button type="submit">Recherche</button>
+                        <input class="butt" type="submit" value="Recherche">
                     </div>
                 </form>
                 <div class="zone3">
