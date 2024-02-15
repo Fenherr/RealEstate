@@ -3,78 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./asset/css/header-footer.css">
-    <link rel="stylesheet" href="styleSheet.css">
+    <link rel="stylesheet" href="./asset/css/login.css">
+    <title>Login</title>
 </head>
 <body>
-    <header class="flex justify-content align-item">    
-        <a href="index.html"><img class="logo" src="./asset/images/logo x150.png" alt="logo"></a>
-        <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-        <nav>
-            <ul class="menu flex justify-content">
-                <li><a class="title-txt" href="buy.html">Acheter</a></li>
-                <li><a class="title-txt" href="rent.html">Louer</a></li>
-                <li><a class="title-txt" href="sell.html">Vendre</a></li>
-                <li><a class="title-txt" href="contact.html">Contact</a></li>
-            </ul>            
-        </nav>
-        <div class="logo-mon-compte">
-            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
-        </div>
-    </header>
+    <div class=" container">
+        <form action="" method="post">
 
-    <main>
-    <body>
-        <div class="Container">
-            <form action="" method="post">
-                <h2>registration</h2>
-                <div class=" content ">
-                    <label for="name"> username</label>
-                    <input type="text" placeholder="enter full name  " name="name"  required>
-                </div>
-                <div class=" input-box">
-                    <label for="email ">email</label>
-                    <input type="text" placeholder="enter your valid email adress  " name="email"  required>
-                </div>
-                <div class=" content ">
-                    <label for="phone ">Phone Number</label>
-                    <input type="tel" placeholder="enter phone number " name="phone"  required>
-                </div>
+            <h2> Inscription </h2>
+            <div class="content">
                 <div class="input-box">
-                    <label for="password "> password</label>
-                    <input type="text" placeholder="enter new password " name="password"  required>
-                </div>
-                <div class="input-box">
-                    <label for="confirm-passwrd "> Confirm password</label>
-                    <input type="text" placeholder="confirm your password " name="confirmPassword"  required>
-                </div>
-            </form>
-            <span class="gender-title">Gender</span>
-            <div class="gender-category">
-                <input type="ratio" name="gender" id=" male">
-                <label for="male">Male</label>
-                <input type="ratio" name="gender" id=" female">
-                <label for="female">female</label>
-                <input type="ratio" name="gender" id=" other">
-                <label for="other">other</label>
+                    <label for="name">full Name</label>
+                    <input type="text" placeholder="enter full Name" name="Name" required>
+                 </div>
+            <div class="input-box">
+                <label for="username">username</label>
+                <input type="text" placeholder="enter username" name="uname" required>
             </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter your valid email" name="email" required>
+             </div>
+             <div class="input-box">
+                <label for="phone">phone Number</label>
+                <input type="tel" placeholder="enter phone number" name="phone" required>
+             </div>
+             <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" placeholder="enter new password" name="password" required>
+             </div>
+             <div class="input-box">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" placeholder="confirm your password" name="confirmPassword" required>
+             </div>
+             <span class="gender-title">Gender</span>
+             <div class="gender-category">
+                <input type="radio" name=" gender" id="homme">
+                <label for="homme">Homme</label>
+                <input type="radio" name="  gender" id="Femme">
+                <label for="femme">Femme</label>
+                <input type="radio" name="gender" id="autre">
+                <label for="autre">autre</label>
+             </div>
+            </div>
+            <div class="alert">
+                <p>By cliking sign up, you agree to our <a href="#">Terms,</a> <a href="#">privacy policy</a> and <a 
+                    href="#">Cookies policy.</a> You may receive SMS motifications from us and can opt out at my any time.</p>     
+                </div>
+                <div class="button-container">
+                    <button>Register</button>
+                </div>
+              </form>
         </div>
-        <div class="alert">
-            <p>by clicking sign up, you agree to our <a href="#">Terms,</a> <a href="#">privacy policy</a>and <a href="#">Cookies Policy.</a>you may receive SMS notifications from us and opt out at any time.</p>
-        </div>
-        <div class="button-container">
-            <button>Register</button>
-        </div>
-        </form>
-        </div>
-    </body>
-
-    </main>
+    
+</body>
+</html>
+   
 
 
 

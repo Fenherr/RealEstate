@@ -36,3 +36,15 @@ function ouverture() {
 }
     flexi.setAttribute("style", "position:absolute;z-index:2;right:0;top:0");
 }
+
+
+/*-_-_-_-_ Formulaire recherche -_-_-_-_-_-_-_-_-_-_-_-_*/
+
+let form=document.getElementById("formu");
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let secteur=document.getElementById("local").value;
+    let prize=document.getElementById("prize").value;
+    let distance=document.getElementById("localization").value;
+    console.log(secteur+" "+prize+" "+distance);
+});
