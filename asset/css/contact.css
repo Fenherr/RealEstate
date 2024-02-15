@@ -222,13 +222,19 @@ button {
 
     /*à corriger*/
     .message {
-        box-sizing: border-box;
-        height: 1rem;
-        width: 10rem;
+        box-sizing: content-box;
+        
+
+
+        
     }
 
-    /* idem message ?*/
-    .maps {}
+    /* idem message */
+    .maps {
+        height: 10rem;
+        width: .5rem;
+
+    }
 
     .fields {
         height: 1rem;
