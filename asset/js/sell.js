@@ -6,39 +6,23 @@ const menuOpener = document.getElementById("menu-opener"),
     btnMenu = document.getElementById("check");
 let menuIsOpen = false;
 
-function checkMenuIsOpen () {
-    console.log("avant boucle");
+function displayManagerMenu () {
+    navBar.classList.toggle("active");
+    accountAccess.classList.toggle("active");
+    body.classList.toggle("stop-overflow");
+    menuOpener.toggleAttribute("hidden");
+    menuCloser.toggleAttribute("hidden");
+
     if (menuIsOpen) {
-        console.log("dans boucle if");
-        closeMenu();
+        menuIsOpen = false;
     } else {
-        console.log("dans boucle else");
-        openMenu();
+        menuIsOpen = true;
     }
 }
 
-function openMenu () {
-    navBar.classList.add("active");
-    accountAccess.classList.add("active");
-    body.classList.add("stop-overflow");
-    menuOpener.setAttribute("hidden", "");
-    menuCloser.removeAttribute("hidden");
-    menuIsOpen = true;
-}
+btnMenu.addEventListener("click", displayManagerMenu);
 
-function closeMenu () {
-    navBar.classList.remove("active");
-    accountAccess.classList.remove("active");
-    body.classList.remove("stop-overflow");
-    menuOpener.removeAttribute("hidden");
-    menuCloser.setAttribute("hidden", "");
-    menuIsOpen = false;
-}
-
-btnMenu.addEventListener("click", checkMenuIsOpen);
-
-window.addEventListener("resize", function() {
-    console.log("fonction activée");
+window.addEventListener("resize", () => {
     if (window.matchMedia("all and (max-width: 768px)").matches) {
         menuOpener.setAttribute("hidden", "");
         if (!menuIsOpen) {
@@ -48,6 +32,5 @@ window.addEventListener("resize", function() {
         }
     } else {
         body.classList.remove("stop-overflow");
-        console.log("boucle else");
     }
 })
