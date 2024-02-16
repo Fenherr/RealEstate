@@ -15,11 +15,11 @@ let searchForm = document.getElementById("search_form");
 
 searchForm.addEventListener("submit", (event) => {
     event.preventDefault ();
-    let varTakeSearch = document.getElementById("take_search");
-    let varTakeLocal = document.getElementById("take_local");
-    let varTakeType = document.getElementById("take_type");
-    let varTakePrice = document.getElementById("take_price");
+    let varTakeSearch = document.getElementById("take_search").value;
+    let varTakeLocal = document.getElementById("take_local").value;
+    let varTakeType = document.getElementById("take_type").value;
+    let varTakePrice = document.getElementById("take_price").value;
 
     console.log(varTakeSearch + " " + varTakeLocal + " " + varTakeType + " " + varTakePrice);
-
 });
+
