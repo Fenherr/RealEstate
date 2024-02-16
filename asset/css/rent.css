@@ -211,12 +211,14 @@ input {
     background-color: #e2fbb700;
 }
 
+
 select {
     text-align: center;
     width: 10rem;
     margin: 0rem 0rem 0.675rem 0rem;
     background-color: #E2FBB7;
 }
+
 
 @media all AND (max-width:1400px)
     {
