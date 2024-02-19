@@ -6,9 +6,10 @@
     <script src="https://kit.fontawesome.com/724458d0e8.js" crossorigin="anonymous"></script>
     <script src="./asset/js/index.js" defer></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
-      </style>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
     <link rel="stylesheet" href="./asset/css/index.css">
 </head>
@@ -29,6 +30,7 @@
             <li><a href="rent.html">Louer</a></li>
             <li><a href="sell.html">Vendre</a></li>
             <li><a href="user.html">Contact</a></li>
+            <li id="idcount"><a href="index.html">Se connecter</a></li>
         </ul>
         <div id="menu_burger"></div>         
     </nav>
@@ -43,23 +45,20 @@
 <!-- bannière avec fonction recherche -->
     <section class="banner">
         <div class="search">
-            <div class="menu_search">
+            <form id="search_form" class="menu_search">
                 <div class="size_form">
-                    <select class="menu_search_deco size_search">
-                        <option label="">Je cherche ...</option>
+                    <select id="take_search" class="menu_search_deco size_search">
+                        <option class="value_bold" value="" disabled>Je cherche ...</option>
                         <option value="vente">Vente</option>
                         <option value="location">Location</option>
                     </select>
                 </div>
-                <div class="size_form">
-                    <div class="input_icon">
-                        <input class="menu_search_deco size_search input_icon_search" type="text" placeholder="Localisation..."  />
-                        <i class="fa-solid fa-magnifying-glass"></i> 
-                    </div>
+                <div class="size_form">   
+                        <input id="take_local" class="menu_search_deco size_search" type="text" placeholder="Localisation..."  />
                 </div>
                 <div class="size_form">
-                    <select class="menu_search_deco size_search">
-                        <option label="">Type de biens ...</option>
+                    <select id="take_type" class="menu_search_deco size_search">
+                        <option class="value_bold" value="" disabled>Type de biens ...</option>
                         <option value="appartement">Appartement</option>
                         <option value="maison">Maison</option>
                         <option value="terrain">Terrain</option>
@@ -67,14 +66,14 @@
                     </select>
                 </div>
                 <div class="size_form">
-                    <input class="menu_search_deco size_search" type="text" placeholder="Prix maximum..."  /> 
+                    <input id="take_price" class="menu_search_deco size_search" type="text" placeholder="Prix maximum..."  /> 
                 </div>
                 <div class="size_form">
                     <div class="search_btn">
-                        <a href="#"><button class="menu_search_deco size_search">Rechercher...</button></a>
+                        <input type="submit" class="menu_search_deco size_search" value="Rechercher" />
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     
