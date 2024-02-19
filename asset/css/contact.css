@@ -143,23 +143,26 @@ h1 {
 }
 
 .formatting {
-    #name, #first-name, #email, #subjet-select, #message {
+    #name, #first-name, #email, #subject-select, #message {
         background-color: #b1f3bc;        
     }  
     width: 50%;
     padding: 0 1.25rem;
 } 
  
-.subject, #subjet-selected, #message, #submit {
+.subject, #subject-selected, #message, #submit {
     display: block;
 }
 
-.subject, #subjet-select {
+.subject {
     background-color: #b1f3bc;
-    height: 2rem;
+    height: 1rem;
     width: 30rem;
     margin-right: 62%;
     padding-bottom: 2%;
+}
+#subject-selected {
+    border: none;
 }
 
 #message {
@@ -191,6 +194,11 @@ button {
         margin-bottom: 1%;
     }
 }
+.maps iframe{
+    width: 37.5rem;
+    height: 28.12rem;
+}
+
 
 .fields {
     background-color: #b1f3bc;
@@ -198,11 +206,16 @@ button {
 }
 
 @media screen AND (max-width: 768px) {
-    .phone-numbers, .other-request, .form, .subject, .message,.find-us, .maps {
+    .phone-numbers, .form, .subject, .message,.find-us, .maps {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;       
+        width: 51rem;
     } 
+    .other-request{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+    }    
 
     .wallpaper {
         display: flex;
@@ -210,30 +223,27 @@ button {
     }
     
     input {
-        height: 1rem;
-        width: 10rem;
+        height: 2rem;
+        width: 15rem;
     }
 
-    .subject, #subjet-select {
-        height: 1rem;
+    .subject, #subject-select {
+        height: 2rem;
         width: 10rem;
+        padding-top: 1%;
         padding-bottom: 2%;
     }
 
-    /*à corriger*/
-    .message {
+    #message {
         box-sizing: content-box;
-        
-
-
-        
+        margin-top: 10%;    
+        height:15rem ;
+        width: 16rem ;          
     }
 
-    /* idem message */
-    .maps {
-        height: 10rem;
-        width: .5rem;
-
+    .maps iframe {
+        height: 17rem;
+        width: 17rem;
     }
 
     .fields {
