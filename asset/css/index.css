@@ -126,21 +126,17 @@ a:hover {
     width: 13rem;
 }
 
-.input_icon {
-    position: relative;
-}
-
-.input_icon_search+i {
-    position: absolute;
-    top: 8px;
-    left: 185px;
+.menu_search_deco .value_bold  {
+    font-weight: bold;
+    color: #1f1f1f;
+    font-size: 0.85rem;
 }
 
 input[type="text"]:focus {
 	outline:none;
 }
 
-.search_btn button {
+.search_btn input {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
@@ -150,7 +146,7 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-.search_btn button:hover {
+.search_btn input:hover {
     border: solid #000000 1px;
     font-size: 0.95rem;
 }

@@ -1,4 +1,4 @@
-// Début
+// Ouverture et fermeture menu burger
 let burgermenu=document.getElementById("burger");
 let listmenu=document.querySelector("#zemenu");
 let main=document.querySelector("main");
@@ -9,10 +9,9 @@ main.addEventListener("click", fermeture);
 
 function fermeture() {
     let flexi=document.getElementById("divmenu");
+    if (flexi!=null) {
     flexi.setAttribute("style", "position:absolute;z-index:2;right:-100%;top:0");
-    
-
-    ;
+    }
 }
 
 function ouverture() {
@@ -33,7 +32,7 @@ function ouverture() {
     header.appendChild(flexi);
     listmenu=listmenu.textContent;
     return console.log(listmenu);
-}
+    }
     flexi.setAttribute("style", "position:absolute;z-index:2;right:0;top:0");
 }
 
@@ -46,5 +45,45 @@ form.addEventListener("submit", (event) => {
     let secteur=document.getElementById("local").value;
     let prize=document.getElementById("prize").value;
     let distance=document.getElementById("localization").value;
+    try {
+        test3(secteur);
+        test(prize);
+        test2(distance);
+    } catch (bug) {
+        alert(bug);
+    }
     console.log(secteur+" "+prize+" "+distance);
+    if ((secteur!="") && prize!="" && distance!="") {
+        alert("Direction le serveur !!!");
+    }
 });
+
+
+
+
+function test(zenumber) {
+    let tmp;
+    tmp="";
+    if ((isNaN(zenumber)) || (zenumber=="")) {
+        tmp="NaN";
+    }
+    console.log(tmp);
+    if (tmp==="NaN") {
+        throw new Error("veuillez saisir un prix en euros sans les centimes !");
+    }
+}
+
+function test2(peri) {
+    let tmp;
+    tmp="";
+    console.log(tmp);
+    if (tmp==peri) {
+        throw new Error("veuillez choisir une distance !");
+    }
+}
+
+function test3(zeneant) {
+    if (zeneant=="") {
+        throw new Error("veuillez indiquer une localité !");
+    }
+}
