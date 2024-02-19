@@ -64,7 +64,7 @@ p, a, ul {
 .content-text,
 .number_point,
 section h2,
-footer h2 {
+footer h2, .info-button {
     font-family: 'opensans', sans-serif;
     font-size: 1rem;
 }

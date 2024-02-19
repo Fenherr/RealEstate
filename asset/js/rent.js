@@ -46,19 +46,25 @@ form.addEventListener("submit", (event) => {
     let prize=document.getElementById("prize").value;
     let distance=document.getElementById("localization").value;
     try {
+        test3(secteur);
         test(prize);
         test2(distance);
     } catch (bug) {
         alert(bug);
     }
     console.log(secteur+" "+prize+" "+distance);
+    if ((secteur!="") && prize!="" && distance!="") {
+        alert("Direction le serveur !!!");
+    }
 });
+
+
 
 
 function test(zenumber) {
     let tmp;
     tmp="";
-    if (isNaN(zenumber)) {
+    if ((isNaN(zenumber)) || (zenumber=="")) {
         tmp="NaN";
     }
     console.log(tmp);
@@ -73,5 +79,11 @@ function test2(peri) {
     console.log(tmp);
     if (tmp==peri) {
         throw new Error("veuillez choisir une distance !");
+    }
+}
+
+function test3(zeneant) {
+    if (zeneant=="") {
+        throw new Error("veuillez indiquer une localité !");
     }
 }
