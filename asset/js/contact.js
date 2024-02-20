@@ -17,7 +17,7 @@ console.log (burgerMenu[i])
 
 //--------------formulaire----------------- 
 
- //-> pr chps obligatoires
+ //-> for required fields
  let Name = document.querySelector ("#name")
  let firstName = document.querySelector ("#first-name")
  let mail = document.querySelector ("#email")
@@ -33,10 +33,11 @@ console.log (burgerMenu[i])
      }
  }
 
-    //-> gestion rechargement page suite submit
+    //-> page reload management continue submit
 let form = document.querySelector (".form")
 form.addEventListener ("submit", (event) => {
     event.preventDefault();
+    // for addition test required fields
     checkRequiredFields (Name)    
     checkRequiredFields (firstName)
     checkRequiredFields (mail)
