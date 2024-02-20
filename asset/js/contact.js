@@ -15,23 +15,34 @@ console.log (burgerMenu[i])
 
 
 
-/*formulaire -> JS*/
-/* -> gestion rechargement page suite submit*/
-/* -> pr chps obligatoires*/
+//--------------formulaire----------------- 
+
+ //-> pr chps obligatoires
+ let Name = document.querySelector ("#name")
+ let firstName = document.querySelector ("#first-name")
+ let mail = document.querySelector ("#email")
+ let subject = document.querySelector ("#subject-select")
+ let message = document.querySelector ("#message")
+ 
+ function checkRequiredFields (balises) {
+     if (balises.value === "") {
+         balises.classList.add("error")
+     }
+     else {
+         balises.classList.remove("error")
+     }
+ }
+
+    //-> gestion rechargement page suite submit
 let form = document.querySelector (".form")
 form.addEventListener ("submit", (event) => {
     event.preventDefault();
+    checkRequiredFields (Name)    
+    checkRequiredFields (firstName)
+    checkRequiredFields (mail)
+    checkRequiredFields (subject)
+    checkRequiredFields (message)
+
 console.log ("rechargement page non effectué")
-
-let actionForm1 = document.querySelector ("#name")
-console.log (actionForm1.value)
-let actionForm2 = document.querySelector ("#first-name")
-console.log (actionForm2.value)
-let actionForm3 = document.querySelector ("#email")
-console.log (actionForm3.value)
-let actionForm4 = document.querySelector ("#subject-select")
-console.log (actionForm4.value)
-let actionForm5 = document.querySelector ("#message")
-console.log (actionForm5.value)   
+    
 })
-
