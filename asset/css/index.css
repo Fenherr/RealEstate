@@ -122,6 +122,10 @@ a:hover {
     margin-right: 0.5rem;
 }
 
+.redRequire {
+    border: red 1px solid; 
+}
+
 .menu_search_deco p {
     width: 13rem;
 }
@@ -149,6 +153,10 @@ input[type="text"]:focus {
 .search_btn input:hover {
     border: solid #000000 1px;
     font-size: 0.95rem;
+}
+
+.redRequire {
+    border-color: ;
 }
 
 /*section actualités*/

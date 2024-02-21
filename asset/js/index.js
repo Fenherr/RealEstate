@@ -15,11 +15,31 @@ let searchForm = document.getElementById("search_form");
 
 searchForm.addEventListener("submit", (event) => {
     event.preventDefault ();
-    let varTakeSearch = document.getElementById("take_search");
-    let varTakeLocal = document.getElementById("take_local");
-    let varTakeType = document.getElementById("take_type");
-    let varTakePrice = document.getElementById("take_price");
+    let varTakeSearch = document.getElementById("take_search").value;
+    let varTakeLocal = document.getElementById("take_local").value;
+    let varTakeType = document.getElementById("take_type").value;
+    let varTakePrice = document.getElementById("take_price").value;
 
     console.log(varTakeSearch + " " + varTakeLocal + " " + varTakeType + " " + varTakePrice);
 
-});
+    try {
+        verify(varTakeSearch);
+        verify(varTakeLocal);
+        verify(varTakeType);
+        verify(varTakePrice);
+    } catch (error) {
+        console.log(error);
+        alert(error);
+    }
+})
+
+function verify (selection) {
+    if (selection === "") {
+        //throw new Error ("Tous les champs sont requis");
+        let redRequireSelect = document.querySelectorAll(".size_form select");
+        redRequireSelect.classList.add("redRequire");
+    } else {
+        console.log(selection);
+    }
+};
+
