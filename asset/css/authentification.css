@@ -1,401 +1,49 @@
-@font-face {
-    font-family: "baloo2";
-    src: url(../fonts-family/Baloo2-Medium.ttf);
-}
-@font-face {
-    font-family: "opensans";
-    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
-}
-:root {
-    --main-color: #b1f3bc;
-    --third-color: white;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    color: inherit;
-    font-family: "opensans";
-}
-
-a {
-    text-decoration: none;
-}
-
-
-.logo:hover {
-    opacity: 0.6;
-}
-
-.title-txt {
-    font-family: "Baloo2", sans-serif;
-    font-size: 1.4rem;
-}
-.flex {
-    display: flex;
-}
-
-.justify-content{
-    justify-content: space-between;
-}
-
-.align-item{
-    align-items: center;
-}
-
-.menu li {
-    list-style: none;
-    margin: 0 40px 0 0;
-}
-
-.menu a:hover, .logo-mon-compte:hover {
-    font-weight: bolder;
-}
-
-header {
-    background-color: var(--main-color);
-    font-family: baloo2;
-    font-size: 1.4rem;
-    padding: 0.675rem; 
-   
-}
-
-#check, .checkbtn {
-    display: none;
-    cursor: pointer;
-}
-
-@media all and (max-width: 768px) {
-    
-    .checkbtn {
-        display: block;
-        font-size: 30px;
-        padding-right: 0.675rem;
-        color: black;
-        float: right;
-    }
-
-    .menu, .logo-mon-compte, header nav {
-        display: none!important;
-    }
-
-}
-
-
-/*style qui s'applique à la partie main*/
-
-
-
-main{
-    height:100vh;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form_container{
-    height: 66%;
-    width: 40.5%;
-    
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 55px;
-    position: absolute;
-    left: 2px;
-    top: 102px;
-    padding-top: 114px;
-    padding-bottom: 213px;
-}
-
-.form_container_heading{
-    font-size: 1.2rem;
+*{
     font-family:sans-serif;
-    color: #B1F3BC;
 }
 
-
-
-.form_container_inputs,.form_container_button {
-    padding: 15px;
-    width: 80%;
+body{
+    background: url(../images/agent-immobilier-ecologie.jpeg);
+    height: 100vh;
+    background-position: left;
+    background-size: cover;
+}
+form{
+    width: 380px;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5%;
     border-radius: 10px;
-    border: 2px solid black;
-    outline:none;
+    box-shadow: 0 10px 20px red;
+    background-color: rgba(0,0,0,0,3);
+    overflow: hidden;
 }
-.form_container_button{
-    width: 85%;
-    background-color: #B1F3BC;
-    color: #fff;
-
-}
-
-.test {
-    width: 88%;
-    height: 100%;
-    margin-bottom:15px ;
-    margin-left: 38%;
-}
- 
-.image {
-    width: 66%;
-    height: 100%;
-}
-
-
-
-.check {
-    display: flex;
-    margin-left: -320px;
-    justify-content: space-around;
-}
-
-
-
-
-
-
-
-
-
-
- /*footer commun*/
-
-footer {
-    background-color: #1f1f1f;
-    font-family: "opensans";
-    padding-top: 0.675rem;
-}
-
-.social-media {
-    color: var(--third-color);
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5rem;
-    padding-left: 38px;
-}
-
-.social-media li {
-    padding: 20px;
-}
-
-footer p, footer h2, .footer-queries a {
-    color: var(--third-color);
-}
-
-.colonne {
-    display: flex;
-    padding-top: 0.675rem;
-}
-
-footer ul {
-    flex-flow: column;
-}
-
-footer li {
-    list-style: none;
-    padding-bottom: 1rem;
-}
-
-.footer-services, .footer-access, .footer-contact {
-    display: flex;
-    flex-direction: column;
-    padding-left: 8.95rem;
-}
-
-
-.copyright {
-    padding-bottom: 0.675rem;
+h2{
     text-align: center;
+    text-transform: uppercase;
+    color:black;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
 }
-
-.footer-logo img {
-    width: 150px;
-    height: 73px;
+.container{
+    padding: 16px;
 }
-
-.footer-logo {
-    padding: 0.675rem;
-    padding-top: 0;
+input[type=text] , input[type=password]{
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color:#fff;
+    border: 1px solid #fff;
 }
-
-footer p {
-padding-left: 9px;
-padding-top: 2rem;
-}
-
-#fb:hover, #tw:hover, #insta:hover {
-    transform: scale(2);
-    cursor: pointer;
-}
-
-footer h2 {
-    padding-bottom: 10px;
-}
-
-footer li a:hover {
-    text-decoration: underline;
-}
-
-.footer-queries {
-    display: flex;
-    justify-content: space-around;
-}
-
-@media all and (max-width: 1200px) {
-    .colonne {
-        flex-direction: column;
-    }
-
-    .footer-access, .footer-services, .footer-contact {
-        width: 33.33%;
-    }
-
-}
-
-@media all and (max-width: 992px) {
-    .footer-access, .footer-services, .footer-contact {
-        padding-left: 1.5rem;
-    }
-    .social-media {
-        padding-left: 0rem;
-    }
-    .footer-access, .footer-services, .footer-contact {
-        width: 20%;
-    } 
-}
-
-@media all and (max-width: 768px) {
-    .footer-access, .footer-services, .footer-contact {
-        padding-left: 1.5rem;
-}
-.form_container{
-    height: 25%;
-    width: 38.5%;
-   
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 17%;
-    position: absolute;
-    left: 2px;
-    padding-top: 34.5%;
-    padding-bottom: 25.5%;
+input[type=text]:focus, input[type password]:focus{
+    outline:none;
+    background-color:#fff;
 }
 
 
-.check {
-    display: flex;
-    flex-direction: column;
-}
-}
 
-@media all and (max-width: 576px) {
-
-    .image {
-        display: none;
-    }
-
-    .form_container{
-        height: 41%;
-        width: 92%;
-       
-        padding: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 17%;
-        position: absolute;
-        left: 2px;
-        top: 103px;
-        padding-top: 34.5%;
-        padding-bottom: 44%;
-    }
-    
-    .check {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .form_container_heading{
-        font-size: 1.2rem;
-        font-family:sans-serif;
-        color: #B1F3BC;
-        padding-top: 20%;
-    }
-    
-
-
-
-               /* footer */
-
-    .colonne {
-        flex-direction: column;
-    }
-    .footer-access, .footer-services, .footer-contact {
-        padding: 0.675rem;
-        padding-left: 1rem;
-    }
-
-  
-    .footer-logo p {
-        padding-left: 8.5rem;
-    }
-
-    .social-media {
-        font-size: 3.5rem;
-        padding-left: 0rem;
-        justify-content: space-around;
-    }
-
-  
-
-    .footer-queries {
-        flex-direction: column;
-    }
-
-    .social-media li:last-child {
-        padding-right: 0;
-    }
-}
-
-
-@media screen and (max-width: 576px) {
-
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 992px) {
-
-}
-
-@media screen and (max-width: 1200px) {
-
-}
-
-
-/* 
-    Jusqu’à 479px : smartphone en portrait
-    De 480px à 959px : smartphone en paysage, tablette en portrait et petite tablette en paysage
-    De 960px à 1280px : tablette en paysage, écran d’ordinateur de taille petite et moyenne
-    1281px et au delà : grand écran d’ordinateur (21″ et + en plein écran )
-
-    @media all and (max-width:576px){ }
-    @media all and (max-width:768px){ }
-    @media all and (max-width:992px){ }
-    @media all and (max-width:1200px){ }
-
-*/      
 
    
 
