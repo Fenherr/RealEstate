@@ -186,6 +186,11 @@ form {
     
 }
 
+.alert {
+    border: red dotted 2px;
+}
+
+
 .lab-pri {
     letter-spacing: 0.022rem;
 }
