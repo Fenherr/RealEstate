@@ -57,25 +57,27 @@
             <article class="formatting">
                 <form action="form">                
                     <label for="name">
-                        <input type="text" id="name" placeholder="Nom :">
+                        <input type="text" id="name" placeholder="Nom* :">
                     </label>
 
                     <label for="first-name">
-                        <input type="text" id="first-name" placeholder="Prénom :">
+                        <input type="text" id="first-name" placeholder="Prénom* :">
                     </label>
 
                     <label for="email">
-                        <input type="email" name="" id="email" placeholder="Email :">
-                    </label>      
+                        <input type="email" name="" id="email" placeholder="Email* :">
+                    </label>  
                 </form>
             </article>
 
             <article class="formatting">   
                 <form action="form"> 
                 <div class="subject">
-                        <label for="subject-select">Sujet :</label>
+                    <label for="subject-select">Sujet* :</label>
                         <select id="subject-select">
                             <optgroup label="Particuliers">
+                                <!--value empty -> subject required --> 
+                                <option value=""></option>
                                 <option value="Mon espace personnel">Mon espace personnel</option>
                                 <option value="Recherche d'un bien">Recherche d'un bien</option>
                                 <option value="Vendre son bien">Vendre son bien</option>
@@ -92,9 +94,9 @@
                     </div>
 
                     <label for="message">
-                        <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message :"></textarea>
+                        <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
                     </label>
-
+                        
                     <button type="submit">Envoyer</button>  
                    
                 </form>            
@@ -118,7 +120,8 @@
             </article>
         </section>
 
-        <p class="fields">* champs obligatoires</p>
+        <p class="fields"> (*) champs obligatoires</p>
+
     </div>
 </main>
 
