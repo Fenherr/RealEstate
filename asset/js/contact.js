@@ -18,19 +18,20 @@ console.log (burgerMenu[i])
 //--------------formulaire----------------- 
 
  //-> for required fields
- let lastname = document.querySelector ("#name")
- let firstName = document.querySelector ("#first-name")
- let mail = document.querySelector ("#email")
- let subject = document.querySelector ("#subject-select")
- let message = document.querySelector ("#message")
+let lastname = document.querySelector ("#name")
+//lastname.setAttribute ("required","");
+let firstName = document.querySelector ("#first-name")
+//firstName.setAttribute ("required","");
+let mail = document.querySelector ("#email")
+//mail.setAttribute ("required","");
+let subject = document.querySelector ("#subject-select")
+//subject.setAttribute ("required","");
+let message = document.querySelector ("#message")
+//message.setAttribute ("required","");
  
  function checkRequiredFields (balises) {
      if (balises.value === "") {
-         balises.classList.add("error")
-         console.log ("Veuillez remplir les champs obligatoires")
-     }
-     else {
-         balises.classList.remove("error")
+        throw new Error ("Veuillez remplir les champs obligatoires")
      }
 }  
 
@@ -39,32 +40,42 @@ let form = document.querySelector (".form")
 form.addEventListener ("submit", (event) => {
     event.preventDefault();
 
-    // for addition test required fields
-    checkRequiredFields (lastname)    
-    checkRequiredFields (firstName)
-    checkRequiredFields (mail)
-    checkRequiredFields (subject)
-    checkRequiredFields (message)  
+    // and addition test required fields
+    try{
+        checkRequiredFields (lastname)    
+        checkRequiredFields (firstName)
+        checkRequiredFields (mail)
+        checkRequiredFields (subject)
+        checkRequiredFields (message)    
 
-console.log ("rechargement page non effectué")
+        console.log ("rechargement page non effectué")  
+    }
+    catch (error) {
+        alert (error.message) // -> message throw new Error
+        console.log ("Veuillez remplir les champs obligatoires")
+    }
+
 })
 
-/*    // check value desired format
-function checksFields (balises) {
-
-}   */  
     // check mail desired format
+let mailRegEx = new RegExp ("[a-z0-9._-]+@[a-z0-9._-]+\\.[a-z._-]+")
 function checkMail (balise) {
-    let mail = new RegExp ("[a-z0-9._-]+@[a-z0-9._-]+\\.[a-z._-]+")
-     
-    if (mail.test(balise.value)) {
+         
+    if (mailRegEx.test(balise.value)) {
         balise.classList.remove("error")
     }
     else {
-        balise.classList.add("error")
+        throw new Error ("Veuillez saisir une adresse mail valide")
+    }
+
+    try {
+        checkMail (mailRegEx)
+    } catch (error) {
+        alert (error.message)
         console.log ("Veuillez saisir une adresse mail valide")
+
     }
 }
-mail.addEventListener("change",() => {
-    checkMail(mail) 
-})
+
+
+  
