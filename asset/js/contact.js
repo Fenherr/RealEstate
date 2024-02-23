@@ -17,23 +17,36 @@ console.log (burgerMenu[i])
 
 //--------------formulaire----------------- 
 
- //-> for required fields
+//-> for required fields
 let lastname = document.querySelector ("#name")
-//lastname.setAttribute ("required","");
 let firstName = document.querySelector ("#first-name")
-//firstName.setAttribute ("required","");
 let mail = document.querySelector ("#email")
-//mail.setAttribute ("required","");
 let subject = document.querySelector ("#subject-select")
-//subject.setAttribute ("required","");
 let message = document.querySelector ("#message")
-//message.setAttribute ("required","");
  
  function checkRequiredFields (balises) {
      if (balises.value === "") {
         throw new Error ("Veuillez remplir les champs obligatoires")
      }
 }  
+
+ // check mail desired format
+
+ function checkMail (balise) {
+    let mailRegEx = new RegExp ("[a-z0-9._-]+@[a-z0-9._-]+\.[a-z._-]+")   
+    let test = mailRegEx.test(balise)
+    if (!test) {
+        throw new Error ("Veuillez saisir une adresse mail valide")
+    }
+    /* ou
+    let mailRegEx = new RegExp ("[a-z0-9._-]+@[a-z0-9._-]+\.[a-z._-]+")
+    if (mailRegEx.test(balise)) {
+        balise.classList.remove ("error")
+    }
+    else {
+        throw new Error ("Veuillez saisir une adresse mail valide")
+    }*/
+}
 
     //-> page reload management continue submit
 let form = document.querySelector (".form")
@@ -45,6 +58,7 @@ form.addEventListener ("submit", (event) => {
         checkRequiredFields (lastname)    
         checkRequiredFields (firstName)
         checkRequiredFields (mail)
+        checkMail (mail.value)
         checkRequiredFields (subject)
         checkRequiredFields (message)    
 
@@ -54,28 +68,9 @@ form.addEventListener ("submit", (event) => {
         alert (error.message) // -> message throw new Error
         console.log ("Veuillez remplir les champs obligatoires")
     }
-
 })
 
-    // check mail desired format
-let mailRegEx = new RegExp ("[a-z0-9._-]+@[a-z0-9._-]+\\.[a-z._-]+")
-function checkMail (balise) {
-         
-    if (mailRegEx.test(balise.value)) {
-        balise.classList.remove("error")
-    }
-    else {
-        throw new Error ("Veuillez saisir une adresse mail valide")
-    }
-
-    try {
-        checkMail (mailRegEx)
-    } catch (error) {
-        alert (error.message)
-        console.log ("Veuillez saisir une adresse mail valide")
-
-    }
-}
+   
 
 
   
