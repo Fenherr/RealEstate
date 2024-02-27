@@ -593,3 +593,15 @@ footer li a:hover {
         padding-right: 0;
     }
 }
+
+@media all and (max-width: 460px) {
+
+    .logo {
+        padding-left: 6.5rem;
+    }
+
+    .social-media li {
+        padding-right: 4rem;
+    }
+
+}
