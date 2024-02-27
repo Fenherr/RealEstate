@@ -33,7 +33,8 @@ let message = document.querySelector ("#message")
  // check mail desired format
 
  function checkMail (balise) {
-    let mailRegEx = new RegExp ("[a-z0-9._-]+@[a-z0-9._-]+\.[a-z._-]+")   
+    let mailRegEx = new RegExp ("[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]+")
+    console.log(mailRegEx.test(balise))   
     let test = mailRegEx.test(balise)
     if (!test) {
         throw new Error ("Veuillez saisir une adresse mail valide")
