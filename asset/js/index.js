@@ -1,10 +1,13 @@
+//menu burger
+
 const links = document.querySelectorAll("nav li");
 
 menu_burger.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 
-//exo try catch
+//search banner
+
 /*searchForm.addEventListener("submit", (event) => {
     event.preventDefault ();
     let varTakeSearch = document.getElementById("take_search").value;
