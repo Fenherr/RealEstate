@@ -26,7 +26,7 @@
             </ul>            
         </nav>
         <div class="logo-mon-compte">
-            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+            <a class="active" href="authentification.html"><i class="fa-solid fa-user"></i> Mon compte</a>
         </div>
     </header>
 
@@ -57,45 +57,46 @@
             <article class="formatting">
                 <form action="form">                
                     <label for="name">
-                        <input type="text" id="name" placeholder="Nom :">
+                        <input type="text" id="name" placeholder="Nom* :">
                     </label>
 
                     <label for="first-name">
-                        <input type="text" id="first-name" placeholder="Prénom :">
+                        <input type="text" id="first-name" placeholder="Prénom* :">
                     </label>
 
                     <label for="email">
-                        <input type="email" name="" id="email" placeholder="Email :">
-                    </label>      
+                        <input type="email" name="" id="email" placeholder="Email* :">
+                    </label>  
                 </form>
             </article>
 
             <article class="formatting">   
                 <form action="form"> 
                 <div class="subject">
-                        <label for="subjet-select">Sujet :</label>
-                        <select id="subjet-select">
+                    <label for="subject-select">Sujet* :</label>
+                        <select id="subject-select">
                             <optgroup label="Particuliers">
-                                <option value="">Mon espace personnel</option>
-                                <option value="">Mon profil locataire</option>
-                                <option value="">Recherche d'un bien</option>
-                                <option value="">Vendre son bien</option>
-                                <option value="">L'alerte immo</option>
-                                <option value="">Données personnelles : exercer mes droits</option>
-                                <option value="">Problèmes techniques sur le site</option>
+                                <!--value empty -> subject required --> 
+                                <option value=""></option>
+                                <option value="Mon espace personnel">Mon espace personnel</option>
+                                <option value="Recherche d'un bien">Recherche d'un bien</option>
+                                <option value="Vendre son bien">Vendre son bien</option>
+                                <option value="L'alerte immo">L'alerte immo</option>
+                                <option value="Données personnelles : exercer mes droits">Données personnelles : exercer mes droits</option>
+                                <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
                             </optgroup>
                             <optgroup label="Professionnels">
-                                <option value="">Partenariat</option>
-                                <option value="">Régie publicitaire</option>
-                                <option value="">Offres commerciales</option>
+                                <option value="Partenariat">Partenariat</option>
+                                <option value="Régie publicitaire">Régie publicitaire</option>
+                                <option value="Offres commerciales">Offres commerciales</option>
                             </optgroup>
                         </select>                    
                     </div>
 
                     <label for="message">
-                        <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message :"></textarea>
+                        <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
                     </label>
-
+                        
                     <button type="submit">Envoyer</button>  
                    
                 </form>            
@@ -115,11 +116,13 @@
             </article>
 
             <article class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44427.813926552095!2d0.8441252993535505!3d45.89654548272686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47feeadaef87b0c9%3A0x8b265b0dc126d53e!2s87200%20Saint-Junien!5e0!3m2!1sfr!2sfr!4v1705479222960!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44427.813926552095!2d0.8441252993535505!3d45.89654548272686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47feeadaef87b0c9%3A0x8b265b0dc126d53e!2s87200%20Saint-Junien!5e0!3m2!1sfr!2sfr!4v1705479222960!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
 
-        <p class="fields">* champs obligatoires</p>
+        <p class="fields"> (*) champs obligatoires</p>
+        <a href="" class="rgpd">Pour toute demande relative au traitement de vos données personnelles et / ou exercer vos droits, cliquez ici</a>
+
     </div>
 </main>
 

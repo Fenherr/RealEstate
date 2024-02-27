@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>authentication</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/authentification.css">
+    <title>authentification</title>
 
 </head>
 <body>
@@ -24,54 +25,47 @@
             </ul>            
         </nav>
         <div class="logo-mon-compte">
-            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+            <a class="active" href="#"><i class="fa-solid fa-user"></i> Mon compte</a>
         </div>
     </header>
-</body>
 
-<main>
-    <form class="form_container">
-        <p class="form_container_heading">MON ESPACE</p>
-    <div class="chekbox authentication"> 
-        
-        <div class="check">
-            <input type="checkbox">
-            <p>mémoriser</p>
-        
-        <p> <a href="forgetpassword.html"> mot de passe oublié ?</p></a>
-    </div>
-</div>
-        
-        <button class="form_container_button"><a href="index.html">CONNEXION</button></a>
-        <P>Vous n'avez pas de compte ? <a href="user.html">Créer un compte !</a></P>
+
+<div class="parent2">
+    <form action="" method="post">
+        <h2>Login form</h2>
+        <div class="container">
+            <input type="text" placeholder=" enter Email" name="email" required>
+            <input type="password" placeholder="enter Password" name="password" required>
+            <a href="#" id="forgot-password"> Forgot password?</a>
+            <button type="submit" id="login-btn">log in</button>
+        </div>
+        <div class="member">
+            not a member? <a href="./inscription.html" id="signup-link"> Sign up</a>
+        </div>
+
     </form>
-    <div class="image">
+
+         <div class="image">
             <img class="test" src="asset/images/agent-immobilier-ecologie.jpeg" alt="image agent-immobilier-ecologie"  >    
         </div>
-        </main>
-
-
-
-
-
-
-
+</div>
+       
 
 
 
 
 <footer>
-    <div class="colonne">
-        <div class="footer-logo">
+            <div class="colonne">
+             <div class="footer-logo">
             <a href="index.html"><img class="logo" src="./asset/images/logo_white_150.png" alt="Logo" width="150px" height="73px"></a>
             <p>Retrouvez-nous sur les réseaux sociaux</p>
 
-            <ul class="social-media">
+             <ul class="social-media">
                 <li><i  id="fb" class="fa-brands fa-facebook"></i></li>
                 <li><i  id="tw" class="fa-brands fa-twitter"></i></li>
                 <li><i  id="insta" class="fa-brands fa-instagram"></i></li>
-            </ul>
-        </div>
+             </ul>
+         </div>
         <div class="footer-queries">
             <div class="footer-services">
                 <h2>Services</h2>
@@ -107,11 +101,7 @@
             <div class="copyright">
                 <p>acgdimmo©</p>
             </div>
-
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    
+        </footer>   
 </body>
-
-
-</html> 
+</html>

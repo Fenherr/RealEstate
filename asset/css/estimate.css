@@ -46,6 +46,8 @@ a {
 .menu li {
     list-style: none;
     margin: 0 40px 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu a:hover, .logo-mon-compte:hover {
@@ -59,29 +61,85 @@ header {
     padding: 0.675rem;
 }
 
+.navbar {
+    display: flex;
+}
+
 /***************MENU BURGER****************/
 
-#check, .checkbtn {
-    display: none;
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+
+/*#icons {
     cursor: pointer;
+    display: none;
+    font-size: 30px;
 }
 
 @media all and (max-width: 768px) {
-    
-    .checkbtn {
+    #icons {
         display: block;
-        font-size: 30px;
-        padding-right: 0.675rem;
-        color: black;
-        float: right;
     }
-
-    .menu, .logo-mon-compte, header nav {
-        display: none!important;
+    #icons::before {
+        content: "\2630";
     }
+    .active #icons::before {
+        content: "/2715";
+    }
+}*/
 
+@media all and (max-width: 768px) {
+    nav {
+        display: none;
+    }
 }
 
+@media all and (min-width: 768px) {
+    #openBtn {
+        display: none;
+    }
+}
+
+.logo-mon-compte {
+    display: flex;
+    justify-content: center;
+}
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -510px;
+    background-color: var(--main-color);
+    padding-top: 95px;
+    transition: right 0.5s ease;
+}
+
+.sidenav.active {
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#nav.active {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 150px;
+  padding: 10px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
 
 /************** FOOTER ******************   */
 
@@ -379,6 +437,10 @@ h5 {
     margin: 1rem;
     padding: 1rem;
     border-radius: 0.88rem;
+}
+
+.info a {
+    text-align: center;
 }
 
 .info p {

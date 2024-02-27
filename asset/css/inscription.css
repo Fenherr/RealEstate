@@ -1,3 +1,9 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family:sans-serif ;
+    box-sizing: border-box ;
+}
 @font-face {
     font-family: "baloo2";
     src: url(../fonts-family/Baloo2-Medium.ttf);
@@ -76,104 +82,74 @@ header {
         display: none!important;
     }
 
-}
 
 
 
 
 
 
-*{
-    font-family:sans-serif;
+
+
+
+
 }
 
 body{
-   
-    height: 100vh;
-    background-position: left;
-    background-size: cover;
+    
+    justify-content: center;
+    align-items:center ;
+    height:100vh ;
     background-image: linear-gradient( green , white);
 }
-form{
-    width: 50%;
-    height: 360px;
-    margin-top: 5%;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px white;
-    background-color: rgba(0,0,0,0,3);
-    overflow: hidden;
-    margin-top: 5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-h2{
-    text-align: center;
-    text-transform: uppercase;
-    color:#fff;
-    padding-bottom: 20px;
-    border-bottom: 1px solid white;
-}
+
 .container{
-    padding: 40px;
-   
-}
-input[type=text] , input[type=password]{
-    width: 100%;
-    margin: 8px 0;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    background-color:#fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-input[type=text]:focus, input[type =password]:focus{
-    outline:none;
-    background-color: #fff;
-    
-}
-#forgot-password{
-    font-size: 15px;
-    float: right;
-    text-decoration:none ;
-    color:#fff;
-    cursor: pointer;
-}
-#forgot-password:hover{
-    color: black;
-}
-#login-btn{
-    font-size: 15px;
-    font-weight: bold;
-    width: 100%;
-    margin: 12px 0px;
-    background-color:#fdfffd;
-    border:none;
-    cursor:pointer;
-    color: black;
-    border-radius: 5px;
-}
-#login-btn:hover{
-    background-image: linear-gradient();
-}
-.member{
-    padding: 16px;
-    font-size: 15px;
-    text-align: center;
-    color:#fff;
-    
-}
-#signup-link{
-    color:#fdfffd;
-    text-decoration: none;
-    cursor: pointer;
-}
-#signup-link:hover{
-    color: gray;
+    max-width:650px ;
+    padding:28px;
+    margin:0  28px;
+    border-radius: 10px;
+    overflow: hidden;
+    background:  rgba(0,0,0,0,2);
+    box-shadow:0 15px 25px  ;
 }
 
-.parent2{
+h2{
+    font-size:26px;
+    font-weight:bold;
+    text-align:left ;
+    color: #fff;
+    padding-bottom:1px solid red;
+}
+.content{
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px o;
+}
+.input-box{
+    display: flex;
+    flex-wrap:wrap;
+    width:50%;
+    padding-bottom: 15px;
+}
+.input-box:nth-child(2n){
+    justify-content:end;
+}
+.input-box label, .gender-title{
+    width:95%;
+    color: #fff;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.gender-title{
+    font-size: 16px;
+}
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
 }
 .test {
     width: 100%;
@@ -182,9 +158,105 @@ input[type=text]:focus, input[type =password]:focus{
 }
 
 
+.parent{
+    display: flex;
+}
+
+form{
+    margin-top: 5rem;
+}
 
 
-/************** FOOTER ******************   */
+
+
+
+
+
+.input-box input:is(:focus,:valid){
+    box-shadow: 0  3px  6px  rgba(0,0,0,0,2);
+}
+.gender-category label{
+    padding: 0  20px  5px;
+    font-size: 14px;
+}
+.gender-category{
+    color:black;
+}
+.gender-category label, .gender-category input{
+    cursor: pointer;
+}
+.alert p{
+    font-size: 14px;
+    font-style: italic;
+    color:#fff;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+.alert a{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+.alert a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color:red;
+}
+.button-container{
+    margin: 15px 0;
+}
+.button-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,white,gray);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-container button:hover{
+    background-image:  linear-gradient(to right gray,white);
+}
+
+
+
+
+@media(max-widht:600px){
+    .container{
+        min-width:280px;
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+    .content::webkit-scrolbar{
+        width: 0;
+    }
+
+}
+
+
+
+/***************footer*************/
+
+
 
 footer {
     background-color: #1f1f1f;
@@ -344,6 +416,11 @@ footer li a:hover {
     }
 
 }
+
+
+
+
+
 
 
 

@@ -98,7 +98,7 @@ a:hover {
     padding-right: 1.3rem;
 }
 
-.menu_search {
+#search_form {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .menu_search_deco {
-    border: #1f1f1f 1px solid;  
+    /*border: #1f1f1f 1px solid;*/  
     border-radius: 6px;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
@@ -120,6 +120,22 @@ a:hover {
     font-family: 'Open sans', sans-serif;
     margin-right: 0.5rem;
     margin-right: 0.5rem;
+}
+
+form input {
+    border: #1f1f1f 1px solid;
+}
+
+form select {
+    border: #1f1f1f 1px solid;
+}
+
+form.submitted input:invalid {
+    border: red 1px solid; 
+}
+
+form.submitted select:invalid {
+    border: red 1px solid; 
 }
 
 .menu_search_deco p {
