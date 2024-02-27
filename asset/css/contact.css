@@ -324,7 +324,123 @@ button {
 
     .rgpd {
         height: 1rem;
-        width: 23rem;
+        width: 22rem;
+    }
+} 
+
+/* MQ 460px*/
+@media screen AND (max-width: 460px) {
+    .phone-numbers, .form, .subject, .message,.find-us, .maps {
+        display: flex;
+        flex-direction: column;
+        width: 51rem;
+    } 
+    .other-request{
+        display: flex;
+        flex-direction: column;
+        width: 27rem;
+    }    
+
+    .wallpaper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input {
+        height: 2rem;
+        width: 15rem;
+    }
+
+    .subject, #subject-select {
+        height: 2rem;
+        width: 16rem;
+        margin-top: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #message {
+        box-sizing: content-box;
+        margin-top: 5%;    
+        height:15rem ;
+        width: 16rem ;          
+    }
+
+    .maps iframe {
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .find-us {
+        width: 25rem;
+    }
+
+    .fields {
+        height: 1rem;
+        width: 10rem;
+    }
+
+    .rgpd {
+        height: 1rem;
+        width: 22rem;
+    }
+} 
+
+/* MQ 320px*/
+@media screen AND (max-width: 320px) {
+    .phone-numbers, .form, .subject, .message,.find-us, .maps {
+        display: flex;
+        flex-direction: column;
+        width: 36rem;
+    } 
+    .other-request{
+        display: flex;
+        flex-direction: column;
+        width: 18rem;
+    }    
+
+    .wallpaper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input {
+        height: 2rem;
+        width: 15rem;
+    }
+
+    .subject, #subject-select {
+        height: 2rem;
+        width: 16rem;
+        margin-top: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #message {
+        box-sizing: content-box;
+        margin-top: 5%;    
+        height:15rem ;
+        width: 16rem ;          
+    }
+
+    .maps iframe {
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .find-us {
+        width: 18rem;
+    }
+
+    .fields {
+        height: 1rem;
+        width: 10rem;
+    }
+
+    .rgpd {
+        height: 1rem;
+        width: 22rem;
     }
 } 
 
