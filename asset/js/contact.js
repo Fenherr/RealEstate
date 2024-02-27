@@ -1,16 +1,27 @@
 /*header commun -> Menu burger => JS*/
 
 let burgerMenu1 = document.querySelector ("nav")
-/*console.log (burgerMenu1)*/
 let burgerMenu2 = document.querySelector (".logo-mon-compte");
-/*console.log (burgerMenu2)*/
 
-let burgerMenu = [burgerMenu1, burgerMenu2];
-/*console.log (burgerMenu)*/
+let burgerMenu = ['burgerMenu1', 'burgerMenu2'];
 
 for (let i=0; i < burgerMenu.length; i++) {
 console.log (burgerMenu[i])
 }
+
+/*ajout liste menu dans burgerMenu */
+let listBurgerMenu = createElement ('burgerMenu')
+
+/* pr fermeture burgerMenu si clic en dehors*/ 
+let main = document.querySelector("main")   
+
+listBurgerMenu.addEventListener ("onClick", déploiementMenu);
+main.addEventListener ("onClick", fermetureMenu);
+header.addEventListener ("onClick", fermetureMenu);
+
+
+
+
 
 
 
