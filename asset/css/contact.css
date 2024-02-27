@@ -206,6 +206,12 @@ button {
     margin-right: 90%;      
 }
 
+.rgpd {
+    background-color: #b1f3bc;   
+    margin-top: 1%;
+    width: 60rem;
+}
+
 @media screen AND (max-width: 768px) {
     .phone-numbers, .form, .subject, .message,.find-us, .maps {
         display: flex;
@@ -255,6 +261,11 @@ button {
     .fields {
         height: 1rem;
         width: 10rem;
+    }
+
+    .rgpd {
+        height: 1rem;
+        width: 23rem;
     }
 }   
 
