@@ -59,18 +59,6 @@ header {
 /*******************/
 
 @media all and (max-width:768px) {
-
-    a {
-        color: white;
-    }
-   
-    a:hover {
-        color: #6F86FF;
-    }
-    
-    body .off-screen-menu {
-        font-family: sans-serif;
-    }
     
     /* off-screen-menu */
     .off-screen-menu {
@@ -86,7 +74,7 @@ header {
         justify-content: center;
         text-align: center;
         font-size: 3rem;
-        transition: .3s ease;
+        transition: .5s ease;
     }
 
     .off-screen-menu.active {
@@ -94,6 +82,7 @@ header {
         z-index: 14 ;
     }
     
+
     /* nav */
     nav {
         padding: 1rem;
@@ -143,8 +132,8 @@ header {
 
     .ham-menu.active {
         position: fixed;
-        right: 4%;
-        top: 7%;
+        right: 4.5%;
+        top: 6%;
     }
 
     .ham-menu span {

@@ -1,28 +1,112 @@
+@font-face {
+    font-family: "baloo2";
+    src: url(../fonts-family/Baloo2-Medium.ttf);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
+}
+:root {
+    --main-color: #b1f3bc;
+    --third-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+.title-txt {
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.4rem;
+}
+.flex {
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-item{
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 40px 0 0;
+}
+
+.menu a:hover, .logo-mon-compte:hover {
+    font-weight: bolder;
+}
+
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    font-size: 1.4rem;
+    padding: 0.675rem;
+}
+
+#check, .checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+    
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        padding-right: 0.675rem;
+        color: black;
+        float: right;
+    }
+
+    .menu, .logo-mon-compte, header nav {
+        display: none!important;
+    }
+
+}
+
+
+
+
+
+
 *{
     font-family:sans-serif;
 }
 
 body{
-    background: url(../images/agent-immobilier-ecologie.jpeg);
+   
     height: 100vh;
     background-position: left;
     background-size: cover;
+    background-image: linear-gradient( green , white);
 }
 form{
-    width: 380px;
+    width: 40%;
     height: auto;
-    margin-left:auto;
-    margin-right: auto;
     margin-top: 5%;
     border-radius: 10px;
-    box-shadow: 0 10px 20px red;
+    box-shadow: 0 10px 20px white;
     background-color: rgba(0,0,0,0,3);
     overflow: hidden;
 }
 h2{
     text-align: center;
     text-transform: uppercase;
-    color:black;
+    color:#fff;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
 }
@@ -37,18 +121,228 @@ input[type=text] , input[type=password]{
     background-color:#fff;
     border: 1px solid #fff;
 }
-input[type=text]:focus, input[type password]:focus{
+input[type=text]:focus, input[type =password]:focus{
     outline:none;
-    background-color:#fff;
+    background-color: #fff;
+    
+}
+#forgot-password{
+    font-size: 15px;
+    float: right;
+    text-decoration:none ;
+    color:#fff;
+    cursor: pointer;
+}
+#forgot-password:hover{
+    color: black;
+}
+#login-btn{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    margin: 12px 0px;
+    text-transform: uppercase;
+    background-color:#fdfffd;
+    border:none;
+    cursor:pointer;
+    transition: 0.3;
+    color: black;
+}
+#login-btn:hover{
+    background-image: linear-gradient();
+}
+.member{
+    padding: 16px;
+    font-size: 15px;
+    text-align: center;
+    color:#fff;
+    
+}
+#signup-link{
+    color:#fdfffd;
+    text-decoration: none;
+    cursor: pointer;
+}
+#signup-link:hover{
+    color: gray;
+}
+
+.parent2{
+    display: flex;
+    
+}
+.test {
+    width: 100%;
+    height: 100%;
+    
+}
+form{
+    margin-top: 3rem;
+} 
+
+
+
+
+/************** FOOTER ******************   */
+
+footer {
+    background-color: #1f1f1f;
+    font-family: "opensans";
+    padding-top: 0.675rem;
+}
+
+.social-media {
+    color: var(--third-color);
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding-left: 38px;
+}
+
+.social-media li {
+    padding: 20px;
+}
+
+footer p, footer h2, .footer-queries a {
+    color: var(--third-color);
+}
+
+.colonne {
+    display: flex;
+    padding-top: 0.675rem;
+}
+
+footer ul {
+    flex-flow: column;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.footer-services, .footer-access, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.95rem;
 }
 
 
+.copyright {
+    padding-bottom: 0.675rem;
+    text-align: center;
+}
 
+.footer-logo img {
+    width: 150px;
+    height: 73px;
+}
 
-   
+.footer-logo {
+    padding: 0.675rem;
+    padding-top: 0;
+}
 
+footer p {
+padding-left: 9px;
+padding-top: 2rem;
+}
 
+#fb:hover, #tw:hover, #insta:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
 
+footer h2 {
+    padding-bottom: 10px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-queries {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 1200px) {
+    .colonne {
+        flex-direction: column;
+    }
+
+    .footer-access, .footer-services, .footer-contact {
+        width: 33.33%;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+    }
+    .social-media {
+        padding-left: 0rem;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        width: 20%;
+    } 
+}
+
+@media all and (max-width: 768px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+        width: max-content;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .colonne {
+        flex-direction: column;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        padding: 0.675rem;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        padding-left: 12.5rem;
+    }
+
+    .footer-logo p {
+        padding-left: 8.5rem;
+    }
+
+    .social-media {
+        font-size: 3.5rem;
+        padding-left: 0rem;
+        justify-content: space-around;
+    }
+
+    .social-media li {
+        padding: 1rem 8.6rem 1rem 0rem;
+    }
+
+    .footer-queries {
+        flex-direction: column;
+    }
+
+    .social-media li:last-child {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 460px) {
+
+    .logo {
+        padding-left: 6.5rem;
+    }
+
+    .social-media li {
+        padding-right: 4rem;
+    }
+
+}
 
 
 
