@@ -21,7 +21,7 @@ function ouverture() {
     let compteplus=document.createElement("li");
     let flexi=document.createElement("div");
     linkmenu.setAttribute("class", "title-txt");
-    linkmenu.setAttribute("href", "to_manage.html")
+    linkmenu.setAttribute("href", "authentification.html")
     linkmenu.textContent="Compte";
     listmenu.setAttribute("style", "display:block; background-color:#b1f3bc; border:black solid 1px; padding-left:1rem");
     flexi.setAttribute("id", "divmenu");
