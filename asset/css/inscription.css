@@ -417,10 +417,16 @@ footer li a:hover {
 
 }
 
+@media all and (max-width: 1300px)
+{
+.test {
+    display: none;
 
+}
 
-
-
+.parent{
+justify-content: center;
+}
 
 
 
