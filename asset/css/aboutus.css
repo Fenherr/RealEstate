@@ -98,7 +98,7 @@ header {
     nav ul {
         position: absolute;
         left: -100%;
-        top: 15%;
+        top: 14%;
         flex-direction: column;
         background-color: #B1F3BC;
         opacity: 0.9;
@@ -123,6 +123,28 @@ header {
 
 }
 
+
+@media all and (max-width: 368px){
+
+    nav ul {
+        position: absolute;
+        left: -100%;
+        top: 11%;
+        flex-direction: column;
+        background-color: #B1F3BC;
+        opacity: 0.9;
+        width: 100%;
+        text-align: end;
+        transition: 0.25s;
+    }
+
+header .logo {
+    width: 70%;
+}
+
+
+}
+
 /*Contenu page*/
 
 p{
@@ -134,7 +156,7 @@ p{
 
 .p2{
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 h1{
@@ -148,7 +170,8 @@ h1{
 .rectangle-noir1{
     width: 48rem;
     background-color: black;
-    border: 0.5rem solid black;
+    border: 0.5rem solid #e2fbb7;
+    box-shadow: 30px 30px #B1F3BC;
     border-radius: 1rem;
     text-align: center;
     line-height: 3rem;
@@ -354,7 +377,7 @@ footer li a:hover {
         padding-left: 1rem;
     }
 
-    .logo {
+    footer .logo {
         padding-left: 12.5rem;
     }
 
@@ -389,7 +412,7 @@ footer li a:hover {
     }
 }
 
-@media all and (max-width: 805px){
+@media all and (max-width: 870px){
     h1{
         font-size: 2rem;
     }
@@ -411,15 +434,19 @@ footer li a:hover {
     .qsn, .mission, .équipe, .valeurs, .pourquoi {
         background-size: 45rem;
     }
+
+    .p2{
+        font-size: 0.9rem;
+    }
 }
 
-@media all and (max-width: 590px){
+@media all and (max-width: 650px){
     .rectangle-noir1{
         width: 25rem;
     }
 }
 
-@media all and (max-width: 427px){
+@media all and (max-width: 494px){
     .rectangle-noir1{
         width: 20rem;
         line-height: 1.5rem;
@@ -439,6 +466,23 @@ footer li a:hover {
 
     article {
         padding-top: 0;
+    }
+
+}
+@media all and (max-width: 434px){
+
+        .rectangle-noir1{
+            border: 0.2rem solid #e2fbb7;
+            box-shadow: 10px 10px #B1F3BC;
+        }
+
+}
+
+@media all and (max-width: 362px){
+
+    .rectangle-noir1{
+        box-shadow: 0px 0px #B1F3BC;
+        border: 0.2rem solid #B1F3BC;
     }
 
 }
