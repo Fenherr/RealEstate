@@ -1,32 +1,43 @@
-*{
+* {
     text-decoration: none;
     list-style: none;
 }
 
+@font-face {
+    font-family: "baloo2";
+    src:
+        url("../../fonts/Baloo_2/Baloo2-VariableFont_wght.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "opensans";
+    src:
+        url("../../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") format(truetype);
+}
 
 /*Contenu page*/
 
-p{
+p {
     color: white;
     font-size: 1.5rem;
-    font-family:'Open Sans' ;
+    font-family: 'opensans';
     text-align: justify;
 }
 
-.p2{
+.p2 {
     color: black;
     font-size: 1.2rem;
 }
 
-h1{
+h1 {
     margin-bottom: 2rem;
     text-decoration: underline;
     color: white;
     font-size: 2.5rem;
-    font-family: 'Baloo 2'
+    font-family: 'baloo2'
 }
 
-.rectangle-noir1{
+.rectangle-noir1 {
     width: 48rem;
     background-color: black;
     border: 0.5rem solid #e2fbb7;
@@ -40,11 +51,11 @@ h1{
 }
 
 
-article{
+article {
     padding-top: 10rem;
 }
 
-.qsn{
+.qsn {
     background-color: #e2fbb7;
     background-image: url(../images/aboutus/np_Blue-house-wall-with-window-and-vines_4ZDx90_free.jpeg);
     background-repeat: no-repeat;
@@ -52,7 +63,7 @@ article{
     background-size: 75rem;
 }
 
-.mission{
+.mission {
     background-color: #e2fbb7;
     background-image: url(../images/aboutus/np_Estate-agent-presenting-house-to-buyers_4APkW5_free.jpeg);
     background-repeat: no-repeat;
@@ -61,7 +72,7 @@ article{
 }
 
 
-.équipe{
+.équipe {
     background-color: #e2fbb7;
     background-image: url(../images/aboutus/np_Group-of-students-doing-teamwork-together-for-project_5okA95_free.jpeg);
     background-repeat: no-repeat;
@@ -69,7 +80,7 @@ article{
     background-size: 75rem;
 }
 
-.valeurs{
+.valeurs {
     background-color: #e2fbb7;
     background-image: url(../images/aboutus/np_Close-up-top-view-of-young-people-putting-their-hands-together_4dPka4_free.jpeg);
     background-repeat: no-repeat;
@@ -77,7 +88,7 @@ article{
     background-size: 75rem;
 }
 
-.pourquoi{
+.pourquoi {
     background-color: #e2fbb7;
     background-image: url(../images/aboutus/np_Traditional-wall-stone-stable-and-house_4m1vQ4_free.jpeg);
     background-repeat: no-repeat;
@@ -86,11 +97,11 @@ article{
 }
 
 
-.vert{
+.vert {
     padding-top: 0;
 }
 
-section{
+section {
     background-color: whitesmoke;
     border: 0.5rem solid black;
     padding: 5rem;
@@ -99,7 +110,7 @@ section{
     align-items: center;
 }
 
-.rectangle-vert{
+.rectangle-vert {
     width: auto;
     text-align: center;
     background-color: #B1F3BC;
@@ -117,14 +128,14 @@ section{
 
 /*Media queries contenu page*/
 
-@media all and (max-width: 1230px){
-    .rectangle-vert{
+@media all and (max-width: 1230px) {
+    .rectangle-vert {
         padding: 2rem;
     }
 }
 
-@media all and (max-width: 870px){
-    h1{
+@media all and (max-width: 870px) {
+    h1 {
         font-size: 2rem;
     }
 
@@ -132,38 +143,42 @@ section{
         font-size: 1rem;
     }
 
-    .p2{
+    .p2 {
         font-size: 1.5rem;
     }
 
-    .rectangle-noir1{
+    .rectangle-noir1 {
         width: 35rem;
         line-height: 2rem;
         padding: 2rem;
     }
 
-    .qsn, .mission, .équipe, .valeurs, .pourquoi {
+    .qsn,
+    .mission,
+    .équipe,
+    .valeurs,
+    .pourquoi {
         background-size: 45rem;
     }
 
-    .p2{
+    .p2 {
         font-size: 0.9rem;
     }
 }
 
-@media all and (max-width: 650px){
-    .rectangle-noir1{
+@media all and (max-width: 650px) {
+    .rectangle-noir1 {
         width: 25rem;
     }
 }
 
-@media all and (max-width: 494px){
-    .rectangle-noir1{
+@media all and (max-width: 494px) {
+    .rectangle-noir1 {
         width: 20rem;
         line-height: 1.5rem;
     }
 
-      h1{
+    h1 {
         font-size: 1.5rem;
     }
 
@@ -171,7 +186,7 @@ section{
         font-size: 0.75rem;
     }
 
-    .p2{
+    .p2 {
         font-size: 0.75rem;
     }
 
@@ -180,18 +195,19 @@ section{
     }
 
 }
-@media all and (max-width: 434px){
 
-        .rectangle-noir1{
-            border: 0.2rem solid #e2fbb7;
-            box-shadow: 10px 10px #B1F3BC;
-        }
+@media all and (max-width: 434px) {
+
+    .rectangle-noir1 {
+        border: 0.2rem solid #e2fbb7;
+        box-shadow: 10px 10px #B1F3BC;
+    }
 
 }
 
-@media all and (max-width: 362px){
+@media all and (max-width: 362px) {
 
-    .rectangle-noir1{
+    .rectangle-noir1 {
         box-shadow: 0px 0px #B1F3BC;
         border: 0.2rem solid #B1F3BC;
     }
