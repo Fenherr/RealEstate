@@ -6,26 +6,63 @@
     <title>Estimer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="asset/css/estimate.css">
-    <link rel="stylesheet" href="./asset/css/header-footer.css">
 
 </head>
 <body>
     <!--Partie Header-->
 
     <header class="flex justify-content align-item">    
-        <img class="logo" src="./asset/images/logo x150.png" alt="logo">
+        <a href="index.html"></a><img class="logo" src="./asset/images/logo x150.png" alt="logo">
+        <!--<input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+        </label>-->
+
         <nav>
-            <ul class="menu flex justify-content">
+
+            <div class="navbar">
+
+                <ul class="menu flex justify-content">
+                    <li><a class="title-txt" href="buy.html">Acheter</a></li>
+                    <li><a class="title-txt" href="rent.html">Louer</a></li>
+                    <li><a class="title-txt" href="sell.html">Vendre</a></li>
+                    <li><a class="title-txt" href="contact.html">Contact</a></li>
+                </ul> 
+                
+                <div class="logo-mon-compte">
+                    <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul id="nav" class="menu flex justify-content">
                 <li><a class="title-txt" href="buy.html">Acheter</a></li>
                 <li><a class="title-txt" href="rent.html">Louer</a></li>
                 <li><a class="title-txt" href="sell.html">Vendre</a></li>
                 <li><a class="title-txt" href="contact.html">Contact</a></li>
-            </ul>            
-        </nav>
-        <div class="logo-mon-compte">
-            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+            </ul>
+
+            <div class="logo-mon-compte">
+                <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+            </div>
+
         </div>
-        <div id="icons"></div>
+
+
+        <!--<div id="icons"></div>-->
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+
     </header>
     <!--Partie case estimation-->
 
@@ -59,10 +96,10 @@
         <h5>Adresse :</h5>
 
         <div class="adresse">
-            <input type="Adresse" placeholder="   Ex: 121 Rue des Fleurs 87000 Limoges" style="width: 700px; height: 40px;">
+            <input type="text" placeholder="   Ex: 121 Rue des Fleurs 87000 Limoges">
         </div>
         <button class="valider">
-            <a href="#">Valider</a>
+        <a href="#">Valider</a>
         </button>
     </fieldset>
 </form>
@@ -77,7 +114,9 @@
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. 
                 Duis ultricies pulvinar euismod. </p>
-            <button class="ensaone"><a href="#">En savoirs plus</a></button>
+            <button class="ensaone">
+            <a href="#">En savoirs plus</a>
+            </button>
         </article>
     </fieldset>
 
@@ -89,7 +128,9 @@
             <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. 
                 Duis ultricies pulvinar euismod.</p>
-            <button class="ensaone"><a href="#">En savoirs plus</a></button>
+            <button class="ensaone">
+            <a href="#">En savoirs plus</a>
+            </button>
         </article>
     </fieldset>
 </div>
@@ -107,7 +148,7 @@
                 </ul>
             </div>
 
-            <div class="footer-service">
+            <div class="footer-services">
                 <h2>Services</h2>
 
                 <ul class="flex">
@@ -116,7 +157,7 @@
                     <li>Louer</li>
                 </ul>
             </div>
-            <div class="footer-acces">
+            <div class="footer-access">
                 <h2>Accès rapide</h2>
 
                 <ul class="flex">
@@ -142,5 +183,7 @@
             </div>
     
     </footer>
+
+<script src="./asset/js/estimate.js"></script>
 </body>
 </html>

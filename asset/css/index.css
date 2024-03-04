@@ -21,70 +21,84 @@ a {
     color: black;
     font-size: 1rem;
 }
+
 /*header : logo et menu*/
-@font-face {
-    font-family: "baloo2";
-    src: url(../fonts-family/Baloo2-Medium.ttf);
-}
-@font-face {
-    font-family: "opensans";
-    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
-}
-:root {
-    --main-color: #b1f3bc;
-}
-* {
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: #000;
-}
-.title-txt {
-    font-family: "Baloo2", sans-serif;
-    font-size: 1.4rem;
-}
-.flex {
-    display: flex;
-}
-.justify-content{
-    justify-content: space-between;
-}
-.align-item{
-    align-items: center;
-}
-.menu li {
-    list-style: none;
-    margin: 0 40px 0 0;
-}
-.menu li:hover, .logo-mon-compte:hover {
-    font-weight: bolder;
+header a {
+    font-size: 1.1rem;
 }
 
 header {
-    background-color: var(--main-color);
-    font-family: baloo2;
-    font-size: 1.4rem;
-    padding: 0.675rem;
+    display: flex;
+    background-color: #b1f3bc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.2rem;
 }
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 47px 0 5px 5px;
+    width: 100%;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav {
+    width: 100%;
+}
+
+.auth {
+   display: flex;
+   margin-top: 47px;
+   list-style: none;
+   width: -webkit-fill-available;
+   width: 100%;
+   justify-content: flex-end;
+   padding-right: 30px;
+}
+
+i[class="fa-regular fa-user"] {
+    position: relative;
+    top: -2px;
+    padding-right: 5px;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+#idcount {
+    display: none;
+}
+
 /*bannière avec fonction recherche*/
 .banner {
     background-image: url("../images/home/site_corot_1920.jpg");
     padding: 5rem 0;
+    /*background-size: cover;*/
 }
 
 .search {
-    width: 90%;
+    width: fit-content;
     background-color: #ffffff95;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
 }
 
-.menu_search {
+#search_form {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
@@ -95,45 +109,63 @@ header {
 }
 
 .menu_search_deco {
-    border: #1f1f1f 1px solid;  
+    /*border: #1f1f1f 1px solid;*/  
     border-radius: 6px;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    width: 15rem;
+    width: 13rem;
     background-color: #ffffff;
     font-family: 'Open sans', sans-serif;
+    margin-right: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-.input_icon {
-    position: relative;
+#search_form input {
+    border: #1f1f1f 1px solid;
 }
 
-.input_icon_search+i {
-    position: absolute;
-    top: 8px;
-    left: 210px;
+#search_form select {
+    border: #1f1f1f 1px solid;
+}
+
+#search_form.submitted input:invalid {
+    border: red 1px solid; 
+}
+
+#search_form.submitted select:invalid {
+    border: red 1px solid; 
+}
+
+.menu_search_deco p {
+    width: 13rem;
+}
+
+.menu_search_deco .value_bold  {
+    font-weight: bold;
+    color: #1f1f1f;
+    font-size: 0.85rem;
 }
 
 input[type="text"]:focus {
 	outline:none;
 }
 
-.search_btn button {
+.search_btn input {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-}
-
-.search_btn button:hover {
-    background-color: #b1f3bc;
     cursor: pointer;
 }
 
+.search_btn input:hover {
+    border: solid #000000 1px;
+    font-size: 0.95rem;
+}
 
 /*section actualités*/
 .news {
@@ -193,7 +225,7 @@ input[type="text"]:focus {
 .news_all {
     background-color: #ffffff;
     width: 200px;
-    height: 150px;
+    height: 153px;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
@@ -250,8 +282,9 @@ input[type="text"]:focus {
 /*section derniers biens en vente*/
 .sell {
     background-color: #ffffff;
-    width: auto;
+    width: 100%;
     padding-bottom: 20px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -299,7 +332,7 @@ i[class="fa-solid fa-bed"] {
     padding-top: 2px;   
 }
 
-.vertical_row{
+.vertical_row {
     width: 1px;
     border-left: 1px solid black;
     height: 20px;
@@ -335,46 +368,57 @@ i[class="fa-solid fa-bed"] {
 .customers {
     background-color: #1f1f1f;
     width: auto;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     text-align: center;
     color: #ffffff;
 }
 
-.customers span {
-    font-style: italic;
+.customers h2 {
+    margin: 0 auto;
 }
 
 .customers p {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
+    font-style: italic;
 }
 
-.customers button {
+.customers .button {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width: 15%;
+    width: 10rem;
     margin-top: 15px;
+    transition: transform .3s;
+    margin: 0 auto;
 }
 
-.customers button:hover {
-    background-color: #b1f3bc;
+.customers .button:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.customers button a:hover {
+.customers .button a:hover {
     font-weight: inherit;
 }
 
 /*section article agence*/
+.bkg_agency {
+    background-image: url("../images/home/stj_pano_opacity.png");
+    background-repeat: no-repeat;
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
+
 .agency {
     background-color: #ffffff;
     width: auto;
-    padding-bottom: 40px;
 }
 
 .agency h1 {
@@ -390,22 +434,55 @@ i[class="fa-solid fa-bed"] {
     text-align: center;
 }
 
-.agency button {
+.button_estimate {
     padding: 7px 10px 7px 10px;
     background-color: #e2fbb7;
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
     border-color:transparent;
-    width:15%;
+    width:10rem;
     margin-top: 15px;
+    transition: transform .3s;
+    text-align: center;
 }
 
-.agency button:hover {
-    background-color: #b1f3bc;
+.button_manage {
+    padding: 7px 10px 7px 10px;
+    background-color: #e2fbb7;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border-color:transparent;
+    width:10rem;
+    margin-top: 1rem;
+    transition: transform .3s;
+    text-align: center;
 }
 
-.agency button a:hover {
+.center_button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.button_estimate:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.button_manage:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.button_estimate .button a {
+    font-weight: inherit;
+}
+
+.button_manage .button a {
     font-weight: inherit;
 }
 
@@ -413,9 +490,10 @@ i[class="fa-solid fa-bed"] {
 .footer {
     background-color: #000000;
     width: auto;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 2.5rem;
     display: flex;
     justify-content: space-around;
 }
@@ -512,43 +590,198 @@ i[class="fa-solid fa-bed"] {
     font-size: 0.8rem;
     background-color: #000000;
     color: #ffffff;
-    padding-bottom: 30px;
+    padding-bottom: 1.25rem;
     font-family: 'Open sans', sans-serif;
 }
 
 /*menu burger*/
-.menu_burger {
-    display: flex;
-    justify-content: flex-start;
+#menu_burger {
+    position: absolute;
+    right: 2%;
     display: none;
+    cursor: pointer;
+    
 }
 
-/*------------------------------------------------------*/
-@media all and (max-width: 576px) {
+/*-----------------------------------------------------------------------*/
 
-    html,body {
-        overflow-x: hidden;
-        width: 100%;
-      }
+/*----------------------------------------------*/
+@media screen and (max-width: 480px) {
 
-/*header : logo et menu*/
-    nav ul li {
+    header {
+        padding-bottom: 0;
+    }
+
+    .logo {
+        margin-left: 0.2rem;
+    }
+
+    /*bannière avec fonction recherche*/
+    .banner {
+        padding: 0 0 !important;
+    }
+
+    .search {
+        background-color: inherit;
+    }
+
+    .menu_search {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        margin: 0 auto; 
+    }
+
+    .menu_search_deco {
+        margin-top: 5px;
+    }
+
+    .input_icon_search + i {
         display: none;
-        }
+    }
 
-    .logo-mon-compte {
+    .size_form select {
+        width: 13rem !important;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+
+    .size_form input {
+        width: 12.625rem !important;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+
+    .search_btn button {
+        width: 13rem !important;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+
+    /*section actualités*/
+    .news_slide {
+        flex-direction: column;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        align-items: center;
+        flex-wrap: nowrap !important;
+    }
+
+    .news h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .news_1, .news_2, .news_3 {
+        margin-bottom: 2rem;
+    }
+
+    .news {
+        padding-bottom: 1rem;
+    }
+
+    /*section derniers biens en vente*/
+    .sell {
+        padding-bottom: 0;
+    }
+
+    .sell h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .sell_slide {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .sell_frame {
+        margin-bottom: 2rem;
+    }
+
+    .navbar_sell {
+        padding-bottom: 0.5rem;
+        margin-top: -1rem;
+    }
+
+    /*section avis clients*/
+
+    .customers .button {
+        transition: none;
+    }
+
+    .customers .button:hover {
+        pointer-events: none;
+        transition: none;
+    }
+
+    /*section article agence*/
+    .agency {
+        padding-bottom: 0.5rem;
+    }
+
+    .agency h1 {
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .bkg_agency p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-justify: inter-word;
+        text-align: left !important;
+    }
+
+    .button_estimate, .button_manage {
+        transition: none;
+        max-width: 6rem;
+    }
+
+   .button_estimate:hover, .button_manage:hover {
+    pointer-events: none;
+    transform: none;
+    }
+
+    .center_button {
+        margin-top: 0;
+    }
+
+    .bkg_agency {
+        padding-bottom: 2rem;
+    }
+
+    /*section footer*/
+    .column2, .column3, .column4 {
+        margin-left: 0.1rem !important;   
+    }
+
+    footer {
+        padding-left: 0.2rem !important;
+    }
+
+    
+
+}
+
+/*------------------------------------------*/
+@media screen and (max-width: 576px) {
+
+    .auth {
         display: none;
     }
 
-    .logo img {
-        width: 55%;
+    header {
+        padding-bottom: 0;
     }
 
-    .menu_burger {
-        display: block;
-    }
-
-/*bannière avec fonction recherche*/
+    /*bannière avec fonction recherche*/
     .banner {
         padding: 0 0;
     }
@@ -566,27 +799,31 @@ i[class="fa-solid fa-bed"] {
 
     .menu_search_deco {
         margin-top: 5px;
-        width: 20rem;
     }
 
     .input_icon_search + i {
         top: 13px;
-        left: 300px;
+        left: 295px !important;
     }
 
-/*section actualités*/
+    .size_form select {
+        width: 20rem;
+    }
+
+    .size_form input {
+        width: 19.6rem;
+    }
+
+    .search_btn button {
+        width: 20rem;
+    }
+
+    /*section actualités*/
     .news_slide {
-        flex-wrap: wrap;
+        flex-direction: column;
         padding-left: 2rem;
         padding-right: 2rem;
-    }
-
-    .news_1,news_2 {
-        margin-bottom: 3rem;
-    }
-
-    .news {
-        padding-bottom: 3rem;
+        align-items: center;
     }
 
     .news h1 {
@@ -594,15 +831,17 @@ i[class="fa-solid fa-bed"] {
         padding-bottom: 1.5rem;
     }
 
-/*section derniers biens en vente*/
-    .sell {
-        padding-bottom: 0;
+    .news_1, .news_2, .news_3 {
+        margin-bottom: 2rem;
     }
 
-    .sell_slide {
-        flex-wrap: wrap;
-        padding-left: 2rem;
-        padding-right: 2rem;
+    .news {
+        padding-bottom: 1rem;
+    }
+
+    /*section derniers biens en vente*/
+    .sell {
+        padding-bottom: 0;
     }
 
     .sell h1 {
@@ -610,8 +849,17 @@ i[class="fa-solid fa-bed"] {
         padding-bottom: 1.5rem;
     }
 
+    .sell_slide {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
     .sell_frame {
         margin-bottom: 2rem;
+    }
+
+    #frame_1, #frame_2, #frame_4 {
+        display: none !important;
     }
 
     .navbar_sell {
@@ -619,36 +867,60 @@ i[class="fa-solid fa-bed"] {
         margin-top: -1rem;
     }
 
-/*section avis clients*/
-    .customers {
-        padding-bottom: 3rem;
+    /*section avis clients*/
+    .customers p {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .customers button {
-        width: auto;
+    .customers .button {
+        transition: none;
     }
 
-/*section article agence*/
+    .customers button:hover {
+        pointer-events: none;
+        transition: none;
+    }
+
+    /*section article agence*/
     .agency {
-        padding-bottom: 1.3rem;
+        padding-bottom: 0.5rem;
     }
 
     .agency h1 {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
     }
 
-    .agency button {
-        width: auto;
-    }
-
-    .agency p {
+    .bkg_agency p {
         margin-left: 2rem;
         margin-right: 2rem;
         padding-bottom: 1rem;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-justify: inter-word;
+        text-align: justify;
     }
 
-/*section footer*/
+    .button_estimate, .button_manage {
+        transition: none;
+    }
+
+   .button_estimate:hover, .button_manage:hover {
+    pointer-events: none;
+    transform: none;
+    }
+
+    .center_button {
+        margin-top: 0;
+    }
+
+    .bkg_agency {
+        padding-bottom: 2rem;
+    }
+
+    /*section footer*/
     .footer {
         display: inherit;
     }
@@ -657,9 +929,8 @@ i[class="fa-solid fa-bed"] {
         font-size: 2.5rem;
     }
 
-    .column2, .column3, .column4 ul {
+    .column2 ul, .column3 ul, .column4 ul {
         padding-left: 0.6rem;
-        padding-top: 0.4rem;
     }
 
     .footer li {
@@ -678,64 +949,386 @@ i[class="fa-solid fa-bed"] {
 }
 
 /*--------------------------------------------*/
-@media all and (max-width: 768px) {
-/*header : logo et menu*/
-    nav ul li {
+
+@media screen and (max-width: 768px) {
+
+    .auth {
         display: none;
     }
 
-    .logo-mon-compte {
-        display: none;
+    header {
+        padding-bottom: 0;
     }
 
-    .logo img {
-     width: 55%;
+    /*bannière avec fonction recherche*/
+    .banner {
+        padding: 0 0;
     }
 
-    .menu_burger {
-        display: block;
+    .search {
+        background-color: inherit;
     }
 
-/*bannière avec fonction recherche*/
+    .menu_search {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        margin: 0 auto; 
+    }
+
     .menu_search_deco {
-        width: 7.8rem
+        margin-top: 5px;
     }
 
     .input_icon_search + i {
-        left: 100px;
+        top: 13px;
+        left: 295px !important;
+    }
+
+    .size_form select {
+        width: 20rem;
+    }
+
+    .size_form input {
+        width: 19.6rem;
+    }
+
+    .search_btn button {
+        width: 20rem;
+    }
+
+    /*section actualités*/
+    .news_slide {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-items: center;
+    }
+
+    .news h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .news_1, .news_2, .news_3 {
+        margin-bottom: 2rem;
+    }
+
+    .news {
+        padding-bottom: 2.5rem;
+    }
+
+    /*section derniers biens en vente*/
+    .sell {
+        padding-bottom: 0;
+    }
+
+    .sell h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .sell_frame {
+        margin-bottom: 2rem;
+    }
+
+    .navbar_sell {
+        padding-bottom: 0.5rem;
+        margin-top: -1rem;
+    }
+
+    .sell_slide {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    #frame_1, #frame_2, #frame_4 {
+        display: none !important;
+    }
+
+    /*section avis clients*/
+    .customers .button {
+        transition: none;
+    }
+
+    .customers .button:hover {
+        pointer-events: none;
+        transform: none;
+    }
+
+    /*section article agence*/
+    .agency {
+        padding-bottom: 0.5rem;
+    }
+
+    .agency h1 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .bkg_agency p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-justify: inter-word;
+        text-align: justify;
+    }
+
+    .button_estimate, .button_manage {
+        transition: none;
+    }
+
+   .button_estimate:hover, .button_manage:hover {
+    pointer-events: none;
+    transform: none;
+    }
+
+    .center_button {
+        margin-top: 0;
+    }
+
+    .bkg_agency {
+        padding-bottom: 2rem;
+    }
+
+    /*section footer*/
+    .footer {
+        display: inherit;
+    }
+
+    .social_media i::before {
+        font-size: 2.5rem;
+    }
+
+    .column2 ul, .column3 ul, .column4 ul {
+        padding-left: 0.6rem;
+    }
+
+    .footer li {
+        font-size: 1.1rem;
+        line-height: 1.5em;
+    }
+
+    .footer a {
+        font-size: 0.9rem;
+    }
+
+    .column4 li span {
+        font-size: 0.9rem;
+    }
+
+    /*burger menu*/
+    /*#nav {
+        transition: top 0.3s;
+        transition-delay: 0.2s;
+      }*/
+
+      #nav.hidden {
+        top: 0;
+      }
+
+    #menu_burger {
+        display: block;
+        margin-right: 0.5rem;
+        padding-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    #idcount {
+        display: block;
+    }
+
+    #menu_burger:before {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f0c9";
+        font-weight: 900;
+    }
+
+   .active #menu_burger:before {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f00d";
+        font-weight: 900;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        position: absolute;
+        left: -100%;
+        right: 0;
+        top: 2.9rem;
+        background:#ccffd5;
+        width: 100%;
+        text-align: right;
+        z-index: 10;
+        transition: 0.3s;
+        border-bottom: 1px solid #1f1f1f;
+        opacity: 0.9;
+    }
+
+    nav li {
+        margin-left: 0 !important;
+        border-top: 1px solid #1f1f1f;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        
+    }
+
+    nav li a {
+        padding-right: 0.7rem;
+    }
+
+    nav li:hover {
+        background-color:#e2fbb7;
+        margin-left: 0;
+    }
+
+    nav li a:hover {
+        font-weight: inherit;
+    }
+
+    nav.active ul {
+        left: 0;
+    }
+
+}
+
+/*-----------------------------------------------*/
+@media screen and (max-width: 992px) {
+     
+    /*header : logo et menu*/
+     header ul {
+        padding-left: 0;
+    }
+
+    /*bannière avec fonction recherche*/
+
+    .search {
+        background-color: inherit;
+    }
+
+    #search_form {
+        display: inherit;
+    }
+
+    .menu_search {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        margin: 0 auto; 
+    }
+
+    .menu_search_deco {
+        margin-top: 5px;
+    }
+
+    .input_icon_search + i {
+        top: 13px;
+        left: 295px !important;
+    }
+
+    .size_form select {
+        width: 20rem;
+    }
+
+    .size_form input {
+        width: 19.6rem;
+    }
+
+    .search_btn button {
+        width: 20rem;
+    }
+
+    /*section actualités*/
+    .news_slide {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        flex-wrap: wrap;
+        gap: 3em 1em;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .size_flex {
+        min-width: 40%;
+        flex-grow: 1;
+    }
+
+    .news_all {
+        height: 153px;
+    }
+
+    .news_1, .news_2, .news_3, .news_all {
+        margin: 0 auto;
+    }
+
+    /*section derniers biens en vente*/
+    .sell_slide {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #frame_1, #frame_4 {
+        display: none;
+    }
+
+    .sell_slide {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    /*section avis clients*/
+    .customers .button {
+        transition: none;
+    }
+
+    .customers .button:hover {
+        pointer-events: none;
+        transform: none;
+    }
+
+     /*section article agence*/
+     .button_estimate, .button_manage {
+        transition: none;
+    }
+
+    .button_estimate:hover, .button_manage:hover {
+        pointer-events: none;
+        transform: none;
+        }
+
+}
+
+/*-----------------------------------------------*/
+@media screen and (max-width: 1200px) {
+     
+    /*header : logo et menu*/
+     header ul {
+        padding-left: 0;
+    }
+
+    /*bannière avec fonction recherche*/
+    .menu_search_deco {
+        width: 10rem;
     }
 
     .banner {
-        padding: 3rem 0;
+        padding: 2rem 0;
     }
-/*section actualités*/
-/*section derniers biens en vente*/
-/*section avis clients*/
-/*section article agence*/
-/*section footer*/
-    
-}
 
-
-@media all and (max-width: 992px) {
-/*header : logo et menu*/
-/*bannière avec fonction recherche*/
-/*section actualités*/
-/*section derniers biens en vente*/
-/*section avis clients*/
-/*section article agence*/
-/*section footer*/   
+    .input_icon_search + i {
+        left: 140px;
+    }
 
 }
 
-@media all and (max-width: 1200px) {
-/*header : logo et menu*/
-/*bannière avec fonction recherche*/
-/*section actualités*/
-/*section derniers biens en vente*/
-/*section avis clients*/
-/*section article agence*/
-/*section footer*/
-}
+/* -------------------------XXL-----------------------*/
+@media screen and (min-width: 1500px) {
+    .bkg_agency {
+        background-image: none;
+    }
 
-    
+}

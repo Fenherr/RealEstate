@@ -28,6 +28,21 @@
         </div>
     </header>
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <footer>
         <div class="colonne">
             <div class="footer-logo">

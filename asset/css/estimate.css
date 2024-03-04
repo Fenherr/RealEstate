@@ -1,31 +1,331 @@
-#icons {
-    cursor: pointer;
-    display: none;
+@font-face {
+    font-family: "baloo2";
+    src: url(../fonts-family/Baloo2-Medium.ttf);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
+}
+:root {
+    --main-color: #b1f3bc;
+    --third-color: white;
 }
 
-@media screen (max-width: 768px) {
-     #icons {
+* {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+/*****************HEADER**************/
+
+a {
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+.title-txt {
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.4rem;
+}
+.flex {
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-item{
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 40px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a:hover, .logo-mon-compte:hover {
+    font-weight: bolder;
+}
+
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    font-size: 1.4rem;
+    padding: 0.675rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+/***************MENU BURGER****************/
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+
+/*#icons {
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+}
+
+@media all and (max-width: 768px) {
+    #icons {
         display: block;
     }
     #icons::before {
         content: "\2630";
     }
+    .active #icons::before {
+        content: "/2715";
+    }
+}*/
+
+@media all and (max-width: 768px) {
+    nav {
+        display: none;
+    }
 }
 
+@media all and (min-width: 768px) {
+    #openBtn {
+        display: none;
+    }
+}
+
+.logo-mon-compte {
+    display: flex;
+    justify-content: center;
+}
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -510px;
+    background-color: var(--main-color);
+    padding-top: 95px;
+    transition: right 0.5s ease;
+}
+
+.sidenav.active {
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#nav.active {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 150px;
+  padding: 10px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/************** FOOTER ******************   */
+
+footer {
+    background-color: #1f1f1f;
+    font-family: "opensans";
+    padding-top: 0.675rem;
+}
+
+.social-media {
+    color: var(--third-color);
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding-left: 38px;
+}
+
+.social-media li {
+    padding: 20px;
+}
+
+footer p, footer h2, .footer-queries a {
+    color: var(--third-color);
+}
+
+.colonne {
+    display: flex;
+    padding-top: 0.675rem;
+}
+
+footer ul {
+    flex-flow: column;
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.footer-services, .footer-access, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.95rem;
+}
+
+
+.copyright {
+    padding-bottom: 0.675rem;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: 73px;
+}
+
+.footer-logo {
+    padding: 0.675rem;
+    padding-top: 0;
+}
+
+footer p {
+padding-left: 9px;
+padding-top: 2rem;
+}
+
+#fb:hover, #tw:hover, #insta:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+footer h2 {
+    padding-bottom: 10px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-queries {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 1200px) {
+    .colonne {
+        flex-direction: column;
+    }
+
+    .footer-access, .footer-services, .footer-contact {
+        width: 33.33%;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+    }
+    .social-media {
+        padding-left: 0rem;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        width: 20%;
+    } 
+}
+
+@media all and (max-width: 768px) {
+    .footer-access, .footer-services, .footer-contact {
+        padding-left: 1.5rem;
+        width: max-content;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .colonne {
+        flex-direction: column;
+    }
+    .footer-access, .footer-services, .footer-contact {
+        padding: 0.675rem;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        padding-left: 12.5rem;
+    }
+
+    .footer-logo p {
+        padding-left: 8.5rem;
+    }
+
+    .social-media {
+        font-size: 3.5rem;
+        padding-left: 0rem;
+        justify-content: space-around;
+    }
+
+    .social-media li {
+        padding: 1rem 8.6rem 1rem 0rem;
+    }
+
+    .footer-queries {
+        flex-direction: column;
+    }
+
+    .social-media li:last-child {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 460px) {
+
+    .logo {
+        padding-left: 6.5rem;
+    }
+
+    .social-media li {
+        padding-right: 4rem;
+    }
+
+
+}
+
+
+/**********TITRE DE LA PAGE**********/
 h3 {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
     margin-bottom: 2rem;
     font-family: "Baloo2", sans-serif;
     font-size: 1.5rem;
 }
 
-fieldset {
-    margin-right: 10rem;
-    margin-left: 2rem;
+.info h3:hover {
+    text-decoration: underline;
+}
+
+
+/***********CASE D'ESTIMATION*********/
+
+.estimer {
+    margin: 0 auto;
+    width: 50%;
     border-radius: 1rem;
-    margin-bottom: 2rem;
+    box-shadow: 1px 2px 1px 2px;
 }
 
 h5 {
@@ -52,6 +352,9 @@ h5 {
 .adresse input {
     border-radius: 0.880rem;
     margin-right: 5rem;
+    width: 500px;
+    height: 40px;
+    font-size: 0,95rem;
 }
 
 .valider {
@@ -66,6 +369,58 @@ h5 {
     font-family: "opensans", sans-serif;
 }
 
+@media all and (max-width: 576px) {
+    .estimation-immo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .information {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+}
+
+@media all and (max-width: 576px) {
+    
+    h3 {
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        text-align: center;
+        margin-right: 1rem;
+    }
+
+    .estimer {
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 1rem;
+    }
+    
+    .adresse input {
+        width: 95%;
+        margin-right: 1rem;
+    }
+}
+
+/*@media all and (max-width: 768px) {
+    .estimer {
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 1rem;
+    }
+    
+    .adresse input {
+        width: 450px;
+        margin-right: 1rem;
+    }
+}*/
+
+
+/***********PARTIE INFORMATION**********/
+
 .information {
     display: flex;
     justify-content: space-around;
@@ -73,17 +428,23 @@ h5 {
 
 .estimation-immo {
     margin-top: 8rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: var(--main-color);
 }
 
 .info {
-    margin: 1rem;
     padding: 1rem;
     border-radius: 0.88rem;
 }
 
+.info a {
+    text-align: center;
+}
+
 .info p {
     font-family: "opensans", sans-serif;
-    text-align: justify;
+    text-align: center;
     font-size: 0.85rem;
 }
 
@@ -97,3 +458,4 @@ h5 {
     margin-left: 2rem;
     font-family: "opensans", sans-serif;
 }
+
