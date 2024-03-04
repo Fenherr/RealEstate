@@ -9,61 +9,11 @@
 
 </head>
 <body>
-    <!--Partie Header-->
 
-    <header class="flex justify-content align-item">    
-        <a href="index.html"></a><img class="logo" src="./asset/images/logo x150.png" alt="logo">
-        <!--<input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-        </label>-->
+    <?php 
+        require 'header.php';
+    ?>
 
-        <nav>
-
-            <div class="navbar">
-
-                <ul class="menu flex justify-content">
-                    <li><a class="title-txt" href="buy.html">Acheter</a></li>
-                    <li><a class="title-txt" href="rent.html">Louer</a></li>
-                    <li><a class="title-txt" href="sell.html">Vendre</a></li>
-                    <li><a class="title-txt" href="contact.html">Contact</a></li>
-                </ul> 
-                
-                <div class="logo-mon-compte">
-                    <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
-                </div>
-
-            </div>
-
-        </nav>
-
-        <div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="#" class="close">x</a>
-            <ul id="nav" class="menu flex justify-content">
-                <li><a class="title-txt" href="buy.html">Acheter</a></li>
-                <li><a class="title-txt" href="rent.html">Louer</a></li>
-                <li><a class="title-txt" href="sell.html">Vendre</a></li>
-                <li><a class="title-txt" href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="logo-mon-compte">
-                <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
-            </div>
-
-        </div>
-
-
-        <!--<div id="icons"></div>-->
-
-        <a href="#" id="openBtn">
-            <span class="burger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </a>
-
-    </header>
     <!--Partie case estimation-->
 
     <h3>Vous souhaitez estimer votre bien ?</h3>
@@ -135,55 +85,9 @@
     </fieldset>
 </div>
 
-    <footer>
-        <div class="colonne">
-            <div class="footer-logo">
-                <a href="index.html"><img src="./asset/images/logo_white_150.png" alt="Logo"></a>
-                <p>Retrouvez-nous sur les réseaux sociaux</p>
+<?php 
+        require 'footer.php';
+?>
 
-                <ul class="social-media">
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-            </div>
-
-            <div class="footer-services">
-                <h2>Services</h2>
-
-                <ul class="flex">
-                    <li>Achat</li>
-                    <li>Vendre</li>
-                    <li>Louer</li>
-                </ul>
-            </div>
-            <div class="footer-access">
-                <h2>Accès rapide</h2>
-
-                <ul class="flex">
-                    <li>Inscription newsletter</li>
-                    <li>Qui sommes-nous ?</li>
-                    <li>Nos offres d'emploi</li>
-                    <li>Avis client</li>
-                    <li>Plan du site</li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h2>Contact</h2>
-
-                <ul class="flex">
-                    <li>06.08.16.45.22</li>
-                    <li>contact@acgdimmo.fr</li>
-                    <li>Saint-Junien</li>
-                </ul>
-            </div>
-        </div>
-            <div class="copyright">
-                <p>acgdimmo©</p>
-            </div>
-    
-    </footer>
-
-<script src="./asset/js/estimate.js"></script>
 </body>
 </html>
