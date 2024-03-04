@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="asset/js/header.js" defer></script>
+    <link rel="stylesheet" href="./asset/css/header_footer.css">
     <link rel="stylesheet" href="./asset/css/inscription.css">
     <title>inscrition</title>
 </head>
+
 
 
 <body>
@@ -17,14 +21,6 @@ require 'header.php';
 
     
 
-
-     <!-- Accueil
-    Acheter
-    Louer
-    Vendre
-    Contact
-    Se connecter -->
-    
 
     
 
