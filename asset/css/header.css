@@ -1,3 +1,16 @@
+/*********** var ***********/
+:root {
+    --main-color:rgba(177, 243, 188, 1);
+    --third-color: white;
+    --related-green-color: #E2FBB7;
+    --footer-color: #1F1F1F;
+    --border-size: 3px;
+    --border-radius: 25px;
+    --margin-left-document: 50px;
+    --space-element-gap: 35px;
+    --padd-header: 0.675rem;
+}
+
 @font-face {
     font-family: "baloo2";
     src: 
