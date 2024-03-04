@@ -766,8 +766,6 @@ i[class="fa-solid fa-bed"] {
         padding-left: 0.2rem !important;
     }
 
-    
-
 }
 
 /*------------------------------------------*/
@@ -1120,12 +1118,6 @@ i[class="fa-solid fa-bed"] {
         font-size: 0.9rem;
     }
 
-    /*burger menu*/
-    /*#nav {
-        transition: top 0.3s;
-        transition-delay: 0.2s;
-      }*/
-
       #nav.hidden {
         top: 0;
       }
@@ -1306,7 +1298,7 @@ i[class="fa-solid fa-bed"] {
 @media screen and (max-width: 1200px) {
      
     /*header : logo et menu*/
-     header ul {
+    header ul {
         padding-left: 0;
     }
 
