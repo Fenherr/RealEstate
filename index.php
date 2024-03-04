@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
     <link rel="stylesheet" href="./asset/css/index.css">
+
 </head>
 
 <body>
