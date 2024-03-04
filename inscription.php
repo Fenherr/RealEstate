@@ -18,6 +18,25 @@
 require 'header.php';
 ?>
 
+<<<<<<< HEAD
+=======
+<?php
+    // Afficher une alerte JavaScript lorsque la page est chargée
+    echo "<script>alert('Doumbé  ou Baki ???? Tape 1 pour Doumbe');</script>";
+?>
+
+
+    
+
+
+
+
+
+
+
+
+
+>>>>>>> 069c34665b6be539db72c355cbd4a1e16f039a6e
 
 
     <div class="parent">
