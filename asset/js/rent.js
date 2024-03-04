@@ -1,5 +1,5 @@
 // Ouverture et fermeture menu burger
-let burgermenu=document.getElementById("burger");
+/*let burgermenu=document.getElementById("burger");
 let listmenu=document.querySelector("#zemenu");
 let main=document.querySelector("main");
 let header=document.querySelector("header");
@@ -34,7 +34,7 @@ function ouverture() {
     return console.log(listmenu);
     }
     flexi.setAttribute("style", "position:absolute;z-index:2;right:0;top:0;width:100%;text-align:center");
-}
+} */
 
 
 /*-_-_-_-_ Formulaire recherche -_-_-_-_-_-_-_-_-_-_-_-_*/
