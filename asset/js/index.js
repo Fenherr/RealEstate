@@ -6,6 +6,20 @@ menu_burger.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 
+
+/*document.addEventListener('scroll', (event) => {
+
+    let navBar = document.getElementById("nav");
+	
+    if(document.scrollY > 100) {
+    	navBar.classList.toggle("hidden");
+        
+    } else {
+    	navBar.classList.remove("hidden");
+    }
+});*/
+
+
 //search banner
 
 /*searchForm.addEventListener("submit", (event) => {
