@@ -15,7 +15,10 @@
 require 'header.php';
 ?>
 
-    
+<?php
+    // Afficher une alerte JavaScript lorsque la page est chargée
+    echo "<script>alert('Doumbé  ou Baki ???? Tape 1 pour Doumbe');</script>";
+?>
 
 
      <!-- Accueil
