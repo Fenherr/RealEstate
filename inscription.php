@@ -24,7 +24,61 @@
         <div class="logo-mon-compte">
             <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
         </div>
+       
+        <div id="root">
+            <div id="topnav" class="topnav">
+              <a id="home_link" class="topnav_link" href="/">HOME</a>
+          
+              <!-- Classic Menu -->
+              <nav role="navigation" id="topnav_menu">
+                <a class="topnav_link" href="/about">ABOUT</a>
+                <a class="topnav_link" href="/contact-us">CONTACT</a>
+              </nav>
+          
+              <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                <!-- Some spans to act as a hamburger -->
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+          
+              <!-- Responsive Menu -->
+              <nav role="navigation" id="topnav_responsive_menu">
+                <ul>
+                  <li><a href="/">HOME</a></li>
+                  <li><a href="/acceuil">acceuil</a></li>
+                  <li><a href="/acheter">acheter</a></li>
+                  <li><a href="/louer">louer</a></li>
+                  <li><a href="/vendre">vendre</a></li>
+                  <li><a href="/contact">contact</a></li>
+                  <li><a href="/se connecter">se connecter</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
     </header>
+
+
+
+     <!-- Accueil
+    Acheter
+    Louer
+    Vendre
+    Contact
+    Se connecter -->
+    
+
+    
+
+
+
+
+
+
+
+
+
+
 
     <div class="parent">
 
