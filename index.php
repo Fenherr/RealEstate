@@ -18,6 +18,7 @@
 <body>
 
 <!-- logo avec menu principal -->
+<!-- include of header php file -->
 <?php require 'header_index.php'; ?>
 
 <main>
@@ -179,6 +180,7 @@
 </main>
 
 <!-- footer -->
+<!-- include of footer php file -->
 <?php require 'footer_index.php'; ?>
 
 <div class="copyright">
