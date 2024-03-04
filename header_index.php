@@ -1,7 +1,7 @@
 <!-- logo avec menu principal -->
 <header id="header">
     <div class="logo">
-        <a href="index.html">
+        <a href="index.php">
             <img src="asset/images/logo x150.png" alt="logo acgdimmo">
         </a>
     </div>
