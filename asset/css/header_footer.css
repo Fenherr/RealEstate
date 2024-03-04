@@ -1,12 +1,25 @@
+/*********** var ***********/
+:root {
+    --main-color:rgba(177, 243, 188, 1);
+    --third-color: white;
+    --related-green-color: #E2FBB7;
+    --footer-color: #1F1F1F;
+    --border-size: 3px;
+    --border-radius: 25px;
+    --margin-left-document: 50px;
+    --space-element-gap: 35px;
+    --padd-header: 0.675rem;
+}
+
 @font-face {
     font-family: "baloo2";
     src: 
-        url("../fonts/web fonts/Baloo2-Medium.ttf") format(truetype);
+        url("../fonts/Baloo2-Medium.ttf") format(truetype);
 }
 
 @font-face {
     font-family: "opensans";
-    src: url("../fonts/web fonts/OpenSans/OpenSans-Regular.ttf") format(truetype);
+    src: url("../fonts/OpenSans-Regular.ttf") format(truetype);
 }
 
 [hidden] {
@@ -26,13 +39,7 @@ a {
     text-decoration: none;
 }
 
-.title-txt {
-    font-family: "baloo2", sans-serif;
-    font-size: 1.4rem;
-}
-
-.title-txt.active,
-.account-connexion.active h2 {
+.title-txt.active {
     font-weight: bold;
 }
 
@@ -56,6 +63,11 @@ section h2,
 footer h2, .info-button {
     font-family: 'opensans', sans-serif;
     font-size: 1rem;
+}
+
+.title-txt, .logo-mon-compte a {
+    font-family: "baloo2", sans-serif;
+    font-size: 1.4rem;
 }
 
 body {
@@ -126,7 +138,7 @@ header {
         height: 100vh;
         right: -100%;
         text-align: center;
-        z-index: 1;
+        z-index: 2;
         background: var(--main-color);
         touch-action: none;
     }
@@ -136,14 +148,14 @@ header {
     }
 
     .logo-mon-compte {
-        top: 18rem;
+        top: 22rem;
     }
 
     .menu li {
         width: 100%;
     }
 
-    .menu li:first-child {
+    .menu li {
         padding-top: 2rem;
     }
 

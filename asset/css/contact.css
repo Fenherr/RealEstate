@@ -1,4 +1,4 @@
-/*header commun*/
+/*header commun
 
 @font-face {
     font-family: "baloo2";
@@ -61,14 +61,14 @@ header {
     padding: 0.675rem;
 }
 
-#check, .checkbtn {     /* disparition menu */
+#check, .checkbtn {     // disparition menu 
     display: none;
     cursor: pointer;
 }
 
 @media all and (max-width: 768px) {
     
-    .checkbtn {         /* apparition menu burger*/
+    .checkbtn {         // apparition menu burger
         display: block;
         font-size: 30px;
         padding-right: 0.675rem;
@@ -79,7 +79,8 @@ header {
     .menu, .logo-mon-compte, header nav {
         display: none!important;
     }
-}
+} */
+
 
 /*body - page contact*/
 
@@ -446,7 +447,7 @@ button {
 
 
    
-/*footer commun*/
+/*footer commun
 
 footer {
     background-color: #1f1f1f;
@@ -603,5 +604,4 @@ footer li a:hover {
     .social-media li {
         padding-right: 4rem;
     }
-
-}
+} */
