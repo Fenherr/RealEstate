@@ -1,31 +1,41 @@
 /*header commun -> Menu burger => JS*/
 
-let burgerMenu1 = document.querySelector ("nav")
-let burgerMenu2 = document.querySelector (".logo-mon-compte");
+const menuOpener = document.getElementById("menu-opener"),
+    menuCloser = document.getElementById("menu-closer"),
+    navBar = document.querySelector(".menu"),
+    accountAccess = document.querySelector(".logo-mon-compte"),
+    body = document.querySelector("body"),
+    btnMenu = document.getElementById("check");
+let menuIsOpen = false;
 
-let burgerMenu = ['burgerMenu1', 'burgerMenu2'];
+function displayManagerMenu () {
+    navBar.classList.toggle("active");
+    accountAccess.classList.toggle("active");
+    body.classList.toggle("stop-overflow");
+    menuOpener.toggleAttribute("hidden");
+    menuCloser.toggleAttribute("hidden");
 
-for (let i=0; i < burgerMenu.length; i++) {
-console.log (burgerMenu[i])
+    if (menuIsOpen) {
+        menuIsOpen = false;
+    } else {
+        menuIsOpen = true;
+    }
 }
 
-/*ajout liste menu dans burgerMenu */
-let listBurgerMenu = createElement ('burgerMenu')
+btnMenu.addEventListener("click", displayManagerMenu);
 
-/* pr fermeture burgerMenu si clic en dehors*/ 
-let main = document.querySelector("main")   
-
-listBurgerMenu.addEventListener ("onClick", déploiementMenu);
-main.addEventListener ("onClick", fermetureMenu);
-header.addEventListener ("onClick", fermetureMenu);
-
-
-
-
-
-
-
-
+window.addEventListener("resize", () => {
+    if (window.matchMedia("all and (max-width: 768px)").matches) {
+        menuOpener.setAttribute("hidden", "");
+        if (!menuIsOpen) {
+            menuOpener.removeAttribute("hidden");
+        } else {
+            body.classList.add("stop-overflow");
+        }
+    } else {
+        body.classList.remove("stop-overflow");
+    }
+})
 
 
 //--------------formulaire----------------- 
