@@ -1,18 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
     text-decoration: none;
     list-style: none;
-}
-
-@font-face {
-    font-family: "Baloo 2" ;
-    src: url("../fonts/Baloo2-Medium.ttf");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
 }
 
 

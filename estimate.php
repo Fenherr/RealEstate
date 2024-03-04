@@ -6,6 +6,7 @@
     <title>Estimer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="asset/css/estimate.css">
+    <link rel="stylesheet" href="asset/css/header_footer.css">
 
 </head>
 <body>
@@ -89,5 +90,6 @@
         require 'footer.php';
 ?>
 
+<script src="asset/js/header.js"></script>
 </body>
 </html>
