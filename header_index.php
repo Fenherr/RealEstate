@@ -1,5 +1,5 @@
 <!-- logo avec menu principal -->
-<header>
+<header id="header">
     <div class="logo">
         <a href="index.html">
             <img src="asset/images/logo x150.png" alt="logo acgdimmo">

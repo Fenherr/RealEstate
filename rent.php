@@ -6,11 +6,11 @@
     <title>Location</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/rent.css">
-
+    <script src="./asset/js/rent.js" defer></script>
     
 </head>
 <body>
-    <!--<header class="flex justify-content align-item">    
+    <header class="flex justify-content align-item">    
         <a href="index.html"><img class="logo" src="./asset/images/logo x150.png" alt="logo"></a>
         <nav>
             <ul id="zemenu" class="menu flex justify-content">
@@ -26,7 +26,7 @@
         <div class="logo-alter">
             <input type="button" id="burger" value="">
         </div>
-    </header>--> 
+    </header>
      <?php //require 'header_index.php'; ?>
     <main>
         <div>
