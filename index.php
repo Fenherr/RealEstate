@@ -169,10 +169,10 @@
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <div class="center_button">
                 <div class="button_estimate">
-                    <div class="button"><a href="estimate.html">Estimons votre bien</a></div>
+                    <div class="button"><a href="estimate.php">Estimons votre bien</a></div>
                 </div>
                 <div class="button_manage">
-                    <div class="button"><a href="to_manage.html">Gérons votre bien</a></div>
+                    <div class="button"><a href="to_manage.php">Gérons votre bien</a></div>
                 </div>
             </div>
         </div>
