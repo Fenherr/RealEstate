@@ -82,7 +82,81 @@ header {
         display: none!important;
     }
 
-
+   
+    header {
+        background-color: var(--main-color);
+        font-family: baloo2;
+        padding: var(--padd-header);
+        font-size: 1.4rem;
+    }
+    
+    .logo:hover {
+        opacity: 0.6;
+    }
+    
+    .menu li {
+        list-style: none;
+        margin: 0 40px 0 0;
+    }
+    .menu a:hover, .logo-mon-compte:hover {
+        font-weight: bolder;
+    }
+    
+    #check, .checkbtn {
+        display: none;
+        cursor: pointer;
+        color: black;
+    }
+    
+    .stop-overflow {
+        overflow: hidden;
+    }
+    
+    @media all and (max-width: 768px) {
+        
+        .checkbtn { 
+            display: block;
+            font-size: 30px;
+            padding-right: 0.675rem;
+            float: right;
+        }
+    
+        .menu, .logo-mon-compte {
+            position: fixed;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            right: -100%;
+            text-align: center;
+            z-index: 1;
+            background: var(--main-color);
+            touch-action: none;
+        }
+    
+        .menu {
+            top: 5rem;
+        }
+    
+        .logo-mon-compte {
+            top: 18rem;
+        }
+    
+        .menu li {
+            width: 100%;
+        }
+    
+        .menu li:first-child {
+            padding-top: 2rem;
+        }
+    
+        .active {
+            right: 0;
+        }
+    
+        .menu, .active, #menu-opener, #menu-closer, .logo-mon-compte {
+            transition: .4s;
+        }
+    }
 
 
 
@@ -417,11 +491,12 @@ footer li a:hover {
 
 }
 
+@media all and (max-width: 1300px){
+.test {
+    display: none;
 
+}
 
-
-
-
-
-
-
+.parent{
+justify-content: center;
+}

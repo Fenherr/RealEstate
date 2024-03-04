@@ -24,6 +24,7 @@
         <div class="logo-mon-compte">
             <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
         </div>
+        
     </header>
 
     <div class="parent">
@@ -148,7 +149,7 @@
                     </div>
             
             </footer>
-    
+    <script src="./asset/js/inscription.js" > </script>
 </body>
 </html>
    
