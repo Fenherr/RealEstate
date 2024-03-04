@@ -1,19 +1,30 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    list-style: none;
 }
 
+@font-face {
+    font-family: "Baloo 2" ;
+    src: url("../fonts-family/Baloo2-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts-family/OpenSans/OpenSans-Regular.ttf");
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #B1F3BC;
+    width: 100%;
 }
 
 .menu{
     display: flex;
-    list-style: none;
     gap: 3rem;
 }
 
@@ -39,7 +50,6 @@ header {
 }
 
 a{
-    text-decoration: none;
     color: black;
     font-size: 1.5rem;
     transition: 0.3s ease;
@@ -53,11 +63,12 @@ a{
 p{
     color: white;
     font-size: 2rem;
+    font-family:'Open Sans' ;
 }
 
 .p2{
     color: black;
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 h1{
@@ -67,80 +78,83 @@ h1{
 }
 
 .rectangle-noir1{
-    width: 31rem;
+    width: 48rem;
     background-color: black;
     border: 0.5rem solid black;
     border-radius: 1rem;
     text-align: center;
+    line-height: 4rem;
     box-sizing: border-box;
     padding: 2rem;
 
 }
 
 
-.rectangle-noir2{
-    width: 56rem;
-    text-align: right;
-    background-color: black;
-    border: 0.5rem solid black;
-    border-radius: 1rem;
-    padding: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box;
-    margin-left: 40%; 
-    margin-right: 3rem; 
-    margin-top: 4rem; 
-    margin-bottom: 3rem;
-    font-family: 'Open Sans'
-}
-
-.rectangle-noir3{
-    width: 47rem;
-    background-color: black;
-    border: 0.5rem solid black;
-    border-radius: 1rem;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 1rem;
+article{
+    padding-top: 10rem;
 }
 
 .qsn{
+    background-color: #e2fbb7;
+    background-image: url(../images/aboutus/np_Blue-house-wall-with-window-and-vines_4ZDx90_free.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 66px 42px 28px 50px;
-    background-image: url(../images/aboutus/np_Blue-house-wall-with-window-and-vines_4ZDx90_free.jpeg)
+    background-position: top;
+    background-size: 75rem;
 }
 
 .mission{
+    background-color: #e2fbb7;
+    background-image: url(../images/aboutus/np_Estate-agent-presenting-house-to-buyers_4APkW5_free.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 66px 42px 28px 50px;
-    background-image: url(../images/aboutus/np_Estate-agent-presenting-house-to-buyers_4APkW5_free_1.jpeg)
+    background-position: top;
+    background-size: 75rem;
 }
 
 
 .équipe{
+    background-color: #e2fbb7;
+    background-image: url(../images/aboutus/np_Group-of-students-doing-teamwork-together-for-project_5okA95_free.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 66px 42px 28px 50px;
-    background-image: url(../images/aboutus/np_Group-of-students-doing-teamwork-together-for-project_5okA95_free.jpeg)
+    background-position: top;
+    background-size: 75rem;
 }
 
 .valeurs{
+    background-color: #e2fbb7;
+    background-image: url(../images/aboutus/np_Close-up-top-view-of-young-people-putting-their-hands-together_4dPka4_free.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 66px 42px 28px 50px;
-    background-image: url(../images/aboutus/np_Close-up-top-view-of-young-people-putting-their-hands-together_4dPka4_free.jpeg)
+    background-position: top;
+    background-size: 75rem;
 }
-
 
 .pourquoi{
+    background-color: #e2fbb7;
+    background-image: url(../images/aboutus/np_Traditional-wall-stone-stable-and-house_4m1vQ4_free.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 66px 42px 28px 50px;
-    background-image: url(../images/aboutus/np_Traditional-wall-stone-stable-and-house_4m1vQ4_free.jpeg)
+    background-position: top;
+    background-size: 75rem;
 }
+
+
+.vert{
+    padding-top: 0;
+}
+
+section{
+    background-color: whitesmoke;
+    border: 0.5rem solid black;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+
+
 
 .rectangle-vert{
     width: auto;
@@ -180,8 +194,8 @@ h2{
 .logos{
     display: flex;
     gap: 5rem;
-    list-style: none;
     margin: 1rem;
+    font-size: 5rem;
 }
 
 .colonnes{
@@ -193,7 +207,6 @@ font-family: 'Baloo 2'
 }
 
 .listef{
-    list-style: none;
     padding: 0;
     font-size: 1.5rem;
 }
@@ -216,4 +229,64 @@ font-family: 'Baloo 2'
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+@media all and (max-width: 1230px){
+    .rectangle-vert{
+        padding: 2rem;
+    }
+}
+
+@media all and (max-width: 805px){
+    h1{
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .p2{
+        font-size: 1.5rem;
+    }
+
+    .rectangle-noir1{
+        width: 35rem;
+        line-height: 2rem;
+        padding: 2rem;
+    }
+
+    .qsn, .mission, .équipe, .valeurs, .pourquoi {
+        background-size: 45rem;
+    }
+}
+
+@media all and (max-width: 590px){
+    .rectangle-noir1{
+        width: 25rem;
+    }
+}
+
+@media all and (max-width: 427px){
+    .rectangle-noir1{
+        width: 20rem;
+        line-height: 1.5rem;
+    }
+
+      h1{
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    .p2{
+        font-size: 0.75rem;
+    }
+
+    article {
+        padding-top: 0;
+    }
+
 }

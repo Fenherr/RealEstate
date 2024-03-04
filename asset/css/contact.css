@@ -1,60 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600; 1 700 ; 1 800 & display=swap');
-
+@font-face {
+    font-family: "baloo2";
+    src: url(../fonts-family/Baloo2-Medium.ttf);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
+}
+:root {
+    --main-color: #b1f3bc;
+    --third-color: white;
+}
 * {
     padding: 0;
     margin: 0;
 }
-
 a {
     text-decoration: none;
+    color: #000;
 }
-a, h1, h2, h3, h4, h5, h6 {
-    font-family: "baloo 2";
-    font-weight: 500;
-    font-size: 20px;
+.title-txt {
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.4rem;
 }
-header {
-    background-color: #b1f3bc; 
+.flex {
     display: flex;
+}
+.justify-content{
     justify-content: space-between;
+}
+.align-item{
     align-items: center;
 }
-
-.logo {
-    padding: 10px;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-}
-
 .menu li {
-    margin-right: 44px;
+    list-style: none;
+    margin: 0 2.5rem 0 0;
 }
-
-.menu a {
-    font-size: 24px;
-        color: black;
-}
-
-.menu a:hover {
-    color: black;
+.menu li:hover, .logo-mon-compte:hover {
     font-weight: bolder;
 }
 
-.logo-my-account {
-    color: black;
-}
-.logo-my-account a:hover {
-    color: #000;
-    font-weight: bolder;
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    font-size: 1.4rem;
+    padding: 0.675rem;
 }
 
+/*body*/
+
+a, h1, h2, h3, h4, h5, h6 {
+    font-family: "baloo2";
+    font-weight: 500;
+    font-size: 2rem;
+}
 .contact {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.875rem;
 }
   
 .contactform {
@@ -63,30 +64,68 @@ header {
     }
 
 .phone {
+    h2, h3 {
+        font-size: 1.25rem;
+    }
     width: 50%;
-    padding: 0 20px;    
+    padding: 0 1.25rem 1.875rem;
+
 }
 
 h4 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: #b1f3bc; 
+    font-size: 1.25rem;
+    margin-right: 62%;
+    margin-bottom: 1%;    
 }
-
-label-message {
-    height: max-content;
  
-}
-
-.obligatoire {
-    color: red;
-}
-
-
-.map {
+.form {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.formatting {
+    #name, #first-name, #email, #subjet-select, #message {
+        background-color: #b1f3bc;        
+    }  
+    width: 50%;
+    padding: 0 1.25rem;
+} 
+ 
+#subjet, #subjet-selected, #message, #submit {
+    display: block;
+}
+.subject {
+    background-color: #b1f3bc;
+    margin-right: 62%;
+}
+
+#message {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.button {
+    width: 0.188rem;
+    background-color: #E2FBB7;
+}
+
+
+.find-us {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 1.875rem 1.25rem 1.875rem 1.25rem;
+   
+    h5 {background-color: #b1f3bc; 
+        font-size: 1.25rem;
+        margin-bottom: 1%;
+    }
+}
+
+.champs {
+    background-color: #b1f3bc;
+    margin-right: 90%;
+    margin-bottom: 1%;   
 }
 
 footer {
@@ -94,8 +133,10 @@ footer {
     color: aliceblue;
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
-
+    margin-top: 0.313rem;
+}
+footer a {
+    color: aliceblue;
 }
 footer a:hover {
     color: aliceblue;
@@ -104,7 +145,8 @@ footer a:hover {
 
 .social-networks {
     img{
-        .contrast{filter: contrast(300%);}
+        /*.contrast{filter: contrast(300%);}*/
+        color: aliceblue;
     }
 }
 
@@ -114,6 +156,18 @@ footer a:hover {
 .copyright {
     display: flex;
     justify-content: center;
-    align-items: last baseline;
-
+    text-align: center;
 }
+
+/*medias query*/
+@media all AND (max-width:579px)
+    {
+        nav {
+            display: none;
+        }
+        .logo-my-account {
+            display: none;
+        }
+    }
+
+

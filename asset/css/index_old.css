@@ -22,60 +22,64 @@ a {
     font-size: 1rem;
 }
 /*header : logo et menu*/
-@font-face {
-    font-family: "baloo2";
-    src: url(../fonts-family/Baloo2-Medium.ttf);
-}
-@font-face {
-    font-family: "opensans";
-    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
-}
-:root {
-    --main-color: #b1f3bc;
-}
-* {
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: #000;
-}
-.title-txt {
-    font-family: "Baloo2", sans-serif;
-    font-size: 1.4rem;
-}
-.flex {
-    display: flex;
-}
-.justify-content{
-    justify-content: space-between;
-}
-.align-item{
-    align-items: center;
-}
-.menu li {
-    list-style: none;
-    margin: 0 40px 0 0;
-}
-.menu li:hover, .logo-mon-compte:hover {
-    font-weight: bolder;
+header a {
+    font-size: 1.1rem;;
 }
 
 header {
-    background-color: var(--main-color);
-    font-family: baloo2;
-    font-size: 1.4rem;
-    padding: 0.675rem;
+    display: flex;
+    background-color: #b1f3bc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.2rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 47px 0 5px 5px;
+    width: 100%;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+nav {
+    width: 100%;
+}
+
+.auth {
+   display: flex;
+   margin-top: 47px;
+   list-style: none;
+   width: -webkit-fill-available;
+   width: 100%;
+   justify-content: flex-end;
+   padding-right: 30px;
+}
+
+i[class="fa-regular fa-user"] {
+    position: relative;
+    top: -2px;
+    padding-right: 5px;
+}
+
+a:hover {
+    font-weight: 600;
 }
 /*bannière avec fonction recherche*/
 .banner {
     background-image: url("../images/home/site_corot_1920.jpg");
-    padding: 5rem 0;
+    padding: 90px 0;
 }
 
 .search {
-    width: 90%;
+    width: 70%;
     background-color: #ffffff95;
     margin-left: auto;
     margin-right: auto;
@@ -88,7 +92,7 @@ header {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
-    padding: 2rem 0;
+    padding: 20px 0;
     justify-content: space-around;
     margin-top: 25px;
     margin-bottom: 25px;    
@@ -99,9 +103,9 @@ header {
     border-radius: 6px;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    width: 15rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 140px;
     background-color: #ffffff;
     font-family: 'Open sans', sans-serif;
 }
@@ -113,7 +117,7 @@ header {
 .input_icon_search+i {
     position: absolute;
     top: 8px;
-    left: 210px;
+    left: 117px;
 }
 
 input[type="text"]:focus {
@@ -202,7 +206,7 @@ input[type="text"]:focus {
 
 .activ_news_all span {
    position: relative;
-   top: 25%;
+   top: 30%;
    font-size: 1.1rem;
 }
 
@@ -308,13 +312,14 @@ i[class="fa-solid fa-bed"] {
 .navbar_sell {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding-bottom: 30px;
 }
 
 .navbar_sell a {
     text-align: center;
 }
+
+.navbar_sell
 
 .navbar_sell_min_btn {
     display: inline-block;
@@ -438,18 +443,11 @@ i[class="fa-solid fa-bed"] {
     list-style: none;
     line-height: 2em;
 }
-
-.column4 li span {
-    font-size: 0.8rem;
-    padding-left: 0.5rem;
-}
-
 .footer p {
     color: #ffffff;
     font-size: 0.9rem;
     list-style: none;
     line-height: 2em;
-    padding-left: 0.6rem;
 }
 
 .column1 {
@@ -467,12 +465,11 @@ i[class="fa-solid fa-bed"] {
 .column4 .menu_footer {
     font-weight: bold;
 }
-
 .footer i[class="fa-brands fa-square-facebook"] {
     color: #ffffff;
     font-size: 35px;
     margin-top: 10px;
-    padding: 0 10px;
+    margin: 0 10px;
 }
 
 .footer i[class="fa-brands fa-square-twitter"] {
@@ -481,24 +478,11 @@ i[class="fa-solid fa-bed"] {
     margin-top: 10px;
     margin: 0 10px;  
 }
-
 .footer i[class="fa-brands fa-square-instagram"] {
     color: #ffffff;
     font-size: 35px;
     margin-top: 10px;
     margin: 0 10px;  
-}
-
-.footer i[class="fa-solid fa-phone"] {
-    font-size: 0.8rem;
-}
-
-.footer i[class="fa-solid fa-at"] {
-    font-size: 0.8rem;
-}
-
-.footer i[class="fa-solid fa-location-dot"] {
-    font-size: 0.8rem;
 }
 
 .footer i[class="fa-regular fa-copyright"] {
@@ -523,219 +507,42 @@ i[class="fa-solid fa-bed"] {
     display: none;
 }
 
-/*------------------------------------------------------*/
+
 @media all and (max-width: 576px) {
-
-    html,body {
-        overflow-x: hidden;
-        width: 100%;
-      }
-
-/*header : logo et menu*/
-    nav ul li {
-        display: none;
+        nav ul li {
+            display: none;
         }
 
-    .logo-mon-compte {
-        display: none;
+        .auth {
+            display: none;
+        }
+
+        .logo img {
+            width: 55%;
+        }
+
+        .menu_burger {
+            display: block;
+        }
+
     }
 
-    .logo img {
-        width: 55%;
-    }
-
-    .menu_burger {
-        display: block;
-    }
-
-/*bannière avec fonction recherche*/
-    .banner {
-        padding: 0 0;
-    }
-
-    .search {
-        background-color: inherit;
-    }
-
-    .menu_search {
-        flex-direction: column;
-        justify-content: none;
-        align-items: center;
-        margin: 0 auto; 
-    }
-
-    .menu_search_deco {
-        margin-top: 5px;
-        width: 20rem;
-    }
-
-    .input_icon_search + i {
-        top: 13px;
-        left: 300px;
-    }
-
-/*section actualités*/
-    .news_slide {
-        flex-wrap: wrap;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .news_1,news_2 {
-        margin-bottom: 3rem;
-    }
-
-    .news {
-        padding-bottom: 3rem;
-    }
-
-    .news h1 {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-/*section derniers biens en vente*/
-    .sell {
-        padding-bottom: 0;
-    }
-
-    .sell_slide {
-        flex-wrap: wrap;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .sell h1 {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .sell_frame {
-        margin-bottom: 2rem;
-    }
-
-    .navbar_sell {
-        padding-bottom: 0.5rem;
-        margin-top: -1rem;
-    }
-
-/*section avis clients*/
-    .customers {
-        padding-bottom: 3rem;
-    }
-
-    .customers button {
-        width: auto;
-    }
-
-/*section article agence*/
-    .agency {
-        padding-bottom: 1.3rem;
-    }
-
-    .agency h1 {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .agency button {
-        width: auto;
-    }
-
-    .agency p {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        padding-bottom: 1rem;
-    }
-
-/*section footer*/
-    .footer {
-        display: inherit;
-    }
-
-    .social_media i::before {
-        font-size: 2.5rem;
-    }
-
-    .column2, .column3, .column4 ul {
-        padding-left: 0.6rem;
-        padding-top: 0.4rem;
-    }
-
-    .footer li {
-        font-size: 1.1rem;
-        line-height: 1.5em;
-    }
-
-    .footer a {
-        font-size: 0.9rem;
-    }
-
-    .column4 li span {
-        font-size: 0.9rem;
-    }
-
-}
-
-/*--------------------------------------------*/
 @media all and (max-width: 768px) {
-/*header : logo et menu*/
-    nav ul li {
-        display: none;
-    }
-
-    .logo-mon-compte {
-        display: none;
-    }
-
-    .logo img {
-     width: 55%;
-    }
-
-    .menu_burger {
-        display: block;
-    }
-
-/*bannière avec fonction recherche*/
-    .menu_search_deco {
-        width: 7.8rem
-    }
-
-    .input_icon_search + i {
-        left: 100px;
-    }
-
-    .banner {
-        padding: 3rem 0;
-    }
-/*section actualités*/
-/*section derniers biens en vente*/
-/*section avis clients*/
-/*section article agence*/
-/*section footer*/
     
+    }
+
 }
-
-
 @media all and (max-width: 992px) {
-/*header : logo et menu*/
-/*bannière avec fonction recherche*/
-/*section actualités*/
-/*section derniers biens en vente*/
-/*section avis clients*/
-/*section article agence*/
-/*section footer*/   
+    
+    }
 
 }
 
 @media all and (max-width: 1200px) {
-/*header : logo et menu*/
-/*bannière avec fonction recherche*/
-/*section actualités*/
-/*section derniers biens en vente*/
-/*section avis clients*/
-/*section article agence*/
-/*section footer*/
+    
+
 }
 
+@media all and (max-width: 1400px) {
     
+}

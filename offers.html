@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos offres d'emploi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="asset/css/offers.css">
+    <link rel="stylesheet" href="./asset/css/offers.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <!--Menu-->
         <!--Logo cliquable vers un lien-->
         <a href="index.html">
-            <img src="asset/images/logo x150.png" alt="logo" width="75">
+            <img id="logo" src="asset/images/logo x150.png" alt="logo" width="75">
         </a>
         <!--Barre de navigation horizontale-->
         <nav class="menu">
@@ -26,7 +26,7 @@
         <!--Espace de connexion + icone cliquable-->
         <div class="logo-auth">
             <a href="login.html">
-                <a id="user-logo" href="#Mon compte"><i class="fa-regular fa-user"></i> Mon compte
+                <a id="user-logo" href="authentification.html"><i class="fa-regular fa-user"></i> Mon compte
     </header>
     <main>
         <!--Première section-->
@@ -48,7 +48,9 @@
                 <input id="form" type="text" placeholder="Où">
                 </div>
             </form>
+            <div class="responsive-research">
                 <input id="research" type="submit" value="Rechercher">
+            </div>
             </div>
             <div class="form-contract">
                 <select name="contract" id="form">
@@ -71,7 +73,9 @@
         </section>
         <!--Second section-->
         <div class="section2-title">
-            <h4>Nos offres</h4>
+            <h4 class="h4">Nos offres</h4>
+            <h4 class="h4responsive">Nos dernières offres</h4>
+
         </div>
         <section class="section2">
             <div class="photos-map">
@@ -94,6 +98,7 @@
                     </a>
         </section>
         <section class="section2">
+            <div class="photos-map">
             <div class="section2-photos">
                 <a href="offers-last.html">
                     <img id="offer-photo" src="asset/images/offers/photo_offer.jpg" alt="photo de l'offre">
@@ -115,6 +120,7 @@
             </div>
             </div>
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88855.56780126509!2d0.802923295652055!3d45.89658301200862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47feeadaef87b0c9%3A0x8b265b0dc126d53e!2s87200%20Saint-Junien!5e0!3m2!1sfr!2sfr!4v1705492808751!5m2!1sfr!2sfr" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+        </div>
         </section>
         <ul class="paging">
             <div>
@@ -125,7 +131,7 @@
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
-            <li><a href="#">7</a></li>
+            <li><a href="#">5</a></li>
             <div>
                 <a class="go-right" href="#"><span>&#8594;</span></a>
             </div>
@@ -137,8 +143,6 @@
                   <option value="page3">Page 3</option>
                   <option value="page3">Page 4</option>
                   <option value="page3">Page 5</option>
-                  <option value="page3">Page 6</option>
-                  <option value="page3">Page 7</option>
                 </select>
               </div>
             </li>
@@ -195,52 +199,52 @@
         </section>
     </main>
     <footer>
-        <!--Footer-->
-        <div class="logo-text">
-            <a href="index.html">
-                <img id="footer-logo" src="asset/images/logo_white_150.png" alt="logo" width="115">
-            </a>
-            <div class="footer-text">Retrouvez nous sur nos réseaux sociaux</p>
-            </div>
-            <div class="footer-logos">
-                <a href="#"><img src="asset/images/offers/insta.png" alt="" width="30"></a>
-                <a href="#"><img src="asset/images/offers/twitter.png" alt="" width="25"></a>
-                <a href="#"><img src="asset/images/offers/fb.png" alt="" width="30"></a>
-            </div>
-        </div>
-        <nav class="footer-menu">
-            <p><strong>Services</strong></p>
-            <li><a href="buy.html">Acheter</a></li>
-            <li><a href="rent.html">Louer</a></li>
-            <li><a href="sell.html">Vendre</a></li>
-        </nav>
-        <nav class="footer-menu">
-            <p><strong>Accès rapide</strong></p>
-            <li><a href="#">Inscription newsletter</a></li>
-            <li><a href="aboutus.html">Qui sommes-nous ?</a></li>
-            <li><a href="offers-last.html">Nos offres d'emploi</a></li>
-            <li><a href="#">Avis client</a></li>
-            <li><a href="#">Plan du site</a></li>
-        </nav>
-        <nav class="footer-menu">
-            <p><strong>Contact</strong></p>
-            <section class="last-footer">
-                <li id="number">
-                    <p><i class="fa-solid fa-phone"></i>  00-00-00-00-00</p>
-                </li>
-                <li><a href="#"><i class="fa-regular fa-envelope"></i> contact@acgdimmo.fr</a></li>
-                <li><a
-                        href="https://www.google.fr/maps/place/87200+Saint-Junien/@45.8964635,0.8029236,12z/data=!3m1!4b1!4m6!3m5!1s0x47feeadaef87b0c9:0x8b265b0dc126d53e!8m2!3d45.88716!4d0.901165!16zL20vMDh6Xzkz?entry=ttu"><i class="fa-solid fa-location-dot"></i> Saint-Junien</a>
-                </li>
-            </section>
-        </nav>
+        <div class="colonne">
+            <div class="footer-logo">
+                <a href="index.html"><img src="./asset/images/logo_white_150.png" alt="Logo"></a>
+                <p>Retrouvez-nous sur nos réseaux sociaux</p>
 
-        <div class="copyright">
+                <ul class="social-media">
+                    <a href="#"><li><i id="fb" class="fa-brands fa-facebook"></i></li></a>
+                    <a href="#"></a><li><i id="tw" class="fa-brands fa-twitter"></i></li></a>
+                    <a href="#"></a><li><i id="insta" class="fa-brands fa-instagram"></i></li></a>
+                </ul>
+            </div>
+
+            <div class="footer-services">
+                <h2>Services</h2>
+
+                <ul class="flex">
+                    <a href="buy.html"><li>Achat</li></a>
+                    <a href="sell.html"><li>Vendre</li></a>
+                    <a href="rent.html"><li>Louer</li></a>
+                </ul>
+            </div>
+            <div class="footer-access">
+                <h2>Accès rapide</h2>
+
+                <ul class="flex">
+                    <a href="newsletter registration.html"><li>Inscription newsletter</li></a>
+                    <a href="aboutus.html"><li>Qui sommes-nous ?</li></a>
+                    <a href="offers.html"><li>Nos offres d'emploi</li></a>
+                    <a href="customer-feedback.html"><li>Avis client</li></a>
+                    <a href="sitemap.html"><li>Plan du site</li></a>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact</h2>
+
+                <ul class="flex">
+                    <li class="number">06.08.16.45.22</li>
+                    <a href="mailto:contact@acgdimmo.fr"><li>contact@acgdimmo.fr</li></a>
+                    <a href="https://www.google.fr/maps/place/87200+Saint-Junien/@45.8964635,0.802924,12z/data=!3m1!4b1!4m6!3m5!1s0x47feeadaef87b0c9:0x8b265b0dc126d53e!8m2!3d45.88716!4d0.901165!16zL20vMDh6Xzkz?entry=ttu"><li>Saint-Junien</li></a>
+                </ul>
+            </div>
         </div>
+            <div class="copyright">
+                <p>acgdimmo©</p>
+            </div>
     </footer>
-    <div class="copyright">
-        <p>acgdimmo&copy</p>
-    </div>
 </body>
 
 </html>

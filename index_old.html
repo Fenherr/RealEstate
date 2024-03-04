@@ -9,26 +9,35 @@
       </style>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
-    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="./asset/css/index_old.css">
 </head>
-
+<body>
 
 <!-- logo avec menu principal -->
    <header>
-    <header class="flex justify-content align-item">    
-        <img class="logo" src="./asset/images/logo x150.png" alt="logo">
-        <nav>
-            <ul class="menu flex justify-content">
-                <li><a class="title-txt" href="buy.html">Acheter</a></li>
-                <li><a class="title-txt" href="rent.html">Louer</a></li>
-                <li><a class="title-txt" href="sell.html">Vendre</a></li>
-                <li><a class="title-txt" href="contact.html">Contact</a></li>
-            </ul>            
-        </nav>
-        <div class="logo-mon-compte">
-            <a class="active" href="#Mon compte"><i class="fa-solid fa-user"></i> Mon compte</a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="asset/images/logo x150.png" alt="logo acgdimmo">
+            </a>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a class="activ" href="index.html">Accueil</a></li>
+                <li><a class="activ" href="buy.html">Acheter</a></li>
+                <li><a class="activ" href="rent.html">Louer</a></li>
+                <li><a class="activ"href="sell.html">Vendre</a></li>
+                <li><a class="activ" href="login.html">Contact</a></li>
+            </ul>         
+        </nav>
+
+        <div class="auth"> 
+            <li><a href="#"><i class="fa-regular fa-user"></i>Mon compte</a></li>
+        </div>
+        
+        <div class="menu_burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>   
+
    </header>
 
 <!-- bannière avec fonction recherche -->
@@ -60,8 +69,7 @@
                 </div>
         </div>
     </div>
-    
-<body>
+
 <!-- section actualités -->
     <section>
         <div class="news">
@@ -165,8 +173,6 @@
         <p><button><a href="#">Nous contacter</a></button></p>
     </section>
 
-</body>
-
 <!-- footer -->
     <footer class="footer">
         <div class="column1">
@@ -174,11 +180,9 @@
                 <img src="asset/images/logo_white_150.png" alt="logo acgdimmo" width="150" height="73">
             </a>
             <p>Retouvez-nous sur les réseaux sociaux</p>
-            <div  class="section_social_media">
-                <span class="social_media"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
-                <span class="social_media"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></span>
-                <span class="social_media"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></span>
-            </div>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
         </div>
 
         <div class="column2">
@@ -204,9 +208,9 @@
         <div class="column4">
             <ul>
                 <li class="menu_footer">Contact</li>
-                <li><i class="fa-solid fa-phone"></i><span>07 06 05 04 03</span></li>
-                <li><i class="fa-solid fa-at"></i><span>contact@acgdimmo.fr</span></li>
-                <li><i class="fa-solid fa-location-dot"></i><span>Saint-Junien</span></li>
+                <li><i class="fa-solid fa-phone"></i>   07 06 05 04 03</li>
+                <li><i class="fa-solid fa-at"></i>   contact@acgdimmo.fr</li>
+                <li><i class="fa-solid fa-location-dot"></i>   Saint-Junien</li>
             </ul>
         </div>
     </footer>
@@ -214,5 +218,6 @@
     <div class="copyright">
         <p>copyright <i class="fa-regular fa-copyright"></i> acgd immo</p>
     </div>
-
+ 
+</body>
 </html>
