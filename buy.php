@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy real estate</title>
+    <link rel="stylesheet" href="asset/css/header_footer.css">
     <link rel="stylesheet" href="asset/css/buy.css">
+    <script src="asset/js/header.js" defer></script>
+
 </head>
 
 <body>
@@ -71,5 +74,6 @@
     ?>
 
 </body>
+
 
 </html>
