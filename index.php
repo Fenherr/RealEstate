@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
     <link rel="stylesheet" href="./asset/css/index.css">
+
 </head>
 
 <body>
 
 <!-- logo avec menu principal -->
+<!-- include of header php file -->
 <?php require 'header_index.php'; ?>
 
 <main>
@@ -178,6 +180,7 @@
 </main>
 
 <!-- footer -->
+<!-- include of footer php file -->
 <?php require 'footer_index.php'; ?>
 
 <div class="copyright">

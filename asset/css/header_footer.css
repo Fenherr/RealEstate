@@ -14,12 +14,12 @@
 @font-face {
     font-family: "baloo2";
     src: 
-        url("../fonts/web fonts/Baloo2-Medium.ttf") format(truetype);
+        url("../fonts/Baloo2-Medium.ttf") format(truetype);
 }
 
 @font-face {
     font-family: "opensans";
-    src: url("../fonts/web fonts/OpenSans/OpenSans-Regular.ttf") format(truetype);
+    src: url("../fonts/OpenSans-Regular.ttf") format(truetype);
 }
 
 [hidden] {
@@ -39,13 +39,7 @@ a {
     text-decoration: none;
 }
 
-.title-txt {
-    font-family: "baloo2", sans-serif;
-    font-size: 1.4rem;
-}
-
-.title-txt.active,
-.account-connexion.active h2 {
+.title-txt.active {
     font-weight: bold;
 }
 
@@ -69,6 +63,11 @@ section h2,
 footer h2, .info-button {
     font-family: 'opensans', sans-serif;
     font-size: 1rem;
+}
+
+.title-txt, .logo-mon-compte a {
+    font-family: "baloo2", sans-serif;
+    font-size: 1.4rem;
 }
 
 body {
@@ -149,14 +148,14 @@ header {
     }
 
     .logo-mon-compte {
-        top: 18rem;
+        top: 22rem;
     }
 
     .menu li {
         width: 100%;
     }
 
-    .menu li:first-child {
+    .menu li {
         padding-top: 2rem;
     }
 
