@@ -46,12 +46,12 @@ a {
     font-weight: bolder;
 }
 
-header {
+/*header {
     background-color: var(--main-color);
     font-family: baloo2;
     font-size: 1.4rem;
     padding: 0.675rem;
-}
+}*/
 h1, h2, h3, h4 {
     font-family: baloo2;
 }
@@ -208,14 +208,14 @@ input {
     background-color: #E2FBB7;
 }
 
-.botonburger {
+/*.botonburger {
     width: 3rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
     height: 3rem;
     font-size: 2rem;
     border: none;
     background-color: #e2fbb700;
-}
+}*/
 
 
 select {
@@ -351,9 +351,9 @@ select {
             display: contents;
         }
 
-        nav {
+        /*nav {
             display: none;
-        }
+        }*/
 
         .zone0 {
             flex-direction: column;
@@ -407,7 +407,7 @@ select {
 
 
 /* footer */
-
+/*
 footer {
     background-color: #1f1f1f;
     font-family: "opensans";
@@ -566,7 +566,8 @@ footer li a:hover {
         padding-right: 4rem;
     }
 
-}
+}*/
+
 /*---------------------------------------*/
 
 /* Add media query for header */

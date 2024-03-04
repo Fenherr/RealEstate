@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <header class="flex justify-content align-item">    
+    <!--<header class="flex justify-content align-item">    
         <a href="index.html"><img class="logo" src="./asset/images/logo x150.png" alt="logo"></a>
         <nav>
             <ul id="zemenu" class="menu flex justify-content">
@@ -26,8 +26,8 @@
         <div class="logo-alter">
             <input type="button" id="burger" value="">
         </div>
-    </header>
-     <?php //require 'header_index.php'; ?>
+    </header>-->
+     <?php require 'header.php'; ?>
     <main>
         <div>
             <div>
@@ -118,7 +118,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <!--<footer>
         <div class="colonne">
             <div class="footer-logo">
                 <a href="index.html"><img class="logo" src="./asset/images/logo_white_150.png" alt="Logo" width="150px" height="73px"></a>
@@ -166,6 +166,7 @@
                     <p>acgdimmo©</p>
                 </div>
         
-        </footer>
+        </footer>-->
+        <?php require 'footer.php'; ?>
 </body>
 </html>
