@@ -7,30 +7,16 @@
     <script src="asset/js/header.js" defer></script>
     <link rel="stylesheet" href="./asset/css/header_footer.css">
     <link rel="stylesheet" href="./asset/css/inscription.css">
-    <title>inscrition</title>
+    <title>inscription</title>
 </head>
 
 
 
 <body>
 
-
 <?php
 require 'header.php';
 ?>
-
-    
-
-
-    
-
-
-
-
-
-
-
-
 
 
 
@@ -99,14 +85,6 @@ require 'header.php';
     <?php
      require 'footer.php';
     ?>
-
-
-
-
-
-
-
-
 
 
 </body>
