@@ -14,13 +14,13 @@
 @font-face {
     font-family: "baloo2";
     src: 
-        url("../../fonts/Baloo2-Medium.ttf") format(truetype);
+        url("../../fonts/Baloo_2/static/Baloo2-Medium.ttf") format(truetype);
 }
 
 @font-face {
     font-family: "opensans";
     src:
-        url("../../fonts/OpenSans-Regular.ttf") format(truetype);
+        url("../../fonts/Baloo_2/static/Baloo2-Medium.ttf") format(truetype);
 }
 
 [hidden] {
@@ -107,7 +107,7 @@ header {
 
 .menu li {
     list-style: none;
-    margin: 0 40px 0 0;
+    margin: 0 2.5rem 0 0;
 }
 .menu a:hover, .logo-mon-compte:hover {
     font-weight: bolder;
@@ -157,6 +157,10 @@ header {
     }
 
     .menu li {
+        padding-top: 1.5rem;
+    }
+
+    .menu li:first-child {
         padding-top: 2rem;
     }
 
