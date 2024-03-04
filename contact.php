@@ -114,7 +114,8 @@
 <?php require 'footer.php';?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-<script src="asset/js/contact.js"></script>
+<script src="./asset/js/header.js"></script>
+<script src="./asset/js/contact.js"></script>
 </body>
 
 </html>

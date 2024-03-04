@@ -139,7 +139,7 @@ header {
         height: 100vh;
         right: -100%;
         text-align: center;
-        z-index: 2;
+        z-index: 99999;
         background: var(--main-color);
         touch-action: none;
     }
