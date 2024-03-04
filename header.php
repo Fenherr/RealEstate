@@ -7,10 +7,10 @@
                 <i class="fa-solid fa-xmark" id="menu-closer" hidden></i>
             </label>
             <ul class="menu flex justify-content">
-                <li><a class="title-txt" href="buy.html">Acheter</a></li>
-                <li><a class="title-txt" href="rent.html">Louer</a></li>
-                <li><a class="title-txt" href="sell.html">Vendre</a></li>
-                <li><a class="title-txt" href="contact.html">Contact</a></li>
+                <li><a class="title-txt" href="buy.php">Acheter</a></li>
+                <li><a class="title-txt" href="rent.php">Louer</a></li>
+                <li><a class="title-txt" href="sell.php">Vendre</a></li>
+                <li><a class="title-txt" href="contact.php">Contact</a></li>
             </ul>
         </nav>
         <div class="logo-mon-compte">
