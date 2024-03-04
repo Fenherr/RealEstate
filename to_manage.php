@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="asset/css/to_manage.css">   
     <link rel="stylesheet" href="asset/css/header_footer.css">
-    <script src="asset/js/header.js" defer></script>
+    <script src="./asset/js/header.js" defer></script>
 </head>
 <body>
     <!-- Header -->
