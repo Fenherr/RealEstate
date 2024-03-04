@@ -310,7 +310,7 @@ footer {
     padding: 20px;
 }
 
-footer p, footer h2, footer li {
+footer p, footer h2, .footer-queries a {
     color: var(--third-color);
 }
 
@@ -459,8 +459,12 @@ footer li a:hover {
 
 @media all and (max-width: 768px) {
     .footer-access, .footer-services, .footer-contact {
-        padding-left: 1.5rem;
-}
+        width: max-content;
+    }
+
+    .search_bar {
+        display: none;
+    }
 }
 
 @media all and (max-width: 576px) {
@@ -497,4 +501,36 @@ footer li a:hover {
     .social-media li:last-child {
         padding-right: 0;
     }
+
+    .title_service, .title_service2 {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image_service_1, .image_service2 {
+        padding-left: 6.5rem;
+    }
+
+    .text_service, .text_service2 {
+        padding-left: 6.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search_bar {
+        display: none;
+    }
+}
+
+@media all and (max-width: 460px) {
+
+    .logo {
+        padding-left: 6.5rem;
+    }
+
+    .social-media li {
+        padding-right: 4rem;
+    }
+
 }
