@@ -1,15 +1,20 @@
 @font-face {
     font-family: "baloo2";
-    src: url(../fonts-family/Baloo2-Medium.ttf);
+    src: 
+        url("../fonts/web fonts/Baloo2-Medium.ttf") format(truetype);
 }
+
 @font-face {
     font-family: "opensans";
-    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
+    src: url("../fonts/web fonts/OpenSans/OpenSans-Regular.ttf") format(truetype);
 }
-:root {
-    --main-color: #b1f3bc;
-    --third-color: white;
+
+[hidden] {
+    display: none;
 }
+
+
+/*********** Global ***********/
 
 * {
     padding: 0;
@@ -21,65 +26,139 @@ a {
     text-decoration: none;
 }
 
-.logo:hover {
-    opacity: 0.6;
-}
-
 .title-txt {
-    font-family: "Baloo2", sans-serif;
+    font-family: "baloo2", sans-serif;
     font-size: 1.4rem;
 }
+
+.title-txt.active,
+.account-connexion.active h2 {
+    font-weight: bold;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+
+.align-item {
+    align-items: center;
+}
+
+p, a, ul {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.content-text,
+.number_point,
+section h2,
+footer h2, .info-button {
+    font-family: 'opensans', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    width: 100%;
+}
+
+button, a {
+    cursor: pointer;
+}
+
 .flex {
     display: flex;
 }
 
-.justify-content{
-    justify-content: space-between;
+.full-width {
+    width: 100%;
 }
 
-.align-item{
-    align-items: center;
+.hover-low-opacity:hover {
+    opacity: 50%;
+}
+
+
+/*********** Header ***********/
+
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    padding: var(--padd-header);
+    font-size: 1.4rem;
+}
+
+.logo:hover {
+    opacity: 0.6;
 }
 
 .menu li {
     list-style: none;
     margin: 0 40px 0 0;
 }
-
 .menu a:hover, .logo-mon-compte:hover {
     font-weight: bolder;
-}
-
-header {
-    background-color: var(--main-color);
-    font-family: baloo2;
-    font-size: 1.4rem;
-    padding: 0.675rem;
 }
 
 #check, .checkbtn {
     display: none;
     cursor: pointer;
+    color: black;
+}
+
+.stop-overflow {
+    overflow: hidden;
 }
 
 @media all and (max-width: 768px) {
     
-    .checkbtn {
+    .checkbtn { 
         display: block;
         font-size: 30px;
         padding-right: 0.675rem;
-        color: black;
         float: right;
     }
 
-    .menu, .logo-mon-compte, header nav {
-        display: none!important;
+    .menu, .logo-mon-compte {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        right: -100%;
+        text-align: center;
+        z-index: 1;
+        background: var(--main-color);
+        touch-action: none;
+    }
+
+    .menu {
+        top: 5rem;
+    }
+
+    .logo-mon-compte {
+        top: 18rem;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li:first-child {
+        padding-top: 2rem;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .menu, .active, #menu-opener, #menu-closer, .logo-mon-compte {
+        transition: .4s;
     }
 
 }
 
 
-/************** FOOTER ******************   */
+/*********** Footer ***********/
 
 footer {
     background-color: #1f1f1f;
@@ -163,6 +242,7 @@ footer li a:hover {
 }
 
 @media all and (max-width: 1200px) {
+
     .colonne {
         flex-direction: column;
     }
@@ -174,18 +254,22 @@ footer li a:hover {
 }
 
 @media all and (max-width: 992px) {
+
     .footer-access, .footer-services, .footer-contact {
         padding-left: 1.5rem;
     }
+
     .social-media {
         padding-left: 0rem;
     }
+    
     .footer-access, .footer-services, .footer-contact {
         width: 20%;
     } 
 }
 
 @media all and (max-width: 768px) {
+
     .footer-access, .footer-services, .footer-contact {
         padding-left: 1.5rem;
         width: max-content;
@@ -193,9 +277,11 @@ footer li a:hover {
 }
 
 @media all and (max-width: 576px) {
+
     .colonne {
         flex-direction: column;
     }
+    
     .footer-access, .footer-services, .footer-contact {
         padding: 0.675rem;
         padding-left: 1rem;
