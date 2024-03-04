@@ -309,7 +309,6 @@ footer li a:hover {
 h3 {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
     margin-bottom: 2rem;
     font-family: "Baloo2", sans-serif;
     font-size: 1.5rem;
@@ -326,6 +325,7 @@ h3 {
     margin: 0 auto;
     width: 50%;
     border-radius: 1rem;
+    box-shadow: 1px 2px 1px 2px;
 }
 
 h5 {
@@ -434,7 +434,6 @@ h5 {
 }
 
 .info {
-    margin: 1rem;
     padding: 1rem;
     border-radius: 0.88rem;
 }
@@ -445,7 +444,7 @@ h5 {
 
 .info p {
     font-family: "opensans", sans-serif;
-    text-align: justify;
+    text-align: center;
     font-size: 0.85rem;
 }
 

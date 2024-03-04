@@ -82,7 +82,81 @@ header {
         display: none!important;
     }
 
-
+   
+    header {
+        background-color: var(--main-color);
+        font-family: baloo2;
+        padding: var(--padd-header);
+        font-size: 1.4rem;
+    }
+    
+    .logo:hover {
+        opacity: 0.6;
+    }
+    
+    .menu li {
+        list-style: none;
+        margin: 0 40px 0 0;
+    }
+    .menu a:hover, .logo-mon-compte:hover {
+        font-weight: bolder;
+    }
+    
+    #check, .checkbtn {
+        display: none;
+        cursor: pointer;
+        color: black;
+    }
+    
+    .stop-overflow {
+        overflow: hidden;
+    }
+    
+    @media all and (max-width: 768px) {
+        
+        .checkbtn { 
+            display: block;
+            font-size: 30px;
+            padding-right: 0.675rem;
+            float: right;
+        }
+    
+        .menu, .logo-mon-compte {
+            position: fixed;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            right: -100%;
+            text-align: center;
+            z-index: 1;
+            background: var(--main-color);
+            touch-action: none;
+        }
+    
+        .menu {
+            top: 5rem;
+        }
+    
+        .logo-mon-compte {
+            top: 18rem;
+        }
+    
+        .menu li {
+            width: 100%;
+        }
+    
+        .menu li:first-child {
+            padding-top: 2rem;
+        }
+    
+        .active {
+            right: 0;
+        }
+    
+        .menu, .active, #menu-opener, #menu-closer, .logo-mon-compte {
+            transition: .4s;
+        }
+    }
 
     /* ******************** NAV BAR ******************** */
 .topnav {
@@ -440,182 +514,5 @@ form{
     }
 
 }
-
-
-
-/***************footer*************/
-
-
-
-footer {
-    background-color: #1f1f1f;
-    font-family: "opensans";
-    padding-top: 0.675rem;
-}
-
-.social-media {
-    color: var(--third-color);
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5rem;
-    padding-left: 38px;
-}
-
-.social-media li {
-    padding: 20px;
-}
-
-footer p, footer h2, .footer-queries a {
-    color: var(--third-color);
-}
-
-.colonne {
-    display: flex;
-    padding-top: 0.675rem;
-}
-
-footer ul {
-    flex-flow: column;
-}
-
-footer li {
-    list-style: none;
-    padding-bottom: 1rem;
-}
-
-.footer-services, .footer-access, .footer-contact {
-    display: flex;
-    flex-direction: column;
-    padding-left: 8.95rem;
-}
-
-
-.copyright {
-    padding-bottom: 0.675rem;
-    text-align: center;
-}
-
-.footer-logo img {
-    width: 150px;
-    height: 73px;
-}
-
-.footer-logo {
-    padding: 0.675rem;
-    padding-top: 0;
-}
-
-footer p {
-padding-left: 9px;
-padding-top: 2rem;
-}
-
-#fb:hover, #tw:hover, #insta:hover {
-    transform: scale(2);
-    cursor: pointer;
-}
-
-footer h2 {
-    padding-bottom: 10px;
-}
-
-footer li a:hover {
-    text-decoration: underline;
-}
-
-.footer-queries {
-    display: flex;
-    justify-content: space-around;
-}
-
-@media all and (max-width: 1200px) {
-    .colonne {
-        flex-direction: column;
-    }
-
-    .footer-access, .footer-services, .footer-contact {
-        width: 33.33%;
-    }
-
-}
-
-@media all and (max-width: 992px) {
-    .footer-access, .footer-services, .footer-contact {
-        padding-left: 1.5rem;
-    }
-    .social-media {
-        padding-left: 0rem;
-    }
-    .footer-access, .footer-services, .footer-contact {
-        width: 20%;
-    } 
-}
-
-@media all and (max-width: 768px) {
-    .footer-access, .footer-services, .footer-contact {
-        padding-left: 1.5rem;
-        width: max-content;
-    }
-}
-
-@media all and (max-width: 576px) {
-    .colonne {
-        flex-direction: column;
-    }
-    .footer-access, .footer-services, .footer-contact {
-        padding: 0.675rem;
-        padding-left: 1rem;
-    }
-
-    .logo {
-        padding-left: 12.5rem;
-    }
-
-    .footer-logo p {
-        padding-left: 8.5rem;
-    }
-
-    .social-media {
-        font-size: 3.5rem;
-        padding-left: 0rem;
-        justify-content: space-around;
-    }
-
-    .social-media li {
-        padding: 1rem 8.6rem 1rem 0rem;
-    }
-
-    .footer-queries {
-        flex-direction: column;
-    }
-
-    .social-media li:last-child {
-        padding-right: 0;
-    }
-}
-
-@media all and (max-width: 460px) {
-
-    .logo {
-        padding-left: 6.5rem;
-    }
-
-    .social-media li {
-        padding-right: 4rem;
-    }
-
-}
-
-@media all and (max-width: 1300px)
-{
-.test {
-    display: none;
-
-}
-
-.parent{
-justify-content: center;
-}
-
 
 

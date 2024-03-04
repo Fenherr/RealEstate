@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/rent.css">
     <script src="./asset/js/rent.js" defer></script>
+    
 </head>
 <body>
     <header class="flex justify-content align-item">    
@@ -26,6 +27,7 @@
             <input type="button" id="burger" value="">
         </div>
     </header>
+     <?php //require 'header_index.php'; ?>
     <main>
         <div>
             <div>
