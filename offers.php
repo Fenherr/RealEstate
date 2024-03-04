@@ -19,6 +19,11 @@
 require 'header.php';
 ?>
 
+<?php
+    // Afficher une alerte JavaScript lorsque la page est chargée
+    echo "<script>alert('Bienvenue sur cette page PHP!');</script>";
+?>
+
     <div class="mobile">
         <div class="mobile-top-offer">
             <div class="mobile-top-text">
