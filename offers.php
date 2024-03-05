@@ -19,6 +19,11 @@
 require 'header.php';
 ?>
 
+<?php
+    // Afficher une alerte JavaScript lorsque la page est chargée
+    echo "<script>alert('Bienvenue sur cette page PHP!');</script>";
+?>
+
     <div class="mobile">
         <div class="mobile-top-offer">
             <div class="mobile-top-text">
@@ -31,13 +36,7 @@ require 'header.php';
         <div class="mobile-search-filters">
             <div class="logo-form"> <i class="fa-solid fa-magnifying-glass"></i> <input id="form-mobile" type="text"
                     placeholder="Tapez votre recherche">
-                <div class="form-contract"> <select name="contract" id="form2">
-                        <option value="filtres">Filtres</option>
-                        <option value="filtres">CDD</option>
-                        <option value="filtres">CDI</option>
-                        <option value="filtres">Stage</option>
-                        </optgroup>
-                    </select> </div>
+                <div class="form-contract"> x </div>
             </div>
         </div>
         <div class="mobile-map"> <iframe id="map"

@@ -22,6 +22,7 @@ function displayManagerMenu () {
 
 btnMenu.addEventListener("click", displayManagerMenu);
 
+/* Detect if the browser resizes and display or not the icon that allows to open the menu. */
 window.addEventListener("resize", () => {
     if (window.matchMedia("all and (max-width: 768px)").matches) {
         menuOpener.setAttribute("hidden", "");
