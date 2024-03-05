@@ -6,7 +6,9 @@
     <title>CONTACT</title>
     <!--lien pour bonhomme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- appel des header/footer communs-->
     <link rel="stylesheet" href="./asset/css/header_footer.css">
+    <!--appel de la page perso-->
     <link rel="stylesheet" href="./asset/css/contact.css">
 </head>
 
@@ -81,7 +83,7 @@
                         <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
                     </label>
                         
-                    <button type="submit">Envoyer</button>  
+                    <button type="">Envoyer</button>  
                    
                 </form>            
             </article>
