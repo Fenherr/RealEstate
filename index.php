@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/724458d0e8.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/header.js" defer></script>
     <script src="./asset/js/index.js" defer></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
+    <link rel="stylesheet" href="./asset/css/header_footer.css">
     <link rel="stylesheet" href="./asset/css/index.css">
 
 </head>
@@ -19,7 +21,7 @@
 
 <!-- logo avec menu principal -->
 <!-- include of header php file -->
-<?php require 'header_index.php'; ?>
+<?php require 'header.php'; ?>
 
 <main>
 <!-- bannière avec fonction recherche -->
@@ -181,7 +183,7 @@
 
 <!-- footer -->
 <!-- include of footer php file -->
-<?php require 'footer_index.php'; ?>
+<?php require 'footer.php'; ?>
 
 <div class="copyright">
     <p>copyright <i class="fa-regular fa-copyright"></i> acgd immo</p>

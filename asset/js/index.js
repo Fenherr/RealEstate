@@ -1,10 +1,10 @@
 //menu burger
 
-const links = document.querySelectorAll("nav li");
+/*const links = document.querySelectorAll("nav li");
 
 menu_burger.addEventListener("click", () => {
     nav.classList.toggle("active");
-});
+});*/
 
 
 /*document.addEventListener('scroll', (event) => {

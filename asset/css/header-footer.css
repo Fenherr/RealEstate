@@ -1,34 +1,15 @@
-/*********** var ***********/
-:root {
-    --main-color:rgba(177, 243, 188, 1);
-    --third-color: white;
-    --related-green-color: #E2FBB7;
-    --footer-color: #1F1F1F;
-    --border-size: 3px;
-    --border-radius: 25px;
-    --margin-left-document: 50px;
-    --space-element-gap: 35px;
-    --padd-header: 0.675rem;
-}
-
 @font-face {
     font-family: "baloo2";
-    src: 
-        url("../../fonts/Baloo_2/static/Baloo2-Medium.ttf") format(truetype);
+    src: url(../fonts-family/Baloo2-Medium.ttf);
 }
-
 @font-face {
     font-family: "opensans";
-    src:
-        url("../../fonts/Open_Sans/static/OpenSans-Regular.ttf") format(truetype);
+    src: url(../fonts-family/OpenSans/OpenSans-Regular.ttf);
 }
-
-[hidden] {
-    display: none;
+:root {
+    --main-color: #b1f3bc;
+    --third-color: white;
 }
-
-
-/*********** Global ***********/
 
 * {
     padding: 0;
@@ -40,142 +21,65 @@ a {
     text-decoration: none;
 }
 
-.title-txt.active {
-    font-weight: bold;
-}
-
-.justify-content {
-    justify-content: space-between;
-}
-
-.align-item {
-    align-items: center;
-}
-
-p, a, ul {
-    text-decoration: none;
-    color: black;
-    list-style: none;
-}
-
-.content-text,
-.number_point,
-section h2,
-footer h2, .info-button {
-    font-family: 'opensans', sans-serif;
-    font-size: 1rem;
-}
-
-.title-txt, .logo-mon-compte a {
-    font-family: "baloo2", sans-serif;
-    font-size: 1.4rem;
-}
-
-body {
-    width: 100%;
-}
-
-button, a {
-    cursor: pointer;
-}
-
-.flex {
-    display: flex;
-}
-
-.full-width {
-    width: 100%;
-}
-
-.hover-low-opacity:hover {
-    opacity: 50%;
-}
-
-
-/*********** Header ***********/
-
-header {
-    background-color: var(--main-color);
-    font-family: baloo2;
-    padding: var(--padd-header);
-    font-size: 1.4rem;
-}
-
 .logo:hover {
     opacity: 0.6;
 }
 
+.title-txt {
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.4rem;
+}
+.flex {
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-item{
+    align-items: center;
+}
+
 .menu li {
     list-style: none;
-    margin: 0 2.5rem 0 0;
+    margin: 0 40px 0 0;
 }
+
 .menu a:hover, .logo-mon-compte:hover {
     font-weight: bolder;
+}
+
+header {
+    background-color: var(--main-color);
+    font-family: baloo2;
+    font-size: 1.4rem;
+    padding: 0.675rem;
 }
 
 #check, .checkbtn {
     display: none;
     cursor: pointer;
-    color: black;
-}
-
-.stop-overflow {
-    overflow: hidden;
 }
 
 @media all and (max-width: 768px) {
     
-    .checkbtn { 
+    .checkbtn {
         display: block;
         font-size: 30px;
         padding-right: 0.675rem;
+        color: black;
         float: right;
     }
 
-    .menu, .logo-mon-compte {
-        position: fixed;
-        display: block;
-        width: 100%;
-        height: 100vh;
-        right: -100%;
-        text-align: center;
-        z-index: 99999;
-        background: var(--main-color);
-        touch-action: none;
-    }
-
-    .menu {
-        top: 5rem;
-    }
-
-    .logo-mon-compte {
-        top: 22rem;
-    }
-
-    .menu li {
-        width: 100%;
-    }
-
-    .menu li {
-        padding-top: 1.5rem;
-    }
-
-    .menu li:first-child {
-        padding-top: 2rem;
-    }
-
-    .active {
-        right: 0;
-    }
-
-    .menu, .active, #menu-opener, #menu-closer, .logo-mon-compte {
-        transition: .4s;
+    .menu, .logo-mon-compte, header nav {
+        display: none!important;
     }
 
 }
 
 
-/*********** Footer ***********/
+/************** FOOTER ******************   */
 
 footer {
     background-color: #1f1f1f;
@@ -259,7 +163,6 @@ footer li a:hover {
 }
 
 @media all and (max-width: 1200px) {
-
     .colonne {
         flex-direction: column;
     }
@@ -271,22 +174,18 @@ footer li a:hover {
 }
 
 @media all and (max-width: 992px) {
-
     .footer-access, .footer-services, .footer-contact {
         padding-left: 1.5rem;
     }
-
     .social-media {
         padding-left: 0rem;
     }
-    
     .footer-access, .footer-services, .footer-contact {
         width: 20%;
     } 
 }
 
 @media all and (max-width: 768px) {
-
     .footer-access, .footer-services, .footer-contact {
         padding-left: 1.5rem;
         width: max-content;
@@ -294,11 +193,9 @@ footer li a:hover {
 }
 
 @media all and (max-width: 576px) {
-
     .colonne {
         flex-direction: column;
     }
-    
     .footer-access, .footer-services, .footer-contact {
         padding: 0.675rem;
         padding-left: 1rem;
