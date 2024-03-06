@@ -41,7 +41,7 @@
             <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
-                <form action="form">                
+                <form method="post" action="">                
                     <label for="name">
                         <input type="text" id="name" placeholder="Nom* :">
                     </label>
@@ -57,7 +57,7 @@
             </article>
 
             <article class="formatting">   
-                <form action="form"> 
+                <form action=""> 
                 <div class="subject">
                     <label for="subject-select">Sujet* :</label>
                         <select id="subject-select">
@@ -83,7 +83,7 @@
                         <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
                     </label>
                         
-                    <button type="">Envoyer</button>  
+                    <button>Envoyer</button>  
                    
                 </form>            
             </article>
