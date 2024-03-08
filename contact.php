@@ -1,3 +1,17 @@
+<!--cookie insertion-->
+<script>
+    requiredFields = [lastname,firstName,mail,subject,message];
+    document.cookie = "cookieForm = " + fields;
+</script>        
+<?php 
+setcookie('cookieForm', 'fields', time()+182.5*24*3600, true, true);
+?>
+<?php
+$requiredFields= $_COOKIE['cookieForm'];
+echo $requiredFields;
+?> 
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -41,7 +55,7 @@
             <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
-                <form method="post" action="">                
+                <form method="POST" action="">                
                     <label for="name">
                         <input type="text" id="name" placeholder="Nom* :">
                     </label>
@@ -53,11 +67,11 @@
                     <label for="email">
                         <input type="email" name="" id="email" placeholder="Email* :">
                     </label>  
-                </form>
+                </form>              
             </article>
 
             <article class="formatting">   
-                <form action=""> 
+            <form method="POST" action="">                
                 <div class="subject">
                     <label for="subject-select">Sujet* :</label>
                         <select id="subject-select">
@@ -83,9 +97,8 @@
                         <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
                     </label>
                         
-                    <button>Envoyer</button>  
-                   
-                </form>            
+                    <button type="submit">Envoyer</button>  
+                </form> 
             </article>
         </section>
 
