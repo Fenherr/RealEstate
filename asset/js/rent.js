@@ -87,8 +87,7 @@ form.addEventListener("submit", (event) => {
     if (secteur!="" && prize!="" && distance!="") {
         alert("Direction vers le serveur !!!");
         resultForm=[secteur,prize,distance];
-        console.log(resultForm)
-        document.cookie="resultatRecher = " + resultForm;
+        document.cookie="resultatRecher = " + resultForm + ";SameSite=Lax";
     }
 });
 
