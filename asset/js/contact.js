@@ -1,4 +1,4 @@
-/*header commun -> Menu burger => JS*/
+//-------header commun -> burgerMenu => JS----------------
 
 const menuOpener = document.getElementById("menu-opener"),
     menuCloser = document.getElementById("menu-closer"),
@@ -91,6 +91,11 @@ form.addEventListener ("submit", (event) => {
     catch (error) {
         alert (error.message) // -> message throw new Error
         console.log ("Veuillez remplir les champs obligatoires")
+        
+        // add cookie to php form
+        requiredFields = [lastname,firstName,mail,subject,message];
+        document.cookie = "cookieForm = " + requiredFields;
+
     }
 })
 
