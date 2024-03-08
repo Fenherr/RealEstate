@@ -51,6 +51,7 @@ form.addEventListener("submit", (event) => {
     alertprize=alertprize.classList.remove("alert");
     let alertdistance=document.getElementById("localization");
     alertdistance=alertdistance.classList.remove("alert");
+    let resultForm;
 
     try {
         test3(secteur);
@@ -85,6 +86,9 @@ form.addEventListener("submit", (event) => {
     }
     if (secteur!="" && prize!="" && distance!="") {
         alert("Direction vers le serveur !!!");
+        resultForm=[secteur,prize,distance];
+        console.log(resultForm)
+        document.cookie="resultatRecher = " + resultForm;
     }
 });
 
