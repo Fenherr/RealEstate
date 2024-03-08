@@ -92,10 +92,9 @@ form.addEventListener ("submit", (event) => {
         alert (error.message) // -> message throw new Error
         console.log ("Veuillez remplir les champs obligatoires")
         
-        // add cookie to php form
+        //create & add cookie to php form
         requiredFields = [lastname,firstName,mail,subject,message];
-        document.cookie = "cookieForm = " + requiredFields;
-
+        document.cookie = "cookieForm = " + requiredFields; 
     }
 })
 
