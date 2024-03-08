@@ -46,7 +46,6 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
             <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
-            
                 <?php 
                 /* check for cookie presence
             
@@ -57,8 +56,7 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
                         echo "c'est pas bon";
                     }*/
                 ?> 
-
-                <form method="POST" action="">                
+                <form action="">                
                     <label for="name">
                         <input type="text" id="name" placeholder="Nom* :">
                     </label>
@@ -74,7 +72,7 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
             </article>
 
             <article class="formatting">   
-            <form method="POST" action="">                
+            <form action="">                
                 <div class="subject">
                     <label for="subject-select">Sujet* :</label>
                         <select id="subject-select">
@@ -102,6 +100,12 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
                         
                     <button type="submit">Envoyer</button>  
                 </form> 
+                               
+                <?php 
+                    $requiredFields= $_COOKIE['cookieForm']; 
+                    
+                ?>   
+
             </article>
         </section>
 
