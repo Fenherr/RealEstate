@@ -1,16 +1,7 @@
-<!--cookie insertion-->
-<script>
-    requiredFields = [lastname,firstName,mail,subject,message];
-    document.cookie = "cookieForm = " + fields;
-</script>        
+<!--cookie insertion-->       
 <?php 
-setcookie('cookieForm', 'fields', time()+182.5*24*3600, true, true);
+setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, true);
 ?>
-<?php
-$requiredFields= $_COOKIE['cookieForm'];
-echo $requiredFields;
-?> 
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -55,6 +46,18 @@ echo $requiredFields;
             <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
+            
+                <?php 
+                /* check for cookie presence
+            
+                    if (isset ($_COOKIE ['cookieForm'])){
+                        $requiredFields= $_COOKIE['cookieForm'];
+                        echo 'Coucou je suis '. $requiredFields;
+                    }else {
+                        echo "c'est pas bon";
+                    }*/
+                ?> 
+
                 <form method="POST" action="">                
                     <label for="name">
                         <input type="text" id="name" placeholder="Nom* :">
