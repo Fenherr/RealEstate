@@ -65,8 +65,11 @@
                         <input class="butt" type="submit" value="Recherche">
                     </div>
                 </form>
-                <?php $resulForm= $_COOKIE['resultatRecher'];
+                <?php 
+                    if (isset($_COOKIE['resultatRecher'])) {
+                    $resulForm= $_COOKIE['resultatRecher'];
                     echo $resulForm;
+                    }
                     ?>
                 <div class="zone3">
                     <!--bloque image gauche-->
