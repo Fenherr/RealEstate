@@ -1,3 +1,9 @@
+<?php 
+                    if (isset($_COOKIE['resultatRecher'])) {
+                    $resulForm= $_COOKIE['resultatRecher'];
+                    echo $resulForm;
+                    }
+                    ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -65,12 +71,7 @@
                         <input class="butt" type="submit" value="Recherche">
                     </div>
                 </form>
-                <?php 
-                    if (isset($_COOKIE['resultatRecher'])) {
-                    $resulForm= $_COOKIE['resultatRecher'];
-                    echo $resulForm;
-                    }
-                    ?>
+                
                 <div class="zone3">
                     <!--bloque image gauche-->
                     <div class="zone4">
