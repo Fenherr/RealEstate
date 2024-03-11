@@ -39,7 +39,7 @@ function ouverture() {
 
 /*-_-_-_-_ Formulaire recherche -_-_-_-_-_-_-_-_-_-_-_-_*/
 
-let form=document.getElementById("formu");
+/*let form=document.getElementById("formu");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     let secteur=document.getElementById("local").value;
@@ -88,6 +88,7 @@ form.addEventListener("submit", (event) => {
         alert("Direction vers le serveur !!!");
         resultForm=[secteur,prize,distance];
         document.cookie="resultatRecher = " + resultForm + ";SameSite=Lax" + ";secure";
+        location.reload();
     }
 });
 
@@ -117,5 +118,25 @@ function test2(peri) {
 function test3(zeneant) {
     if (zeneant=="") {
         throw new Error("veuillez indiquer une localité !");
+    }
+}*/
+let button=document.getElementById(".butt");
+
+let secteur=document.getElementById("local").value;
+let alertsecteur=document.getElementById("local");
+let prize=document.getElementById("prize").value;
+let alertprize=document.getElementById("prize");
+
+//alertsecteur.addEventListener("click", buz);
+//alertprize.addEventListener("click", buz2);
+
+console.log(secteur);
+
+
+function buz() {
+    alertsecteur=document.getElementById("local");
+
+    if (secteur=="") {
+        alertsecteur=alertsecteur.classList.add("alert");
     }
 }
