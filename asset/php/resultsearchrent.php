@@ -12,7 +12,7 @@
         <?php 
             print_r($_POST);
             $nomLocal="<p>Secteur : ".htmlspecialchars($_POST["local"])."</p>";
-            $nomPrize="<p>Prix de la location :  ".($_POST["prize"])."</p>";
+            $nomPrize="<p>Prix de la location :  ".($_POST["prize"])." €</p>";
             $nomDistance="<p>Périmètre de recherche :  ".($_POST["distance"])."</p>";
             echo $nomLocal;
             echo $nomPrize;
