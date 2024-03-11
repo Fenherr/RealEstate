@@ -60,7 +60,7 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
                     }*/
                 ?> 
                 
-                <form method="POST" action="./form_processing.php">                
+                <form method="POST" action="./formContact_processing.php">                
                     <label for="name">
                     <input type="text" id="name" name="name" placeholder="Nom* :">
                     </label>
