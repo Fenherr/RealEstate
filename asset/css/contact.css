@@ -153,13 +153,14 @@ h1 {
  
 .subject, #subject-selected, #message, #submit {
     display: block;
+    justify-content: end;
 }
 
 .subject {
     background-color: #b1f3bc;
     height: 1rem;
     width: 30rem;
-    margin-right: 62%;
+   /* margin-right: 62%;*/
     padding-bottom: 2%;
 }
 

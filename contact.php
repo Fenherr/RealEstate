@@ -8,6 +8,9 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="./asset/js/header.js"defer></script>
+    <script src="./asset/js/contact.js"defer></script>
     <title>CONTACT</title>
     <!--lien pour bonhomme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -43,68 +46,62 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
         </section>
 
         <!--formulaire-->
-            <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
+        <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
                 <?php 
-                /* check for cookie presence
+                /*// check for cookie presence
             
                     if (isset ($_COOKIE ['cookieForm'])){
                         $requiredFields= $_COOKIE['cookieForm'];
-                        echo 'Coucou je suis '. $requiredFields;
+                        echo 'HELLO, I AM '. $requiredFields;
                     }else {
-                        echo "c'est pas bon";
+                        echo "ERROR";
                     }*/
                 ?> 
-                <form action="">                
+                
+                <form method="POST" action="./formContact_processing.php">                
                     <label for="name">
-                        <input type="text" id="name" placeholder="Nom* :">
+                    <input type="text" id="name" name="name" placeholder="Nom* :">
                     </label>
 
                     <label for="first-name">
-                        <input type="text" id="first-name" placeholder="Prénom* :">
+                    <input type="text" id="first-name" name="first-name" placeholder="Prénom* :">
                     </label>
 
                     <label for="email">
-                        <input type="email" name="" id="email" placeholder="Email* :">
+                    <input type="email" id="email" name="email" placeholder="Email* :">
                     </label>  
-                </form>              
-            </article>
-
-            <article class="formatting">   
-            <form action="">                
-                <div class="subject">
-                    <label for="subject-select">Sujet* :</label>
-                        <select id="subject-select">
-                            <optgroup label="Particuliers">
-                                <!--value empty -> subject required --> 
-                                <option value=""></option>
-                                <option value="Mon espace personnel">Mon espace personnel</option>
-                                <option value="Recherche d'un bien">Recherche d'un bien</option>
-                                <option value="Vendre son bien">Vendre son bien</option>
-                                <option value="L'alerte immo">L'alerte immo</option>
-                                <option value="Données personnelles : exercer mes droits">Données personnelles : exercer mes droits</option>
-                                <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
-                            </optgroup>
-                            <optgroup label="Professionnels">
-                                <option value="Partenariat">Partenariat</option>
-                                <option value="Régie publicitaire">Régie publicitaire</option>
-                                <option value="Offres commerciales">Offres commerciales</option>
-                            </optgroup>
-                        </select>                    
-                    </div>
+                     
+                    <div class="subject">
+                        <label for="subject-select">Sujet* :</label>
+                        <select id="subject-select" name="subject">
+                                <optgroup label="Particuliers">
+                                    <!--value empty -> subject required --> 
+                                    <option value=""></option>
+                                    <option value="Mon espace personnel">Mon espace personnel</option>
+                                    <option value="Recherche d'un bien">Recherche d'un bien</option>
+                                    <option value="Vendre son bien">Vendre son bien</option>
+                                    <option value="L'alerte immo">L'alerte immo</option>
+                                    <option value="Données personnelles : exercer mes droits">Données personnelles : exercer mes droits</option>
+                                    <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
+                                </optgroup>
+                                <optgroup label="Professionnels">
+                                    <option value="Partenariat">Partenariat</option>
+                                    <option value="Régie publicitaire">Régie publicitaire</option>
+                                    <option value="Offres commerciales">Offres commerciales</option>
+                                </optgroup>
+                            </select>                    
+                        </div>
 
                     <label for="message">
-                        <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
-                    </label>
+                    <textarea name="message" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>                    </label>
                         
                     <button type="submit">Envoyer</button>  
                 </form> 
+                
                                
-                <?php 
-                    $requiredFields= $_COOKIE['cookieForm']; 
-                    
-                ?>   
+                <?php $requiredFields= $_COOKIE['cookieForm']; ?>   
 
             </article>
         </section>
@@ -135,9 +132,6 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
 <!--footer commun-->
 <?php require 'footer.php';?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-<script src="./asset/js/header.js"></script>
-<script src="./asset/js/contact.js"></script>
 </body>
 
 </html>
