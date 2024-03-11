@@ -50,31 +50,32 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
         <section class="form">  
             <article class="formatting">
                 <?php 
-                // check for cookie presence
+                /*// check for cookie presence
             
                     if (isset ($_COOKIE ['cookieForm'])){
                         $requiredFields= $_COOKIE['cookieForm'];
                         echo 'HELLO, I AM '. $requiredFields;
                     }else {
                         echo "ERROR";
-                    }
+                    }*/
                 ?> 
+                
                 <form method="POST" action="./form_processing.php">                
                     <label for="name">
-                        <input type="text" id="name" placeholder="Nom* :">
+                    <input type="text" id="name" name="name" placeholder="Nom* :">
                     </label>
 
                     <label for="first-name">
-                        <input type="text" id="first-name" placeholder="Prénom* :">
+                    <input type="text" id="first-name" name="first-name" placeholder="Prénom* :">
                     </label>
 
                     <label for="email">
-                        <input type="email" name="" id="email" placeholder="Email* :">
+                    <input type="email" id="email" name="email" placeholder="Email* :">
                     </label>  
                      
                     <div class="subject">
                         <label for="subject-select">Sujet* :</label>
-                            <select id="subject-select">
+                        <select id="subject-select" name="subject">
                                 <optgroup label="Particuliers">
                                     <!--value empty -> subject required --> 
                                     <option value=""></option>
@@ -94,11 +95,11 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
                         </div>
 
                     <label for="message">
-                        <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
-                    </label>
+                    <textarea name="message" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>                    </label>
                         
                     <button type="submit">Envoyer</button>  
                 </form> 
+                
                                
                 <?php $requiredFields= $_COOKIE['cookieForm']; ?>   
 
