@@ -1,3 +1,20 @@
+<?php
+
+    try {
+        // Ligne pour se connecter à la base de données...
+        $mySqlClient=new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
+        //echo "Youpi !!!";
+    }
+    catch (Exeption $e) {
+        die ('Error'.$e->getMessage());
+    }
+    $prepareData=$mySqlClient->prepare('SELECT*FROM user');
+    $prepareData->execute();
+    $datas=$prepareData->fetchAll();
+    foreach ($datas as $data) {
+    echo $data['firstname'].' '.$data['lastname'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -44,17 +61,19 @@
             <!-- zone Recherche + zone gauche -->
             <div class="zone1">
                 <!-- bloc recherche -->
-                <form id="formu">
+                <form action="./asset/php/resultsearchrent.php" method="post" id="formu">
                     <div>
                         <label for="localization">Lieu :</label>
-                        <input id="local" type="text" autofocus placeholder="Adresse, département, région, etc...">
+                        <input name="local" id="local" type="search" placeholder="Adresse, département, région, etc..." required="required">
                     </div>
                     <div>
                         <label class="lab-pri">Prix :</label>
-                        <input id="prize" type="text" placeholder="Prix en euros">
+                        <input name="prize" id="prize" type="number" value="1000" placeholder="Prix en euros" required="required">
+                    </div>
+                    <div>
                     </div>
                     <div class="group-button">
-                        <select name="distance" id="localization">
+                        <select name="distance" id="localization" required="required">
                             <option value="">Périmètre</option>
                             <option value="10Km">10 Km</option>
                             <option value="20km">20 Km</option>
@@ -62,15 +81,14 @@
                             <option value="departement">Département</option>
                             <option value="region">Région</option>
                         </select>
+                        <select name="habit" id="" required="required">
+                            <option value="">Type de bien</option>
+                            <option value="appartement">Appartement</option>
+                            <option value="maison">Maison</option>
+                        </select>
                         <input class="butt" type="submit" value="Recherche">
                     </div>
                 </form>
-                <?php 
-                    if (isset($_COOKIE['resultatRecher'])) {
-                    $resulForm= $_COOKIE['resultatRecher'];
-                    echo $resulForm;
-                    }
-                    ?>
                 <div class="zone3">
                     <!--bloque image gauche-->
                     <div class="zone4">
