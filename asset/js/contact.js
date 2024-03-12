@@ -1,4 +1,4 @@
-//-------header commun -> burgerMenu => JS----------------
+//-------common header -> burgerMenu => JS----------------
 
 const menuOpener = document.getElementById("menu-opener"),
     menuCloser = document.getElementById("menu-closer"),
