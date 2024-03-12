@@ -1,4 +1,4 @@
-/*header commun
+/*common header 
 
 @font-face {
     font-family: "baloo2";
@@ -151,8 +151,9 @@ h1 {
     padding: 0 1.25rem;
 } 
  
-.subject, #subject-selected, #message, #submit {
+.form2 {
     display: block;
+    /*float: right;*/
 }
 
 .subject {
@@ -447,7 +448,7 @@ button {
 
 
    
-/*footer commun
+/*common footer 
 
 footer {
     background-color: #1f1f1f;
