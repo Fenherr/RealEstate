@@ -97,9 +97,9 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
 
                         <label for="message">
                         <textarea name="message" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>                    </label>
-                            
-                        <button type="submit">Envoyer</button>  
                     </div>      
+       
+                    <button type="submit">Envoyer</button>  
                 </form> 
                 
                                
@@ -133,10 +133,18 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
     <!-- php connection to database-->
     <?php
     try {
-        $mySqlClient=new PDO ('mySql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
+        $mySqlClient=new PDO ('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
     }
     catch (Exception $e) {
         die ('Error'.$e->getMessage());
+    }
+    ?>
+    <?php
+    $prepareData=$mySqlClient->prepare('SELECT * FROM user');
+    $prepareData->execute();
+    $datas=$prepareData->fetchAll();
+    foreach ($datas as $data){
+        echo$data['firstname'];
     }
     ?>
 
