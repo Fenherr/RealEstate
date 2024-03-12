@@ -10,13 +10,15 @@
 <body>
     <main>
         <?php 
-            print_r($_POST);
+            //print_r($_POST);
             $nomLocal="<p>Secteur : ".htmlspecialchars($_POST["local"])."</p>";
             $nomPrize="<p>Prix de la location :  ".($_POST["prize"])." €</p>";
             $nomDistance="<p>Périmètre de recherche :  ".($_POST["distance"])."</p>";
+            $nomTypeHouse="<p>Type d'habitation :  ".($_POST["habit"])."</p>";
             echo $nomLocal;
             echo $nomPrize;
             echo $nomDistance;
+            echo $nomTypeHouse;
         ?>
         <p style="text-align:center"><a href="../../rent.php"><button class="butt">Retour</button></a></p>
     </main>
