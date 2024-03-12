@@ -8,6 +8,12 @@
     catch (Exeption $e) {
         die ('Error'.$e->getMessage());
     }
+    $prepareData=$mySqlClient->prepare('SELECT*FROM user');
+    $prepareData->execute();
+    $datas=$prepareData->fetchAll();
+    foreach ($datas as $data) {
+    echo $data['firstname'].' '.$data['lastname'];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
