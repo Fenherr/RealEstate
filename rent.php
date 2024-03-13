@@ -1,6 +1,6 @@
 <?php
 
-    try {
+    /*try {
         // Ligne pour se connecter à la base de données...
         $mySqlClient=new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
         //echo "Youpi !!!";
@@ -13,7 +13,7 @@
     $datas=$prepareData->fetchAll();
     foreach ($datas as $data) {
     echo $data['firstname'].' '.$data['lastname'];
-    }
+    }*/
 ?>
 <!DOCTYPE html>
 <html lang="fr">
