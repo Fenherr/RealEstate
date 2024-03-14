@@ -1,7 +1,37 @@
+<!-- php connection to secure database-->
+<?php
+    //files inclusion
+    require_once('./asset/php/config.php');
+
+    //check connection secure
+    try {
+        $conn = 'mysql:host=' . $db_host . ';dbname=' . $db_name . ';charset=utf8mb4';
+        $mySqlClient=new PDO ($conn,$db_user,$db_password);
+    }
+    catch (Exception $e) {
+        die ('Error'.$e->getMessage());
+    }
+    ?>
+
+<!-- database test--> 
+    <?php
+    /*//request
+    $prepareData=$mySqlClient->prepare('SELECT * FROM user');
+    //execute
+    $prepareData->execute();
+    $datas=$prepareData->fetchAll();
+    //check & display
+    foreach ($datas as $data){
+        echo $data['firstname'];
+    }*/
+    ?>
+
 <!--cookie insertion-->       
 <?php 
 setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, true);
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -60,40 +90,41 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
                     }*/
                 ?> 
                 
-                <form method="POST" action="./formContact_processing.php">                
-                    <label for="name">
-                    <input type="text" id="name" name="name" placeholder="Nom* :">
-                    </label>
+                <form method="POST" action="./asset/php/formContact_processing.php">                
+                    <div class="form1">
+                        <label for="name">
+                        <input type="text" id="name" name="name" placeholder="Nom* :">
+                        </label>
 
-                    <label for="first-name">
-                    <input type="text" id="first-name" name="first-name" placeholder="Prénom* :">
-                    </label>
+                        <label for="first-name">
+                        <input type="text" id="first-name" name="first-name" placeholder="Prénom* :">
+                        </label>
 
-                    <label for="email">
-                    <input type="email" id="email" name="email" placeholder="Email* :">
-                    </label>  
-                     
+                        <label for="email">
+                        <input type="email" id="email" name="email" placeholder="Email* :">
+                        </label>  
+                    </div>     
                     <div class="form2" >  
                         <div class="subject">
                             <label for="subject-select">Sujet* :</label>
                             <select id="subject-select" name="subject">
-                                    <optgroup label="Particuliers">
-                                        <!--value empty -> subject required --> 
-                                        <option value=""></option>
-                                        <option value="Mon espace personnel">Mon espace personnel</option>
-                                        <option value="Recherche d'un bien">Recherche d'un bien</option>
-                                        <option value="Vendre son bien">Vendre son bien</option>
-                                        <option value="L'alerte immo">L'alerte immo</option>
-                                        <option value="Données personnelles : exercer mes droits">Données personnelles : exercer mes droits</option>
-                                        <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
-                                    </optgroup>
-                                    <optgroup label="Professionnels">
-                                        <option value="Partenariat">Partenariat</option>
-                                        <option value="Régie publicitaire">Régie publicitaire</option>
-                                        <option value="Offres commerciales">Offres commerciales</option>
-                                    </optgroup>
-                                </select>                    
-                            </div>
+                                <optgroup label="Particuliers">
+                                    <!--value empty -> subject required --> 
+                                    <option value=""></option>
+                                    <option value="Mon espace personnel">Mon espace personnel</option>
+                                    <option value="Recherche d'un bien">Recherche d'un bien</option>
+                                    <option value="Vendre son bien">Vendre son bien</option>
+                                    <option value="L'alerte immo">L'alerte immo</option>
+                                    <option value="Données personnelles : exercer mes droits">Données personnelles : exercer mes droits</option>
+                                    <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
+                                </optgroup>
+                                <optgroup label="Professionnels">
+                                    <option value="Partenariat">Partenariat</option>
+                                    <option value="Régie publicitaire">Régie publicitaire</option>
+                                    <option value="Offres commerciales">Offres commerciales</option>
+                                </optgroup>
+                            </select>                    
+                        </div>
 
                         <label for="message">
                         <textarea name="message" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>                    </label>
@@ -129,24 +160,6 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
         <a href="" class="rgpd">Pour toute demande relative au traitement de vos données personnelles et / ou exercer vos droits, cliquez ici https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees</a>
 
     </div>
-
-    <!-- php connection to database-->
-    <?php
-    try {
-        $mySqlClient=new PDO ('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
-    }
-    catch (Exception $e) {
-        die ('Error'.$e->getMessage());
-    }
-    ?>
-    <?php
-    $prepareData=$mySqlClient->prepare('SELECT * FROM user');
-    $prepareData->execute();
-    $datas=$prepareData->fetchAll();
-    foreach ($datas as $data){
-        echo$data['firstname'];
-    }
-    ?>
 
 </main>
 
