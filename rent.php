@@ -1,6 +1,6 @@
 <?php
 
-    try {
+    /*try {
         // Ligne pour se connecter à la base de données...
         $mySqlClient=new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
         //echo "Youpi !!!";
@@ -8,6 +8,12 @@
     catch (Exeption $e) {
         die ('Error'.$e->getMessage());
     }
+    $prepareData=$mySqlClient->prepare('SELECT*FROM user');
+    $prepareData->execute();
+    $datas=$prepareData->fetchAll();
+    foreach ($datas as $data) {
+    echo $data['firstname'].' '.$data['lastname'];
+    }*/
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -62,19 +68,19 @@
                     </div>
                     <div>
                         <label class="lab-pri">Prix :</label>
-                        <input name="prize" id="prize" type="number" value="1000" placeholder="Prix en euros" required="required">
+                        <input name="prize" id="prize" type="number" placeholder="Prix en euros" required="required">
                     </div>
                     <div>
                     </div>
                     <div class="group-button">
-                        <select name="distance" id="localization" required="required">
+                        <!--<select name="distance" id="localization" required="required">
                             <option value="">Périmètre</option>
                             <option value="10Km">10 Km</option>
                             <option value="20km">20 Km</option>
                             <option value="30km">30 Km</option>
                             <option value="departement">Département</option>
                             <option value="region">Région</option>
-                        </select>
+                        </select>-->
                         <select name="habit" id="" required="required">
                             <option value="">Type de bien</option>
                             <option value="appartement">Appartement</option>
