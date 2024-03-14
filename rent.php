@@ -73,14 +73,14 @@
                     <div>
                     </div>
                     <div class="group-button">
-                        <select name="distance" id="localization" required="required">
+                        <!--<select name="distance" id="localization" required="required">
                             <option value="">Périmètre</option>
                             <option value="10Km">10 Km</option>
                             <option value="20km">20 Km</option>
                             <option value="30km">30 Km</option>
                             <option value="departement">Département</option>
                             <option value="region">Région</option>
-                        </select>
+                        </select>-->
                         <select name="habit" id="" required="required">
                             <option value="">Type de bien</option>
                             <option value="appartement">Appartement</option>
