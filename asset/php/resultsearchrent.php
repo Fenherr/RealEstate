@@ -11,14 +11,14 @@
     <main>
         <?php
              
-             $nomPrize="<p>Prix de la location :  ".($_POST["prize"])." €</p>";
+             $nomPrize=(int)($_POST["prize"]);
              //$nomDistance="<p>Périmètre de recherche :  ".($_POST["distance"])."</p>";
              $nomLocal='"'.htmlspecialchars($_POST["local"]).'"';
              $nomTypeHouse='"'.($_POST["habit"]).'"';
-             echo $nomLocal;
-             echo $nomPrize;
+             //echo $nomLocal;
+             echo gettype($nomPrize);
              //echo $nomDistance;
-             echo $nomTypeHouse;
+             //echo $nomTypeHouse;
             try {
                 // Ligne pour se connecter à la base de données...
                 $mySqlClient=new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
@@ -27,11 +27,16 @@
             catch (Exeption $e) {
                 die ('Error'.$e->getMessage());
             }
-            $prepareData=$mySqlClient->prepare("SELECT descrip FROM `house` WHERE type=$nomTypeHouse AND search_zone=$nomLocal;");
+            $prepareData=$mySqlClient->prepare("SELECT descrip FROM `house` WHERE type=$nomTypeHouse AND search_zone=$nomLocal AND price<=$nomPrize ORDER BY price DESC;");
             $prepareData->execute();
             $datas=$prepareData->fetchAll();
+            echo "<h2>Locations disponibles :</h2>";
             foreach ($datas as $data) {
-            echo $data['descrip']."<br>";
+                echo "<p>".$data['descrip']."<p>";
+            }
+            // Résultat de la recherche négatif...
+            if ($datas==NULL) {
+                echo "<p>Aucun résultat...<p>";
             }
             //print_r($_POST);
         ?>

@@ -68,7 +68,7 @@
                     </div>
                     <div>
                         <label class="lab-pri">Prix :</label>
-                        <input name="prize" id="prize" type="number" value="1000" placeholder="Prix en euros" required="required">
+                        <input name="prize" id="prize" type="number" placeholder="Prix en euros" required="required">
                     </div>
                     <div>
                     </div>
