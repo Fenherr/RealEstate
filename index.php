@@ -18,12 +18,10 @@
 </head>
 
 <body>
-<?php
- define("DBHOST", "localhost");
- define("DBUSER", "root"); 
- define("DBPASS", ""); 
- define("DBNAME", "acgd_immo");
 
+<?php require 'connect_index.php'; ?>
+
+<?php
  
  $dsn = "mysql:dbname=".DBNAME.";host=".DBHOST;
 
