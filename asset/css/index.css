@@ -1,8 +1,18 @@
-@font-face {
+/*@font-face {
     font-family: "baloo2";
-    src: 
-        url("../../fonts/Baloo_2/static/Baloo2-Medium.ttf") format(truetype);
-}
+    src: url("../../fonts/Baloo_2/static/Baloo2-Medium.ttf") format(truetype);*/
+    @font-face {
+        font-family: "baloo2";
+        src: 
+            url("../../fonts/Baloo_2/static/Baloo2-Medium.ttf") format(truetype);
+    }
+    
+    @font-face {
+        font-family: "opensans";
+        src:
+            url("../../fonts/Open_Sans/static/OpenSans-Regular.ttf") format(truetype);
+    }
+
 
 body {
     margin: 0 0;
@@ -380,15 +390,19 @@ i[class="fa-solid fa-bed"] {
     color: #ffffff;
 }
 
-.customers h2 {
+.customers h1 {
     margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
 }
 
 .customers p {
-    margin-top: 2rem;
+    margin-top: 1.3rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-style: italic;
+    color: #ffffff;
 }
 
 .customers .button {

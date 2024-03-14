@@ -19,6 +19,33 @@
 
 <body>
 
+<?php require 'connect_index.php'; ?>
+
+<?php
+ 
+ $dsn = "mysql:dbname=".DBNAME.";host=".DBHOST;
+
+ try{
+     
+     $db = new PDO($dsn, DBUSER, DBPASS);
+
+   echo "Je suis connectée <br>";
+
+    $db->exec("SET NAMES utf8"); 
+
+ }catch(PDOException $e){
+     die("Erreur:".$e->getMessage());
+ }
+
+ $prepareData = $db -> prepare('SELECT * FROM user');
+ $prepareData -> execute();
+ $datas= $prepareData -> fetchAll();
+ foreach ($datas as $data) {
+    echo $data ["first_name"];
+ }
+
+?>
+
 <!-- logo avec menu principal -->
 <!-- include of header php file -->
 <?php require 'header.php'; ?>
@@ -154,7 +181,7 @@
 
 <!-- section avis clients -->
     <section class="customers">
-        <h2>Avis clients</h2>
+        <h1>Avis clients</h1>
         <p>Ce que nos clients pensent de notre travail</p>
         <div class="button"><a href="customer-feedback.html">Lire les témoignages</a></div>
     </section>
