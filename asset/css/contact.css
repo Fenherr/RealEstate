@@ -138,10 +138,10 @@ h1 {
     text-shadow: #F0F8FF 0.5px 0.5px, #F0F8FF -0.5px 0.5px, #F0F8FF -0.5px -0.5px, #F0F8FF 0.5px -0.5px;
 }
  
-.form {
-    display: flex;
+/*.form1 {
+    display: block;
     justify-content: space-between;
-}
+}*/
 
 .formatting {
     #name, #first-name, #email, #subject-select, #message {
@@ -151,16 +151,48 @@ h1 {
     padding: 0 1.25rem;
 } 
  
-.form2, #submit {
-    display: block;
-    position: relative;
+/*.form2 {
+    display: flex;
+    flex-direction: column;
+    align-items :flex-end
 }
+
+
+#submit {
+    align-self: flex-end;
+}*/
+
+/* code à tester*/
+.form1 {
+    display: inline-block;
+    width: 40%; /* Réduire la largeur pour permettre un peu d'espace */
+    margin-right: 10rem; /* Ajouter une marge à droite pour espacer les formulaires */
+    vertical-align: top;
+}
+
+.form2 {
+    display: inline-block;
+    width: 40%; /* Réduire la largeur pour permettre un peu d'espace */
+    vertical-align: top;
+}
+
+#submit {
+    display: block;
+    margin-top: 1rem;
+    width: auto;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* fin du code à tester*/
 
 .subject {
     background-color: #b1f3bc;
     height: 1rem;
     width: 30rem;
-    /*margin-right: 62%;*/
+    margin-right: 62%;
     padding-bottom: 2%;
 }
 
