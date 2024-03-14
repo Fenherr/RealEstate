@@ -144,14 +144,15 @@ a:hover {
 
 #search_form select {
     border: #1f1f1f 1px solid;
+    padding-left: 5px;
 }
 
 #search_form.submitted input:invalid {
-    border: red 1px solid; 
+    border: red 2px solid; 
 }
 
 #search_form.submitted select:invalid {
-    border: red 1px solid; 
+    border: red 2px solid; 
 }
 
 .menu_search_deco p {

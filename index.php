@@ -56,26 +56,26 @@
         <div class="search">
             <form id="search_form" class="menu_search">
                 <div class="size_form">
-                    <select id="take_search" class="menu_search_deco size_search" required oninput="setCustomValidity('')" >
+                    <select id="take_search" class="menu_search_deco size_search" required >
                         <option class="value_bold" value="">Je cherche ...</option>
                         <option value="vente">Vente</option>
                         <option value="location">Location</option>
                     </select>
                 </div>
                 <div class="size_form">   
-                        <input id="take_local" class="menu_search_deco size_search" type="text" placeholder="Localisation..." required oninput="setCustomValidity('')" autofocus />
+                        <input id="take_local" class="menu_search_deco size_search" type="text" placeholder=" Localisation..." required />
                 </div>
                 <div class="size_form">
-                    <select id="take_type" class="menu_search_deco size_search" required oninput="setCustomValidity('')">
+                    <select id="take_type" class="menu_search_deco size_search" required >
                         <option class="value_bold" value="">Type de biens ...</option>
-                        <option value="appartement">Appartement</option>
+                        <option value="appartement" >Appartement</option>
                         <option value="maison">Maison</option>
                         <option value="terrain">Terrain</option>
                         <option value="autre">Autre</option>
                     </select>
                 </div>
                 <div class="size_form">
-                    <input id="take_price" class="menu_search_deco size_search" type="text" placeholder="Prix maximum..." required oninput="setCustomValidity('')" autofocus /> 
+                    <input id="take_price" class="menu_search_deco size_search" type="text" placeholder=" Prix..." required /> 
                 </div>
                 <div class="size_form">
                     <div class="search_btn">
