@@ -41,9 +41,9 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Import necessary files
-require './asset/php/PHPMailer/src/PHPMailer.php';
-require './asset/php/PHPMailer/src/SMTP.php';
-require './asset/php/PHPMailer/src/Exception.php';
+require './PHPMailer/src/PHPMailer.php';
+require './PHPMailer/src/SMTP.php';
+require './PHPMailer/src/Exception.php';
 
 
 //Create an instance; passing `true` enables exceptions
@@ -55,7 +55,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'gonzalez.patricia2409@gmail.com';      // !!! PROVISIONAL -> will need to use main mail from agency  //SMTP username 
-    $mail->Password   = 'mtmu_qesq_fngg_jtxy';                  //SMTP password
+    $mail->Password   = 'mtmuqesqfnggjtxy';                     //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
