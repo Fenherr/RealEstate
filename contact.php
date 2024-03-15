@@ -79,10 +79,9 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
         <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
+                <!--check for cookie presence-->
                 <?php 
-                /*// check for cookie presence
-            
-                    if (isset ($_COOKIE ['cookieForm'])){
+                    /*if (isset ($_COOKIE ['cookieForm'])){
                         $requiredFields= $_COOKIE['cookieForm'];
                         echo 'HELLO, I AM '. $requiredFields;
                     }else {
@@ -90,6 +89,7 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
                     }*/
                 ?> 
                 
+                <!--form contact process--> 
                 <form method="POST" action="./asset/php/formContact_processing.php">                
                     <div class="form1">
                         <label for="name">
@@ -104,6 +104,7 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
                         <input type="email" id="email" name="email" placeholder="Email* :">
                         </label>  
                     </div>     
+                    
                     <div class="form2" >  
                         <div class="subject">
                             <label for="subject-select">Sujet* :</label>
@@ -128,9 +129,9 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
 
                         <label for="message">
                         <textarea name="message" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>                    </label>
-                    </div>      
-       
-                    <button type="submit">Envoyer</button>  
+                    </div> 
+                    
+                    <button type="submit">Envoyer</button>
                 </form> 
                 
                                
