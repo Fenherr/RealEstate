@@ -19,7 +19,7 @@
 
 <body>
 
-<?php require 'connect_index.php'; ?>
+<?php require './asset/php/connect_index.php'; ?>
 
 <?php
  
