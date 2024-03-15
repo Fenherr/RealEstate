@@ -16,7 +16,7 @@
              $nomLocal='"'.htmlspecialchars($_POST["local"]).'"';
              $nomTypeHouse='"'.($_POST["habit"]).'"';
              //echo $nomLocal;
-             echo gettype($nomPrize);
+             //echo gettype($nomPrize);
              //echo $nomDistance;
              //echo $nomTypeHouse;
             try {
