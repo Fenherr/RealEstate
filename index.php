@@ -48,7 +48,7 @@
 
 <!-- logo avec menu principal -->
 <!-- include of header php file -->
-<?php require 'header.php'; ?>
+<?php @include 'header.php'; ?>
 
 <main>
 <!-- bannière avec fonction recherche -->
@@ -210,7 +210,7 @@
 
 <!-- footer -->
 <!-- include of footer php file -->
-<?php require 'footer.php'; ?>
+<?php @include 'footer.php'; ?>
 
 <div class="copyright">
     <p>copyright <i class="fa-regular fa-copyright"></i> acgd immo</p>
