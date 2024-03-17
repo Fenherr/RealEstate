@@ -19,18 +19,13 @@
              //echo gettype($nomPrize);
              //echo $nomDistance;
              //echo $nomTypeHouse;
-            try {
-                // Ligne pour se connecter à la base de données...
-                $mySqlClient=new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
-                //echo "Youpi !!!";
-            }
-            catch (Exeption $e) {
-                die ('Error'.$e->getMessage());
-            }
+             require '../../connect_index.php';
+             // Requête préparée...
             $prepareData=$mySqlClient->prepare("SELECT descrip FROM `house` WHERE type=$nomTypeHouse AND search_zone=$nomLocal AND price<=$nomPrize ORDER BY price DESC;");
             $prepareData->execute();
             $datas=$prepareData->fetchAll();
             echo "<h2>Locations disponibles :</h2>";
+            // Parcours la table...
             foreach ($datas as $data) {
                 echo "<p>".$data['descrip']."<p>";
             }
