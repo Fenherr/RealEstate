@@ -106,22 +106,19 @@ h1 {
     font-family: "baloo2";
     font-weight: 500;
     font-size: 2rem;       
-   }
+}
 
 .contact {
     text-align: center;
     padding-bottom: 1.875rem;
     text-shadow: #F0F8FF 2px 2px, #F0F8FF -2px 2px, #F0F8FF -2px -2px, #F0F8FF 2px -2px;
- 
-   
 }
   
 .phone-numbers {
     display: flex;
     justify-content: space-between;
     text-shadow: #F0F8FF 0.5px 0.5px, #F0F8FF -0.5px 0.5px, #F0F8FF -0.5px -0.5px, #F0F8FF 0.5px -0.5px;
-   
-    }
+}
 
 .phone {
     font-size: 1.25rem;
@@ -137,62 +134,47 @@ h1 {
     margin-left: 1.25rem;
     text-shadow: #F0F8FF 0.5px 0.5px, #F0F8FF -0.5px 0.5px, #F0F8FF -0.5px -0.5px, #F0F8FF 0.5px -0.5px;
 }
- 
-/*.form1 {
-    display: block;
-    justify-content: space-between;
-}*/
 
 .formatting {
     #name, #first-name, #email, #subject-select, #message {
         background-color: #b1f3bc;        
     }  
-    width: 50%;
-    padding: 0 1.25rem;
+    padding: 0 1.25rem;  
 } 
- 
-/*.form2 {
-    display: flex;
-    flex-direction: column;
-    align-items :flex-end
-}
 
-
-#submit {
-    align-self: flex-end;
-}*/
-
-/* code à tester*/
 .form1 {
     display: inline-block;
-    width: 40%; /* Réduire la largeur pour permettre un peu d'espace */
-    margin-right: 10rem; /* Ajouter une marge à droite pour espacer les formulaires */
+    width: 40%; 
+    margin-right: 10rem; 
     vertical-align: top;
 }
 
 .form2 {
     display: inline-block;
-    width: 40%; /* Réduire la largeur pour permettre un peu d'espace */
-    vertical-align: top;
+    padding-left: 0.5rem;
+    width: 40%;
+    vertical-align: top;*/
 }
 
+/* code à tester*/
 #submit {
     display: block;
-    margin-top: 1rem;
-    width: auto;
     clear: both;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: center; 
+    
 }
-
 /* fin du code à tester*/
+
+
 
 .subject {
     background-color: #b1f3bc;
     height: 1rem;
     width: 30rem;
-    margin-right: 62%;
+    /*margin-right: 62%;*/
     padding-bottom: 2%;
 }
 
@@ -477,7 +459,6 @@ button {
         width: 22rem;
     }
 } 
-
 
    
 /*common footer 
