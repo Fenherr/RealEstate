@@ -23,19 +23,7 @@
 
 <?php
  
- $dsn = "mysql:dbname=".DBNAME.";host=".DBHOST;
 
- try{
-     
-     $db = new PDO($dsn, DBUSER, DBPASS);
-
-   echo "Je suis connectée <br>";
-
-    $db->exec("SET NAMES utf8"); 
-
- }catch(PDOException $e){
-     die("Erreur:".$e->getMessage());
- }
 
  $prepareData = $db -> prepare('SELECT * FROM user');
  $prepareData -> execute();
