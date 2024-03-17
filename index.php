@@ -22,8 +22,6 @@
 <?php require './asset/php/connect_index.php'; ?>
 
 <?php
- 
-
 
  $prepareData = $db -> prepare('SELECT * FROM user');
  $prepareData -> execute();
