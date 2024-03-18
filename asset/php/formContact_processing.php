@@ -26,7 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // RegEx name & first-name
 
 $name = test_input($_POST["name"]);
-if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+$firstName = test_input($_POST["first-name"]);
+
+if (!preg_match("/^[a-zA-Z-' ]*$/",$name && $firstName)) {
   $nameErr = "Only letters and white space allowed";
 }
 
