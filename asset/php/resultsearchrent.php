@@ -20,6 +20,15 @@
              //echo $nomDistance;
              //echo $nomTypeHouse;
              require 'connect_base.php';
+             //
+            try {
+            // Ligne pour se connecter à la base de données...
+                        $mySqlClient=new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset='.DB_CHARSET.'',DB_USER,DB_PASSWORD);
+                        
+            }
+            catch (Exeption $e) {
+                        die ('Error'.$e->getMessage());
+            }
              // Requête préparée...
             $prepareData=$mySqlClient->prepare("SELECT descrip FROM `house` WHERE type=$nomTypeHouse AND search_zone=$nomLocal AND price<=$nomPrize ORDER BY price DESC;");
             $prepareData->execute();
