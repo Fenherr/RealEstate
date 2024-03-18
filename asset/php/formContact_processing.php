@@ -1,57 +1,48 @@
 <?php
-// Check if form submitted
+// ------Check form------
+
+// Retrieving form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // check required fields
-    if (!empty($_POST["name"]) && !empty($_POST["first-name"]) && !empty($_POST["email"]) && !empty($_POST["subject"]) && !empty($_POST["message"])) {
-        // Retrieving form data
-        $name = strip_tags($_POST["name"]);
-        $firstName = strip_tags($_POST["first-name"]);
-        $email = strip_tags($_POST["email"]);
-        $subject = $_POST["subject"];
-        $message = strip_tags($_POST["message"]);
+    $name = strip_tags($_POST["name"]);
+    $firstName = strip_tags($_POST["first-name"]);
+    $email = strip_tags($_POST["email"]);
+    $subject = $_POST["subject"];
+    $message = strip_tags($_POST["message"]);
 
-        // add code for data processing
-        echo "Nom : " . $name . "<br>";
-        echo "Prénom : " . $firstName . "<br>";
-        echo "Email : " . $email . "<br>";
-        echo "Sujet : " . $subject . "<br>";
-        echo "Message : " . $message . "<br>";
-    } else {
-        echo "Veuillez remplir les champs obligatoires";
+    // Check if all fields are filled
+    if (empty($name) || empty($firstName) || empty($email) || empty($subject) || empty($message)) {
+        echo "Veuillez remplir tous les champs obligatoires";
+        exit(); // Stop script execution
     }
-}    
-?>
 
-<?php
-// RegEx name & first-name
+    // Check if name and first name contain only letters and white space
+    if (!preg_match("/^[a-zA-Z-' ]*$/", $name) || !preg_match("/^[a-zA-Z-' ]*$/", $firstName)) {
+        echo "Le nom et le prénom ne doivent contenir que des lettres et des espaces blancs";
+        exit(); // Stop script execution
+    }
 
-$name = test_input($_POST["name"]);
-$firstName = test_input($_POST["first-name"]);
+    // Check if email is in a valid format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Format d'email invalide";
+        exit(); // Stop script execution
+    }
 
-if (!preg_match("/^[a-zA-Z-' ]*$/",$name && $firstName)) {
-  $nameErr = "Only letters and white space allowed";
+    // Add code for data processing
+    echo "Nom : " . $name . "<br>";
+    echo "Prénom : " . $firstName . "<br>";
+    echo "Email : " . $email . "<br>";
+    echo "Sujet : " . $subject . "<br>";
+    echo "Message : " . $message . "<br>";
+
+} else {
+    echo "Le formulaire n'a pas été soumis";
 }
 
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = strip_tags($data);
-    return $data;
-  }
-?>
 
-<!-- mail processing-->
-<?php
-// Form variables
-$nom = $_POST['name'];
-$prenom = $_POST['first-name'];
-$email = $_POST['email'];
-$sujet = $_POST['subject'];
-$message = $_POST['message'];
+// ------Mail processing------
 
 // Message setting
-$message = "Nom : ".$nom. "\n"." Email : ".$email. "\n"." message : ".$message;
-
+$message = nl2br("Nom : ".$name. "\n"." Email : ".$email. "\n"." message : ".$message);
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -64,7 +55,7 @@ require './PHPMailer/src/SMTP.php';
 require './PHPMailer/src/Exception.php';
 
 
-//Create an instance; passing `true` enables exceptions
+// Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
 try {
