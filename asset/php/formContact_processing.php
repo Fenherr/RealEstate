@@ -4,11 +4,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // check required fields
     if (!empty($_POST["name"]) && !empty($_POST["first-name"]) && !empty($_POST["email"]) && !empty($_POST["subject"]) && !empty($_POST["message"])) {
         // Retrieving form data
-        $name = $_POST["name"];
-        $firstName = $_POST["first-name"];
-        $email = $_POST["email"];
+        $name = strip_tags($_POST["name"]);
+        $firstName = strip_tags($_POST["first-name"]);
+        $email = strip_tags($_POST["email"]);
         $subject = $_POST["subject"];
-        $message = $_POST["message"];
+        $message = strip_tags($_POST["message"]);
 
         // add code for data processing
         echo "Nom : " . $name . "<br>";
@@ -32,7 +32,12 @@ if (!preg_match("/^[a-zA-Z-' ]*$/",$name && $firstName)) {
   $nameErr = "Only letters and white space allowed";
 }
 
-
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = strip_tags($data);
+    return $data;
+  }
 ?>
 
 <!-- mail processing-->

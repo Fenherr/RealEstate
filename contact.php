@@ -5,8 +5,8 @@
 
     //check connection secure
     try {
-        $conn = 'mysql:host=' . $db_host . ';dbname=' . $db_name . ';charset=utf8mb4';
-        $mySqlClient=new PDO ($conn,$db_user,$db_password);
+        $conn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4';
+        $mySqlClient=new PDO ($conn,DB_USER,DB_PASSWORD);
     }
     catch (Exception $e) {
         die ('Error'.$e->getMessage());
@@ -129,9 +129,10 @@ setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, t
 
                         <label for="message">
                         <textarea name="message" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>                    </label>
+                        <button type="submit">Envoyer</button>
+
                     </div> 
                     
-                    <button type="submit">Envoyer</button>
                 </form> 
                 
                                
