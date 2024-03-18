@@ -1,32 +1,5 @@
 <?php
-/*// Retrieving form data
-$name = strip_tags($_POST["name"]);
-$firstName = strip_tags($_POST["first-name"]);
-$email = strip_tags($_POST["email"]);
-$subject = $_POST["subject"];
-$message = strip_tags($_POST["message"]);
-
-/* // Check if form submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-   
-    // RegEx name & first-name
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name && $firstName)) {
-        echo "Only letters and white space allowed";
-    }
-  
-    // check required fields
-    if (!empty($_POST["name"]) && !empty($_POST["first-name"]) && !empty($_POST["email"]) && !empty($_POST["subject"]) && !empty($_POST["message"])) {
-        
-        // add code for data processing
-        echo "Nom : " . $name . "<br>";
-        echo "Prénom : " . $firstName . "<br>";
-        echo "Email : " . $email . "<br>";
-        echo "Sujet : " . $subject . "<br>";
-        echo "Message : " . $message . "<br>";
-    }else {
-        echo "Veuillez remplir les champs obligatoires";
-    }
-}*/
+// ------Check form------
 
 // Retrieving form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -66,12 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-
-
-
-// -- mail processing--
-
-
+// ------Mail processing------
 
 // Message setting
 $message = nl2br("Nom : ".$name. "\n"." Email : ".$email. "\n"." message : ".$message);
@@ -87,7 +55,7 @@ require './PHPMailer/src/SMTP.php';
 require './PHPMailer/src/Exception.php';
 
 
-//Create an instance; passing `true` enables exceptions
+// Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
 try {
