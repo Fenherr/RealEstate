@@ -11,7 +11,7 @@
     <main>
         <?php
              
-             $nomPrize=(int)($_POST["prize"]);
+             $nomPrize=((int)($_POST["prize"]));
              //$nomDistance="<p>Périmètre de recherche :  ".($_POST["distance"])."</p>";
              $nomLocal='"'.htmlspecialchars($_POST["local"]).'"';
              $nomTypeHouse='"'.($_POST["habit"]).'"';
@@ -19,7 +19,7 @@
              //echo gettype($nomPrize);
              //echo $nomDistance;
              //echo $nomTypeHouse;
-             require '../../connect_index.php';
+             require 'connect_base.php';
              // Requête préparée...
             $prepareData=$mySqlClient->prepare("SELECT descrip FROM `house` WHERE type=$nomTypeHouse AND search_zone=$nomLocal AND price<=$nomPrize ORDER BY price DESC;");
             $prepareData->execute();
