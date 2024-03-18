@@ -30,13 +30,13 @@
                         die ('Error'.$e->getMessage());
             }
              // Requête préparée...
-            $prepareData=$mySqlClient->prepare("SELECT descrip FROM `houses` WHERE type=$nomTypeHouse AND search_zone=$nomLocal AND price<=$nomPrize ORDER BY price DESC;");
+            $prepareData=$mySqlClient->prepare("SELECT descr FROM `search`, `houses` WHERE area=$nomLocal AND type=$nomTypeHouse AND rented=1 AND price<=$nomPrize ORDER BY price DESC;");
             $prepareData->execute();
             $datas=$prepareData->fetchAll();
             echo "<h2>Locations disponibles :</h2>";
             // Parcours la table...
             foreach ($datas as $data) {
-                echo "<p>".$data['descrip']."<p>";
+                echo "<p>".$data['descr']."<p>";
             }
             // Résultat de la recherche négatif...
             if ($datas==NULL) {
