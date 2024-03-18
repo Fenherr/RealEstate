@@ -1,7 +1,7 @@
 <!-- php connection to secure database-->
 <?php
     //files inclusion
-    require_once('./asset/php/config.php');
+    require_once('./asset/php/connectcontact.php');
 
     //check connection secure
     try {
