@@ -19,18 +19,8 @@
 
 <body>
 
-<?php require './asset/php/connect_index.php'; ?>
+<?php require 'c:laragon\www\connect/connect_index.php'; ?>
 
-<?php
-
- $prepareData = $db -> prepare('SELECT * FROM user');
- $prepareData -> execute();
- $datas= $prepareData -> fetchAll();
- foreach ($datas as $data) {
-    echo $data ["first_name"];
- }
-
-?>
 
 <!-- logo avec menu principal -->
 <!-- include of header php file -->
