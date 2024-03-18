@@ -30,7 +30,7 @@
                         die ('Error'.$e->getMessage());
             }
              // Requête préparée...
-            $prepareData=$mySqlClient->prepare("SELECT descr FROM `search`, `houses` WHERE area=$nomLocal AND type=$nomTypeHouse AND rented=1 AND price<=$nomPrize ORDER BY price DESC;");
+            $prepareData=$mySqlClient->prepare("SELECT descr FROM `houses`, 'search' WHERE type=$nomTypeHouse AND rented=1 AND price<=$nomPrize ORDER BY price DESC AND area=$nomLocal;");
             $prepareData->execute();
             $datas=$prepareData->fetchAll();
             echo "<h2>Locations disponibles :</h2>";
