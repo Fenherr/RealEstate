@@ -23,7 +23,7 @@
              //
             try {
             // Ligne pour se connecter à la base de données...
-                        $mySqlClient=new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8mba',DB_USER,DB_PASSWORD);
+                        $mySqlClient=new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8mb4',DB_USER,DB_PASSWORD);
                         
             }
             catch (Exeption $e) {
