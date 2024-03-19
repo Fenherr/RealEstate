@@ -64,7 +64,7 @@
                 <form action="./asset/php/resultsearchrent.php" method="post" id="formu">
                     <div>
                         <label for="localization">Lieu :</label>
-                        <input name="local" id="local" type="search" placeholder="Adresse, département, région, etc..." required="required">
+                        <input name="local" id="local" type="search" placeholder="Localité, ville, lieu-dit,..." required="required">
                     </div>
                     <div>
                         <label class="lab-pri">Prix :</label>
