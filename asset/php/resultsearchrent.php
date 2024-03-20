@@ -17,6 +17,7 @@
              $nomTypeHouse='"'.($_POST["habit"]).'"';
              //echo $nomLocal;
              //echo gettype($nomPrize);
+             //echo $nomPrize;
              //echo $nomDistance;
              //echo $nomTypeHouse;
              require 'connect_base.php';
@@ -30,13 +31,13 @@
                         die ('Error'.$e->getMessage());
             }
              // Requête préparée...
-            $prepareData=$mySqlClient->prepare("SELECT descrip FROM `houses` WHERE type=$nomTypeHouse AND search_zone=$nomLocal AND price<=$nomPrize ORDER BY price DESC;");
+            $prepareData=$mySqlClient->prepare("SELECT descr,price FROM houses INNER JOIN search ON houses.id_area=search.id WHERE area=$nomLocal AND type=$nomTypeHouse AND price<=$nomPrize ORDER BY houses.price DESC;");
             $prepareData->execute();
             $datas=$prepareData->fetchAll();
             echo "<h2>Locations disponibles :</h2>";
             // Parcours la table...
             foreach ($datas as $data) {
-                echo "<p>".$data['descrip']."<p>";
+                echo "<p>".$data['descr']."<p>";
             }
             // Résultat de la recherche négatif...
             if ($datas==NULL) {
