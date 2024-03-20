@@ -1,4 +1,17 @@
-<!-- php connection to secure database--> 
+<!-- contactVue call --> 
+<?php require_once ('./vue/template/contactVue.php');?>
+
+<!-- contactController call --> 
+<?php require_once('./controller/contactController.php');?>
+
+
+
+
+
+
+<!-------------Parts commented on following MVC relocation-----> 
+
+<!-- php connection to secure database-->
 <?php
     //files inclusion
     //require_once('./asset/php/connect_base.php');
@@ -167,7 +180,8 @@
 
 !--common footer-->
 <?php //require 'footer.php';?>
-
+<!--
 </body>
 
 </html>
+--> 

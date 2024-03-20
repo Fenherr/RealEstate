@@ -55,7 +55,7 @@
                 ?> 
                 
                 <!--form contact process--> 
-                <form method="POST" action="./asset/php/formContact_processing.php">                
+                <form method="POST" action="../../controller/formContact_processing.php">                
                     <div class="form1">
                         <label for="name">
                         <input type="text" id="name" name="name" placeholder="Nom* :">
