@@ -1,38 +1,3 @@
-<!-- php connection to secure database--> 
-<?php
-    //files inclusion
-    //require_once('./asset/php/connect_base.php');
-
-/*    //check connection secure
-    try {
-        $conn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4';
-        $mySqlClient=new PDO ($conn,DB_USER,DB_PASSWORD);
-    }
-    catch (Exception $e) {
-        die ('Error'.$e->getMessage());
-    }
-    ?>
-
-<!-- database test--> 
-    <?php
-    //request
-    $prepareData=$mySqlClient->prepare('SELECT * FROM user');
-    //execute
-    $prepareData->execute();
-    $datas=$prepareData->fetchAll();
-    //check & display
-    foreach ($datas as $data){
-        echo $data['firstname'];
-    }*/
-    ?>
-
-<!--cookie insertion-->       
-<?php 
-//setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, true);
-?>
-
-
-<!-- move to contactVue.php
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -42,17 +7,17 @@
     <script src="./asset/js/header.js"defer></script>
     <script src="./asset/js/contact.js"defer></script>
     <title>CONTACT</title>
-    !--lien pour bonhomme--
+    <!--lien pour bonhomme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    !-- appel des header/footer communs--
+    <!-- appel des header/footer communs-->
     <link rel="stylesheet" href="./asset/css/header_footer.css">
-    !--appel de la page perso--
+    <!--appel de la page perso-->
     <link rel="stylesheet" href="./asset/css/contact.css">
 </head>
 
 <body>
-!--common header--
-<?php //require 'header.php';?>
+<!--common header-->
+<?php require 'header.php';?>
 
 <main>
     <div class="background-picture">
@@ -75,11 +40,11 @@
             </article>
         </section>
 
-        !--formulaire--
+        <!--formulaire-->
         <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
-                !--check for cookie presence-->
+                <!--check for cookie presence-->
                 <?php 
                     /*if (isset ($_COOKIE ['cookieForm'])){
                         $requiredFields= $_COOKIE['cookieForm'];
@@ -89,7 +54,7 @@
                     }*/
                 ?> 
                 
-                <!--form contact process--
+                <!--form contact process--> 
                 <form method="POST" action="./asset/php/formContact_processing.php">                
                     <div class="form1">
                         <label for="name">
@@ -110,7 +75,7 @@
                             <label for="subject-select">Sujet* :</label>
                             <select id="subject-select" name="subject">
                                 <optgroup label="Particuliers">
-                                    !--value empty -> subject required --
+                                    <!--value empty -> subject required --> 
                                     <option value=""></option>
                                     <option value="Mon espace personnel">Mon espace personnel</option>
                                     <option value="Recherche d'un bien">Recherche d'un bien</option>
@@ -136,7 +101,7 @@
                 </form> 
                 
                                
-                <?php //$requiredFields= $_COOKIE['cookieForm']; ?>   
+                <?php $requiredFields= $_COOKIE['cookieForm']; ?>   
 
             </article>
         </section>
@@ -165,8 +130,8 @@
 
 </main>
 
-!--common footer-->
-<?php //require 'footer.php';?>
+<!--common footer-->
+<?php require 'footer.php';?>
 
 </body>
 
