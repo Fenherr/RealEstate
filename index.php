@@ -19,7 +19,7 @@
 
 <body>
 
-<?php require 'c:laragon\www\connect/connect_index.php'; ?>
+<?php require './asset/php/connect_index.php'; ?>
 
 
 <!-- logo avec menu principal -->
