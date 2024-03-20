@@ -19,18 +19,8 @@
 
 <body>
 
-<?php require './asset/php/connect_index.php'; ?>
+<?php require 'c:laragon\www\connect/connect_index.php'; ?>
 
-<?php
-
- $prepareData = $db -> prepare('SELECT * FROM user');
- $prepareData -> execute();
- $datas= $prepareData -> fetchAll();
- foreach ($datas as $data) {
-    echo $data ["first_name"];
- }
-
-?>
 
 <!-- logo avec menu principal -->
 <!-- include of header php file -->
@@ -88,9 +78,9 @@
                 </div>
                 <div class="size_flex">
                     <div class="news_all">
-                        <a class="activ_news_all" href="#"><span>Toutes nos actualités</span></a>
+                        <a class="activ_news_all" href="./asset/articles_index/list_articles_index.php"><span>Toutes nos actualités</span></a>
                         <div>
-                            <a class="activ_news_all_btn" href="#"><span>&rsaquo;</span></a>
+                            <a class="activ_news_all_btn" href="./asset/articles_index/list_articles_index.php"><span>&rsaquo;</span></a>
                         </div>
                     </div>
                 </div>

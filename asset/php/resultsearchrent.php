@@ -11,23 +11,33 @@
     <main>
         <?php
              
-             $nomPrize=(int)($_POST["prize"]);
+             $nomPrize=((int)($_POST["prize"]));
              //$nomDistance="<p>Périmètre de recherche :  ".($_POST["distance"])."</p>";
              $nomLocal='"'.htmlspecialchars($_POST["local"]).'"';
              $nomTypeHouse='"'.($_POST["habit"]).'"';
              //echo $nomLocal;
              //echo gettype($nomPrize);
+             //echo $nomPrize;
              //echo $nomDistance;
              //echo $nomTypeHouse;
-             require '../../connect_index.php';
+             require 'connect_base.php';
+             //
+            try {
+            // Ligne pour se connecter à la base de données...
+                        $mySqlClient=new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8mb4',DB_USER,DB_PASSWORD);
+                        
+            }
+            catch (Exeption $e) {
+                        die ('Error'.$e->getMessage());
+            }
              // Requête préparée...
-            $prepareData=$mySqlClient->prepare("SELECT descrip FROM `house` WHERE type=$nomTypeHouse AND search_zone=$nomLocal AND price<=$nomPrize ORDER BY price DESC;");
+            $prepareData=$mySqlClient->prepare("SELECT descr,price FROM houses INNER JOIN search ON houses.id_area=search.id WHERE area=$nomLocal AND type=$nomTypeHouse AND price<=$nomPrize ORDER BY houses.price DESC;");
             $prepareData->execute();
             $datas=$prepareData->fetchAll();
             echo "<h2>Locations disponibles :</h2>";
             // Parcours la table...
             foreach ($datas as $data) {
-                echo "<p>".$data['descrip']."<p>";
+                echo "<p>".$data['descr']."<p>";
             }
             // Résultat de la recherche négatif...
             if ($datas==NULL) {
