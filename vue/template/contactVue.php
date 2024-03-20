@@ -109,13 +109,13 @@
         <section class="find-us">     
             <article>
                 <p class="social-networks"><strong>Retrouvez-nous sur nos réseaux sociaux</strong></p>
-                <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
-                <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
-                <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
-                <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.facebook.com/"><img src="../vue/images/logosContact/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/"><img src="../vue/images/logosContact/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.youtube.com/"><img src="../vue/images/logosContact/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/"><img src="../vue/images/logosContact/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
             
                 <p class="social-networks"><strong>Et sur l'application</strong></p>
-                <a href="googlemybusiness"><img src="./asset/images/logos/Google-My-Business_logo.svg" alt="logo"width="50" height="50"></a>
+                <a href="googlemybusiness"><img src="../vue/images/logosContact/Google-My-Business_logo.svg" alt="logo"width="50" height="50"></a>
             </article>
 
             <article class="maps">
