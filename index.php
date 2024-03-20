@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/724458d0e8.js" crossorigin="anonymous"></script>
+    <script src="./asset/js/header.js" defer></script>
     <script src="./asset/js/index.js" defer></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
@@ -11,15 +12,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
+    <link rel="stylesheet" href="./asset/css/header_footer.css">
     <link rel="stylesheet" href="./asset/css/index.css">
 
 </head>
 
 <body>
 
+<?php require 'c:laragon\www\connect/connect_index.php'; ?>
+
+
 <!-- logo avec menu principal -->
 <!-- include of header php file -->
-<?php require 'header_index.php'; ?>
+<?php @include 'header.php'; ?>
 
 <main>
 <!-- bannière avec fonction recherche -->
@@ -27,26 +32,26 @@
         <div class="search">
             <form id="search_form" class="menu_search">
                 <div class="size_form">
-                    <select id="take_search" class="menu_search_deco size_search" required oninput="setCustomValidity('')" >
+                    <select name="search" id="take_search" class="menu_search_deco size_search" required >
                         <option class="value_bold" value="">Je cherche ...</option>
                         <option value="vente">Vente</option>
                         <option value="location">Location</option>
                     </select>
                 </div>
                 <div class="size_form">   
-                        <input id="take_local" class="menu_search_deco size_search" type="text" placeholder="Localisation..." required oninput="setCustomValidity('')" autofocus />
+                        <input name="local" id="take_local" class="menu_search_deco size_search" type="text" placeholder=" Localisation..." required />
                 </div>
                 <div class="size_form">
-                    <select id="take_type" class="menu_search_deco size_search" required oninput="setCustomValidity('')">
+                    <select name="type" id="take_type" class="menu_search_deco size_search" required >
                         <option class="value_bold" value="">Type de biens ...</option>
-                        <option value="appartement">Appartement</option>
+                        <option value="appartement" >Appartement</option>
                         <option value="maison">Maison</option>
                         <option value="terrain">Terrain</option>
                         <option value="autre">Autre</option>
                     </select>
                 </div>
                 <div class="size_form">
-                    <input id="take_price" class="menu_search_deco size_search" type="text" placeholder="Prix maximum..." required oninput="setCustomValidity('')" autofocus /> 
+                    <input name="price" id="take_price" class="menu_search_deco size_search" type="text" placeholder=" Prix..." required /> 
                 </div>
                 <div class="size_form">
                     <div class="search_btn">
@@ -73,9 +78,9 @@
                 </div>
                 <div class="size_flex">
                     <div class="news_all">
-                        <a class="activ_news_all" href="#"><span>Toutes nos actualités</span></a>
+                        <a class="activ_news_all" href="./asset/articles_index/list_articles_index.php"><span>Toutes nos actualités</span></a>
                         <div>
-                            <a class="activ_news_all_btn" href="#"><span>&rsaquo;</span></a>
+                            <a class="activ_news_all_btn" href="./asset/articles_index/list_articles_index.php"><span>&rsaquo;</span></a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +157,7 @@
 
 <!-- section avis clients -->
     <section class="customers">
-        <h2>Avis clients</h2>
+        <h1>Avis clients</h1>
         <p>Ce que nos clients pensent de notre travail</p>
         <div class="button"><a href="customer-feedback.html">Lire les témoignages</a></div>
     </section>
@@ -181,7 +186,7 @@
 
 <!-- footer -->
 <!-- include of footer php file -->
-<?php require 'footer_index.php'; ?>
+<?php @include 'footer.php'; ?>
 
 <div class="copyright">
     <p>copyright <i class="fa-regular fa-copyright"></i> acgd immo</p>

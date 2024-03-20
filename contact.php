@@ -1,17 +1,57 @@
+<!-- php connection to secure database-->
+<?php
+    //files inclusion
+    require_once('./asset/php/connect_base.php');
+
+    //check connection secure
+    try {
+        $conn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4';
+        $mySqlClient=new PDO ($conn,DB_USER,DB_PASSWORD);
+    }
+    catch (Exception $e) {
+        die ('Error'.$e->getMessage());
+    }
+    ?>
+
+<!-- database test--> 
+    <?php
+    /*//request
+    $prepareData=$mySqlClient->prepare('SELECT * FROM user');
+    //execute
+    $prepareData->execute();
+    $datas=$prepareData->fetchAll();
+    //check & display
+    foreach ($datas as $data){
+        echo $data['firstname'];
+    }*/
+    ?>
+
+<!--cookie insertion-->       
+<?php 
+setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, true);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="./asset/js/header.js"defer></script>
+    <script src="./asset/js/contact.js"defer></script>
     <title>CONTACT</title>
     <!--lien pour bonhomme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- appel des header/footer communs-->
     <link rel="stylesheet" href="./asset/css/header_footer.css">
+    <!--appel de la page perso-->
     <link rel="stylesheet" href="./asset/css/contact.css">
 </head>
 
 <body>
-<!--header commun-->
+<!--common header-->
 <?php require 'header.php';?>
 
 <main>
@@ -36,54 +76,68 @@
         </section>
 
         <!--formulaire-->
-            <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
+        <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
-                <form action="form">                
-                    <label for="name">
-                        <input type="text" id="name" placeholder="Nom* :">
-                    </label>
+                <!--check for cookie presence-->
+                <?php 
+                    /*if (isset ($_COOKIE ['cookieForm'])){
+                        $requiredFields= $_COOKIE['cookieForm'];
+                        echo 'HELLO, I AM '. $requiredFields;
+                    }else {
+                        echo "ERROR";
+                    }*/
+                ?> 
+                
+                <!--form contact process--> 
+                <form method="POST" action="./asset/php/formContact_processing.php">                
+                    <div class="form1">
+                        <label for="name">
+                        <input type="text" id="name" name="name" placeholder="Nom* :">
+                        </label>
 
-                    <label for="first-name">
-                        <input type="text" id="first-name" placeholder="Prénom* :">
-                    </label>
+                        <label for="first-name">
+                        <input type="text" id="first-name" name="first-name" placeholder="Prénom* :">
+                        </label>
 
-                    <label for="email">
-                        <input type="email" name="" id="email" placeholder="Email* :">
-                    </label>  
-                </form>
-            </article>
+                        <label for="email">
+                        <input type="email" id="email" name="email" placeholder="Email* :">
+                        </label>  
+                    </div>     
+                    
+                    <div class="form2" >  
+                        <div class="subject">
+                            <label for="subject-select">Sujet* :</label>
+                            <select id="subject-select" name="subject">
+                                <optgroup label="Particuliers">
+                                    <!--value empty -> subject required --> 
+                                    <option value=""></option>
+                                    <option value="Mon espace personnel">Mon espace personnel</option>
+                                    <option value="Recherche d'un bien">Recherche d'un bien</option>
+                                    <option value="Vendre son bien">Vendre son bien</option>
+                                    <option value="L'alerte immo">L'alerte immo</option>
+                                    <option value="Données personnelles : exercer mes droits">Données personnelles : exercer mes droits</option>
+                                    <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
+                                </optgroup>
+                                <optgroup label="Professionnels">
+                                    <option value="Partenariat">Partenariat</option>
+                                    <option value="Régie publicitaire">Régie publicitaire</option>
+                                    <option value="Offres commerciales">Offres commerciales</option>
+                                </optgroup>
+                            </select>                    
+                        </div>
 
-            <article class="formatting">   
-                <form action="form"> 
-                <div class="subject">
-                    <label for="subject-select">Sujet* :</label>
-                        <select id="subject-select">
-                            <optgroup label="Particuliers">
-                                <!--value empty -> subject required --> 
-                                <option value=""></option>
-                                <option value="Mon espace personnel">Mon espace personnel</option>
-                                <option value="Recherche d'un bien">Recherche d'un bien</option>
-                                <option value="Vendre son bien">Vendre son bien</option>
-                                <option value="L'alerte immo">L'alerte immo</option>
-                                <option value="Données personnelles : exercer mes droits">Données personnelles : exercer mes droits</option>
-                                <option value="Problèmes techniques sur le site">Problèmes techniques sur le site</option>
-                            </optgroup>
-                            <optgroup label="Professionnels">
-                                <option value="Partenariat">Partenariat</option>
-                                <option value="Régie publicitaire">Régie publicitaire</option>
-                                <option value="Offres commerciales">Offres commerciales</option>
-                            </optgroup>
-                        </select>                    
-                    </div>
+                        <label for="message">
+                        <textarea name="message" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>                    </label>
+                        <button type="submit">Envoyer</button>
 
-                    <label for="message">
-                        <textarea name="textarea" rows="10" cols="63" id="message" placeholder="Votre message* :"></textarea>
-                    </label>
-                        
-                    <button type="submit">Envoyer</button>  
-                   
-                </form>            
+                    </div> 
+                    
+                </form> 
+                
+                               
+                <?php $requiredFields= $_COOKIE['cookieForm']; ?>   
+
             </article>
         </section>
 
@@ -105,17 +159,15 @@
         </section>
 
         <p class="fields"> (*) champs obligatoires</p>
-        <a href="" class="rgpd">Pour toute demande relative au traitement de vos données personnelles et / ou exercer vos droits, cliquez ici</a>
+        <a href="" class="rgpd">Pour toute demande relative au traitement de vos données personnelles et / ou exercer vos droits, cliquez ici https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees</a>
 
     </div>
+
 </main>
 
-<!--footer commun-->
+<!--common footer-->
 <?php require 'footer.php';?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-<script src="./asset/js/header.js"></script>
-<script src="./asset/js/contact.js"></script>
 </body>
 
 </html>

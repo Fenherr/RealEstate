@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./asset/css/header_footer.css">
     <script src="./asset/js/header.js" defer></script>
     <link rel="stylesheet" href="./asset/css/aboutus.css">
+    <link rel ="icon" type="image/png" href= "./asset/images/logo_white_150.png">
 </head>
 
 <body>
