@@ -10,7 +10,7 @@
 <body>
     <main>
         <?php
-             
+             /*
              $nomPrize=((int)($_POST["prize"]));
              //$nomDistance="<p>Périmètre de recherche :  ".($_POST["distance"])."</p>";
              $nomLocal='"'.htmlspecialchars($_POST["local"]).'"';
@@ -19,9 +19,10 @@
              //echo gettype($nomPrize);
              //echo $nomPrize;
              //echo $nomDistance;
-             //echo $nomTypeHouse;
+             //echo $nomTypeHouse;*/
              require 'connect_base.php';
              //
+             require '../../controller/formSearchEntries.php';
             try {
             // Ligne pour se connecter à la base de données...
                         $mySqlClient=new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8mb4',DB_USER,DB_PASSWORD);
