@@ -22,6 +22,27 @@
 require 'header.php';
 ?>
 
+<?php 
+
+try{
+    $mySqlClient = new PDO('mysql:host=localhost; dbname=acgd_immo; charset=utf8mb4', 'root', '' );
+} catch (Exeption $e) {
+    die ('Error'. $e -> getMessage());
+}
+
+?>
+
+<?php
+    $prepareData = $mySqlClient -> prepare('SELECT * FROM user');
+    $prepareData -> execute();
+    $datas = $prepareData -> fetchAll();
+
+    foreach ($datas as $data) {
+        echo $data['firstname'];
+}
+
+?>
+
 
     <main>
         <section class="qsn">

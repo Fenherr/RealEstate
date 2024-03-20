@@ -16,9 +16,31 @@
 
 <body>
 
+
+<?php
+   try {
+    $mySqlClient = new PDO ('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4', 'root','root');
+    echo "Je suis co";
+   }
+    catch (Exception $e){
+        die('Error'.$e -> getMessage());
+    }
+    ?>
+
     <?php
         require 'header.php';
     ?>
+
+    <?php
+    
+        $prepareData = $mySqlClient -> prepare ('SELECT * FROM user');
+        $prepareData -> execute();
+        $datas = $prepareData -> fetchAll();
+        foreach ($datas as $data) {
+            echo $data['firstname'];
+        }
+    ?>
+   
 
     <h1>
         Acheter un bien immobilier
