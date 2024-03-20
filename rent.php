@@ -1,19 +1,4 @@
 <?php
-
-    /*try {
-        // Ligne pour se connecter à la base de données...
-        $mySqlClient=new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root','');
-        //echo "Youpi !!!";
-    }
-    catch (Exeption $e) {
-        die ('Error'.$e->getMessage());
-    }
-    $prepareData=$mySqlClient->prepare('SELECT*FROM user');
-    $prepareData->execute();
-    $datas=$prepareData->fetchAll();
-    foreach ($datas as $data) {
-    echo $data['firstname'].' '.$data['lastname'];
-    }*/
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -23,7 +8,7 @@
     <title>Location</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/header_footer.css">
-    <link rel="stylesheet" href="./asset/css/rent.css">
+    <link rel="stylesheet" href="./vue/css/rent.css">
     <script src="./asset/js/header.js" defer></script>
     <script src="./asset/js/rent.js" defer></script>
     
