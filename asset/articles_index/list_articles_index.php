@@ -18,13 +18,13 @@
 </head>
 
 <?php 
-require 'c:laragon\www\connect/connect_index.php';
+require '../php/connect_index.php';
 
 $sql = "SELECT * FROM `articles` ORDER BY `created_at` DESC";
 $requete =$db->query($sql);
 $articles = $requete->fetchAll();
 
-include 'C:\laragon\www\RealEstate/header.php';
+include '../../header.php';
 ?>
 
 <section>
@@ -37,4 +37,4 @@ include 'C:\laragon\www\RealEstate/header.php';
 <?php endforeach; ?> 
 </section>
 
-<?php include 'C:\laragon\www\RealEstate/footer.php'; ?>
+<?php include '../../footer.php'; ?>

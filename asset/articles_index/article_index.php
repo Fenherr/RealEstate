@@ -17,8 +17,8 @@
 
 </head>
 
-<?php 
-require 'c:laragon\www\connect/connect_index.php';
+<?php
+require '../php/connect_index.php';
 
 include 'C:\laragon\www\RealEstate/header.php';
 
