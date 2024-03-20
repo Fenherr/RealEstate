@@ -12,7 +12,17 @@
     </head>
     <body>
         <?php
-            require "header.php";
+            require_once("../secure-connect.php");
+            try {
+                $dsn = "mysql:host={$db_host}; dbname={$db_name}; charset=utf8mb4";
+                $mySQLClient = new PDO($dsn, $username, $password);
+            }
+            catch (Exception $e) {
+                die('error' . $e->getMessage());
+            }
+        ?>
+        <?php
+            require_once (__DIR__ . "/header.php");
         ?>
         <main>
             <div class="top-content flex flex-in-center-column full-width">
@@ -54,7 +64,7 @@
             </div>
         </main>
         <?php
-            require "footer.php";
+            require_once (__DIR__ . "/footer.php");
         ?>
     </body>
 </html>

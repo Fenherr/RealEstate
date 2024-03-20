@@ -6,18 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos offres d'emploi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./asset/css/offers.css">
+    <script src="./asset/js/offers.js" defer></script>
     <link rel="stylesheet" href="./asset/css/header_footer.css">
     <script src="./asset/js/header.js" defer></script>
-    <script src="./asset/js/offers.js" defer></script>
+    <link rel="stylesheet" href="./asset/css/offers.css">
 </head>
 
 <body>
    
+<?php 
+try {
+    $mySqlClient = new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4', 'root', '');
+} catch(Exception $e) {
+    die('Error: ' . $e->getMessage());
+}
+?>
+
 <?php
-// Inclure le fichier header.php
+// Inclure le fichier header.php (_DIR_.'header.php')
 require 'header.php';
 ?>
+
+<?php
+$prepareData = $mySqlClient -> prepare('SELECT * FROM user');
+$prepareData -> execute();
+$datas = $prepareData -> fetchAll();
+foreach ($datas as $data) {
+echo $data['phone_number'];
+}
+?>
+
+
+
+
 
     <div class="mobile">
         <div class="mobile-top-offer">
@@ -29,8 +50,8 @@ require 'header.php';
             <div class="background-color"></div>
         </div>
         <div class="mobile-search-filters">
-            <div class="logo-form"> <i class="fa-solid fa-magnifying-glass"></i> <input id="form-mobile" type="text"
-                    placeholder="Tapez votre recherche">
+            <div class="logo-form"> <i class="fa-solid fa-magnifying-glass"></i><input id="form-mobile" type="text" 
+                    placeholder="Tapez votre recherche">                                    
                 <div class="form-contract"> x </div>
             </div>
         </div>

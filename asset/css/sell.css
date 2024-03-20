@@ -21,7 +21,8 @@
 
 @font-face {
     font-family: "opensans";
-    src: url("../../fonts/Open_Sans/static/OpenSans-Regular.ttf") format(truetype);
+    src: 
+        url("../../fonts/Open_Sans/static/OpenSans-Regular.ttf") format(truetype);
 }
 
 

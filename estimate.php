@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,13 +16,24 @@
         require 'header.php';
     ?>
 
+    <?php
+        try {
+            $mySqlClient = new PDO('mysql:host=localhost;dbname=acgd_immo;charset=utf8mb4','root', '');
+        } catch (Exception $e) {
+            die ('Error'.$e -> getMessage() );
+        }
+
+    ?>
+
+
     <!--Partie case estimation-->
 
     <h3>Vous souhaitez estimer votre bien ?</h3>
 
 <form>
 
-    <fieldset class="estimer">  
+    <fieldset class="estimer">
+
         <h5>Il s'agit d'un :</h5>
 
         <div class="selection">
@@ -52,13 +64,16 @@
         <button class="valider">
         <a href="#">Valider</a>
         </button>
+
     </fieldset>
 </form>
 
 <!--Partie information-->
 
 <div class="information">
+
     <!--1ère infos-->
+    
     <fieldset class="estimation-immo">
         <article class="info">
             <h3><a href="#">En quoi consiste l'estimation immobilière ?</a></h3>
@@ -84,6 +99,7 @@
             </button>
         </article>
     </fieldset>
+
 </div>
 
 <?php 

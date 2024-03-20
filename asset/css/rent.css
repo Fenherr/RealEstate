@@ -97,6 +97,10 @@ main {
     top: 9rem;
 }
 
+h1, h2, h3, h4 {
+    font-family: baloo2;
+}
+
 h1 {
     background-color:#b1f3bc60 ;
     border-radius: 0.675rem;
@@ -114,6 +118,7 @@ main {
 main p {
     text-align: justify;
     padding: 0rem 1.7rem 1.1rem 1.7rem;
+    font-family: opensans;
 }
 
 main h2 {
@@ -188,7 +193,7 @@ form {
 }
 
 .alert {
-    border: red dotted 2px;
+    border: red dotted 3px;
 }
 
 
