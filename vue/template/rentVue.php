@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/rent.css">
-    <script src="../../asset/js/header.js" defer></script>
+    <script src="../javascript/header.js" defer></script>
     <script src="../javascript/rent.js" defer></script>
     
 </head>
@@ -28,7 +28,7 @@
             <!-- zone Recherche + zone gauche -->
             <div class="zone1">
                 <!-- bloc recherche -->
-                <form action="resultsearchrent.php" method="post" id="formu">
+                <form action="../../controller/formSearchEntriesRent.php" method="post" id="formu">
                     <div>
                         <label for="localization">Lieu :</label>
                         <input name="local" id="local" type="search" placeholder="Localité, ville, lieu-dit,..." required="required">
