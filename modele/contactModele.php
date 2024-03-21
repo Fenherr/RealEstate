@@ -1,7 +1,7 @@
 <!-- php connection to secure database-->
 <?php
     //files inclusion
-    require_once('./asset/php/connect_base.php');
+    require_once('../modele/connect_base.php');
 
     //check connection secure
     try {
@@ -30,3 +30,6 @@
 <?php 
 setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, true);
 ?>
+
+
+ 

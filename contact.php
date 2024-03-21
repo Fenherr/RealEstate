@@ -1,4 +1,6 @@
-<!-- php connection to secure database--> 
+<!-------------Parts commented on following MVC relocation-----> 
+
+<!-- php connection to secure database-->
 <?php
     //files inclusion
     //require_once('./asset/php/connect_base.php');
@@ -167,7 +169,8 @@
 
 !--common footer-->
 <?php //require 'footer.php';?>
-
+<!--
 </body>
 
 </html>
+--> 

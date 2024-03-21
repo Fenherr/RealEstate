@@ -21,7 +21,7 @@
                 }
                 //print_r($_POST);
                 ?>
-        <p style="text-align:center"><a href="../../rent.php"><button class="butt">Retour</button></a></p>
+        <p style="text-align:center"><a href="rentVue.php"><button class="butt">Retour</button></a></p>
     </main>
 </body>
 </html>

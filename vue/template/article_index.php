@@ -20,32 +20,9 @@
 <?php
 require '../php/connect_index.php';
 
-include 'C:\laragon\www\RealEstate/header.php';
+include '../../header.php';
 
-if(!isset($_GET["id"]) || empty($_GET["id"])){
-    header("location: list_articles_index.php");
-    exit;
-}
-
-$id = $_GET["id"];
-
-$sql = "SELECT * FROM `articles` WHERE `id` = :id";
-
-$requete = $db->prepare($sql);
-
-$requete->bindValue(":id", $id, PDO::PARAM_INT);
-
-$requete->execute();
-
-$article = $requete->fetch();
-
-if(!$article) {
-    http_response_code(404);
-    echo "Article inexistant";
-    exit;
-}
-
-$titre = strip_tags($article["title"]);
+require '../../modele/article_index_model.php';
 
 ?>
 
@@ -55,4 +32,4 @@ $titre = strip_tags($article["title"]);
     <div><?= strip_tags($article["content"])?></div>
 </article>
 
-<?php include 'C:\laragon\www\RealEstate/footer.php'; ?>
+<?php include '../../footer.php'; ?>
