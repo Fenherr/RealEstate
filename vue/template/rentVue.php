@@ -17,7 +17,7 @@
     <main>
         <div>
             <div>
-                <picture class="backpict"><img src="../../vue/images/rent/picture-title.jpg" alt="Maquette de maison sur l'herbe"></picture>
+                <picture class="backpict"><img src="../images/rent/picture-title.jpg" alt="Maquette de maison sur l'herbe"></picture>
             </div>
             <div class="title-search">
                 <h1>Chercher et trouver une location</h1>
@@ -52,7 +52,7 @@
                 <div class="zone3">
                     <!--bloque image gauche-->
                     <div class="zone4">
-                        <img src="../../vue/images/rent/saint-junien-rue.jpg" alt="Une rue dans Saint Junien">
+                        <img src="../images/rent/saint-junien-rue.jpg" alt="Une rue dans Saint Junien">
                     </div>
                     <!--bloque image + texte au-dessus -->
                         <div  class="zone5">
@@ -74,14 +74,14 @@
                                     Odio libero suscipit tempore eum consequatur rem in inventore. Aspernatur officia autem temporibus nostrum architecto fuga. Dolor expedita possimus recusandae culpa veniam. Numquam sit quisquam deserunt et doloremque.
                                 </p>
                             </div>
-                            <div class="zone7"><img class="pict" src="../../vue/asset/images/rent/maison.jpg" alt="Une maison"></div>
+                            <div class="zone7"><img class="pict" src="../images/rent/maison.jpg" alt="Une maison"></div>
                         </div>
                 </div>
             </div>
             <!-- zone droite + image -->
             <div  class="zone2">
                 <div class="zone8">
-                    <img class="pict" src="../../vue/images/rent/agent-immobilier-visite.jpg" alt="Agent immobilier faisant visiter un appartement">
+                    <img class="pict" src="../images/rent/agent-immobilier-visite.jpg" alt="Agent immobilier faisant visiter un appartement">
                 </div>
                 <div class="zone9">
                     <h2>Liens utiles</h2>

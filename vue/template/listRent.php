@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location</title>
-    <link rel="stylesheet" href="../../vue/css/header_footer.css">
-    <link rel="stylesheet" href="../../vue/css/rent.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/rent.css">
 </head>
 <body>
     <main>
