@@ -10,9 +10,9 @@
     <!--lien pour bonhomme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- appel des header/footer communs-->
-    <link rel="stylesheet" href="../vue/css/header_footer.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
     <!--appel de la page perso-->
-    <link rel="stylesheet" href="../vue/css/contact.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                 ?> 
                 
                 <!--form contact process--> 
-                <form method="POST" action="../controller/formContact_processing.php">                
+                <form method="POST" action="../../controller/formContact_processing.php">                
                     <div class="form1">
                         <label for="name">
                         <input type="text" id="name" name="name" placeholder="Nom* :">
@@ -109,13 +109,13 @@
         <section class="find-us">     
             <article>
                 <p class="social-networks"><strong>Retrouvez-nous sur nos réseaux sociaux</strong></p>
-                <a href="https://www.facebook.com/"><img src="../vue/images/logosContact/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
-                <a href="https://www.instagram.com/"><img src="../vue/images/logosContact/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
-                <a href="https://www.youtube.com/"><img src="../vue/images/logosContact/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
-                <a href="https://www.linkedin.com/"><img src="../vue/images/logosContact/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.facebook.com/"><img src="../images/logosContact/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/"><img src="../images/logosContact/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.youtube.com/"><img src="../images/logosContact/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/"><img src="../images/logosContact/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
             
                 <p class="social-networks"><strong>Et sur l'application</strong></p>
-                <a href="googlemybusiness"><img src="../vue/images/logosContact/Google-My-Business_logo.svg" alt="logo"width="50" height="50"></a>
+                <a href="googlemybusiness"><img src="../images/logosContact/Google-My-Business_logo.svg" alt="logo"width="50" height="50"></a>
             </article>
 
             <article class="maps">

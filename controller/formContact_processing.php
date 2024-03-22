@@ -1,4 +1,5 @@
 <?php
+require_once('../modele/contactModele.php');
 
 // ------Check form------
 
