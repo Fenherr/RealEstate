@@ -30,42 +30,139 @@
 
     <h3>Vous souhaitez estimer votre bien ?</h3>
 
-<form>
+<form id="estim-1">
 
     <fieldset class="estimer">
 
-        <h5>Il s'agit d'un :</h5>
-
-        <div class="selection">
-            <input type="radio" id="Appart" name="group">
-            <label for="Appartement">Appartement</label>
-        </div>
-        <div class="selection">
-            <input type="radio" id="Home" name="group">
-            <label for="Home">Maison</label>
-        </div>
-
-        <h5>C'est pour une :</h5>
-
-        <div class="selection">
-            <input type="radio" id="Location" name="interest" value="Location">
-            <label for="Location">Location</label>
-        </div>
-        <div class="selection">
-            <input type="radio" id="Vente" name="interest" value="Vente">
-            <label for="Vente">Vente</label>
-        </div>
+        <h4>Votre bien :</h4>
 
         <h5>Adresse :</h5>
 
         <div class="adresse">
             <input type="text" placeholder="   Ex: 121 Rue des Fleurs 87000 Limoges">
         </div>
-        <button class="valider">
-        <a href="#">Valider</a>
-        </button>
 
+        <div class="estim-part">
+            <div class="estim-part-1">
+                <h5>Il s'agit d'un :</h5>
+
+                <div class="selection">
+                    <input type="radio" id="Appart" name="group">
+                    <label for="Appartement">Appartement</label>
+                </div>
+                <div class="selection">
+                    <input type="radio" id="Home" name="group">
+                    <label for="Home">Maison</label>
+                </div>
+                <div class="selection">
+                    <input type="radio" id="other" name="group">
+                    <label for="other">Immeuble, Terrain, Local commercial, Parking...</label>
+                </div>
+            </div>
+
+            <div class="estim-part-2">
+                <h5>C'est pour une :</h5>
+
+                <div class="selection">
+                    <input type="radio" id="Location" name="interest" value="Location">
+                    <label for="Location">Location</label>
+                </div>
+                <div class="selection">
+                    <input type="radio" id="Vente" name="interest" value="Vente">
+                    <label for="Vente">Vente</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="estim-home">
+        <h5>Surface en m²:</h5>
+
+        <div class="adresse">
+            <input type="number" min=0 max=200 placeholder="   m²">
+        </div>
+
+        <h5>Surface de terrain:</h5>
+
+        <div class="adresse">
+            <input type="number" min=0 placeholder="   m²">
+        </div>
+
+        <h5>Nombre de pièces:</h5>
+
+        <div class="adresse">
+            <input type="number" min=0 max=200 placeholder="  Hors cuisine, salle de bain et WC">
+        </div>
+
+        <h5>Étage de l'appartement:</h5>
+
+        <div class="adresse">
+            <input type="number" min=0 max=40 placeholder="   ">
+        </div>
+
+        <h5>Nombre d'étages:</h5>
+
+        <div class="adresse">
+            <input type="number" min=0 max=40 placeholder="   dans l'immeuble">
+        </div>
+        
+        <div class="swp">
+            <button id="togg1" class="precedent">
+            <a href="#">Précédent</a>
+            </button>
+            <button id="togg2" class="suivant">
+            <a href="#">Suivant</a>
+            </button>
+        </div>
     </fieldset>
+</form>
+
+<form class="estimer-2" id="estim2">
+
+        <h4>Vos coordonnées :</h4>
+
+
+        <div class="selection">
+            <input type="radio" id="genre" name="group">
+            <label for="genre">Monsieur</label>
+        </div>
+
+        <div class="selection">
+            <input type="radio" id="genre" name="group">
+            <label for="genre">Madame</label>
+        </div>
+
+        <h5>Nom:</h5>
+
+        <div class="adresse">
+            <input type="text" placeholder=" VICTOR">
+        </div>
+
+        <h5>Prénom:</h5>
+
+        <div class="adresse">
+            <input type="text" placeholder=" Benjamin">
+        </div>
+
+        <h5>Email:</h5>
+
+        <div class="adresse">
+            <input type="mail" placeholder=" Ex: benjamin@example.com">
+        </div>
+
+        <h5>Téléphone:</h5>
+
+        <div class="adresse">
+            <input type="tel" placeholder=" 06 08 16 XX XX">
+        </div>
+
+        <div class="swp-2">
+            <button class="precedent">
+            <a href="#">Précédent</a>
+            </button>
+            <button class="valider">
+            <a href="#">Valider</a>
+            </button>
+        </div>
 </form>
 
 <!--Partie information-->
@@ -107,5 +204,6 @@
 ?>
 
 <script src="asset/js/header.js"></script>
+<script src="asset/js/estimate.js"></script>
 </body>
 </html>
