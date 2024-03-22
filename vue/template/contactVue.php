@@ -1,60 +1,23 @@
-<!-------------Parts commented on following MVC relocation-----> 
-
-<!-- php connection to secure database-->
-<?php
-    //files inclusion
-    //require_once('./asset/php/connect_base.php');
-
-/*    //check connection secure
-    try {
-        $conn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4';
-        $mySqlClient=new PDO ($conn,DB_USER,DB_PASSWORD);
-    }
-    catch (Exception $e) {
-        die ('Error'.$e->getMessage());
-    }
-    ?>
-
-<!-- database test--> 
-    <?php
-    //request
-    $prepareData=$mySqlClient->prepare('SELECT * FROM user');
-    //execute
-    $prepareData->execute();
-    $datas=$prepareData->fetchAll();
-    //check & display
-    foreach ($datas as $data){
-        echo $data['firstname'];
-    }*/
-    ?>
-
-<!--cookie insertion-->       
-<?php 
-//setcookie('cookieForm', 'requiredFields', time()+182.5*24*3600, '/', '', true, true);
-?>
-
-
-<!-- move to contactVue.php
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <script src="./asset/js/header.js"defer></script>
-    <script src="./asset/js/contact.js"defer></script>
+    <script src="../vue/javascript/header.js"defer></script>
+    <script src="../vue/javascript/contact.js"defer></script>
     <title>CONTACT</title>
-    !--lien pour bonhomme--
+    <!--lien pour bonhomme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    !-- appel des header/footer communs--
-    <link rel="stylesheet" href="./asset/css/header_footer.css">
-    !--appel de la page perso--
-    <link rel="stylesheet" href="./asset/css/contact.css">
+    <!-- appel des header/footer communs-->
+    <link rel="stylesheet" href="../vue/css/header_footer.css">
+    <!--appel de la page perso-->
+    <link rel="stylesheet" href="../vue/css/contact.css">
 </head>
 
 <body>
-!--common header--
-<?php //require 'header.php';?>
+<!--common header-->
+<?php require 'header.php';?>
 
 <main>
     <div class="background-picture">
@@ -77,11 +40,11 @@
             </article>
         </section>
 
-        !--formulaire--
+        <!--formulaire-->
         <p class="other-request"><strong>Pour toute autre demande, vous pouvez utiliser le formulaire de contact suivant :</strong></p>
         <section class="form">  
             <article class="formatting">
-                !--check for cookie presence-->
+                <!--check for cookie presence-->
                 <?php 
                     /*if (isset ($_COOKIE ['cookieForm'])){
                         $requiredFields= $_COOKIE['cookieForm'];
@@ -91,8 +54,8 @@
                     }*/
                 ?> 
                 
-                <!--form contact process--
-                <form method="POST" action="./asset/php/formContact_processing.php">                
+                <!--form contact process--> 
+                <form method="POST" action="../controller/formContact_processing.php">                
                     <div class="form1">
                         <label for="name">
                         <input type="text" id="name" name="name" placeholder="Nom* :">
@@ -112,7 +75,7 @@
                             <label for="subject-select">Sujet* :</label>
                             <select id="subject-select" name="subject">
                                 <optgroup label="Particuliers">
-                                    !--value empty -> subject required --
+                                    <!--value empty -> subject required --> 
                                     <option value=""></option>
                                     <option value="Mon espace personnel">Mon espace personnel</option>
                                     <option value="Recherche d'un bien">Recherche d'un bien</option>
@@ -138,7 +101,7 @@
                 </form> 
                 
                                
-                <?php //$requiredFields= $_COOKIE['cookieForm']; ?>   
+                <?php $requiredFields= $_COOKIE['cookieForm']; ?>   
 
             </article>
         </section>
@@ -146,13 +109,13 @@
         <section class="find-us">     
             <article>
                 <p class="social-networks"><strong>Retrouvez-nous sur nos réseaux sociaux</strong></p>
-                <a href="https://www.facebook.com/"><img src="./asset/images/logos/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
-                <a href="https://www.instagram.com/"><img src="./asset/images/logos/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
-                <a href="https://www.youtube.com/"><img src="./asset/images/logos/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
-                <a href="https://www.linkedin.com/"><img src="./asset/images/logos/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.facebook.com/"><img src="../vue/images/logosContact/facebook_f_logo_(2021).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/"><img src="../vue/images/logosContact/instagram_logo_2016.svg" alt="logo"width="50" height="50"></a>
+                <a href="https://www.youtube.com/"><img src="../vue/images/logosContact/youtube_social_white_square_(2017).svg" alt="logo" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/"><img src="../vue/images/logosContact/linkedIn_icon.svg" alt="logo"width="50" height="50"></a>
             
                 <p class="social-networks"><strong>Et sur l'application</strong></p>
-                <a href="googlemybusiness"><img src="./asset/images/logos/Google-My-Business_logo.svg" alt="logo"width="50" height="50"></a>
+                <a href="googlemybusiness"><img src="../vue/images/logosContact/Google-My-Business_logo.svg" alt="logo"width="50" height="50"></a>
             </article>
 
             <article class="maps">
@@ -167,10 +130,9 @@
 
 </main>
 
-!--common footer-->
-<?php //require 'footer.php';?>
-<!--
+<!--common footer-->
+<?php require 'footer.php';?>
+
 </body>
 
 </html>
---> 

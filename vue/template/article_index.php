@@ -11,30 +11,25 @@
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
-    <title>Articles</title>
+    <title>Article</title>
     <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/index.css">
 
 </head>
 
-<?php 
-require 'c:laragon\www\connect/connect_index.php';
+<?php
+require '../php/connect_index.php';
 
-$sql = "SELECT * FROM `articles` ORDER BY `created_at` DESC";
-$requete =$db->query($sql);
-$articles = $requete->fetchAll();
+include '../../header.php';
 
-include 'C:\laragon\www\RealEstate/header.php';
+require '../../modele/article_index_model.php';
+
 ?>
 
-<section>
-    <?php foreach($articles as $article): ?>
-        <article>
-            <h1><a href="article_index.php?id=<?= $article["id"] ?>"><?= $article["title"] ?></a></h1>
-            <p><?= $article["created_at"] ?></p>
-            <div><?= $article["content"] ?></div>
-        </article>
-<?php endforeach; ?> 
-</section>
+<article>
+    <h1><?= strip_tags($article["title"])?></h1>
+    <p><?= strip_tags($article["created_at"])?></p>
+    <div><?= strip_tags($article["content"])?></div>
+</article>
 
-<?php include 'C:\laragon\www\RealEstate/footer.php'; ?>
+<?php include '../../footer.php'; ?>

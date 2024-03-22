@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
-    <link rel="stylesheet" href="./asset/css/header_footer.css">
+    <link rel="stylesheet" href="./vue/css/header_footer.css">
     <link rel="stylesheet" href="./asset/css/index.css">
 
 </head>
 
 <body>
 
-<?php require 'c:laragon\www\connect/connect_index.php'; ?>
+<?php require './asset/php/connect_index.php'; ?>
 
 
 <!-- logo avec menu principal -->
 <!-- include of header php file -->
-<?php @include 'header.php'; ?>
+<?php include './vue/template/header.php'; ?>
 
 <main>
 <!-- bannière avec fonction recherche -->
@@ -186,7 +186,7 @@
 
 <!-- footer -->
 <!-- include of footer php file -->
-<?php @include 'footer.php'; ?>
+<?php include './vue/template/footer.php'; ?>
 
 <div class="copyright">
     <p>copyright <i class="fa-regular fa-copyright"></i> acgd immo</p>

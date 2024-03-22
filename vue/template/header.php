@@ -1,5 +1,5 @@
 <header class="flex justify-content align-item">    
-        <img class="logo" src="./asset/images/logo x150.png" alt="logo">
+        <img class="logo" src="../vue/images/logo x150.png" alt="logo">
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -8,9 +8,9 @@
             </label>
             <ul class="menu flex justify-content">
                 <li><a class="title-txt" href="buy.php">Acheter</a></li>
-                <li><a class="title-txt" href="rent.php">Louer</a></li>
+                <li><a class="title-txt" href="rentVue.php">Louer</a></li>
                 <li><a class="title-txt" href="sell.php">Vendre</a></li>
-                <li><a class="title-txt" href="contact.php">Contact</a></li>
+                <li><a class="title-txt" href="contactVue.php">Contact</a></li>
             </ul>
         </nav>
         <div class="logo-mon-compte">
