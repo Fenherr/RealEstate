@@ -10,7 +10,7 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="./asset/js/aboutus.js" defer></script>
-    <link rel="stylesheet" href="./asset/css/header_footer.css">
+    <link rel="stylesheet" href="./vue/css/header_footer.css">
     <script src="./asset/js/header.js" defer></script>
     <link rel="stylesheet" href="./asset/css/aboutus.css">
     <link rel ="icon" type="image/png" href= "./asset/images/logo_white_150.png">
@@ -19,7 +19,7 @@
 <body>
 
 <?php
-require 'header.php';
+require './vue/template/header.php';
 ?>
 
 <?php 
