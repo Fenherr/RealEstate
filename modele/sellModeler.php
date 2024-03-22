@@ -1,5 +1,5 @@
 <?php
-    require_once("../secure-connect.php");
+    require_once("../../secure-connect.php");
     
     try {
         $dsn = "mysql:host={$db_host}; dbname={$db_name}; charset=utf8mb4";
