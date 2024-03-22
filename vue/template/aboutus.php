@@ -9,37 +9,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="./asset/js/aboutus.js" defer></script>
-    <link rel="stylesheet" href="./asset/css/header_footer.css">
-    <script src="./asset/js/header.js" defer></script>
-    <link rel="stylesheet" href="./asset/css/aboutus.css">
+    <script src="../javascript/aboutus.js" defer></script>
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <script src="../javascript/header.js" defer></script>
+    <link rel="stylesheet" href="../css/aboutus.css">
     <link rel ="icon" type="image/png" href= "./asset/images/logo_white_150.png">
 </head>
 
 <body>
 
 <?php
-require 'header.php';
+require '../template/header.php';
 ?>
 
 <?php 
 
 try{
     $mySqlClient = new PDO('mysql:host=localhost; dbname=acgd_immo; charset=utf8mb4', 'root', '' );
-} catch (Exeption $e) {
+} catch (Exception $e) {
     die ('Error'. $e -> getMessage());
 }
 
 ?>
 
-<?php
-    $prepareData = $mySqlClient -> prepare('SELECT * FROM user');
-    $prepareData -> execute();
-    $datas = $prepareData -> fetchAll();
+ <?php
+//     $prepareData = $mySqlClient -> prepare('SELECT * FROM user');
+//     $prepareData -> execute();
+//     $datas = $prepareData -> fetchAll();
 
-    foreach ($datas as $data) {
-        echo $data['firstname'];
-}
+//     foreach ($datas as $data) {
+//         echo $data['firstname'];
+// }
 
 ?>
 
@@ -146,7 +146,7 @@ try{
     </main>
 
     <?php
-require 'footer.php';
+require '../template/footer.php';
 ?>
 
 </body>
