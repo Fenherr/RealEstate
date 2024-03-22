@@ -1,5 +1,5 @@
 <?php
-/*
+
 // ------Check form------
 
 // Retrieving form data
@@ -83,4 +83,4 @@ try {
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}*/
+}
