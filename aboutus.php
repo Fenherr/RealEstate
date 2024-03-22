@@ -11,7 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="./asset/js/aboutus.js" defer></script>
     <link rel="stylesheet" href="./vue/css/header_footer.css">
-    <script src="./asset/js/header.js" defer></script>
+    <script src="./vue/javascript/header.js" defer></script>
     <link rel="stylesheet" href="./asset/css/aboutus.css">
     <link rel ="icon" type="image/png" href= "./asset/images/logo_white_150.png">
 </head>
@@ -26,7 +26,7 @@ require './vue/template/header.php';
 
 try{
     $mySqlClient = new PDO('mysql:host=localhost; dbname=acgd_immo; charset=utf8mb4', 'root', '' );
-} catch (Exeption $e) {
+} catch (Exception $e) {
     die ('Error'. $e -> getMessage());
 }
 
@@ -146,7 +146,7 @@ try{
     </main>
 
     <?php
-require 'footer.php';
+require './vue/template/footer.php';
 ?>
 
 </body>
