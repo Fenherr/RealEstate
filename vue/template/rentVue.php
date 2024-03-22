@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/header_footer.css">
-    <link rel="stylesheet" href="../css/rent.css">
-    <script src="../javascript/header.js" defer></script>
-    <script src="../javascript/rent.js" defer></script>
+    <link rel="stylesheet" href="./../css/header_footer.css">
+    <link rel="stylesheet" href="./../css/rent.css">
+    <script src="./../javascript/header.js" defer></script>
+    <script src="./../javascript/rent.js" defer></script>
     
 </head>
 <body>
@@ -17,7 +17,7 @@
     <main>
         <div>
             <div>
-                <picture class="backpict"><img src="../images/rent/picture-title.jpg" alt="Maquette de maison sur l'herbe"></picture>
+                <picture class="backpict"><img src="./../images/rent/picture-title.jpg" alt="Maquette de maison sur l'herbe"></picture>
             </div>
             <div class="title-search">
                 <h1>Chercher et trouver une location</h1>
@@ -52,7 +52,7 @@
                 <div class="zone3">
                     <!--bloque image gauche-->
                     <div class="zone4">
-                        <img src="../images/rent/saint-junien-rue.jpg" alt="Une rue dans Saint Junien">
+                        <img src="./../images/rent/saint-junien-rue.jpg" alt="Une rue dans Saint Junien">
                     </div>
                     <!--bloque image + texte au-dessus -->
                         <div  class="zone5">
@@ -81,7 +81,7 @@
             <!-- zone droite + image -->
             <div  class="zone2">
                 <div class="zone8">
-                    <img class="pict" src="../images/rent/agent-immobilier-visite.jpg" alt="Agent immobilier faisant visiter un appartement">
+                    <img class="pict" src="./../images/rent/agent-immobilier-visite.jpg" alt="Agent immobilier faisant visiter un appartement">
                 </div>
                 <div class="zone9">
                     <h2>Liens utiles</h2>
