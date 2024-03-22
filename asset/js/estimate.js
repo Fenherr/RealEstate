@@ -1,18 +1,22 @@
-let sidenav = document.getElementById("mySidenav")
-let openBtn = document.getElementById("openBtn")
-let closeBtn = document.getElementById("closeBtn")
-let nav = document.getElementById("nav")
+let togg1 = document.getElementById("togg1");
+let togg2 = document.getElementById("togg2");
+let estim2 = document.getElementById("estim2");
+togg1.addEventListener("click", () => {
+  if(getComputedStyle(estim2).display != "none"){
+    estim2.style.display = "none";
+  } else {
+    estim2.style.display = "block";
+  }
+})
 
-
-openBtn.onclick = openNav
-closeBtn.onclick = closeNav
-
-function openNav() {
-    sidenav.classList.add("active");
-    nav.classList.add("active");
-}
-
-function closeNav() {
-    sidenav.classList.remove("active");
-}  
-
+function togg(){
+    if(getComputedStyle(estim2).display != "block"){
+      estim2.style.display = "block";
+    } else {
+      estim2.style.display = "none";
+    }
+  };
+  togg2.onclick = togg;
+  
+  
+  

@@ -1,6 +1,6 @@
 <?php
-require_once('./modele/contactModele.php');
-require_once('./vue/template/contactVue.php');
+require_once('../modele/contactModele.php');
+require_once('../vue/template/contactVue.php');
 
 
 
@@ -56,9 +56,9 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Import necessary files
-require './vue/controller/PHPMailer/src/PHPMailer.php';
-require './vue/controller/PHPMailer/src/SMTP.php';
-require './vue/controller/PHPMailer/src/Exception.php';
+require '../controller/PHPMailer/src/PHPMailer.php';
+require '../controller/PHPMailer/src/SMTP.php';
+require '../controller/PHPMailer/src/Exception.php';
 
 
 // Create an instance; passing `true` enables exceptions

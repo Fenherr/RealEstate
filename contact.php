@@ -1,14 +1,3 @@
-<!-- contactVue call --> 
-<?php require_once ('./vue/template/contactVue.php');?>
-
-<!-- contactController call --> 
-<?php require_once('./controller/contactController.php');?>
-
-
-
-
-
-
 <!-------------Parts commented on following MVC relocation-----> 
 
 <!-- php connection to secure database-->

@@ -97,7 +97,7 @@ a:hover {
 
 /*bannière avec fonction recherche*/
 .banner {
-    background-image: url("../images/home/site_corot_1920.jpg");
+    background-image: url("/RealEstate/vue/images/home/site_corot_1920.jpg");
     padding: 5rem 0;
     /*background-size: cover;*/
 }
