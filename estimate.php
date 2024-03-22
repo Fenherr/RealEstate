@@ -13,7 +13,7 @@
 <body>
 
     <?php 
-        require 'header.php';
+        require './vue/template/header.php';
     ?>
 
     <?php
@@ -200,7 +200,7 @@
 </div>
 
 <?php 
-        require 'footer.php';
+        require './vue/template/footer.php';
 ?>
 
 <script src="asset/js/header.js"></script>
