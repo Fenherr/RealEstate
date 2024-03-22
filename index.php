@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/724458d0e8.js" crossorigin="anonymous"></script>
-    <script src="./asset/js/header.js" defer></script>
-    <script src="./asset/js/index.js" defer></script>
+    <script src="/RealEstate/vue/javascript/header.js" defer></script>
+    <script src="/RealEstate/vue/javascript/index.js" defer></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
     <title>Accueil</title>
-    <link rel="stylesheet" href="./vue/css/header_footer.css">
-    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="/RealEstate/vue/css/header_footer.css">
+    <link rel="stylesheet" href="/RealEstate/vue/css/index.css">
 
 </head>
 
@@ -80,7 +80,7 @@
                     <div class="news_all">
                         <a class="activ_news_all" href="./asset/articles_index/list_articles_index.php"><span>Toutes nos actualités</span></a>
                         <div>
-                            <a class="activ_news_all_btn" href="./asset/articles_index/list_articles_index.php"><span>&rsaquo;</span></a>
+                            <a class="activ_news_all_btn" href="./vue/template/list_articles_index.php"><span>&rsaquo;</span></a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                 <p>145000€</p>
                 <p>MAISON</p>
                 <P>SAINT-JUNIEN</p>
-                <a class="activ_sell" href="#"><img src="asset/images/home/bien_1.jpg" alt="bien 1 acgdimmo" width="200"></a>
+                <a class="activ_sell" href="#"><img src="./vue/images/home/bien_1.jpg" alt="bien 1 acgdimmo" width="200"></a>
                 <div class="sell_type">
                     <p><i class="fa-solid fa-bed"></i><span>4</span></p>
                     <div class="vertical_row"></div>
@@ -107,7 +107,7 @@
                 <p>119000€</p>
                 <p>MAISON</p>
                 <P>SAINT-JUNIEN</p>
-                <a class="activ_sell" href="#"><img src="asset/images/home/bien_2.jpg" alt="bien 2 acgdimmo" width="200"></a>
+                <a class="activ_sell" href="#"><img src="./vue/images/home/bien_2.jpg" alt="bien 2 acgdimmo" width="200"></a>
                 <div class="sell_type">
                     <p><i class="fa-solid fa-bed"></i><span>2</span></p>
                     <div class="vertical_row"></div>
@@ -118,7 +118,7 @@
                 <p>139000€</p>
                 <p>MAISON</p>
                 <P>SAINT-JUNIEN</p>
-                <a class="activ_sell" href="#"><img src="asset/images/home/bien_3.jpg" alt="bien 3 acgdimmo" width="200"></a>
+                <a class="activ_sell" href="#"><img src="./vue/images/home/bien_3.jpg" alt="bien 3 acgdimmo" width="200"></a>
                 <div class="sell_type">
                     <p><i class="fa-solid fa-bed"></i><span>4</span></p>
                     <div class="vertical_row"></div>
@@ -129,7 +129,7 @@
                     <p>45000€</p>
                     <p>GRANGE</p>
                     <P>SAINT-JUNIEN</p>
-                    <a class="activ_sell" href="#"><img src="asset/images/home/bien_4.jpg" alt="bien 4 acgdimmo" width="200"></a>
+                    <a class="activ_sell" href="#"><img src="./vue/images/home/bien_4.jpg" alt="bien 4 acgdimmo" width="200"></a>
                     <div class="sell_type">
                         <p><i class="fa-solid fa-bed"></i><span>0</span></p>
                         <div class="vertical_row"></div>

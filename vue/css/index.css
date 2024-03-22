@@ -431,7 +431,7 @@ i[class="fa-solid fa-bed"] {
 
 /*section article agence*/
 .bkg_agency {
-    background-image: url("../images/home/stj_pano_opacity.png");
+    background-image: url("/RealEstate/vue/images/home/stj_pano_opacity.png");
     background-repeat: no-repeat;
     padding-top: 0;
     padding-bottom: 3rem;
@@ -1339,7 +1339,7 @@ i[class="fa-solid fa-bed"] {
 }
 
 /* -------------------------XXL-----------------------*/
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1950px) {
     .bkg_agency {
         background-image: none;
     }
