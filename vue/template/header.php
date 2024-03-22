@@ -8,7 +8,7 @@
             </label>
             <ul class="menu flex justify-content">
                 <li><a class="title-txt" href="buy.php">Acheter</a></li>
-                <li><a class="title-txt" href="rent.php">Louer</a></li>
+                <li><a class="title-txt" href="rentVue.php">Louer</a></li>
                 <li><a class="title-txt" href="sell.php">Vendre</a></li>
                 <li><a class="title-txt" href="contactVue.php">Contact</a></li>
             </ul>
