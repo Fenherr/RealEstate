@@ -159,7 +159,7 @@ h1 {
 /* code à tester*/
 #submit {
     display: block;
-    clear: both;
+    /*clear: both;*/
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;

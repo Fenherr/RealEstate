@@ -1,7 +1,7 @@
 <footer>
         <div class="colonne">
             <div class="footer-logo">
-                <a href="index.html"><img class="logo" src="../vue/images/logo_white_150.png" alt="Logo" width="150px" height="73px"></a>
+                <a href="index.html"><img class="logo" src="../images/logo_white_150.png" alt="Logo" width="150px" height="73px"></a>
                 <p>Retrouvez-nous sur les réseaux sociaux</p>
 
                 <ul class="social-media">

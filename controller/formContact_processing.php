@@ -1,5 +1,6 @@
 <?php
-/*
+require_once('../modele/contactModele.php');
+
 // ------Check form------
 
 // Retrieving form data
@@ -43,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // ------Mail processing------
 
 // Message setting
-$message = nl2br("Nom : ".$name. "\n"." Email : ".$email. "\n"." message : ".$message);
+$message = nl2br("Nom : ".$name. "\n". "Prénom : ".$firstName. "\n". " Email : ".$email. "\n"." message : ".$message);
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -83,4 +84,4 @@ try {
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}*/
+}

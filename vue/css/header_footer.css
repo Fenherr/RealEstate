@@ -14,13 +14,13 @@
 @font-face {
     font-family: "baloo2";
     src: 
-        url("../../fonts/Baloo_2/static/Baloo2-Medium.ttf") format(truetype);
+        url("../css/fonts-family/Baloo2-Medium.ttf") format(truetype);
 }
 
 @font-face {
     font-family: "opensans";
     src:
-        url("../../fonts/Open_Sans/static/OpenSans-Regular.ttf") format(truetype);
+        url("../css/fonts-family/OpenSans/OpenSans-Regular.ttf") format(truetype);
 }
 
 [hidden] {

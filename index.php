@@ -80,7 +80,7 @@
                     <div class="news_all">
                         <a class="activ_news_all" href="./asset/articles_index/list_articles_index.php"><span>Toutes nos actualités</span></a>
                         <div>
-                            <a class="activ_news_all_btn" href="./asset/articles_index/list_articles_index.php"><span>&rsaquo;</span></a>
+                            <a class="activ_news_all_btn" href="/RealEstate/vue/articles_index/list_articles_index.php"><span>&rsaquo;</span></a>
                         </div>
                     </div>
                 </div>
