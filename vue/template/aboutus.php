@@ -10,16 +10,16 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="./asset/js/aboutus.js" defer></script>
-    <link rel="stylesheet" href="./vue/css/header_footer.css">
-    <script src="./vue/javascript/header.js" defer></script>
-    <link rel="stylesheet" href="./asset/css/aboutus.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <script src="../javascript/header.js" defer></script>
+    <link rel="stylesheet" href="../../asset/css/aboutus.css">
     <link rel ="icon" type="image/png" href= "./asset/images/logo_white_150.png">
 </head>
 
 <body>
 
 <?php
-require './vue/template/header.php';
+require '../template/header.php';
 ?>
 
 <?php 
@@ -32,14 +32,14 @@ try{
 
 ?>
 
-<?php
-    $prepareData = $mySqlClient -> prepare('SELECT * FROM user');
-    $prepareData -> execute();
-    $datas = $prepareData -> fetchAll();
+ <?php
+//     $prepareData = $mySqlClient -> prepare('SELECT * FROM user');
+//     $prepareData -> execute();
+//     $datas = $prepareData -> fetchAll();
 
-    foreach ($datas as $data) {
-        echo $data['firstname'];
-}
+//     foreach ($datas as $data) {
+//         echo $data['firstname'];
+// }
 
 ?>
 
@@ -146,7 +146,7 @@ try{
     </main>
 
     <?php
-require './vue/template/footer.php';
+require '../template/footer.php';
 ?>
 
 </body>
