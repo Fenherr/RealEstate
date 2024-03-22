@@ -34,7 +34,23 @@ h3 {
 
 /***********CASE D'ESTIMATION*********/
 
+h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-family: "Baloo2", sans-serif;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
 .estimer {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 1px 2px;
+}
+
+.estimer-2 {
     margin: 0 auto;
     width: 50%;
     border-radius: 1rem;
@@ -68,6 +84,53 @@ h5 {
     width: 500px;
     height: 40px;
     font-size: 0,95rem;
+}
+
+.estim-part {
+    display: flex;
+    justify-content: space-around;
+}
+
+.estim-part-2 {
+    padding-left: 1.5rem;
+}
+
+.estimer-2 {
+    display: none;
+}
+
+.suivant {
+    display: block;
+    font-size: 0.850rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    background-color: #e2fbb7;
+    padding: 1rem;
+    border-radius: 0.88rem;
+    margin-bottom: 1rem;
+    font-family: "opensans", sans-serif;
+}
+
+.precedent {
+    display: block;
+    font-size: 0.850rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    background-color: #e2fbb7;
+    padding: 1rem;
+    border-radius: 0.88rem;
+    margin-bottom: 1rem;
+    font-family: "opensans", sans-serif;
+}
+
+.swp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swp-2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .valider {
@@ -107,6 +170,12 @@ h5 {
     }
 
     .estimer {
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 1rem;
+    }
+
+    .estimer-2 {
         margin: 0 auto;
         width: 90%;
         border-radius: 1rem;
